@@ -1,0 +1,33 @@
+{
+  "name": "hackbeanpot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",    
+    "build": "./node_modules/.bin/webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/react-router-dom": "^4.2.7",
+    "express": "^4.16.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "typescript": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.3.16",
+    "@types/react-dom": "^16.0.5",
+    "html-webpack-plugin": "^3.2.0",
+    "source-map-loader": "^0.2.3",
+    "ts-loader": "^4.3.1",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-hot-middleware": "^2.22.2"
+  }
+}
