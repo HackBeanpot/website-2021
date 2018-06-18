@@ -25,11 +25,6 @@ jobs:
           name: install dependencies
           command: npm install 
 
-      - run:
-          # Needed for the build step
-          name: install gatsby cli globally
-          command: npm install --global gatsby-cli
-
       - save_cache:
           paths:
             - node_modules
@@ -37,7 +32,7 @@ jobs:
 
       - run:
           name: build gatsby site
-          command: gatsby build
+          command: npm run-script build
 
       - run:
           name: deploy to gh-pages branch
