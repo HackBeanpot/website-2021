@@ -18,11 +18,11 @@ The branch `gh-pages` is where our compiled (static) code lives. This branch is 
 
 The branch `develop` is our main branch. Branch off of here if you are starting a new feature; merge back into here if you are ready for that feature to go to prod. We'll periodically merge changes in this branch into the master branch.
 
-All other branches are probably used for developing things. When you make one, try to give it a descriptive name!
+All other branches are probably used for developing things. When you make one, try to give it a descriptive name! And remember to delete your personal branches once your changes are merged to keep the repo clean.
 
 
 ## Directory Structure
-Just put the code in different places until it works. (Jk, who wants to write a full description of this)
+Just put the code in different places until it works. (Jk, Felicia says there might be a different way (who knew??) and she will write this section.)
 
 
 ## Style Guide

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'HackBeanpot 2019 - Come together to build and learn this Spring',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }
