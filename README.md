@@ -1,52 +1,46 @@
-# Hack Beanpot Website version 2.0
-This is the repo for the new hack beanpot website created for the 2019 season
+# beta.hackbeanpot.com
+HackBeanpot's website for 2018-2019. It is written in React and served using GitHub Pages. We use Gatsby to compile our files into static assets for deployment.
 
-## Tools
-- [React](https://reactjs.org/)
-- [Typescript](https://www.typescriptlang.org/docs/home.html)
-- [Sass](https://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
-## Developing
-[Visual Studio Code](https://code.visualstudio.com/) is the recommended editor, and it is helpful to be familiar with command line to use `git` and `npm`.  
-To run the project, use `npm run start`.  
-For debugging, download the chrome extension [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en).
+## Getting Set Up For Development
+First and foremost, make sure you have [Node](https://nodejs.org) installed.
 
-#### Styling
-In your user settings (`ctrl ,` in VSC) change the default to use 2 spaces for a tab. Use single quotes `'` instead of double quotes `"` for strings.
+`git clone https://github.com/HackBeanpot/www-2019` Clone into this repository.
+`cd www-2019` CD into the new local repo.
+`npm install` Install dependencies.
+`gatsby develop` Launch a hot-reloading dev environment to see the site running on your local!
 
-Components, props and state should be named with `CapitalizedCamelCase`. Variables are `camelCased`. File names and folder names should be in `dash-separated-lowercase`.
 
-#### Structure
-Configuration files go in the root directory.  
-`/src` holds all the source code including assets, data, styling and components.  
-All `.scss` files should be imported into `main.scss`.  
+## Branch Structure
+The branch `master` is where our uncompiled production code lives. Whenever a new commit is made here, CI notices and builds everything inside into static assets which are then committed to the branch `gh-pages` and deployed. In general, don't commit directly to master or branch out of it.
 
-**Shared:** Any component that will be used in multiple places belong in `/src/shared` where each component should have its own folder holding the component and associated style sheet.
+The branch `gh-pages` is where our compiled (static) code lives. This branch is LIVE. LIVE I SAY. So we leave it up to our CI robots to manage it. Unless you know what you are doing, probably don't branch, merge, or commit to this branch.
 
-**Data:** All Jsonified content belongs in `/src/data`.
+The branch `develop` is our main branch. Branch off of here if you are starting a new feature; merge back into here if you are ready for that feature to go to prod. We'll periodically merge changes in this branch into the master branch.
 
-**Models:** `.ts` files defining interfaces and classes for different types of objects (ie. projects) go here.
+All other branches are probably used for developing things. When you make one, try to give it a descriptive name! And remember to delete your personal branches once your changes are merged to keep the repo clean.
 
-**Assets:** Images, animations, etc
 
-**src:** Each page should have its own folder housing all its components. If there are multiple components and style sheets within a page, they should be sorted in `/components` and `styles` subfolders.
+## Directory Structure
+Just put the code in different places until it works. (Jk, Felicia says there might be a different way (who knew??) and she will write this section.)
 
-Css constants such as colors should be added to `/src/styles/constants.scss`
 
-## Contributing to the Repo
-When developing locally, always develop on your own branch that is rebased off of `develop`.  
-**To switch to a new branch:** While on `develop`, run `git pull` to get the latest version. `git checkout -b <branch-name>` to create and switch to a new branch (replacing `<branch-name>` with a relevant name).  
+## Style Guide
+Spaces, not tabs.
+Each "tab" is 2 spaces.
+And try to keep to 80 char lines.
+(I just copied this from the old repo. Add to it as we write code)
 
-When your feature is done, make sure your branch is up to date, then push your branch to the remote repo.  
-> `git checkout develop`  
-> `git pull`  
-> `git checkout <your-branch>`  
-> `git rebase origin/develop`  
-> fix and commit any conflicts  
-> `git push origin <your-branch>`  
 
-To merge your changes into `develop`, open a pull request and add reviewers and fill in the PR template. You will need x reviewers to approve your PR before merging.
-**When merging, use the squash and merge option.**
+## How to Compile
+Don't. We have CI.
 
-## Deployment
-The production version of this site is on the `master` branch.
+But the command to do so is `gatsby build` in the repo's top-level directory. Keep in mind that if you do build on your local and then view the static files, links between pages won't work. Better to use `gatsby develop` to see the changes you're working on.
+
+
+## How CI Works
+Forbidden magic. Basically. (Coming soon, Warren will write about it)
+
+
+## Useful References
+* [Gatsby Components](https://www.gatsbyjs.org/docs/building-with-components/)
