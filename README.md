@@ -1,63 +1,46 @@
-# Hack Beanpot Website version 2.0
+# beta.hackbeanpot.com
+HackBeanpot's website for 2018-2019. It is written in React and served using GitHub Pages. We use Gatsby to compile our files into static assets for deployment.
 
-This is the repo for the new hack beanpot website created for the 2019 season
 
-## Tools
+## Getting Set Up For Development
+First and foremost, make sure you have [Node](https://nodejs.org) installed.
 
-- [React](https://reactjs.org/)
-- [Typescript](https://www.typescriptlang.org/docs/home.html)
-- [Sass](https://sass-lang.com/documentation/file.SASS_REFERENCE.html)
+`git clone https://github.com/HackBeanpot/www-2019` Clone into this repository.
+`cd www-2019` CD into the new local repo.
+`npm install` Install dependencies.
+`gatsby develop` Launch a hot-reloading dev environment to see the site running on your local!
 
-## Developing
 
-[Visual Studio Code](https://code.visualstudio.com/) is the recommended editor, and it is helpful to be familiar with command line to use `git` and `npm`.  
-To run the project, use `npm i` then `npm run start`.  
-For debugging, download the chrome extension [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en).
+## Branch Structure
+The branch `master` is where our uncompiled production code lives. Whenever a new commit is made here, CI notices and builds everything inside into static assets which are then committed to the branch `gh-pages` and deployed. In general, don't commit directly to master or branch out of it.
 
-#### Styling
+The branch `gh-pages` is where our compiled (static) code lives. This branch is LIVE. LIVE I SAY. So we leave it up to our CI robots to manage it. Unless you know what you are doing, probably don't branch, merge, or commit to this branch.
 
-In your user settings (`ctrl ,` in VSC) change the default to use 2 spaces for a tab. Use single quotes `'` instead of double quotes `"` for strings.
+The branch `develop` is our main branch. Branch off of here if you are starting a new feature; merge back into here if you are ready for that feature to go to prod. We'll periodically merge changes in this branch into the master branch.
 
-We use Prettier for code styling. In VSC, install the prettier extension. In your user settings, add the line `"editor.formatOnSave": true` to automatically format files when you save them.
+All other branches are probably used for developing things. When you make one, try to give it a descriptive name! And remember to delete your personal branches once your changes are merged to keep the repo clean.
 
-Components, props and state should be named with `CapitalizedCamelCase`. Variables are `camelCased`. File names, folder names, and CSS classes should be in `dash-separated-lowercase`.
 
-#### Structure
+## Directory Structure
+Just put the code in different places until it works. (Jk, Felicia says there might be a different way (who knew??) and she will write this section.)
 
-Configuration files go in the root directory.  
-`/src` holds all the source code including assets, data, styling and components.
 
-**Styles:** All `.scss` files should be imported into `main.scss`. Css constants such as colors should be added to `/src/styles/constants.scss`
+## Style Guide
+Spaces, not tabs.
+Each "tab" is 2 spaces.
+And try to keep to 80 char lines.
+(I just copied this from the old repo. Add to it as we write code)
 
-**Shared:** Any component that will be used in multiple places belong in `/src/shared` where each component should have its own folder holding the component and associated style sheet.
 
-**Data:** All Jsonified content belongs in `/src/data`.
+## How to Compile
+Don't. We have CI.
 
-**Models:** `.ts` files defining interfaces and classes for different types of objects (ie. projects) go here.
+But the command to do so is `gatsby build` in the repo's top-level directory. Keep in mind that if you do build on your local and then view the static files, links between pages won't work. Better to use `gatsby develop` to see the changes you're working on.
 
-**Assets:** Images, animations, etc
 
-**src:** Each page should have its own folder housing all its components. If there are multiple components and style sheets within a page, they should be sorted in `/components` and `styles` subfolders.
+## How CI Works
+Forbidden magic. Basically. (Coming soon, Warren will write about it)
 
-**config:** When adding a new folder, keep imports clean by adding the path to `tsconfig.json` in the paths section. Likewise, use the @path statements in your imports.
 
-## Contributing to the Repo
-
-When developing locally, always develop on your own branch that is rebased off of `develop`.  
-**To switch to a new branch:** While on `develop`, run `git pull` to get the latest version. `git checkout -b <branch-name>` to create and switch to a new branch (replacing `<branch-name>` with a relevant name).
-
-When your feature is done, make sure your branch is up to date, then push your branch to the remote repo.
-
-> `git checkout develop`  
-> `git pull`  
-> `git checkout <your-branch>`  
-> `git rebase origin/develop`  
-> fix and commit any conflicts  
-> `git push origin <your-branch>`
-
-To merge your changes into `develop`, open a pull request and add reviewers and fill in the PR template. You will need 3 reviewers to approve your PR before merging. In your PR, do include screenshots or a gif of your feature when relevant.
-**When merging, use the squash and merge option.**
-
-## Deployment
-
-The production version of this site is on the `master` branch.
+## Useful References
+* [Gatsby Components](https://www.gatsbyjs.org/docs/building-with-components/)
