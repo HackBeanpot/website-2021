@@ -44,8 +44,8 @@ jobs:
               git stash
               git checkout gh-pages
               find . -mindepth 1 -maxdepth 1  ! -path './.git' ! -path './.git/*' ! -name '.gitignore' ! -path './.circleci' ! -path './.circleci/*' ! -name 'CNAME' -exec rm -rf {} +
-              git add -u
-              git stash pop
+              git checkout stash -- .
+              git stash drop
               cp -r public/ .
               rm -rf public
               git add -A
