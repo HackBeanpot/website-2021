@@ -46,7 +46,7 @@ jobs:
               find . -mindepth 1 -maxdepth 1  ! -path './.git' ! -path './.git/*' ! -name '.gitignore' ! -path './.circleci' ! -path './.circleci/*' ! -name 'CNAME' -exec rm -rf {} +
               git checkout stash -- .
               git stash drop
-              cp -r public/ /
+              sudo cp -r public/ ~
               rm -rf public
               git add -A
               git commit -m "CI build"
