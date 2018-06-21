@@ -13,13 +13,17 @@ jobs:
 
 
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "b0:5a:c3:32:6c:a7:a2:9c:e9:03:d3:ad:b3:8e:80:a6"
+
       - checkout
 
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
 
       - run: 
           name: install dependencies
