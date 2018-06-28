@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import FAQItem from '../components/FAQItem'
+import MailingListPrompt from '../components/MailingListPrompt'
 
 const App = () => (
     <div>
@@ -26,10 +28,7 @@ const App = () => (
                     <br />
                     @ Genuine HQ
                 </h1>
-                <div>
-                    <input placeholder="Join our mailing list!" />
-                    <button>Do it</button>
-                </div>
+                <MailingListPrompt />
                 <span>
           <img
               src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
@@ -93,10 +92,9 @@ const App = () => (
         </div>
         <div style={{ clear: 'both', background: '#d3d3d3' }}>
             <h2>Frequently Asked Questions</h2>
-            <h3>Question and answer component goes here</h3>
-            <h3>Question and answer component goes here</h3>
-            <h3>Question and answer component goes here</h3>
-            <h3>Question and answer component goes here</h3>
+            <FAQItem />
+            <FAQItem />
+            <FAQItem />
         </div>
         <div>
             <h2>2019 Sponsors</h2>
@@ -117,9 +115,6 @@ const App = () => (
                     width="20%"
                 />
             </div>
-        </div>
-        <div>
-            <h2>Footer goes here</h2>
         </div>
     </div>
 );
