@@ -1,3 +1,36 @@
 @charset "UTF-8";
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+.landing-section {
+  height: 100vh;
+}
+
+.hero-logo {
+  height: 75%;
+  width: 50%;
+  float: left;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.about-section {
+  /* Placeholder */
+}
+
+.faq-section {
+  clear: both;
+  background: #d3d3d3;
+}
+
+.sponsors-section {
+  /* Placeholder */
+}
+
+.sponsor {
+  height: 20%;
+  width: 20%;
+}

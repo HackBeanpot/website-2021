@@ -1,19 +1,12 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import FAQItem from '../components/FAQItem'
-import MailingListPrompt from '../components/MailingListPrompt'
+import FAQItem from '../components/FAQItem';
+import MailingListPrompt from '../components/MailingListPrompt';
+import AboutItem from '../components/AboutItem';
 
 const App = () => (
     <div>
-        <div style={{ height: '100vh' }}>
-            <div>
-                <img
-                    src="https://hackbeanpot.com/img/solid_logo.png"
-                    height="75%"
-                    width="50%"
-                    style={{ float: 'left' }}
-                />
-            </div>
+        <section className="landing-section">
+            <img className="hero-logo" src="https://hackbeanpot.com/img/solid_logo.png"/>
 
             <div>
                 <h3>
@@ -30,92 +23,60 @@ const App = () => (
                 </h1>
                 <MailingListPrompt />
                 <span>
-          <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
-              height="50px"
-              width="50px"
-          />
-          <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
-              height="50px"
-              width="50px"
-          />
-          <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
-              height="50px"
-              width="50px"
-          />
-          <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg"
-              height="50px"
-              width="50px"
-          />
-        </span>
+                    <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg" />
+                    <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg" />
+                    <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg" />
+                    <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ski_trail_rating_symbol-green_circle.svg" />
+                </span>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section className="about-section">
             <h2>HackBeanpot is about...</h2>
-            <div style={{ clear: 'both' }}>
-                {/* Probably make this into a component*/}
-                <img
-                    src="https://hackbeanpot.com/img/wmud/IMG_0299.jpg"
-                    height="40%"
-                    width="40%"
-                    style={{ float: 'left' }}
-                />
-                <h3>The stories</h3>
-                <h4>Stories subtext</h4>
-                <Link to={'/stories'}>Link to stories</Link>
-            </div>
-            <div style={{ clear: 'both' }}>
-                {/* Probably make this into a component*/}
-                <img
-                    src="https://hackbeanpot.com/img/wmud/IMG_0299.jpg"
-                    height="40%"
-                    width="40%"
-                    style={{ float: 'right' }}
-                />
-                <h3>The projects</h3>
-                <h4>Projects subtext</h4>
-            </div>
-            <div style={{ clear: 'both' }}>
-                {/* Probably make this into a component*/}
-                <img
-                    src="https://hackbeanpot.com/img/wmud/IMG_0299.jpg"
-                    height="40%"
-                    width="40%"
-                    style={{ float: 'left' }}
-                />
-                <h3>The people</h3>
-                <h4>People subtext</h4>
-            </div>
-        </div>
-        <div style={{ clear: 'both', background: '#d3d3d3' }}>
+            <AboutItem
+                header="The Stories"
+                content="Stories content"
+                pageLink="/stories"
+                floatDirection="left"
+            />
+            <AboutItem
+                header="The Projects"
+                content="Projects content"
+                pageLink="/projects"
+                floatDirection="right"
+            />
+            <AboutItem
+                header="The People"
+                content="People content"
+                pageLink="/sponsorship"
+                floatDirection="left"
+            />
+        </section>
+
+        <section className="faq-section">
             <h2>Frequently Asked Questions</h2>
-            <FAQItem />
-            <FAQItem />
-            <FAQItem />
-        </div>
-        <div>
+            <FAQItem
+                question="Question 1"
+                answer="Answer 1"
+            />
+            <FAQItem
+                question="Question 2"
+                answer="Answer 2"
+            />
+            <FAQItem
+                question="Question 3"
+                answer="Answer 3"
+            />
+        </section>
+
+        <section className="sponsors-section">
             <h2>2019 Sponsors</h2>
             <div>
-                <img
-                    src="https://www.freelogodesign.org/img/logo-ex-5.png"
-                    height="20%"
-                    width="20%"
-                />
-                <img
-                    src="https://www.freelogodesign.org/img/logo-ex-5.png"
-                    height="20%"
-                    width="20%"
-                />
-                <img
-                    src="https://www.freelogodesign.org/img/logo-ex-5.png"
-                    height="20%"
-                    width="20%"
-                />
+                <img className="sponsor" src="https://www.freelogodesign.org/Content/img/logo-ex-5.png" />
+                <img className="sponsor" src="https://www.freelogodesign.org/Content/img/logo-ex-5.png" />
+                <img className="sponsor" src="https://www.freelogodesign.org/Content/img/logo-ex-5.png" />
             </div>
-        </div>
+        </section>
     </div>
 );
 
