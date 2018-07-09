@@ -18,6 +18,8 @@ const Layout = ({ children }) => (
     <Nav siteTitle={'HackBeanpot'} />
     <div className="container">{children()}</div>
   </div>
+
+  // TODO: Add footer
 );
 
 Layout.propTypes = {
