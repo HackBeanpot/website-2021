@@ -1,7 +1,8 @@
 import React from 'react';
-import FAQItem from '../components/FAQItem';
+import FAQItems from '../components/FAQItems';
 import MailingListPrompt from '../components/MailingListPrompt';
 import AboutItem from '../components/AboutItem';
+import FAQs from '../data/FAQs.json';
 
 const App = () => (
     <div>
@@ -55,18 +56,7 @@ const App = () => (
 
         <section className="faq-section">
             <h2>Frequently Asked Questions</h2>
-            <FAQItem
-                question="Question 1"
-                answer="Answer 1"
-            />
-            <FAQItem
-                question="Question 2"
-                answer="Answer 2"
-            />
-            <FAQItem
-                question="Question 3"
-                answer="Answer 3"
-            />
+            <FAQItems FAQs={FAQs} />
         </section>
 
         <section className="sponsors-section">
