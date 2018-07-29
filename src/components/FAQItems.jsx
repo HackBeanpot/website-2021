@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Masonry from 'react-masonry-component';
 
-
 class FAQItems extends Component {
   constructor(props) {
     super(props);
@@ -9,19 +8,13 @@ class FAQItems extends Component {
 
   render() {
     const childElements = this.props.FAQs.map(FAQ => (
-      <li className="faq-masonry-element">
+      <div className="faq-masonry-element">
         <h4>{FAQ.question}</h4>
         <p>{FAQ.answer}</p>
-      </li>
+      </div>
     ));
 
-    return (
-      <Masonry
-        elementType={'ul'}
-      >
-        {childElements}
-      </Masonry>
-    );
+    return <Masonry>{childElements}</Masonry>;
   }
 }
 FAQItems.defaultProps = {
