@@ -46,7 +46,7 @@ const App = () => (
         </span>
       </div>
     </section>
-
+    
     <section className="about-section">
       <h2>HackBeanpot is about...</h2>
       <AboutItem
@@ -64,11 +64,11 @@ const App = () => (
       <AboutItem
         header="The People"
         content="People content"
-        pageLink="/sponsorship"
+        //pageLink="/sponsorship"
         floatDirection="left"
       />
     </section>
-
+    
     <section className="faq-section">
       <h2>Frequently Asked Questions</h2>
       <FAQItems FAQs={FAQs} />
