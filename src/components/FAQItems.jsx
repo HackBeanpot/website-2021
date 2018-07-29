@@ -1,15 +1,29 @@
-import React, { Fragment } from 'react';
+import React, { Component } from 'react';
+import Masonry from 'react-masonry-component';
 
-const FAQItems = props => (
-  <div>
-    {props.FAQs.map(FAQ => (
-      <Fragment>
+
+class FAQItems extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const childElements = this.props.FAQs.map(FAQ => (
+      <li className="faq-masonry-element">
         <h4>{FAQ.question}</h4>
         <p>{FAQ.answer}</p>
-      </Fragment>
-    ))}
-  </div>
-);
+      </li>
+    ));
+
+    return (
+      <Masonry
+        elementType={'ul'}
+      >
+        {childElements}
+      </Masonry>
+    );
+  }
+}
 FAQItems.defaultProps = {
   FAQs: [
     {
