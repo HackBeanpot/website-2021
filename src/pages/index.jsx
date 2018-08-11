@@ -1,8 +1,8 @@
 import React from 'react';
-import FAQItems from '../components/FAQItems';
-import MailingListPrompt from '../components/MailingListPrompt';
-import AboutItem from '../components/AboutItem';
-import FAQs from '../data/FAQs.json';
+import FAQItems from 'components/faq-items';
+import MailingListPrompt from 'components/MailingListPrompt';
+import AboutItem from 'components/AboutItem';
+import FAQs from 'data/FAQs.json';
 
 const App = () => (
   <div>

@@ -20,16 +20,8 @@ class FAQItems extends Component {
 FAQItems.defaultProps = {
   FAQs: [
     {
-      question: 'What is your name?',
-      answer: 'Sir Galahad of Camelot.'
-    },
-    {
-      question: 'What is your quest?',
-      answer: 'I seek the Grail.'
-    },
-    {
-      question: 'What... is your favorite color?',
-      answer: 'Blue. No yell-- auuuuuuuugh!'
+      question: '',
+      answer: ''
     }
   ]
 };
