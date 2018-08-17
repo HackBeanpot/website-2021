@@ -1,10 +1,4 @@
-@charset "UTF-8";
-
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import '../pages/stories/stories.scss';
-@import '../pages/sponsors/sponsors.scss';
-@import '../components/aboutItem/AboutItem.scss';
-@import './constants.scss';
+// Styles for the home page
 
 .landing-section {
   height: 100vh;
@@ -57,16 +51,7 @@
   background: #d3d3d3;
 }
 
-.faq-masonry-element {
-  width: 500px;
-  padding: 10px 20px;
-}
-
 // SPONSORS
-
-.sponsors-section {
-  /* Placeholder */
-}
 
 .sponsor {
   height: 20%;
