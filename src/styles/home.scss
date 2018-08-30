@@ -47,8 +47,35 @@
 // FAQ
 
 .faq-section {
-  clear: both;
-  background: #d3d3d3;
+  /* Placeholder */
+}
+
+.faq-title {
+  font-size: $title;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.faq-masonry-element {
+  width: 48%;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .faq-masonry-element {
+    width: 100%;
+  }
+}
+
+.faq-element-question {
+  font-size: $subtitle;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: 1.15em;
+}
+
+.faq-element-answer {
+  font-size: $small-body;
+  margin: 0;
 }
 
 // SPONSORS
