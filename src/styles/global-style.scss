@@ -11,7 +11,7 @@
 
 // Import styles for components
 @import '../components/aboutItem/about-item.scss';
-
+@import '/nav.scss';
 @import '/footer.scss';
 
 * {
@@ -24,6 +24,10 @@
 // NAVBAR
 .hbp-nav {
   z-index: 50;
+}
+
+body {
+  background-color: $gray;
 }
 
 // SECTIONS
