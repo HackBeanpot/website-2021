@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Nav from 'components/nav';
-import 'styles/main.scss';
+import Footer from 'components/footer';
+import 'styles/global-style.scss';
 
 // Shows the header and footer on every page
 const Layout = ({ children }) => (
@@ -16,10 +17,9 @@ const Layout = ({ children }) => (
       ]}
     />
     <Nav siteTitle={'HackBeanpot'} />
-    <div className="container">{children()}</div>
+    <div>{children()}</div>
+    <Footer />
   </div>
-
-  // TODO: Add footer
 );
 
 Layout.propTypes = {
