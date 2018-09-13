@@ -1,12 +1,17 @@
 .navbar {
-  background: $gray !important;
+  background: transparent !important;
   padding-top: 20px;
+  z-index: 50;
+  position: absolute;
+  flex-flow: row nowrap !important;
+  justify-content: flex-start !important;
+  @media (min-width: 576px) {
+    padding-left: 50px;
+  }
 }
 
-.navbar-brand {
-  font-family: $logo-font-family;
-  color: $navy !important;
-  font-weight: bold;
+.navbar-logo {
+  width: 50px;
 }
 
 .nav-item {
@@ -15,5 +20,11 @@
 
 .nav-link {
   color: $navy !important;
+  font-size: 18px;
   font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+.nav-link:hover {
+  transform: rotate(-7deg);
 }

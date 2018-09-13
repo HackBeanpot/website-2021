@@ -1,9 +1,10 @@
 @import '../../styles/constants.scss';
 
 .sponsor-welcome {
-  padding-bottom: 175px;
+  margin-top: 100px;
+  margin-bottom: 175px;
   @media (max-width: 1024px) {
-    padding-bottom: 50px;
+    margin-bottom: 100px;
   }
 }
 
@@ -22,7 +23,7 @@
 
 .sponsor-title {
   text-align: left;
-  font-size: $title;
+  font-size: $large-title;
   font-weight: 600;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -41,7 +42,7 @@
 
 .sponsor-section-header {
   text-align: center;
-  font-size: $title;
+  font-size: $med-title;
   font-weight: 600;
   padding-top: 100px;
   padding-bottom: 50px;

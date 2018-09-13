@@ -1,9 +1,11 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import FAQItems from 'components/faq-items';
 import AboutItem from 'components/aboutItem/about-item';
 import FAQs from 'data/faqs.json';
 import AboutContent from 'data/about-content.json';
 import SponsorLogos from 'components/sponsor-logos';
+import Logo from 'images/logo-full.jsx';
 
 import HomeBlob1 from 'images/home-blob-1';
 import HomeBlob2 from 'images/home-blob-2';
@@ -15,7 +17,6 @@ import HomeBlob6 from 'images/home-blob-6';
 import Circuit1 from 'images/circuit-1';
 import Circuit2 from 'images/circuit-2';
 import Circuit3 from 'images/circuit-3';
-import LogoWhite from 'images/logo-white.jsx';
 
 const App = () => {
   return (
@@ -30,8 +31,8 @@ const App = () => {
       <Circuit2 />
       <section className="landing-section container">
         <div className="row">
-          <div className="col-md-5">
-            <LogoWhite />
+          <div className="hero-logo col-md-5">
+            <Logo />
           </div>
           <div className="col-md-7 header">
             <div className="header-content">
@@ -49,9 +50,9 @@ const App = () => {
                 </strong>
               </p>
             </div>
-            <a href="/sponsors" role="button" className="yellow-btn lg-btn">
+            <Link to="/sponsors" role="button" className="yellow-btn lg-btn">
               Learn more
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -88,6 +89,7 @@ const App = () => {
         </div>
       </section>
       <section className="sponsors-section container">
+        <p className="sponsors-title">2018 Sponsors</p>
         <SponsorLogos />
       </section>
     </div>

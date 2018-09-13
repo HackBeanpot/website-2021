@@ -1,12 +1,10 @@
-// Styles for the home page
-
+// HEADER
 .landing-section {
   height: fit-content;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 300px;
+  margin-top: 175px;
+  margin-bottom: 250px;
   @media (max-width: 1024px) {
-    margin-top: 75px;
     margin-bottom: 50px;
     padding-bottom: 20px;
   }
@@ -15,37 +13,37 @@
 .hero-logo {
   width: 100%;
   height: 100%;
-  @media (max-width: 1024px) {
+  padding: 0 50px;
+  @media (max-width: 767px) {
     display: none;
-  }
-}
-
-.icon {
-  height: 50px;
-  width: 50px;
-}
-
-// HEADER
-.header-title {
-  font-size: 72px;
-  font-weight: 700;
-  padding: 30px 0px;
-  @media (max-width: 1024px) {
-    font-size: 50px;
   }
 }
 
 .header {
   overflow: hidden;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .header-content {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.header-title {
+  font-size: 72px;
+  font-weight: 700;
+  padding: 30px 0px;
+  @media (max-width: 1024px) {
+    font-size: 60px;
+  }
 }
 
 .header-text {
+  width: 80%;
   font-size: $large-body;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 // ABOUT
@@ -60,9 +58,12 @@
 }
 
 .about-title {
-  font-size: $title;
+  font-size: $large-title;
   font-weight: 700;
   margin-bottom: 50px;
+  @media (max-width: 1024px) {
+    font-size: $med-title;
+  }
 }
 
 // FAQ
@@ -76,13 +77,13 @@
 }
 
 .faq-title {
-  font-size: $title;
+  font-size: $med-title;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
 .faq-button-title {
-  font-size: $title;
+  font-size: $med-title;
   font-weight: 700;
   margin-bottom: 50px;
   line-height: 70px;
@@ -103,8 +104,31 @@
   height: auto;
 }
 
+.faq-element-answer {
+  font-size: $small-body;
+  height: auto;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 0;
+}
+
 .sponsors-section {
-  margin-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media (max-width: 1024px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .sponsors-title {
+    font-size: $large-title;
+    font-weight: 700;
+    margin-bottom: 50px;
+    @media (max-width: 1024px) {
+      font-size: $med-title;
+    }
+  }
 
   .sponsor-header {
     font-size: 35px;
@@ -166,17 +190,14 @@
     height: 200px;
     @media (max-width: 992px) {
       height: auto;
-      width: 80%;
+      width: 50%;
     }
   }
-}
 
-.faq-element-answer {
-  font-size: $small-body;
-  height: auto;
-  padding: 15px 30px;
-  border-radius: 10px;
-  margin: 0;
+  .in-kind-sponsors {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
 }
 
 // home images
@@ -243,7 +264,8 @@
   //light blue blob 2
   .home-blob-6 {
     right: -150px;
-    bottom: 1050px;
+    bottom: 1400px;
+    // bottom: 1050px;
     @media (max-width: 1024px) {
       display: none;
     }
