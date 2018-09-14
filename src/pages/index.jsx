@@ -1,10 +1,11 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import FAQItems from 'components/faq-items';
-import MailingListPrompt from 'components/mailing-list-prompt';
 import AboutItem from 'components/aboutItem/about-item';
 import FAQs from 'data/faqs.json';
 import AboutContent from 'data/about-content.json';
 import SponsorLogos from 'components/sponsor-logos';
+import Logo from 'images/logo-full.jsx';
 
 import HomeBlob1 from 'images/home-blob-1';
 import HomeBlob2 from 'images/home-blob-2';
@@ -16,7 +17,6 @@ import HomeBlob6 from 'images/home-blob-6';
 import Circuit1 from 'images/circuit-1';
 import Circuit2 from 'images/circuit-2';
 import Circuit3 from 'images/circuit-3';
-import LogoWhite from 'images/logo-white.jsx';
 
 const App = () => {
   return (
@@ -31,8 +31,8 @@ const App = () => {
       <Circuit2 />
       <section className="landing-section container">
         <div className="row">
-          <div className="col-md-5">
-            <LogoWhite />
+          <div className="hero-logo col-md-5">
+            <Logo />
           </div>
           <div className="col-md-7 header">
             <div className="header-content">
@@ -45,14 +45,17 @@ const App = () => {
               <h1 className="logo-div header-title">HackBeanpot</h1>
               <p className="header-text">
                 <strong>
-                  We are currently looking for companies to sponsor HackBeanpot
-                  2019!
+                  HackBeanpot is a celebration of the Boston tech scene 🎉 Our
+                  nonprofit organization throws an annual hackathon for the most
+                  creative minds in town to dream up tomorrow’s technology. Tech
+                  companies, organizers, and students come together to expand
+                  their networks and build lasting relationships.
                 </strong>
               </p>
             </div>
-            <a href="/sponsors" role="button" className="yellow-btn lg-btn">
-              Learn more
-            </a>
+            <Link to="/sponsors" role="button" className="yellow-btn lg-btn">
+              Get involved!
+            </Link>
           </div>
         </div>
       </section>
@@ -77,7 +80,11 @@ const App = () => {
             <div className="center-text faq-button-title">
               Don't see your question?
               <br />
-              <a role="button" class="btn yellow-btn lg-btn">
+              <a
+                href="mailto:team@hackbeanpot.com"
+                role="button"
+                class="btn yellow-btn lg-btn"
+              >
                 Email Us
               </a>
             </div>
@@ -85,6 +92,7 @@ const App = () => {
         </div>
       </section>
       <section className="sponsors-section container">
+        <p className="sponsors-title">2018 Sponsors</p>
         <SponsorLogos />
       </section>
     </div>

@@ -22,14 +22,28 @@
 .footer-heading {
   color: $teal;
   font-size: $subtitle;
+  overflow: hidden;
 }
 
-a,
-a:hover {
+.footer a,
+.footer a:hover {
   color: $teal;
+}
+
+.coc {
+  margin-top: 150px;
+  margin-bottom: 75px;
+}
+
+.coc a {
+  color: $purple;
+}
+
+.coc ul {
+  list-style-type: disc;
 }
 
 .coc-header {
   margin: 25px 0;
-  font-size: $title;
+  font-size: $large-title;
 }
