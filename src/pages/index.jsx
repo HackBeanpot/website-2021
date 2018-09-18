@@ -1,10 +1,12 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import FAQItems from 'components/faq-items';
 import AboutItem from 'components/aboutItem/about-item';
 import FAQs from 'data/faqs.json';
 import AboutContent from 'data/about-content.json';
 import SponsorLogos from 'components/sponsor-logos';
+import Logo from 'images/logo-full.jsx';
 
 import HomeBlob1 from 'images/home-blob-1';
 import HomeBlob2 from 'images/home-blob-2';
@@ -16,7 +18,6 @@ import HomeBlob6 from 'images/home-blob-6';
 import Circuit1 from 'images/circuit-1';
 import Circuit2 from 'images/circuit-2';
 import Circuit3 from 'images/circuit-3';
-import LogoWhite from 'images/logo-white.jsx';
 
 import favicon from './favicon.png';
 
@@ -45,28 +46,30 @@ const App = () => {
         <Circuit2 />
         <section className="landing-section container">
           <div className="row">
-            <div className="col-md-5">
-              <LogoWhite />
+            <div className="hero-logo col-md-5">
+              <Logo />
             </div>
             <div className="col-md-7 header">
               <div className="header-content">
                 <div>
                   <p className="header-text">
                     An independently-run Boston hackathon for curious students,
-                    hackers, makers, and beginners.
+                    hackers, makers, and beginners. 🎉
                   </p>
                 </div>
                 <h1 className="logo-div header-title">HackBeanpot</h1>
                 <p className="header-text">
-                  <strong>
-                    We are currently looking for companies to sponsor HackBeanpot
-                    2019!
-                  </strong>
+                  <strong>We are here to celebrate the Boston tech scene.</strong>
+                  <br />
+                  Our nonprofit organization throws an annual hackathon for the
+                  most creative minds in town to dream up tomorrow’s technology.
+                  Tech companies, organizers, and students come together to expand
+                  their networks and build lasting relationships.
                 </p>
               </div>
-              <a href="/sponsors" role="button" className="yellow-btn lg-btn">
-                Learn more
-              </a>
+              <Link to="/sponsors" role="button" className="yellow-btn lg-btn">
+                Get involved!
+              </Link>
             </div>
           </div>
         </section>
@@ -103,6 +106,7 @@ const App = () => {
           </div>
         </section>
         <section className="sponsors-section container">
+          <p className="sponsors-title">2018 Sponsors</p>
           <SponsorLogos />
         </section>
       </div>
