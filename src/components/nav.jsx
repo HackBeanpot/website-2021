@@ -1,22 +1,18 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Logo from 'images/icon@4x.png';
 
-const Nav = ({ siteTitle }) => (
+const Nav = () => (
   // TODO arrange links for mobile/smaller screens
-  <nav className="container navbar navbar-expand-lg navbar-light bg-light hbp-nav">
+  <nav className="container navbar navbar-expand navbar-light bg-light">
     <Link className="navbar-brand" to="/">
-      {siteTitle}
+      <img src={Logo} className="navbar-logo" />
     </Link>
     <ul className="navbar-nav mr-auto">
-      {/* <li className="nav-item">
-        <Link className="nav-link" to="/stories/">
-          Stories
-        </Link>
-      </li> */}
       <li className="nav-item">
-        <a className="nav-link" href="/sponsors/">
+        <Link className="nav-link" to="/sponsors">
           Sponsors
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
         <a
@@ -25,6 +21,15 @@ const Nav = ({ siteTitle }) => (
           target="_blank"
         >
           Projects
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          className="nav-link"
+          href="https://hackbeanpot.wordpress.com/"
+          target="_blank"
+        >
+          Blog
         </a>
       </li>
     </ul>
