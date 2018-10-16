@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div>
       <Helmet
-        title="HackBeanpot 2018"
+        title="HackBeanpot 2019"
         meta={[
           {
             name: 'description',
@@ -35,6 +35,10 @@ const App = () => {
           {
             name: 'keywords',
             content: 'hackathon, boston, students, hackers, makers, beginners'
+          },
+          {
+            name: 'theme-color',
+            content: '#db5945'
           }
         ]}
         link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
