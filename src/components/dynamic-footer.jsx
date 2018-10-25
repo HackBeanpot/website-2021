@@ -1,24 +1,15 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import InstagramIcon from 'mdi-react/InstagramIcon';
 import FacebookBoxIcon from 'mdi-react/FacebookBoxIcon';
 import TwitterBoxIcon from 'mdi-react/TwitterBoxIcon';
 import LinkedinBoxIcon from 'mdi-react/LinkedinBoxIcon';
-import LogoWhite from 'images/logo-white.jsx';
 
-const Footer = () => (
-  <div className="dark-background footer">
+const DynamicFooter = props => (
+  <div className={'footer ' + props.firstBackgroundColor + '-background'}>
     <div className="row">
-      <div className="offset-sm-2 col-sm-3 center-h-v">
-        <a href="http://eepurl.com/dFx_Cf" target="blank">
-          <h3 className="footer-heading">Join Our Mailing List</h3>
-        </a>
-      </div>
-      <div className="col-sm-2 center-h-v">
-        <LogoWhite />
-      </div>
-      <div className="col-sm-3 center-h-v">
+      <div className="offset-sm-3 col-sm-3 center-h-v">
         <span>
+          <h3>Stay up to date!</h3>
           <a href="https://www.instagram.com/hackbeanpot" target="blank">
             <InstagramIcon className="icon-small" />
           </a>
@@ -36,16 +27,23 @@ const Footer = () => (
           </a>
         </span>
       </div>
-    </div>
-    <div className="center-text">
-      <p>
-        HackBeanpot, Inc. is a registered 501(c)(3) organization.&nbsp;
-        <Link className="coc-link" to="/CodeOfConduct/">
-          Code of Conduct
-        </Link>
-      </p>
+
+      <div className="col-sm-3 center-h-v">
+        <a
+          href="http://eepurl.com/dFx_Cf"
+          target="blank"
+          role="button"
+          class="btn yellow-btn lg-btn"
+        >
+          Join our mailing list!
+        </a>
+      </div>
     </div>
   </div>
 );
 
-export default Footer;
+DynamicFooter.defaultProps = {
+  firstBackgroundColor: 'light-blue'
+};
+
+export default DynamicFooter;
