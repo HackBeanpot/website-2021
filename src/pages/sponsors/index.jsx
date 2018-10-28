@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import DynamicFooter from 'components/dynamic-footer';
 
 import SponsorLevels from 'pages/sponsors/components/sponsor-levels';
 import SponsorLogos from 'components/sponsor-logos';
@@ -22,8 +23,9 @@ class SponsorsPage extends React.Component {
             <div className="container sponsor-welcome">
               <div className="sponsor-title">{MainContent.title}</div>
               <div className="sponsor-cta col-md-8">{MainContent.cta}</div>
-
-              <div className="sponsor-cta col-md-8">{MainContent.ps}</div>
+              <div className="sponsor-cta col-md-8">
+                <strong>{MainContent.ps}</strong>
+              </div>
               <a
                 href="mailto:team@hackbeanpot.com"
                 role="button"
@@ -42,16 +44,18 @@ class SponsorsPage extends React.Component {
               <div className="sponsor-section-header">{MainContent.perks}</div>
               <div className="sponsor-perk-cta">{MainContent.perksCta}</div>
               <SponsorLevels content={LevelContent} />
-              <div className="sponsor-section-header">
+              <div className="center-text faq-button-title">
                 Interested in learning about our full sponsorship packet?
+                <br />
+                <br />
+                <a
+                  href="mailto:team@hackbeanpot.com"
+                  role="button"
+                  class="btn yellow-btn lg-btn"
+                >
+                  Email Us
+                </a>
               </div>
-              <a
-                href="mailto:team@hackbeanpot.com"
-                role="button"
-                className="yellow-btn lg-btn sponsor-button sponsor-button-center"
-              >
-                Email Us
-              </a>
             </div>
             <Circuit2 />
             <Circuit3 />
@@ -63,20 +67,11 @@ class SponsorsPage extends React.Component {
                 <p className="sponsors-title">2018 Sponsors</p>
                 <SponsorLogos />
               </section>
-              <div class="sponsor-section-header">
-                Interested in getting involved?
-              </div>
-              <a
-                href="mailto:team@hackbeanpot.com"
-                role="button"
-                class="yellow-btn lg-btn sponsor-button sponsor-button-center"
-              >
-                Email Us
-              </a>
             </div>
             <SponsorBlob3 />
           </div>
         </div>
+        <DynamicFooter firstBackgroundColor="teal" />
       </Fragment>
     );
   }

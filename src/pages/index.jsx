@@ -7,6 +7,7 @@ import FAQs from 'data/faqs.json';
 import AboutContent from 'data/about-content.json';
 import SponsorLogos from 'components/sponsor-logos';
 import Logo from 'images/logo-full.jsx';
+import DynamicFooter from 'components/dynamic-footer';
 
 import HomeBlob1 from 'images/home-blob-1';
 import HomeBlob2 from 'images/home-blob-2';
@@ -108,6 +109,7 @@ const App = () => {
               <div className="center-text faq-button-title">
                 Don't see your question?
                 <br />
+                <br />
                 <a
                   href="mailto:team@hackbeanpot.com"
                   role="button"
@@ -122,8 +124,16 @@ const App = () => {
         <section className="sponsors-section container">
           <p className="sponsors-title">2018 Sponsors</p>
           <SponsorLogos />
+          <a
+            href="/sponsors"
+            role="button"
+            class="yellow-btn lg-btn ponsor-button sponsor-button-center"
+          >
+            Become a sponsor
+          </a>
         </section>
       </div>
+      <DynamicFooter firstBackgroundColor="light-blue" />
     </div>
   );
 };
