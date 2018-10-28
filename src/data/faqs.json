@@ -2,18 +2,18 @@
   {
     "question": "When and where is HackBeanpot 2019?",
     "answer":
-      "HackBeanpot 2019 is February 8-10th at Catalant Technologies in the Seaport district of Boston"
+      "HackBeanpot 2019 is February 8-10th at Catalant Technologies in the Seaport district of Boston."
   },
   {
-    "question": "When will tickets be released?",
+    "question": "How do I register?",
     "answer":
-      "Tickets for HackBeanpot 2019 will be released mid-January via Eventbrite. Join our mailing list and we'll let you know when!"
+      "Registration for HackBeanpot 2019 will begin a few months before the event. Join our mailing list and we'll let you know when!"
   },
   {
     "question":
       "I don't have a lot of programming experience. Are hackathons for me?",
     "answer":
-      "Yes! People of all levels of experience attend HackBeanpot. If you get stuck, we have mentors to provide assistance. We care much more about fostering a fun environment where you can learn rather than an environment that only attracts elite hackers. Our blog advice for first-time hackers can be found <a href=\"https://hackbeanpot.wordpress.com/2017/12/27/first-blog-post/\" target=\"blank\">here</a> and <a href=\"https://hackbeanpot.wordpress.com/2017/12/27/more-advice-for-first-time-hackers/\" target=\"blank\">here</a>."
+      "Yes! People of all levels of experience attend HackBeanpot. If you get stuck, we have mentors to provide assistance. We care much more about fostering a fun environment where you can learn rather than an environment that only attracts elite hackers. Our blog advice for first-time hackers can be found <a href=\"https://medium.com/hackbeanblog/simple-advice-for-first-time-hackers-641b30bfa3ae\" target=\"__blank\">here</a> and <a href=\"https://medium.com/hackbeanblog/more-advice-for-first-time-hackers-76d461e641d9\" target=\"_blank\">here</a>."
   },
   {
     "question":
@@ -28,12 +28,12 @@
   {
     "question": "Are there limits on team size?",
     "answer":
-      "No limits! However because prizes are budgeted for teams of 5 and under, we recommend max 5 members per team."
+      "No limits! However, because prizes are budgeted for teams of 5 and under, we recommend max 5 members per team."
   },
   {
     "question": "Should I bring my resume?",
     "answer":
-      "If you want to, sure! You can also upload your resume here and we'll pass it along to sponsoring companies."
+      "If you want to, sure! You can also upload your resume when you register and we'll pass it along to sponsoring companies."
   },
   {
     "question": "Can I work on an old project?",
@@ -47,7 +47,7 @@
   {
     "question": "What should I bring?",
     "answer":
-      "HackBeanpot is an overnight hackathon, so we recommend bringing a laptop, charger, phone, toothbrush, and anything else you'd normally bring to an overnight event. We also wrote a <a href=\"https://hackbeanpot.wordpress.com/2018/01/23/what-to-bring-to-hackbeanpot-2018/\" target=\"blank\">blog post</a> about what to bring."
+      "HackBeanpot is an overnight hackathon, so we recommend bringing a laptop, charger, phone, toothbrush, and anything else you'd normally bring to an overnight event. We also wrote a <a href=\"https://medium.com/hackbeanblog/what-to-bring-to-hackbeanpot-2018-eb4b8cc48daa\" target=\"_blank\">blog post</a> about what to bring."
   },
   {
     "question": "I have a dietary restriction. Will there be food for me?",

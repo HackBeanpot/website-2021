@@ -7,28 +7,28 @@ import LinkedinBoxIcon from 'mdi-react/LinkedinBoxIcon';
 const DynamicFooter = props => (
   <div className={'footer ' + props.firstBackgroundColor + '-background'}>
     <div className="row">
-      <div className="offset-sm-3 col-sm-3 center-h-v">
+      <div className="offset-lg-3 col-lg-3 center-h-v">
         <span>
           <h3>Stay up to date!</h3>
           <a href="https://www.instagram.com/hackbeanpot" target="blank">
             <InstagramIcon className="icon-small" />
           </a>
-          <a href="https://www.facebook.com/hackbeanpot" target="blank">
+          <a href="https://www.facebook.com/hackbeanpot" target="_blank">
             <FacebookBoxIcon className="icon-small" />
           </a>
-          <a href="https://twitter.com/hackbeanpot" target="blank">
+          <a href="https://twitter.com/hackbeanpot" target="_blank">
             <TwitterBoxIcon className="icon-small" />
           </a>
           <a
             href="https://www.linkedin.com/company/hackbeanpot-inc/"
-            target="blank"
+            target="_blank"
           >
             <LinkedinBoxIcon className="icon-small" />
           </a>
         </span>
       </div>
 
-      <div className="col-sm-3 center-h-v">
+      <div className="footer-cta col-lg-4 center-h-v">
         <a
           href="http://eepurl.com/dFx_Cf"
           target="blank"
