@@ -39,7 +39,7 @@ const App = () => {
           },
           {
             name: 'theme-color',
-            content: '#db5945'
+            content: '#A4DBE8'
           }
         ]}
         link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
