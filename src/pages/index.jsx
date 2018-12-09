@@ -81,12 +81,10 @@ const App = () => {
                   Catalant Technologies
                   <br />
                   Seaport District
-                  <br />
-
                 </p>
               </div>
               <a href="https://docs.google.com/forms/u/2/d/1cdtsey9QeY5YiIELzRpcNxlk60qs8k-ppmuTfMBeG4c/edit?usp=drive_web" role="button" className="yellow-btn lg-btn">
-                Register today!
+                Apply today!
               </a>
             </div>
           </div>
