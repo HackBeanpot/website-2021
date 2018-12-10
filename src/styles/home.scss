@@ -45,6 +45,7 @@
 .header-text {
   width: 80%;
   font-size: $large-body;
+  margin-bottom: 0px; // Looks nicer. Overrides 1rem from p definition
   @media (max-width: 1024px) {
     width: 100%;
   }
