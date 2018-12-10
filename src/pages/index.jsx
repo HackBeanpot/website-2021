@@ -61,10 +61,7 @@ const App = () => {
             </div>
             <div className="col-md-7 header">
               <div className="header-content">
-                <p className="header-text">
-                  An independently-run Boston hackathon for curious students,
-                  hackers, makers, and beginners. 🎉
-                </p>
+
                 <div className="logo-div">
                   <div className="mobile-logo">
                     <Logo />
@@ -72,19 +69,23 @@ const App = () => {
                   <h1 className="header-title">HackBeanpot</h1>
                 </div>
                 <p className="header-text">
-                  <strong>
-                    We are here to celebrate the Boston tech scene.
-                  </strong>
+                  An independently-run Boston hackathon for curious students,
+                  hackers, makers, and beginners. 🎉
+
+                  <br /><br />
+
+                  <strong>Come celebrate the Boston tech scene with us!</strong>
                   <br />
-                  Our nonprofit organization throws an annual hackathon for the
-                  most creative minds in town to dream up tomorrow’s technology.
-                  Tech companies, organizers, and students come together to
-                  expand their networks and build lasting relationships.
+                  February 8-10, 2019
+                  <br />
+                  Catalant Technologies
+                  <br />
+                  Seaport District
                 </p>
               </div>
-              <Link to="/sponsors" role="button" className="yellow-btn lg-btn">
-                Get involved!
-              </Link>
+              <a href="https://docs.google.com/forms/u/2/d/1cdtsey9QeY5YiIELzRpcNxlk60qs8k-ppmuTfMBeG4c/edit?usp=drive_web" role="button" className="yellow-btn lg-btn">
+                Apply today!
+              </a>
             </div>
           </div>
         </section>
