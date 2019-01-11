@@ -61,7 +61,6 @@ const App = () => {
             </div>
             <div className="col-md-7 header">
               <div className="header-content">
-
                 <div className="logo-div">
                   <div className="mobile-logo">
                     <Logo />
@@ -71,9 +70,8 @@ const App = () => {
                 <p className="header-text">
                   An independently-run Boston hackathon for curious students,
                   hackers, makers, and beginners. 🎉
-
-                  <br /><br />
-
+                  <br />
+                  <br />
                   <strong>Come celebrate the Boston tech scene with us!</strong>
                   <br />
                   February 8-10, 2019
@@ -83,9 +81,7 @@ const App = () => {
                   Seaport District
                 </p>
               </div>
-              <a href="https://docs.google.com/forms/u/2/d/1cdtsey9QeY5YiIELzRpcNxlk60qs8k-ppmuTfMBeG4c/edit?usp=drive_web" role="button" className="yellow-btn lg-btn">
-                Apply today!
-              </a>
+              <div>Applications have now closed.</div>
             </div>
           </div>
         </section>
