@@ -3,9 +3,10 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import FAQItems from 'components/faq-items';
 import AboutItem from 'components/aboutItem/about-item';
+import CountdownClock from 'components/countdownClock/countdown-clock';
 import FAQs from 'data/faqs.json';
 import AboutContent from 'data/about-content.json';
-import SponsorLogos from 'components/sponsor-logos';
+import Sponsors2019 from 'components/sponsors-2019';
 import Logo from 'images/logo-full.jsx';
 import DynamicFooter from 'components/dynamic-footer';
 
@@ -61,6 +62,7 @@ const App = () => {
             </div>
             <div className="col-md-7 header">
               <div className="header-content">
+
                 <div className="logo-div">
                   <div className="mobile-logo">
                     <Logo />
@@ -79,6 +81,10 @@ const App = () => {
                   Catalant Technologies
                   <br />
                   Seaport District
+                  <CountdownClock
+                    eventStartDate={new Date('February 8, 2019 20:00:00')}
+                    hackingEndDate={new Date('February 10, 2019 11:00:00')}
+                  />
                 </p>
               </div>
               <div>Applications have now closed.</div>
@@ -119,8 +125,8 @@ const App = () => {
           </div>
         </section>
         <section className="sponsors-section container">
-          <p className="sponsors-title">2018 Sponsors</p>
-          <SponsorLogos />
+          <p className="sponsors-title">2019 Sponsors</p>
+          <Sponsors2019 />
           <a
             href="/sponsors"
             role="button"
