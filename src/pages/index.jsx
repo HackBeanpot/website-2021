@@ -6,7 +6,7 @@ import AboutItem from 'components/aboutItem/about-item';
 import CountdownClock from 'components/countdownClock/countdown-clock';
 import FAQs from 'data/faqs.json';
 import AboutContent from 'data/about-content.json';
-import SponsorLogos from 'components/sponsor-logos';
+import Sponsors2019 from 'components/sponsors-2019';
 import Logo from 'images/logo-full.jsx';
 import DynamicFooter from 'components/dynamic-footer';
 
@@ -125,8 +125,8 @@ const App = () => {
           </div>
         </section>
         <section className="sponsors-section container">
-          <p className="sponsors-title">2018 Sponsors</p>
-          <SponsorLogos />
+          <p className="sponsors-title">2019 Sponsors</p>
+          <Sponsors2019 />
           <a
             href="/sponsors"
             role="button"
