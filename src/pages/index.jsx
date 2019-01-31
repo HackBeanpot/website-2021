@@ -62,7 +62,6 @@ const App = () => {
             </div>
             <div className="col-md-7 header">
               <div className="header-content">
-
                 <div className="logo-div">
                   <div className="mobile-logo">
                     <Logo />
@@ -87,7 +86,6 @@ const App = () => {
                   />
                 </p>
               </div>
-              <div>Applications have now closed.</div>
             </div>
           </div>
         </section>
