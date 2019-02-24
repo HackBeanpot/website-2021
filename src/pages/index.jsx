@@ -19,7 +19,6 @@ import HomeBlob6 from 'images/home-blob-6';
 
 import Circuit1 from 'images/circuit-1';
 import Circuit2 from 'images/circuit-2';
-import Circuit3 from 'images/circuit-3';
 
 import favicon from './favicon.png';
 
@@ -114,7 +113,7 @@ const App = () => {
                 <a
                   href="mailto:team@hackbeanpot.com"
                   role="button"
-                  class="btn yellow-btn lg-btn"
+                  className="btn yellow-btn lg-btn"
                 >
                   Email Us
                 </a>
@@ -128,7 +127,7 @@ const App = () => {
           <a
             href="/sponsors"
             role="button"
-            class="yellow-btn lg-btn sponsor-button sponsor-button-center"
+            className="yellow-btn lg-btn sponsor-button sponsor-button-center"
           >
             Become a sponsor
           </a>
