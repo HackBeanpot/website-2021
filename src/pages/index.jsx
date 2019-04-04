@@ -75,12 +75,12 @@ const App = () => {
                   <br />
                   <a
                     style={{ top: '40px' }}
-                    href="https://hackbeanpot-2019.devpost.com/submissions"
+                    href="https://forms.gle/gvfW8g6xjtFwcypv7"
                     role="button"
                     target="_blank"
                     className="yellow-btn lg-btn"
                   >
-                    This year's projects
+                    Join our team!
                   </a>
                 </p>
               </div>
