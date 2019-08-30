@@ -108,18 +108,20 @@ const App = () => {
           </div>
         </section>
 
-        <section className="about-section container">
-          <p className="section-title">HackBeanpot is about...</p>
-          {AboutContent.map(item => (
-            <AboutItem
-              title={item.title}
-              content={item.content}
-              imgSrc={item.imgSrc}
-              hasBtn={item.hasBtn}
-              btn={item.btn}
-              floatDirection={item.floatDirection}
-            />
-          ))}
+        <section className="about-section">
+          <div className="container">
+            <p className="section-title">HackBeanpot is about...</p>
+            {AboutContent.map(item => (
+              <AboutItem
+                title={item.title}
+                content={item.content}
+                imgSrc={item.imgSrc}
+                hasBtn={item.hasBtn}
+                btn={item.btn}
+                floatDirection={item.floatDirection}
+              />
+            ))}
+          </div>
         </section>
         <section className="faq-section dark-background">
           <div className="container">

@@ -113,8 +113,9 @@
 // ABOUT
 .about-section {
   height: fit-content;
-  margin-top: 100px;
-  margin-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: $sprout-green;
   @media (max-width: 1024px) {
     margin-top: 50px;
     margin-bottom: 50px;
