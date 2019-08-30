@@ -107,6 +107,18 @@ body {
   justify-content: center;
 }
 
+.green-leaf {
+  position: absolute;
+  left: 0%;
+  right: 28.71%;
+  top: 78.66%;
+  bottom: -76.45%;
+
+  /* Sprout Green */
+  background: $sprout-green;
+  transform: matrix(0.22, -0.98, 0.98, 0.22, 0, 0);
+}
+
 // NAV BAR
 .custom-nav {
   margin: 0 !important;
