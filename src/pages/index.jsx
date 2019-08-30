@@ -88,8 +88,28 @@ const App = () => {
           </div>
         </section>
 
+        <section className="theme-announcement">
+          <div className="container">
+            <p className="section-title">Our theme for this year is...</p>
+            <div className="row">
+              <div className="hero-logo col-md-4">
+                <Logo />
+              </div>
+              <div className="col-md-8 theme-text">
+                <div className="theme-title">Sprout!</div>
+                <div>
+                  Sprout is an embodiment for what HackBeanpot stands for -
+                  openness to learning new things, and having fun! We wanted to
+                  make it our focus theme this year to cultivate relationships
+                  that foster growth.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="about-section container">
-          <p className="about-title">HackBeanpot is about...</p>
+          <p className="section-title">HackBeanpot is about...</p>
           {AboutContent.map(item => (
             <AboutItem
               title={item.title}
@@ -122,7 +142,7 @@ const App = () => {
           </div>
         </section>
         <section className="sponsors-section container">
-          <p className="sponsors-title">2019 Sponsors</p>
+          <p className="section-title">2019 Sponsors</p>
           <Sponsors2019 />
           <a
             href="/sponsors"
