@@ -123,7 +123,7 @@ const App = () => {
             ))}
           </div>
         </section>
-        <section className="faq-section dark-background">
+        <section className="faq-section">
           <div className="container">
             <p className="faq-title">Frequently Asked Questions</p>
             <FAQItems FAQs={FAQs} />

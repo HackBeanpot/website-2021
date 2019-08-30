@@ -7,7 +7,7 @@
       "url": "https://medium.com/hackbeanblog",
       "size": "lg-btn"
     },
-    "floatDirection": "left",
+    "floatDirection": "right",
     "content":
       "<p>Memorable stories from HackBeanpot are just one of the things that make us unique. Our attendees range from CS graduate students to beginner designers who have never written a line of code before.</p>"
   },
@@ -19,7 +19,7 @@
       "url": "https://projects.hackbeanpot.com/",
       "size": "lg-btn"
     },
-    "floatDirection": "right",
+    "floatDirection": "left",
     "content":
       "<p>Projects at HackBeanpot are about learning and exploration. In past years they’ve ranged from a <a href='https://github.com/crowddj/crowddj-react/' target='_blank'>crowdsourced music playlist</a> to a <a href='https://github.com/dan3944/emojiscript/' target='_blank'>scripting language made entirely of emojis</a>.</p>"
   },
@@ -31,7 +31,7 @@
       "url": "/sponsors",
       "size": "lg-btn"
     },
-    "floatDirection": "left",
+    "floatDirection": "right",
     "content":
       "<p>Every year HackBeanpot looks forward to hosting 150+ curious students, experienced hackers, and hi-tech sponsors in Boston. The only person we’re missing is you!</br></br><strong>Interested in sponsoring HackBeanpot?</strong></p>"
   }

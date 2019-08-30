@@ -116,10 +116,6 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background: $sprout-green;
-  @media (max-width: 1024px) {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
 }
 
 .section-title {
@@ -133,11 +129,12 @@
 
 // FAQ
 .faq-section {
+  background-color: $pale-blue;
   padding-top: 100px;
   padding-bottom: 100px;
   @media (max-width: 1024px) {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 }
 
@@ -178,8 +175,6 @@
 .faq-element-answer {
   font-size: $small-body;
   height: auto;
-  padding: 15px 30px;
-  border-radius: 10px;
   margin: 0;
 
   a {
