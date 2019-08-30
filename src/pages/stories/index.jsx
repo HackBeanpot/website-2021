@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 
-import DynamicFooter from 'components/dynamic-footer';
 import Stories from 'pages/stories/components/stories';
 
 class StoriesPage extends React.Component {
@@ -68,8 +67,6 @@ class StoriesPage extends React.Component {
             </div>
           </div>
         </div>
-
-        <DynamicFooter firstBackgroundColor="light-blue" />
       </Fragment>
     );
   }

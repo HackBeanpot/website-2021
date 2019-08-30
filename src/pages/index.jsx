@@ -8,7 +8,6 @@ import FAQs from 'data/faqs.json';
 import AboutContent from 'data/about-content.json';
 import Sponsors2019 from 'components/sponsors-2019';
 import Logo from 'images/logo-full.jsx';
-import DynamicFooter from 'components/dynamic-footer';
 
 import HomeBlob1 from 'images/home-blob-1';
 import HomeBlob2 from 'images/home-blob-2';
@@ -88,7 +87,7 @@ const App = () => {
           </div>
         </section>
 
-        <section className="theme-announcement">
+        <section className="theme-announcement pale-blue-bg">
           <div className="container">
             <p className="section-title">Our theme for this year is...</p>
             <div className="row">
@@ -108,7 +107,7 @@ const App = () => {
           </div>
         </section>
 
-        <section className="about-section">
+        <section className="about-section sprout-green-bg">
           <div className="container">
             <p className="section-title">HackBeanpot is about...</p>
             {AboutContent.map(item => (
@@ -123,7 +122,7 @@ const App = () => {
             ))}
           </div>
         </section>
-        <section className="faq-section">
+        <section className="faq-section pale-blue-bg">
           <div className="container">
             <p className="faq-title">Frequently Asked Questions</p>
             <FAQItems FAQs={FAQs} />
@@ -143,19 +142,20 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section className="sponsors-section container">
-          <p className="section-title">2019 Sponsors</p>
-          <Sponsors2019 />
-          <a
-            href="/sponsors"
-            role="button"
-            className="yellow-btn lg-btn sponsor-button sponsor-button-center"
-          >
-            Become a sponsor
-          </a>
+        <section className="sponsors-section sprout-green-bg">
+          <div className="container">
+            <p className="section-title">2019 Sponsors</p>
+            <Sponsors2019 />
+            <a
+              href="/sponsors"
+              role="button"
+              className="yellow-btn lg-btn sponsor-button sponsor-button-center"
+            >
+              Become a sponsor
+            </a>
+          </div>
         </section>
       </div>
-      <DynamicFooter firstBackgroundColor="light-blue" />
     </div>
   );
 };
