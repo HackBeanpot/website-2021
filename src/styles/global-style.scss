@@ -75,10 +75,16 @@ body {
 
 .pale-blue-bg {
   background-color: $pale-blue;
+  overflow: hidden;
+}
+
+.yellow-green-bg {
+  background-color: $yellow-green;
+  overflow: hidden;
 }
 
 // BUTTONS
-.yellow-btn {
+.primary-btn {
   color: $hackbeanpot-navy;
   background-color: $yellow-green;
   border-style: none;
@@ -86,9 +92,9 @@ body {
   transition-duration: 0.2s;
 }
 
-.yellow-btn:hover {
+.primary-btn:hover {
   color: $hackbeanpot-navy;
-  background-color: $sprout-green-light;
+  background-color: $yellow-green-hover;
   opacity: 1;
   text-decoration: none;
 }
@@ -96,13 +102,25 @@ body {
 .lg-btn {
   font-size: $large-body;
   padding: 10px 40px;
-  border-radius: 50px;
+  border-radius: 35px;
 }
 
 .md-btn {
   font-size: $small-body;
   padding: 8px 20px;
-  border-radius: 50px;
+  border-radius: 35px;
+}
+
+.secondary-button {
+  border: 5px solid $hackbeanpot-navy;
+  color: $hackbeanpot-navy;
+}
+
+.secondary-button:hover {
+  border: 5px solid $hackbeanpot-navy;
+  color: $white;
+  background-color: $hackbeanpot-navy;
+  opacity: 1;
 }
 
 // GENERAL

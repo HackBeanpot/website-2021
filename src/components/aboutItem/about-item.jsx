@@ -7,7 +7,7 @@ const AboutItem = props => {
       <a
         href={props.btn.url}
         role="button"
-        className={`btn yellow-btn ${props.btn.size}`}
+        className={`btn primary-btn ${props.btn.size} shadow-sm`}
         target="_blank"
       >
         {props.btn.text}

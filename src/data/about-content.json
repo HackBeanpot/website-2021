@@ -1,7 +1,7 @@
 [
   {
     "title": "The stories.",
-    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2018-hbp-candid.jpg",
+    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2020-images/Girl%201%20%2B%20Circle.png",
     "btn": {
       "text": "Read our stories",
       "url": "https://medium.com/hackbeanblog",
@@ -13,7 +13,7 @@
   },
   {
     "title": "The projects.",
-    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2017-hbp-demo.jpg",
+    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2020-images/Girl%202%20%2B%20Circle.png",
     "btn": {
       "text": "See past projects",
       "url": "https://projects.hackbeanpot.com/",
@@ -25,7 +25,7 @@
   },
   {
     "title": "The people.",
-    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2018-hbp-group.jpg",
+    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2020-images/Girl%203%20%2B%20Circle.png",
     "btn": {
       "text": "Check out our Sponsors page",
       "url": "/sponsors",
