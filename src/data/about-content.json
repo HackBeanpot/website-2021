@@ -1,37 +1,37 @@
 [
   {
     "title": "The stories.",
-    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2018-hbp-candid.jpg",
+    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2020-images/Girl%201%20%2B%20Circle.png",
     "btn": {
       "text": "Read our stories",
       "url": "https://medium.com/hackbeanblog",
       "size": "lg-btn"
     },
-    "floatDirection": "left",
+    "floatDirection": "right",
     "content":
       "<p>Memorable stories from HackBeanpot are just one of the things that make us unique. Our attendees range from CS graduate students to beginner designers who have never written a line of code before.</p>"
   },
   {
     "title": "The projects.",
-    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2017-hbp-demo.jpg",
+    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2020-images/Girl%202%20%2B%20Circle.png",
     "btn": {
       "text": "See past projects",
       "url": "https://projects.hackbeanpot.com/",
       "size": "lg-btn"
     },
-    "floatDirection": "right",
+    "floatDirection": "left",
     "content":
       "<p>Projects at HackBeanpot are about learning and exploration. In past years they’ve ranged from a <a href='https://github.com/crowddj/crowddj-react/' target='_blank'>crowdsourced music playlist</a> to a <a href='https://github.com/dan3944/emojiscript/' target='_blank'>scripting language made entirely of emojis</a>.</p>"
   },
   {
     "title": "The people.",
-    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2018-hbp-group.jpg",
+    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2020-images/Girl%203%20%2B%20Circle.png",
     "btn": {
       "text": "Check out our Sponsors page",
       "url": "/sponsors",
       "size": "lg-btn"
     },
-    "floatDirection": "left",
+    "floatDirection": "right",
     "content":
       "<p>Every year HackBeanpot looks forward to hosting 150+ curious students, experienced hackers, and hi-tech sponsors in Boston. The only person we’re missing is you!</br></br><strong>Interested in sponsoring HackBeanpot?</strong></p>"
   }

@@ -8,7 +8,6 @@ import FAQs from 'data/faqs.json';
 import AboutContent from 'data/about-content.json';
 import Sponsors2019 from 'components/sponsors-2019';
 import Logo from 'images/logo-full.jsx';
-import DynamicFooter from 'components/dynamic-footer';
 
 import HomeBlob1 from 'images/home-blob-1';
 import HomeBlob2 from 'images/home-blob-2';
@@ -45,28 +44,15 @@ const App = () => {
         link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
       />
 
-      <div className="light-background home">
-        <HomeBlob1 />
-        <HomeBlob2 />
-        <HomeBlob3 />
-        <HomeBlob4 />
-        <HomeBlob5 />
-        <HomeBlob6 />
-        <Circuit1 />
-        <Circuit2 />
+      <div className="pale-blue-bg home">
         <section className="landing-section container">
           <div className="row">
-            <div className="hero-logo col-md-5">
-              <Logo />
+            <div className="col-md-5">
+
             </div>
             <div className="col-md-7 header">
               <div className="header-content">
-                <div className="logo-div">
-                  <div className="mobile-logo">
-                    <Logo />
-                  </div>
                   <h1 className="header-title">HackBeanpot</h1>
-                </div>
                 <p className="header-text">
                   An independently-run Boston hackathon for curious students,
                   hackers, makers, and beginners. 🎉
@@ -78,7 +64,7 @@ const App = () => {
                     href="http://eepurl.com/gCU4x1"
                     role="button"
                     target="_blank"
-                    className="yellow-btn lg-btn"
+                    className="primary-btn lg-btn"
                   >
                     Join our mailing list!
                   </a>
@@ -88,20 +74,47 @@ const App = () => {
           </div>
         </section>
 
-        <section className="about-section container">
-          <p className="about-title">HackBeanpot is about...</p>
-          {AboutContent.map(item => (
-            <AboutItem
-              title={item.title}
-              content={item.content}
-              imgSrc={item.imgSrc}
-              hasBtn={item.hasBtn}
-              btn={item.btn}
-              floatDirection={item.floatDirection}
-            />
-          ))}
+        <section className="theme-announcement pale-blue-bg">
+          <div className="container">
+            <p className="section-title">Our theme for this year is...</p>
+            <div className="row">
+              <div className="hero-logo col-md-4">
+              </div>
+              <div className="col-md-8 theme-text">
+                <div className="theme-title">Sprout!</div>
+                <div>
+                  Sprout is a representation of what we stand for as an organization
+                   and what we hope to offer all our attendees: growth in new skills, 
+                   relationships, and experiences. Oh, and we're trying to up our 
+                   sustainability game too.
+                </div>
+                <div class="mt-4">
+                  So whether you're a seasoned hackathon-goer, 
+                   a I-have-never-written-a-line-of-code-in-my-life beginner, 
+                   or someone in between, we guarantee you'll learn something 
+                   new at HackBeanpot 2020!
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <section className="faq-section dark-background">
+
+        <section className="about-section sprout-green-bg">
+          <div className="container">
+            <p className="section-title">HackBeanpot is about...</p>
+            {AboutContent.map(item => (
+              <AboutItem
+                title={item.title}
+                content={item.content}
+                imgSrc={item.imgSrc}
+                hasBtn={item.hasBtn}
+                btn={item.btn}
+                floatDirection={item.floatDirection}
+              />
+            ))}
+          </div>
+        </section>
+        <section className="faq-section pale-blue-bg">
           <div className="container">
             <p className="faq-title">Frequently Asked Questions</p>
             <FAQItems FAQs={FAQs} />
@@ -113,7 +126,7 @@ const App = () => {
                 <a
                   href="mailto:team@hackbeanpot.com"
                   role="button"
-                  className="btn yellow-btn lg-btn"
+                  className="btn primary-btn lg-btn"
                 >
                   Email Us
                 </a>
@@ -121,19 +134,24 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section className="sponsors-section container">
-          <p className="sponsors-title">2019 Sponsors</p>
-          <Sponsors2019 />
-          <a
-            href="/sponsors"
-            role="button"
-            className="yellow-btn lg-btn sponsor-button sponsor-button-center"
-          >
-            Become a sponsor
-          </a>
+        <section className="sponsors-section yellow-green-bg">
+          <div className="container">
+            <p className="section-title">Our Sponsors</p>
+            <p>Check back closer to the event for a full list of our HackBeanpot 2020 sponsors.</p>
+            <p>If your company is interested in joining the HackBeanpot community and becoming a sponsor, reach out to us!</p>
+            <div className="mt-2">
+              <a 
+                href="mailto:sponsorship@hackbeanpot.com"
+                class="secondary-button lg-btn shadow">
+                  Email Us
+              </a>
+              <a 
+                className="ml-2 sponsor-link"
+                href="/sponsors">Or visit our Sponsors Page</a>
+            </div>
+          </div>
         </section>
       </div>
-      <DynamicFooter firstBackgroundColor="light-blue" />
     </div>
   );
 };

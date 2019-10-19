@@ -15,7 +15,7 @@ class FAQItems extends Component {
       <div className="faq-masonry-element">
         <p className="faq-element-question">{FAQ.question}</p>
         <p
-          className="faq-element-answer light-background"
+          className="faq-element-answer"
           dangerouslySetInnerHTML={{ __html: FAQ.answer }}
         />
       </div>

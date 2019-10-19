@@ -23,6 +23,7 @@
 
 a {
   color: $teal;
+  transition: 0.2s;
 }
 
 a:hover {
@@ -68,32 +69,58 @@ body {
   overflow: hidden;
 }
 
+.sprout-green-bg {
+  background: $sprout-green;
+}
+
+.pale-blue-bg {
+  background-color: $pale-blue;
+  overflow: hidden;
+}
+
+.yellow-green-bg {
+  background-color: $yellow-green;
+  overflow: hidden;
+}
+
 // BUTTONS
-.yellow-btn {
-  color: white;
-  background-color: $yellow;
+.primary-btn {
+  color: $hackbeanpot-navy;
+  background-color: $yellow-green;
   border-style: none;
   font-weight: 700;
   transition-duration: 0.2s;
 }
 
-.yellow-btn:hover {
-  color: white;
+.primary-btn:hover {
+  color: $hackbeanpot-navy;
+  background-color: $yellow-green-hover;
   opacity: 1;
   text-decoration: none;
-  background-color: #f9de57;
 }
 
 .lg-btn {
   font-size: $large-body;
   padding: 10px 40px;
-  border-radius: 50px;
+  border-radius: 35px;
 }
 
 .md-btn {
   font-size: $small-body;
   padding: 8px 20px;
-  border-radius: 50px;
+  border-radius: 35px;
+}
+
+.secondary-button {
+  border: 5px solid $hackbeanpot-navy;
+  color: $hackbeanpot-navy;
+}
+
+.secondary-button:hover {
+  border: 5px solid $hackbeanpot-navy;
+  color: $white;
+  background-color: $hackbeanpot-navy;
+  opacity: 1;
 }
 
 // GENERAL
@@ -105,6 +132,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.green-leaf {
+  position: absolute;
+  left: 0%;
+  right: 28.71%;
+  top: 78.66%;
+  bottom: -76.45%;
+
+  /* Sprout Green */
+  background: $sprout-green;
+  transform: matrix(0.22, -0.98, 0.98, 0.22, 0, 0);
 }
 
 // NAV BAR

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import DynamicFooter from 'components/dynamic-footer';
 
 import SponsorLevels from 'pages/sponsors/components/sponsor-levels';
 import Sponsors2019 from 'components/sponsors-2019';
@@ -71,7 +70,6 @@ class SponsorsPage extends React.Component {
             <SponsorBlob3 />
           </div>
         </div>
-        <DynamicFooter firstBackgroundColor="teal" />
       </Fragment>
     );
   }
