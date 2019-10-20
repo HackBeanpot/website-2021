@@ -1,12 +1,14 @@
 import React, {Fragment} from 'react'
 import TeamData from 'data/meet-the-team.json';
 
-import DynamicFooter from 'components/dynamic-footer';
 
 const TeamMember = props => (
     <Fragment>
-        <h5>{props.name}</h5>
-        <p>{props.position}</p>
+        <div className="text-center">
+            <div className="team-member-circle mb-3"></div>
+            <h5>{props.name}</h5>
+            <p>{props.position}</p>
+        </div>
     </Fragment>
 )
 
