@@ -1,0 +1,152 @@
+[
+    {
+        "title": "Leadership",
+        "members": [
+            {
+                "name": "Rucha Kanolkar",
+                "fun-fact": "",
+                "picture": "",
+                "position": "President"
+            },
+            {
+                "name": "Ashna Shah",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Vice President"
+            }
+        ]
+    },
+    {
+        "title": "Design",
+        "members": [
+            {
+                "name": "Caitlin Wang",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Design Lead"
+            },
+            {
+                "name": "Catu Berretta",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Designer (Sponsorship)"
+            },
+            {
+                "name": "Jenn Der",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Designer (Outreach)"
+            },
+            {
+                "name": "Sindhu Majeti",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Designer (Tech)"
+            },
+            {
+                "name": "Willa Shiomos",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Designer (Social Media)"
+            }            
+        ]
+    },
+    {
+        "title": "Outreach",
+        "members": [
+            {
+                "name": "Felicia Zhang",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Outreach Lead"
+            },
+            {
+                "name": "Ifteda Ahmed",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Outreach Member"
+            },
+            {
+                "name": "Gauri Dandi",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Outreach Member"
+            },
+            {
+                "name": "Sarah Wessel",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Outreach Member"
+            }            
+        ]
+    },
+    {
+        "title": "Social Media",
+        "members": [
+            {
+                "name": "Nupur Neogi",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Social Lead"
+            }          
+        ]
+    },
+    {
+        "title": "Sponsorship",
+        "members": [
+            {
+                "name": "Raquel Levy",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Sponsorship Lead"
+            },
+            {
+                "name": "Nikitha Koppu",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Sponsorship Member"
+            },
+            {
+                "name": "Caroline Liu",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Sponsorship Member"
+            },
+            {
+                "name": "Daniel Wang",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Sponsorship Member"
+            }           
+        ]
+    },
+    {
+        "title": "Tech",
+        "members": [
+            {
+                "name": "Vyshnavi Chunduru",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Tech Lead"
+            },
+            {
+                "name": "Warren Partridge",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Tech Member"
+            },
+            {
+                "name": "Kyle Posluns",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Tech Member"
+            },
+            {
+                "name": "Nabeel Sherazi",
+                "fun-fact": "",
+                "picture": "",
+                "position": "Tech Member"
+            }            
+        ]
+    }
+]

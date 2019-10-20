@@ -1,0 +1,17 @@
+@import '../styles/constants.scss';
+@import '../../styles/image-style.scss';
+
+.team-header {
+    margin-top: 200px !important; 
+    font-weight: bold
+}
+
+.team-top-section {
+    // only on medium screens or larger
+    width: 70%;
+}
+
+.team-section-title {
+    font-weight: bold;
+}
+

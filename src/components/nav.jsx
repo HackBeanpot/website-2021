@@ -18,6 +18,11 @@ const Nav = () => (
           Sponsors
         </Link>
       </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/team">
+          Team
+        </Link>
+      </li>
     </ul>
     <ul className="navbar-nav custom-nav mr-auto">
       <li className="nav-item">
