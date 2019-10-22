@@ -30,7 +30,7 @@ const DynamicFooter = props => (
 
       <div className="footer-cta col-lg-4 center-h-v">
         <a
-          href="http://eepurl.com/dFx_Cf"
+          href="http://eepurl.com/gCU4x1"
           target="blank"
           role="button"
           className="btn yellow-btn lg-btn"
