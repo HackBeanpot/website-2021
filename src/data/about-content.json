@@ -4,7 +4,7 @@
     "imgSrc": "http://tools.hackbeanpot.com/assets/images/2018-hbp-candid.jpg",
     "btn": {
       "text": "Read our stories",
-      "url": "https://medium.com/hackbeanblog",
+      "url": "https://hackbeanpot.com/stories",
       "size": "lg-btn"
     },
     "floatDirection": "left",
