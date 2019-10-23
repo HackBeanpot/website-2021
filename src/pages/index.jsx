@@ -75,12 +75,12 @@ const App = () => {
                   <br />
                   <a
                     style={{ top: '40px' }}
-                    href="https://forms.gle/gvfW8g6xjtFwcypv7"
+                    href="http://eepurl.com/gCU4x1"
                     role="button"
                     target="_blank"
                     className="yellow-btn lg-btn"
                   >
-                    Join our team!
+                    Join our mailing list!
                   </a>
                 </p>
               </div>

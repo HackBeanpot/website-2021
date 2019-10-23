@@ -11,11 +11,11 @@ class SponsorLevel extends React.Component {
 
   renderSponsorRow(levelContent) {
     let icon;
-    if (levelContent.title === 'Grow') {
+    if (levelContent.title === 'Engagement') {
       icon = <GrowIcon />;
-    } else if (levelContent.title === 'Inspire') {
+    } else if (levelContent.title === 'Innovation') {
       icon = <InspireIcon />;
-    } else if (levelContent.title === 'Recruit') {
+    } else if (levelContent.title === 'Recruitment') {
       icon = <RecruitIcon />;
     }
 
