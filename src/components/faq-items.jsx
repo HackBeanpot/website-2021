@@ -11,8 +11,8 @@ class FAQItems extends Component {
   }
 
   render() {
-    const childElements = this.props.FAQs.map(FAQ => (
-      <div className="faq-masonry-element">
+    const childElements = this.props.FAQs.map((FAQ, index) => (
+      <div key={`faq-${index}`} className="faq-masonry-element">
         <p className="faq-element-question">{FAQ.question}</p>
         <p
           className="faq-element-answer light-background"

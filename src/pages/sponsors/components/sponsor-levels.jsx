@@ -9,7 +9,7 @@ class SponsorLevel extends React.Component {
     this.renderSponsorRow = this.renderSponsorRow;
   }
 
-  renderSponsorRow(levelContent) {
+  renderSponsorRow(levelContent, index) {
     let icon;
     if (levelContent.title === 'Engagement') {
       icon = <GrowIcon />;
@@ -20,7 +20,7 @@ class SponsorLevel extends React.Component {
     }
 
     return (
-      <div className="sponsor-level col-xl-12">
+      <div key={`sponsor-level-${index}`} className="sponsor-level col-xl-12">
         {icon}
         <div className="sponsor-subtitle">{levelContent.title}</div>
         <div className="row sponsor-level-row">
@@ -41,7 +41,9 @@ class SponsorLevel extends React.Component {
     if (this.props !== undefined && this.props.content !== undefined) {
       return (
         <div className="row">
-          {this.props.content.map(content => this.renderSponsorRow(content))}
+          {this.props.content.map((content, index) =>
+            this.renderSponsorRow(content, index)
+          )}
         </div>
       );
     } else {
