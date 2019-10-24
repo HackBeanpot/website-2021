@@ -14,17 +14,17 @@
 }
 
 .sponsor-cta {
+  @include large-body-text;
   padding-top: 20px;
   padding-bottom: 50px;
   padding-left: 0;
   text-align: left;
-  font-size: $large-body;
-  color: $navy;
+  color: $hbp-navy;
 }
 
 .sponsor-title {
+  @include h2-text;
   text-align: left;
-  font-size: $large-title;
   font-weight: 600;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -34,7 +34,7 @@
 }
 
 .sponsor-subtitle {
-  font-size: $med-title;
+  @include h3-text;
   font-weight: 600;
   padding-bottom: 25px;
   display: inline-block;
@@ -42,7 +42,7 @@
 }
 
 .sponsor-section-header {
-  font-size: $large-title;
+  @include h2-text($white);
   font-weight: 600;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -52,12 +52,12 @@
 }
 
 .sponsor-button {
+  @include large-body-text;
   background-color: $yellow;
   color: white;
   padding: 10px 40px;
   border-radius: 33px;
   border-style: none;
-  font-size: $large-body;
 }
 
 .sponsor-button-center {
@@ -68,7 +68,7 @@
 }
 
 .sponsor-perk-cta {
-  font-size: $large-body;
+  @include large-body-text($white);
   padding-bottom: 50px;
 }
 
@@ -77,9 +77,9 @@
 }
 
 .sponsor-level-row {
+  @include large-body-text($white);
   padding-top: 25px;
   padding-bottom: 25px;
-  font-size: $large-body;
 }
 
 .sponsor-level-quote {

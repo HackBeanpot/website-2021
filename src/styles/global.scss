@@ -1,22 +1,5 @@
-// The main style file for all shared styles
-
-@charset "UTF-8";
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import '/constants.scss';
-
-// Import styles for pages
-@import '../pages/stories/stories.scss';
-@import '../pages/sponsors/sponsors.scss';
-@import '/home.scss';
-
-// Import styles for components
-@import '../components/aboutItem/about-item.scss';
-@import '../components/countdownClock/countdown-clock.scss';
-@import '/nav.scss';
-@import '/footer.scss';
-
 * {
-  font-family: $nunito;
+  font-family: $font-body;
   position: relative;
   z-index: 20;
 }
@@ -41,29 +24,29 @@ body {
 
 // SECTIONS
 .logo-div {
-  font-family: $logo-font-family;
+  font-family: $font-logo;
 }
 
 .light-background {
   background-color: $gray;
-  color: $navy;
+  color: $hbp-navy;
   overflow: hidden;
 }
 
 .light-blue-background {
   background-color: $light-blue;
-  color: $navy;
+  color: $hbp-navy;
   overflow: hidden;
 }
 
 .teal-background {
   background-color: $teal;
-  color: $navy;
+  color: $hbp-navy;
   overflow: hidden;
 }
 
 .dark-background {
-  background-color: $navy;
+  background-color: $hbp-navy;
   color: $gray;
   overflow: hidden;
 }
@@ -85,13 +68,13 @@ body {
 }
 
 .lg-btn {
-  font-size: $large-body;
+  @include large-body-text;
   padding: 10px 40px;
   border-radius: 50px;
 }
 
 .md-btn {
-  font-size: $small-body;
+  @include body-text;
   padding: 8px 20px;
   border-radius: 50px;
 }

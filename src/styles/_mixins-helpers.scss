@@ -1,0 +1,18 @@
+@mixin large-cta {
+  @include h5-text;
+  @include drop-shadow;
+  color: $hbp-navy;
+  background-color: $yellow-green;
+  padding: 10px 40px;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: $yellow-green-hover;
+  }
+}
+
+@mixin drop-shadow {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
