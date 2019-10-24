@@ -91,15 +91,15 @@
 @mixin h5-text($color: $hbp-navy) {
   color: $color;
   font-family: $font-body;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 
   @media (min-width: $md) {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   @media (min-width: $xl) {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
