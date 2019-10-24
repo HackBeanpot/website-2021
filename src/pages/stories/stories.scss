@@ -57,9 +57,9 @@
   width: 200px;
   height: 200px;
   overflow: hidden;
-  background-color: $light-blue;
+  background-color: $hbp-blue;
   border-radius: 300px;
-  border: solid 5px $gray;
+  border: solid 5px $grey;
   transition: 0.5s;
   @media (max-width: 767px) {
     width: 100px;
@@ -85,7 +85,7 @@
 }
 
 .stories-round-image:hover {
-  border: solid 5px $yellow;
+  border: solid 5px $yellow-green;
 }
 
 .portrait {

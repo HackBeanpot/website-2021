@@ -5,11 +5,11 @@
 }
 
 a {
-  color: $teal;
+  color: $sprout-green;
 }
 
 a:hover {
-  color: $teal;
+  color: $sprout-green;
   opacity: 0.6;
   text-decoration: none;
 }
@@ -19,7 +19,7 @@ img {
 }
 
 body {
-  background-color: $gray;
+  background-color: $grey;
 }
 
 // SECTIONS
@@ -28,33 +28,33 @@ body {
 }
 
 .light-background {
-  background-color: $gray;
+  background-color: $grey;
   color: $hbp-navy;
   overflow: hidden;
 }
 
 .light-blue-background {
-  background-color: $light-blue;
+  background-color: $hbp-blue;
   color: $hbp-navy;
   overflow: hidden;
 }
 
 .teal-background {
-  background-color: $teal;
+  background-color: $sprout-green;
   color: $hbp-navy;
   overflow: hidden;
 }
 
 .dark-background {
   background-color: $hbp-navy;
-  color: $gray;
+  color: $grey;
   overflow: hidden;
 }
 
 // BUTTONS
 .yellow-btn {
   color: white;
-  background-color: $yellow;
+  background-color: $yellow-green;
   border-style: none;
   font-weight: 700;
   transition-duration: 0.2s;

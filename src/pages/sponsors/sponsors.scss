@@ -53,7 +53,7 @@
 
 .sponsor-button {
   @include large-body-text;
-  background-color: $yellow;
+  background-color: $yellow-green;
   color: white;
   padding: 10px 40px;
   border-radius: 33px;
@@ -83,7 +83,7 @@
 }
 
 .sponsor-level-quote {
-  color: $light-blue;
+  color: $hbp-blue;
   font-style: italic;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
