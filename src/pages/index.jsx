@@ -90,8 +90,9 @@ const App = () => {
 
         <section className="about-section container">
           <p className="about-title">HackBeanpot is about...</p>
-          {AboutContent.map(item => (
+          {AboutContent.map((item, index) => (
             <AboutItem
+              key={`about-item-${index}`}
               title={item.title}
               content={item.content}
               imgSrc={item.imgSrc}
