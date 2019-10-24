@@ -2,8 +2,8 @@
 @import '../../styles/image-style.scss';
 
 .stories-title {
+  @include h2-text;
   text-align: left;
-  font-size: $large-title;
   font-weight: 600;
   padding-top: 200px;
   padding-bottom: 50px;
@@ -13,7 +13,7 @@
 }
 
 .stories-section-header {
-  font-size: $large-title;
+  @include h2-text($white);
   font-weight: 600;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -38,14 +38,14 @@
 }
 
 .stories-cta {
+  @include large-body-text;
   text-align: left;
-  font-size: $large-body;
   margin-bottom: 100px;
 }
 
 .stories-quote {
+  @include large-body-text($white);
   padding-top: 50px;
-  font-size: $large-body;
 }
 
 .stories-quote-from {
@@ -57,9 +57,9 @@
   width: 200px;
   height: 200px;
   overflow: hidden;
-  background-color: $light-blue;
+  background-color: $hbp-blue;
   border-radius: 300px;
-  border: solid 5px $gray;
+  border: solid 5px $grey;
   transition: 0.5s;
   @media (max-width: 767px) {
     width: 100px;
@@ -85,7 +85,7 @@
 }
 
 .stories-round-image:hover {
-  border: solid 5px $yellow;
+  border: solid 5px $yellow-green;
 }
 
 .portrait {
@@ -102,15 +102,15 @@
 }
 
 .stories-button-title {
-  font-size: $med-title;
+  @include h3-text($white);
   font-weight: 700;
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
 .quote-box {
+  @include large-body-text;
   margin: 50px 150px 50px 100px;
-  font-size: $large-body;
   @media (max-width: 1024px) {
     margin: 30px 10px;
   }

@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 
 import StaticFooter from '../components/static-footer';
 import Nav from 'components/nav';
-import 'styles/global-style.scss';
+import 'styles/main.scss';
 import favicon from '../pages/favicon.png';
 
 // Shows the header and footer on every page

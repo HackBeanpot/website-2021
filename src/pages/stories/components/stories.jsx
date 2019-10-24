@@ -70,7 +70,7 @@ class Stories extends React.Component {
       let activeBorder = 'solid 5px #eeeeee';
       if (this.state.currentQuote == index) activeBorder = 'solid 5px #fad20a';
       return (
-        <div style={{ width: '33%', bottom: bottom }}>
+        <div key={`stories-${index}`} style={{ width: '33%', bottom: bottom }}>
           <div
             className="stories-round-image center"
             style={{ border: activeBorder }}
