@@ -47,8 +47,8 @@
 }
 
 .header-text {
+  @include large-body-text;
   width: 80%;
-  font-size: $large-body;
   margin-bottom: 0px; // Looks nicer. Overrides 1rem from p definition
   @media (max-width: 1024px) {
     width: 100%;
@@ -82,7 +82,6 @@
 
   .header-title {
     float: right;
-    font-size: $med-title;
   }
 
   .header-text {
@@ -118,13 +117,10 @@
   background: $sprout-green;
 }
 
-.section-title {
-  font-size: $large-title;
+.about-title {
+  @include h2-text;
   font-weight: 700;
   margin-bottom: 50px;
-  @media (max-width: 1024px) {
-    font-size: $med-title;
-  }
 }
 
 // FAQ
@@ -139,7 +135,7 @@
 }
 
 .faq-title {
-  font-size: $large-title;
+  @include h2-text($white);
   padding-left: 1%;
   font-weight: 700;
   margin-bottom: 50px;
@@ -148,7 +144,7 @@
 }
 
 .faq-button-title {
-  font-size: $med-title;
+  @include h3-text($white);
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -166,23 +162,23 @@
 }
 
 .sponsor-link {
-  color: $dark-green
+  color: $dark-green;
 }
 
 .faq-element-question {
-  font-size: $subtitle;
+  @include large-body-text($white);
   font-weight: 700;
   margin-bottom: 5px;
   height: auto;
 }
 
 .faq-element-answer {
-  font-size: $small-body;
+  @include body-text;
   height: auto;
   margin: 0;
 
   a {
-    color: $teal;
+    color: $sprout-green;
     text-decoration: none;
   }
 }
@@ -201,12 +197,9 @@
   }
 
   .sponsors-title {
-    font-size: $large-title;
+    @include h2-text;
     font-weight: 700;
     margin-bottom: 50px;
-    @media (max-width: 1024px) {
-      font-size: $med-title;
-    }
   }
 
   .sponsor-header {
@@ -344,7 +337,7 @@
   }
 
   .logo-small {
-    background-color: $navy;
+    background-color: $hbp-navy;
     width: 100%;
   }
 

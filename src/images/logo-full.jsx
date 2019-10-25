@@ -3,7 +3,7 @@ import React from 'react';
 const Logo = () => (
   <svg
     id="Layer_1"
-    data-name="Layer 1"
+    dataname="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 70.28 70.28"
   >

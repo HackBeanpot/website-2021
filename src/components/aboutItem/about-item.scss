@@ -3,7 +3,7 @@ img {
 }
 
 .about-item-title {
-  font-size: $subtitle;
+  @include h4-text;
   font-weight: 700;
   @media (max-width: 1024px) {
     margin-top: 1rem;
@@ -11,19 +11,7 @@ img {
 }
 
 .about-item-description {
-  font-size: $large-body;
-  @media (max-width: 1024px) {
-    font-size: $small-body;
-  }
-
-  a {
-    color: $white;
-  }
-
-  a:hover {
-    color: $white;
-    opacity: 0.6;
-  }
+  @include body-text;
 }
 
 .about-item {

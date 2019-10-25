@@ -4,7 +4,7 @@ const InspireIcon = () => (
   <svg
     id="Layer_1"
     className="inspire-icon"
-    dataName="Layer 1"
+    dataname="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 110 110"
   >
