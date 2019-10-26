@@ -4,22 +4,9 @@
   z-index: 20;
 }
 
-a {
-  color: $sprout-green;
-}
-
-a:hover {
-  color: $sprout-green;
-  opacity: 0.6;
-  text-decoration: none;
-}
-
-img {
-  border-radius: 10px;
-}
-
 body {
-  background-color: $grey;
+  @include body-text;
+  background-color: $pale-blue;
 }
 
 // SECTIONS
