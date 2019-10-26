@@ -79,9 +79,18 @@
 }
 
 .faq-masonry-element {
+  display: flex;
+  align-items: flex-start;
   width: 40%;
   margin-bottom: 60px;
   list-style: none;
+}
+
+.faq-item__leaf {
+  margin-right: 20px;
+  svg {
+    width: 30px;
+  }
 }
 
 .faq-item__question {

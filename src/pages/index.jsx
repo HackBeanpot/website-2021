@@ -4,8 +4,8 @@ import Helmet from 'react-helmet';
 import FAQItems from 'components/faq-items';
 import AboutItem from 'components/aboutItem/about-item';
 import AboutContent from 'data/about-content.json';
-import Skyline from 'images/header-skyline.png';
 
+import Skyline from 'images/header-skyline.png';
 import favicon from './favicon.png';
 
 const App = () => {
