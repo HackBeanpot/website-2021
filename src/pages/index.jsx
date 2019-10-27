@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import FAQItems from 'components/faq-items';
+import FAQItems from 'components/faqItem/faq-items';
 import AboutItem from 'components/aboutItem/about-item';
 import AboutContent from 'data/about-content.json';
 
 import Skyline from 'images/header-skyline.png';
+import HomeSponsorsCircuit from 'images/svg/home-sponsors-circuit.jsx';
 import favicon from './favicon.png';
 
 const App = () => {
@@ -38,7 +39,7 @@ const App = () => {
             alt="Skyline illustration"
             className="header__skyline"
           />
-          <div class="container">
+          <div className="container">
             <div className="header__content">
               <h1 className="header__title">HackBeanpot</h1>
               <p className="header__description">
@@ -111,10 +112,13 @@ const App = () => {
           </div>
         </section>
 
-        <section className="sponsors">
+        <section className="home-sponsors">
+          <span className="home-sponsors__circuit">
+            <HomeSponsorsCircuit />
+          </span>
           <div className="container">
-            <h2 className="sponsors__title">Our Sponsors</h2>
-            <div className="sponsors__content">
+            <h2 className="home-sponsors__title">Our Sponsors</h2>
+            <div className="home-sponsors__content">
               <p>
                 Check back closer to the event for a full list of our
                 HackBeanpot 2020 sponsors.
@@ -124,15 +128,15 @@ const App = () => {
                 community and becoming a sponsor, reach out to us!
               </p>
             </div>
-            <div className="sponsors__cta-group">
+            <div className="home-sponsors__cta-group">
               <a
                 href="mailto:sponsorship@hackbeanpot.com"
                 role="button"
-                class="sponsors__cta"
+                className="home-sponsors__cta"
               >
                 Email Us
               </a>
-              <a className="sponsors__cta-link" href="/sponsors">
+              <a className="home-sponsors__cta-link" href="/sponsors">
                 Or visit our Sponsors Page
               </a>
             </div>

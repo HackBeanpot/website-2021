@@ -1,0 +1,25 @@
+.faq-item-sizer,
+.faq-masonry-element {
+  width: 45%;
+}
+
+.faq-gutter-sizer {
+  width: 5%;
+}
+
+.faq-masonry-element {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.faq-item__leaf {
+  margin-right: 20px;
+  svg {
+    width: 30px;
+  }
+}
+
+.faq-item__question {
+  @include h5-text;
+}

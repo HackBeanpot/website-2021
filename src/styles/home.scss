@@ -74,29 +74,6 @@
   @include bottom-margin;
 }
 
-.faq-masonry-wrapper {
-  padding-left: 0;
-}
-
-.faq-masonry-element {
-  display: flex;
-  align-items: flex-start;
-  width: 40%;
-  margin-bottom: 60px;
-  list-style: none;
-}
-
-.faq-item__leaf {
-  margin-right: 20px;
-  svg {
-    width: 30px;
-  }
-}
-
-.faq-item__question {
-  @include h5-text;
-}
-
 .faq__cta-group {
   text-align: center;
 }
@@ -111,33 +88,45 @@
 }
 
 // SPONSORS
-.sponsors {
+.home-sponsors {
   @include yellow-green-bg;
   @include top-padding;
   @include bottom-padding;
+  position: relative;
 }
 
-.sponsors__title {
+.home-sponsors__circuit {
+  position: absolute;
+  width: 400px;
+  top: -3%;
+  left: 60%;
+
+  svg {
+    width: 100%;
+  }
+}
+
+.home-sponsors__title {
   @include h2-text;
   @include bottom-margin;
 }
 
-.sponsors__content {
+.home-sponsors__content {
   width: 45%;
   margin-bottom: 40px;
 }
 
-.sponsors__cta-group {
+.home-sponsors__cta-group {
   display: flex;
   align-items: center;
 }
 
-.sponsors__cta {
+.home-sponsors__cta {
   @include secondary-cta;
   margin-right: 20px;
 }
 
-.sponsors__cta-link {
+.home-sponsors__cta-link {
   font-weight: 700;
 
   &:hover {
