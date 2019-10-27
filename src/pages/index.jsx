@@ -55,7 +55,7 @@ const App = () => {
 
         <section className="theme-announcement">
           <div className="container">
-            <h2 className="theme__title">Our theme for this year is...</h2>
+            <h2 className="theme__title">Our theme for this year&nbsp;is...</h2>
             <div className="theme__content-wrapper">
               <img
                 src={LogoAnimation}

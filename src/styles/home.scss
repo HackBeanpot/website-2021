@@ -1,6 +1,3 @@
-.home {
-}
-
 // ---------------------------------------------------------------------------
 // Header
 // ---------------------------------------------------------------------------
@@ -192,11 +189,22 @@
 .home-sponsors__cta-group {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: $sm) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .home-sponsors__cta {
   @include secondary-cta;
-  margin-right: 20px;
+  margin: 0 0 15px 0;
+
+  @media (min-width: $sm) {
+    margin: 0 20px 0 0;
+  }
 }
 
 .home-sponsors__cta-link {

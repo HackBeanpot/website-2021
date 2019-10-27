@@ -37,8 +37,12 @@
 @mixin h1-text($color: $hbp-navy) {
   color: $color;
   font-family: $font-body;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
+
+  @media (min-width: $sm) {
+    font-size: 60px;
+  }
 
   @media (min-width: $lg) {
     font-size: 80px;
