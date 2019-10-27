@@ -18,7 +18,7 @@ const AboutItem = props => {
 
   return (
     <div className={`about-item ${props.index % 2 === 0 ? 'left' : 'right'}`}>
-      <img src={props.imgSrc} className="col-md-4 about-item__img" />
+      <img src={props.imgSrc} className="about-item__img" />
       <div className="col-md-6 about-item__content">
         <p className="about-item__title">{props.title}</p>
         <p

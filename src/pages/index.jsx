@@ -5,7 +5,8 @@ import FAQItems from 'components/faqItem/faq-items';
 import AboutItem from 'components/aboutItem/about-item';
 import AboutContent from 'data/about-content.json';
 
-import Skyline from 'images/header-skyline.png';
+import LogoAnimation from 'images/logo-sprout.gif';
+import Logo from 'images/logo-full.jsx';
 import HomeSponsorsCircuit from 'images/svg/home-sponsors-circuit.jsx';
 import favicon from './favicon.png';
 
@@ -34,48 +35,54 @@ const App = () => {
 
       <div className="home">
         <section className="header">
-          <img
+          {/* <img
             src={Skyline}
             alt="Skyline illustration"
             className="header__skyline"
-          />
+          /> */}
           <div className="container">
-            <div className="header__content">
-              <h1 className="header__title">HackBeanpot</h1>
-              <p className="header__description">
-                An independently-run Boston hackathon for curious students,
-                hackers, makers, and beginners. Applications for HackBeanpot
-                2020 are opening soon!
-              </p>
-              <a
-                href="http://eepurl.com/gCU4x1"
-                role="button"
-                target="_blank"
-                className="header__cta"
-              >
-                Join our mailing list
-              </a>
-            </div>
+            <h1 className="header__title">HackBeanpot</h1>
+            <p className="header__description">
+              An independently-run Boston hackathon for curious students,
+              hackers, makers, and beginners. Applications for HackBeanpot 2020
+              are opening soon!
+            </p>
+            <a
+              href="http://eepurl.com/gCU4x1"
+              role="button"
+              target="_blank"
+              className="header__cta"
+            >
+              Join our mailing list
+            </a>
           </div>
         </section>
 
         <section className="theme-announcement">
           <div className="container">
             <h2 className="theme__title">Our theme for this year is...</h2>
-            {/* <div className="hero-logo col-md-4" /> */}
-            <p className="theme__sprout">Sprout!</p>
-            <p>
-              Sprout is a representation of what we stand for as an organization
-              and what we hope to offer all our attendees: growth in new skills,
-              relationships, and experiences. Oh, and we're trying to up our
-              sustainability game too.
-            </p>
-            <p>
-              So whether you're a seasoned hackathon-goer, a
-              I-have-never-written-a-line-of-code-in-my-life beginner, or
-              someone in between, we guarantee you'll learn something new at
-              HackBeanpot 2020!
-            </p>
+            <div className="theme__content-wrapper">
+              <img
+                src={LogoAnimation}
+                alt="Skyline illustration"
+                className="theme__logo"
+              />
+              <div className="theme__content">
+                <p className="theme__sprout">Sprout!</p>
+                <p>
+                  Sprout is a representation of what we stand for as an
+                  organization and what we hope to offer all our attendees:
+                  growth in new skills, relationships, and experiences. Oh, and
+                  we're trying to up our sustainability game too.
+                </p>
+                <p>
+                  So whether you're a seasoned hackathon-goer, a
+                  I-have-never-written-a-line-of-code-in-my-life beginner, or
+                  someone in between, we guarantee you'll learn something new at
+                  HackBeanpot 2020!
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 

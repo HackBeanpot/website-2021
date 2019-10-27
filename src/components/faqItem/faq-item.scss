@@ -1,16 +1,28 @@
-.faq-item-sizer,
-.faq-masonry-element {
-  width: 45%;
+.faq-sizer,
+.faq-item {
+  width: 100%;
+
+  @media (min-width: $md) {
+    width: 45%;
+  }
 }
 
 .faq-gutter-sizer {
-  width: 5%;
+  width: 0;
+
+  @media (min-width: $md) {
+    width: 5%;
+  }
 }
 
-.faq-masonry-element {
+.faq-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+
+  @media (min-width: $md) {
+    margin-bottom: 60px;
+  }
 }
 
 .faq-item__leaf {

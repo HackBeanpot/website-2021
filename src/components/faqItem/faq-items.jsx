@@ -5,17 +5,17 @@ import FAQs from 'data/faqs.json';
 import LeafNode from 'images/svg/leaf-node.jsx';
 
 const masonryOptions = {
-  columnWidth: '.faq-item-sizer',
+  columnWidth: '.faq-sizer',
   gutter: '.faq-gutter-sizer', // Horizontal margin for masonry columns
-  itemSelector: '.faq-masonry-element',
+  itemSelector: '.faq-item',
   percentPosition: true
 };
 
 const FAQItems = props => {
   const childElements = FAQs.map((FAQ, index) => [
-    <div className="faq-item-sizer" />,
-    <div className="faq-gutter-sizer" />,
-    <div key={`faq-${index}`} className="faq-masonry-element">
+    <div key={`faq-sizer-${index}`} className="faq-sizer" />,
+    <div key={`faq-gutter-${index}`} className="faq-gutter-sizer" />,
+    <div key={`faq-item-${index}`} className="faq-item">
       <span className="faq-item__leaf">
         <LeafNode />
       </span>

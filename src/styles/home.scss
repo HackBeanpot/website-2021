@@ -1,9 +1,14 @@
 .home {
 }
 
-// HEADER
+// ---------------------------------------------------------------------------
+// Header
+// ---------------------------------------------------------------------------
+
 .header {
   @include pale-blue-bg;
+  @include top-padding;
+  @include bottom-padding;
   position: relative;
 }
 
@@ -12,11 +17,6 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.header__content {
-  margin-bottom: 30px;
-  margin: 300px 0 200px 60%;
 }
 
 .header__title {
@@ -33,7 +33,10 @@
   @include primary-cta;
 }
 
-// THEME
+// ---------------------------------------------------------------------------
+// Theme
+// ---------------------------------------------------------------------------
+
 .theme-announcement {
   @include pale-blue-bg;
   @include top-padding;
@@ -45,12 +48,50 @@
   @include bottom-margin;
 }
 
-.theme__sprout {
-  @include h2-text;
-  @include bottom-margin;
+.theme__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $md) {
+    flex-direction: row;
+  }
 }
 
-// ABOUT
+.theme__logo {
+  width: 50%;
+  margin-bottom: 20px;
+
+  @media (min-width: $md) {
+    width: 30%;
+    margin-bottom: 0;
+  }
+}
+
+.theme__sprout {
+  @include h2-text;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media (min-width: $md) {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.theme__content {
+  width: 100%;
+
+  @media (min-width: $md) {
+    width: 60%;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// About
+// ---------------------------------------------------------------------------
+
 .about {
   @include sprout-green-bg;
   @include top-padding;
@@ -62,7 +103,10 @@
   @include bottom-margin;
 }
 
+// ---------------------------------------------------------------------------
 // FAQ
+// ---------------------------------------------------------------------------
+
 .faq {
   @include pale-blue-bg;
   @include top-padding;
@@ -80,6 +124,7 @@
 
 .faq__cta-label {
   @include large-body-text;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
@@ -87,7 +132,10 @@
   @include primary-cta;
 }
 
-// SPONSORS
+// ---------------------------------------------------------------------------
+// Sponsors
+// ---------------------------------------------------------------------------
+
 .home-sponsors {
   @include yellow-green-bg;
   @include top-padding;
@@ -96,13 +144,24 @@
 }
 
 .home-sponsors__circuit {
+  display: none;
   position: absolute;
-  width: 400px;
-  top: -3%;
   left: 60%;
 
   svg {
     width: 100%;
+  }
+
+  @media (min-width: $md) {
+    display: block;
+    width: 300px;
+    top: -14%;
+  }
+
+  @media (min-width: $xl) {
+    display: block;
+    width: 400px;
+    top: -3%;
   }
 }
 
@@ -112,8 +171,12 @@
 }
 
 .home-sponsors__content {
-  width: 45%;
+  width: 100%;
   margin-bottom: 40px;
+
+  @media (min-width: $md) {
+    width: 45%;
+  }
 }
 
 .home-sponsors__cta-group {
