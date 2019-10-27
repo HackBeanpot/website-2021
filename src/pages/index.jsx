@@ -35,11 +35,6 @@ const App = () => {
 
       <div className="home">
         <section className="header">
-          {/* <img
-            src={Skyline}
-            alt="Skyline illustration"
-            className="header__skyline"
-          /> */}
           <div className="container">
             <h1 className="header__title">HackBeanpot</h1>
             <p className="header__description">
@@ -73,7 +68,7 @@ const App = () => {
                   Sprout is a representation of what we stand for as an
                   organization and what we hope to offer all our attendees:
                   growth in new skills, relationships, and experiences. Oh, and
-                  we're trying to up our sustainability game too.
+                  we're trying to up our sustainability game too. ♻️
                 </p>
                 <p>
                   So whether you're a seasoned hackathon-goer, a
