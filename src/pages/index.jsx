@@ -6,7 +6,7 @@ import AboutItem from 'components/aboutItem/about-item';
 import AboutContent from 'data/about-content.json';
 
 import LogoAnimation from 'images/logo-sprout.gif';
-import Logo from 'images/logo-full.jsx';
+import HomeAboutPattern from 'images/home-about-pattern.png';
 import HomeSponsorsCircuit from 'images/svg/home-sponsors-circuit.jsx';
 import favicon from './favicon.png';
 
@@ -64,7 +64,7 @@ const App = () => {
             <div className="theme__content-wrapper">
               <img
                 src={LogoAnimation}
-                alt="Skyline illustration"
+                alt="Animated logo"
                 className="theme__logo"
               />
               <div className="theme__content">
@@ -87,6 +87,11 @@ const App = () => {
         </section>
 
         <section className="about">
+          <img
+            src={HomeAboutPattern}
+            alt="Animated logo"
+            className="about__pattern"
+          />
           <div className="container">
             <h2 className="about__title">HackBeanpot is about...</h2>
             {AboutContent.map((item, index) => (

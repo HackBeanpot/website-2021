@@ -96,6 +96,16 @@
   @include sprout-green-bg;
   @include top-padding;
   @include bottom-padding;
+  position: relative;
+}
+
+.about__pattern {
+  position: absolute;
+  width: 110%;
+  min-width: $xl;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
 }
 
 .about__title {
