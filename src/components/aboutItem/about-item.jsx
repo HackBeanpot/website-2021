@@ -2,31 +2,27 @@ import React from 'react';
 
 const AboutItem = props => {
   let button;
-  if (props.btn)
+
+  if (props.btn) {
     button = (
       <a
         href={props.btn.url}
         role="button"
-        className={`btn yellow-btn ${props.btn.size}`}
+        className="about-item__cta"
         target="_blank"
       >
         {props.btn.text}
       </a>
     );
+  }
+
   return (
-    <div className="about-item">
-      <img
-        src={props.imgSrc}
-        className={`col-md-5 about-image align-${props.floatDirection}-img`}
-      />
-      <div
-        className={`col-md-7 about-item-content align-${
-          props.floatDirection
-        }-content`}
-      >
-        <p className="about-item-title">{props.title}</p>
-        <div
-          className="about-item-description"
+    <div className={`about-item ${props.index % 2 === 0 ? 'left' : 'right'}`}>
+      <img src={props.imgSrc} className="about-item__img" />
+      <div className="col-md-6 about-item__content">
+        <p className="about-item__title">{props.title}</p>
+        <p
+          className="about-item__description"
           dangerouslySetInnerHTML={{ __html: props.content }}
         />
         {button}

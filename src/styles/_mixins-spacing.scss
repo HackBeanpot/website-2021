@@ -1,0 +1,151 @@
+// ---------------------------------------------------------------------------
+// Margins
+// ---------------------------------------------------------------------------
+
+@mixin margins {
+  margin: 40px 20px;
+
+  @media (min-width: $md) {
+    margin: 40px;
+  }
+
+  @media (min-width: $lg) {
+    margin: 60px;
+  }
+
+  @media (min-width: $xl) {
+    margin: 80px;
+  }
+}
+
+@mixin left-margin {
+  margin-left: 20px;
+
+  @media (min-width: $md) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: $lg) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $xl) {
+    margin-left: 80px;
+  }
+}
+
+@mixin right-margin {
+  margin-right: 20px;
+
+  @media (min-width: $md) {
+    margin-right: 40px;
+  }
+
+  @media (min-width: $lg) {
+    margin-right: 60px;
+  }
+
+  @media (min-width: $xl) {
+    margin-right: 80px;
+  }
+}
+
+@mixin bottom-margin {
+  margin-bottom: 40px;
+
+  @media (min-width: $lg) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $xl) {
+    margin-bottom: 80px;
+  }
+}
+
+@mixin top-margin {
+  margin-top: 40px;
+
+  @media (min-width: $lg) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $xl) {
+    margin-top: 80px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Padding
+// ---------------------------------------------------------------------------
+
+@mixin padding {
+  padding: 20px 20px;
+
+  @media (min-width: $md) {
+    padding: 40px;
+  }
+
+  @media (min-width: $lg) {
+    padding: 60px;
+  }
+
+  @media (min-width: $xl) {
+    padding: 80px;
+  }
+}
+
+@mixin left-padding {
+  padding-left: 20px;
+
+  @media (min-width: $md) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $lg) {
+    padding-left: 60px;
+  }
+
+  @media (min-width: $xl) {
+    padding-left: 80px;
+  }
+}
+
+@mixin right-padding {
+  padding-right: 20px;
+
+  @media (min-width: $md) {
+    padding-right: 40px;
+  }
+
+  @media (min-width: $lg) {
+    padding-right: 60px;
+  }
+
+  @media (min-width: $xl) {
+    padding-right: 80px;
+  }
+}
+
+@mixin bottom-padding {
+  padding-bottom: 40px;
+
+  @media (min-width: $lg) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $xl) {
+    padding-bottom: 80px;
+  }
+}
+
+@mixin top-padding {
+  padding-top: 40px;
+
+  @media (min-width: $lg) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $xl) {
+    padding-top: 80px;
+  }
+}

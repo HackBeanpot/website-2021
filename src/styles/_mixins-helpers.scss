@@ -1,28 +1,47 @@
+// ---------------------------------------------------------------------------
+// CTA Buttons
+// ---------------------------------------------------------------------------
+
 @mixin primary-cta {
-  @include h5-text;
+  @include body-text;
   @include drop-shadow;
+  font-weight: 700;
   background-color: $yellow-green;
-  padding: 10px 40px;
+  padding: 12px 35px;
   border-radius: 50px;
+  transition: background-color 0.3s ease;
 
   &:hover {
     color: $hbp-navy;
     background-color: $yellow-green-hover;
     opacity: 1;
+    text-decoration: none;
+  }
+
+  @media (min-width: $md) {
+    @include h5-text;
+    padding: 12px 40px;
   }
 }
 
 @mixin secondary-cta {
-  @include h5-text;
-  @include drop-shadow;
-  padding: 10px 40px;
+  @include body-text;
+  font-weight: 700;
+  padding: 12px 35px;
   border: 3px $hbp-navy solid;
   border-radius: 50px;
+  transition: background-color 0.2s ease;
 
   &:hover {
     color: $white;
     background-color: $hbp-navy;
     opacity: 1;
+    text-decoration: none;
+  }
+
+  @media (min-width: $md) {
+    @include h5-text;
+    padding: 12px 40px;
   }
 }
 
@@ -30,4 +49,50 @@
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+// ---------------------------------------------------------------------------
+// Inline Links
+// ---------------------------------------------------------------------------
+
+@mixin inline-link($color: $dark-green, $hover: $darker-green) {
+  a:not([role='button']) {
+    color: $color;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $hover;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Colorblock Backgrounds
+// ---------------------------------------------------------------------------
+
+@mixin pale-blue-bg {
+  @include inline-link;
+  background-color: $pale-blue;
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+@mixin sprout-green-bg {
+  @include inline-link($charles-river-blue, $hbp-navy);
+  background-color: $sprout-green;
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+@mixin yellow-green-bg {
+  @include inline-link;
+  background-color: $yellow-green;
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+@mixin dark-green-bg {
+  background-color: $dark-green;
+  color: $white;
+  overflow: hidden;
 }

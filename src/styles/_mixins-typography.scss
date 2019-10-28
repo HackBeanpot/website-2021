@@ -18,15 +18,15 @@
   color: $color;
   font-family: $font-body;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.62em;
 
   @media (min-width: $md) {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   @media (min-width: $xl) {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -37,8 +37,12 @@
 @mixin h1-text($color: $hbp-navy) {
   color: $color;
   font-family: $font-body;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
+
+  @media (min-width: $sm) {
+    font-size: 60px;
+  }
 
   @media (min-width: $lg) {
     font-size: 80px;
@@ -48,7 +52,7 @@
 @mixin h2-text($color: $hbp-navy) {
   color: $color;
   font-family: $font-body;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
 
   @media (min-width: $lg) {
@@ -91,15 +95,15 @@
 @mixin h5-text($color: $hbp-navy) {
   color: $color;
   font-family: $font-body;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 
   @media (min-width: $md) {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   @media (min-width: $xl) {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 

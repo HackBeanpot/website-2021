@@ -1,63 +1,50 @@
-img {
-  padding: 0px !important;
-}
-
-.about-item-title {
-  @include h4-text;
-  font-weight: 700;
-  @media (max-width: 1024px) {
-    margin-top: 1rem;
-  }
-}
-
-.about-item-description {
-  @include body-text;
-}
-
 .about-item {
-  clear: both;
-  overflow: auto;
-  margin-bottom: 150px;
-  margin-top: 125px;
-  @media (max-width: 1024px) {
-    margin-bottom: 75px;
-    margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+
+  &:not(:last-child) {
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $md) {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &.right {
+      flex-direction: row-reverse;
+    }
   }
 }
 
-.about-image {
-  height: 300px;
-  width: auto;
-  @media (max-width: 1024px) {
-    height: auto;
-    width: 100%;
-  }
-  @media (max-width: 767px) {
-    margin-bottom: 35px;
-  }
-}
+.about-item__img {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 
-.align-left-img {
-  float: left;
-}
-
-.align-right-img {
-  float: right;
-}
-
-.about-item-content {
-  text-align: left;
-  padding-left: 50px;
-  overflow-x: hidden;
-  @media (max-width: 767px) {
-    padding-left: 0;
+  @media (min-width: $md) {
+    width: 30%;
+    margin-bottom: 0;
   }
 }
 
-.align-right-content {
-  padding-left: 0;
-  padding-right: 50px;
-  @media (max-width: 767px) {
-    padding-right: 0;
+.about-item__title {
+  @include h4-text;
+}
+
+.about-item__content {
+  width: 100%;
+
+  @media (min-width: $md) {
+    width: 60%;
   }
+}
+
+.about-item__description {
+  margin-bottom: 50px;
+}
+
+.about-item__cta {
+  @include primary-cta;
 }
