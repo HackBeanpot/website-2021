@@ -1,0 +1,65 @@
+* {
+  font-family: $font-body;
+  position: relative;
+  z-index: 20;
+}
+
+body {
+  @include body-text;
+  background-color: $pale-blue;
+}
+
+// SECTIONS
+.logo-div {
+  font-family: $font-logo;
+}
+
+.light-background {
+  background-color: $grey;
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+.light-blue-background {
+  background-color: $hbp-blue;
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+.teal-background {
+  background-color: $sprout-green;
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+.dark-background {
+  background-color: $hbp-navy;
+  color: $grey;
+  overflow: hidden;
+}
+
+// BUTTONS
+// TODO: Stop using this class in favor of the cta mixins
+.yellow-btn {
+  @include primary-cta;
+}
+
+// GENERAL
+.center-text {
+  text-align: center;
+}
+
+.center-h-v {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// NAV BAR
+.custom-nav {
+  margin: 0 !important;
+  @media (max-width: 1024px) {
+    margin: 0 !important;
+    display: block;
+  }
+}
