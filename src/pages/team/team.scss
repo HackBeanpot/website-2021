@@ -2,32 +2,41 @@
 @import '../../styles/image-style.scss';
 
 .team-header {
-    margin-top: 200px !important; 
-    font-weight: bold
-}
-
-.team-top-section {
-    // only on medium screens or larger
-    width: 70%;
+    @include yellow-green-bg;
+    @include top-padding;
+    @include bottom-padding;
+    position: relative;
 }
 
 .team-section-title {
     font-weight: bold;
 }
 
+.leadership {
+    @include yellow-green-bg;
+}
+
+.team__title {
+    @include h4-text;
+}
+
+.team-member__name {
+    @include h5-text;
+}
+
 .team-member-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: #fff;
-    border: 5px solid $hackbeanpot-navy;
+    background-color: $white;
+    border: 5px solid $hbp-navy;
 }
 
 .team-member-circle {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: $hackbeanpot-navy;
+    background-color: $hbp-navy;
 
     &:hover {
         opacity: 0.5;

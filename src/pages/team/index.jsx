@@ -6,7 +6,7 @@ const TeamMember = props => (
     <Fragment>
         <div className="text-center">
             <div className="team-member-circle mb-3"></div>
-            <h5>{props.name}</h5>
+            <h5 class="team-member__name">{props.name}</h5>
             <p>{props.position}</p>
         </div>
     </Fragment>
@@ -28,7 +28,7 @@ class Team extends React.Component {
     renderLeadership(section) {
         return (
             <Fragment class="mt-4">
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-around">
                     <div class="mx-5">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} />
@@ -45,8 +45,8 @@ class Team extends React.Component {
     renderDesign(section) {
         return (
             <Fragment class="mt-4">
-                <h3 class="mt-4 team-section-title">Design</h3>
-                <div class="d-flex justify-content-center">
+                <h3 class="team__title">Design</h3>
+                <div class="d-flex justify-content-around">
                     <div class="mx-5">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} />
@@ -60,7 +60,7 @@ class Team extends React.Component {
                                     position={section.members[2].position} />
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-around">
                     <div class="mx-5">
                         <TeamMember name={section.members[3].name}
                                     position={section.members[3].position} />
@@ -77,8 +77,8 @@ class Team extends React.Component {
     renderOutreach(section) {
         return (
             <Fragment class="mt-4">
-                <h3 class="mt-4 team-section-title">Outreach</h3>
-                <div class="d-flex justify-content-center">
+                <h3 class="team__title">Outreach</h3>
+                <div class="d-flex justify-content-around">
                     <div class="mx-5">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} />
@@ -88,7 +88,7 @@ class Team extends React.Component {
                                     position={section.members[1].position} />
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-around">
                     <div class="mx-5">
                         <TeamMember name={section.members[2].name}
                                     position={section.members[2].position} />
@@ -105,8 +105,8 @@ class Team extends React.Component {
     renderSocial(section) {
         return (
             <Fragment class="mt-4">
-                <h3 class="mt-4 team-section-title">Social</h3>
-                <div class="d-flex justify-content-center">
+                <h3 class="team__title">Social</h3>
+                <div class="d-flex justify-content-around">
                     <div class="">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} />
@@ -119,8 +119,8 @@ class Team extends React.Component {
     renderSponsorship(section) {
         return (
             <Fragment>
-                <h3 class="mt-4 team-section-title">Sponsorship</h3>
-                <div class="d-flex justify-content-center">
+                <h3 class="team__title">Sponsorship</h3>
+                <div class="d-flex justify-content-around">
                     <div class="mx-5">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} />
@@ -130,7 +130,7 @@ class Team extends React.Component {
                                     position={section.members[1].position} />
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-around">
                     <div class="mx-5">
                         <TeamMember name={section.members[2].name}
                                     position={section.members[2].position} />
@@ -147,9 +147,8 @@ class Team extends React.Component {
     renderTech(section) {
         return (
             <Fragment>
-                {/* TODO add luci to tech */}
-                <h3 class="mt-4 team-section-title">Tech</h3>
-                <div class="d-flex justify-content-center">
+                <h3 class="team__title">Tech</h3>
+                <div class="d-flex justify-content-around">
                     <div class="mx-5">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} />
@@ -159,7 +158,7 @@ class Team extends React.Component {
                                     position={section.members[1].position} />
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-around">
                     <div class="mx-5">
                         <TeamMember name={section.members[2].name}
                                     position={section.members[2].position} />
@@ -175,16 +174,14 @@ class Team extends React.Component {
     render() {
         return(
             <Fragment>
-                <div className="yellow-green-bg">
+                <div className="leadership">
                     <div className="container">
-                        <div className="team-top-section">
-                            <div className="header">
-                                <h1 className="team-header header-title">Meet the Team behind HackBeanpot</h1>
-                            </div>
-                            <p className="header-text">We are a group of ~20 driven students who aim to make technical experience and
-                                knowledge accessible to anyone. In the months leading up to our hackathon in
-                                February, we work hard both within and across our five teams - Design, Outreach,
-                                Social Media, Sponsorship, and Tech! </p>
+                        <div className="team-header">
+                            <h1 className="header__title">Meet the Team behind HackBeanpot</h1>
+                            <p className="header__description">We are a group of ~20 driven students who aim to make technical experience and
+                            knowledge accessible to anyone. In the months leading up to our hackathon in
+                            February, we work hard both within and across our five teams - Design, Outreach,
+                            Social Media, Sponsorship, and Tech! </p>
                         </div>
                         {this.renderLeadership(TeamData[0])}
                     </div> 
