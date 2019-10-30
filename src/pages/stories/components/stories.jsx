@@ -3,7 +3,7 @@ import Quote from 'pages/stories/components/quote';
 import Circuit1 from 'images/circuit-1';
 import SponsorBlob1 from 'images/sponsor-blob-1';
 import SponsorBlob2 from 'images/sponsor-blob-2';
-import Quotes from 'data/stories.json';
+import Quotes from 'data/quotes.json';
 
 class Stories extends React.Component {
   constructor(props) {

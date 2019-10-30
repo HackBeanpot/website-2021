@@ -49,7 +49,6 @@
 }
 
 .stories-quote-from {
-  padding-top: 25px;
   font-weight: 600;
 }
 
@@ -109,7 +108,8 @@
 }
 
 .quote-box {
-  @include large-body-text;
+  @include charles-river-blue-bg;
+  @include large-body-text($white);
   margin: 50px 150px 50px 100px;
   @media (max-width: 1024px) {
     margin: 30px 10px;

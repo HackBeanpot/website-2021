@@ -3,13 +3,15 @@ import React, { Fragment } from 'react';
 const Quote = props => (
   <Fragment>
     {!!props.quote ? (
-      <div className="quote-box" id={props.quoteId}>
-        <i className="noClick">"{props.quote.content}"</i>
+      <div>
+        <div className="quote-box charles" id={props.quoteId}>
+          <span className="noClick">"{props.quote.content}"</span>
+        </div>
         <h6 className="stories-quote-from noClick">
-          - {props.quote.author},{' '}
-          <span className="noClick">{props.quote.company}</span>
-        </h6>
-      </div>
+        - {props.quote.author},{' '}
+        <span className="noClick">{props.quote.company}</span>
+      </h6>
+    </div>
     ) : null}
   </Fragment>
 );
