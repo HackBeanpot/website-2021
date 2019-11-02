@@ -4,13 +4,13 @@
         "members": [
             {
                 "name": "Rucha Kanolkar",
-                "fun-fact": "She has tried over 30 types of hummus.",
+                "funFact": "She has tried over 30 types of hummus.",
                 "picture": "",
                 "position": "President"
             },
             {
                 "name": "Ashna Shah",
-                "fun-fact": "She can say the alphabet backwards in under 4 seconds.",
+                "funFact": "She can say the alphabet backwards in under 4 seconds.",
                 "picture": "",
                 "position": "Vice President"
             }
@@ -21,31 +21,31 @@
         "members": [
             {
                 "name": "Caitlin Wang",
-                "fun-fact": "She once slept for 20 hours straight.",
+                "funFact": "She once slept for 20 hours straight.",
                 "picture": "",
                 "position": "Design Lead"
             },
             {
                 "name": "Catu Berretta",
-                "fun-fact": "She loves to talk about herself.",
+                "funFact": "She loves to talk about herself.",
                 "picture": "",
                 "position": "Designer (Sponsorship)"
             },
             {
                 "name": "Jenn Der",
-                "fun-fact": "She is allergic to gluten but loves bread.",
+                "funFact": "She is allergic to gluten but loves bread.",
                 "picture": "",
                 "position": "Designer (Outreach)"
             },
             {
                 "name": "Sindhu Majeti",
-                "fun-fact": "She can touch my toungue to my nose.",
+                "funFact": "She can touch my toungue to my nose.",
                 "picture": "",
                 "position": "Designer (Tech)"
             },
             {
                 "name": "Willa Shiomos",
-                "fun-fact": "She can greek folk dance.",
+                "funFact": "She can greek folk dance.",
                 "picture": "",
                 "position": "Designer (Social Media)"
             }            
@@ -56,25 +56,25 @@
         "members": [
             {
                 "name": "Felicia Zhang",
-                "fun-fact": "She has a black belt in Kenpo karate.",
+                "funFact": "She has a black belt in Kenpo karate.",
                 "picture": "",
                 "position": "Outreach Lead"
             },
             {
                 "name": "Ifteda Ahmed",
-                "fun-fact": "She wears size 3 shoes.",
+                "funFact": "She wears size 3 shoes.",
                 "picture": "",
                 "position": "Outreach Member"
             },
             {
                 "name": "Gauri Dandi",
-                "fun-fact": "She can speak 3 languages.",
+                "funFact": "She can speak 3 languages.",
                 "picture": "",
                 "position": "Outreach Member"
             },
             {
                 "name": "Sarah Wessel",
-                "fun-fact": "She can ride a unicycle... and falls often.",
+                "funFact": "She can ride a unicycle... and falls often.",
                 "picture": "",
                 "position": "Outreach Member"
             }            
@@ -85,7 +85,7 @@
         "members": [
             {
                 "name": "Nupur Neogi",
-                "fun-fact": "Her dream job is to be a park ranger.",
+                "funFact": "Her dream job is to be a park ranger.",
                 "picture": "",
                 "position": "Social Lead"
             }          
@@ -96,25 +96,25 @@
         "members": [
             {
                 "name": "Raquel Levy",
-                "fun-fact": "She knows every word to every song on the Kelly Clarkson Breakaway album.",
+                "funFact": "She knows every word to every song on the Kelly Clarkson Breakaway album.",
                 "picture": "",
                 "position": "Sponsorship Lead"
             },
             {
                 "name": "Nikitha Koppu",
-                "fun-fact": "She is wicked good at Disney trivia.",
+                "funFact": "She is wicked good at Disney trivia.",
                 "picture": "",
                 "position": "Sponsorship Member"
             },
             {
                 "name": "Caroline Liu",
-                "fun-fact": "She thinks she have a light collecting problem (string lights, lawn lights, Christmas lights).",
+                "funFact": "She thinks she have a light collecting problem (string lights, lawn lights, Christmas lights).",
                 "picture": "",
                 "position": "Sponsorship Member"
             },
             {
                 "name": "Daniel Wang",
-                "fun-fact": "**placeholder text**",
+                "funFact": "**placeholder text**",
                 "picture": "",
                 "position": "Sponsorship Member"
             }           
@@ -125,25 +125,25 @@
         "members": [
             {
                 "name": "Vyshnavi Chunduru",
-                "fun-fact": "She was in five different countries in less than a week.",
+                "funFact": "She was in five different countries in less than a week.",
                 "picture": "",
                 "position": "Tech Lead"
             },
             {
                 "name": "Warren Partridge",
-                "fun-fact": "He once ate an entire baguette while riding a bike.",
+                "funFact": "He once ate an entire baguette while riding a bike.",
                 "picture": "",
                 "position": "Tech Member"
             },
             {
                 "name": "Kyle Posluns",
-                "fun-fact": "",
+                "funFact": "",
                 "picture": "",
                 "position": "Tech Member"
             },
             {
                 "name": "Nabeel Sherazi",
-                "fun-fact": "",
+                "funFact": "",
                 "picture": "",
                 "position": "Tech Member"
             }            
