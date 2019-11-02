@@ -8,6 +8,10 @@
     position: relative;
 }
 
+.team-header__description {
+  @include large-body-text;
+  width: 60%
+}
 .team-section-title {
     font-weight: bold;
 }
@@ -24,21 +28,101 @@
     @include h5-text;
 }
 
+.meet-the-team {
+    margin-top: 100px;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container:hover .team-member-image {
+    opacity: 0.75;
+}
+  
+.image-container:hover .team-member-circle {
+    opacity: 0.3;
+}
+
+.image-container:hover .fun-fact {
+    opacity: 1;
+}
+
+.team-leaf {
+    margin-top: -130px;
+    margin-left: -100px;
+    z-index: 2;
+}
+
+.team__cta {
+    @include primary-cta;
+}
+
+.team__cta-label {
+    @include h3-text;
+    @include bottom-margin;
+    margin-top: 200px;
+}
+
+.team__cta-container {
+    height: 400px;
+}
+
+.team-leaf-pattern {
+    margin-right: 0px;
+    position: absolute;
+    right: 0px;
+    bottom: -200px;
+}
+
+.team-badge-leaf__container {
+    float: right;
+    margin-top: -70px;
+}
+
+.team-badge-leaf {
+    z-index: 2;
+}
+
+.team-badge-leaf__content {
+    color: $white;
+    position: absolute;
+    right: 50px;
+    top: 105px;
+    width: 150px;
+}
+
 .team-member-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: $white;
+    transition: .5s ease;
+    backface-visibility: hidden;
     border: 5px solid $hbp-navy;
 }
 
 .team-member-circle {
+    opacity: 0;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: $hbp-navy;
-
-    &:hover {
-        opacity: 0.5;
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: 5px solid $hbp-navy;
 }
+
+.fun-fact {
+    opacity: 0;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
