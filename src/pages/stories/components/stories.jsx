@@ -23,7 +23,7 @@ class Stories extends React.Component {
       return (
         <div key={`stories-${index}`} style={{ width: '33%', bottom: bottom }}>
           <div
-            className="stories-round-image center"
+            className="stories-round-image center" 
             style={{ border: activeBorder }}
           >
             <img
@@ -41,11 +41,11 @@ class Stories extends React.Component {
 
   render() {
     return (
-      <div className="light-background stories-welcome">
+      <div className="stories-welcome">
         <div className="container">
-          <div className="stories-title">We've got stories to share</div>
+          <div className="stories__title">We've got stories to share</div>
           <div className="row">
-            <div className="stories-cta col-md-8">
+            <div className="stories__description col-md-8">
               Whether you're an attendee, mentor, or an organizer, you'll come
               to HackBeanpot with a story to tell. <br /> Here's a collection of
               stories of previous attendees. Our hackers are our priority and we
@@ -59,9 +59,6 @@ class Stories extends React.Component {
             {this.renderImages([3, 4, 5])}
           </div>
         </div>
-        <Circuit1 />
-        <SponsorBlob1 />
-        <SponsorBlob2 />
       </div>
     );
   }

@@ -1,7 +1,7 @@
 @import '../styles/constants.scss';
 @import '../../styles/image-style.scss';
 
-.stories-title {
+.stories__title {
   @include h2-text;
   text-align: left;
   font-weight: 600;
@@ -27,6 +27,7 @@
 }
 
 .stories-tell-quote {
+  @include bottom-padding;
   padding-top: 50px;
   @media (max-width: 767px) {
     padding-top: 0;
@@ -34,10 +35,11 @@
 }
 
 .stories-welcome {
+  @include pale-blue-bg;
   padding-bottom: 100px;
 }
 
-.stories-cta {
+.stories__description {
   @include large-body-text;
   text-align: left;
   margin-bottom: 100px;
@@ -45,10 +47,10 @@
 
 .stories-quote {
   @include large-body-text($white);
-  padding-top: 50px;
 }
 
 .stories-quote-from {
+  margin-top: 30px;
   font-weight: 600;
 }
 
@@ -95,25 +97,36 @@
   }
 }
 
+.stories-tell-section {
+  @include charles-river-blue-bg;
+}
+
 .portrait-large {
   width: 450px;
   height: auto;
 }
 
-.stories-button-title {
+.stories-cta__title {
   @include h3-text($white);
   font-weight: 700;
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
-.quote-box {
-  @include charles-river-blue-bg;
-  @include large-body-text($white);
-  margin: 50px 150px 50px 100px;
+.stories-cta {
+  @include primary-cta;
+}
+
+.quote-box-container {
+  margin: 50px 200px 50px 100px;
   @media (max-width: 1024px) {
     margin: 30px 10px;
   }
+}
+
+.quote-box {
+  @include charles-river-blue-bg;
+  @include large-body-text($white);
 }
 
 .noClick {
