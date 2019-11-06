@@ -9,8 +9,8 @@ const TeamMember = props => (
         <div className="text-center">
             <div className="image-container mb-3">
                 <img className="team-member-image" src="https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.jpg" alt=""/>
-                <span className="fun-fact font-weight-bold">{props.funFact} </span>
                 <div className="team-member-circle"></div>
+                <span className="fun-fact font-weight-bold">{props.funFact} </span>
             </div>
             <h5 class="team-member__name">{props.name}</h5>
             <p>{props.position}</p>

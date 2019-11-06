@@ -36,13 +36,9 @@
 .image-container {
     position: relative;
 }
-
-.image-container:hover .team-member-image {
-    opacity: 0.75;
-}
   
 .image-container:hover .team-member-circle {
-    opacity: 0.3;
+    opacity: 0.8;
 }
 
 .image-container:hover .fun-fact {
@@ -124,5 +120,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    width: 150px;
 }
 
