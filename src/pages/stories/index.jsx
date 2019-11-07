@@ -27,7 +27,7 @@ class StoriesPage extends React.Component {
               <div className="offset-md-1 col-md-5">
                 <img
                   className="portrait portrait-large"
-                  src="http://tools.hackbeanpot.com/assets/images/2018-hbp-candid.jpg"
+                  src="http://tools.hackbeanpot.com/assets/images/team.jpg"
                 />
               </div>
             </div>

@@ -18,13 +18,10 @@ class Stories extends React.Component {
       let bottom = 0;
       if (index == 1) bottom = '75px';
       if (index == 4) bottom = '-75px';
-      let activeBorder = 'solid 5px #eeeeee';
-      if (this.state.currentQuote == index) activeBorder = 'solid 5px #fad20a';
       return (
         <div key={`stories-${index}`} style={{ width: '33%', bottom: bottom }}>
           <div
-            className="stories-round-image center" 
-            style={{ border: activeBorder }}
+            className={ (this.state.currentQuote == index ? "stories-round-image__selected " : "") + "stories-round-image center" }
           >
             <img
               className="portrait"
