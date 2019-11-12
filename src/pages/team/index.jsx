@@ -34,13 +34,13 @@ class Team extends React.Component {
     renderLeadership(section) {
         return (
             <Fragment class="mt-4">
-                <div class="d-flex justify-content-around">
-                    <div class="mx-5">
+                <div class="row">
+                    <div class="col-6">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} 
                                     funFact={section.members[0].funFact}/>
                     </div>
-                    <div class="mx-5">
+                    <div class="col-6">
                         <TeamMember name={section.members[1].name}
                                     position={section.members[1].position}
                                     funFact={section.members[1].funFact} />
@@ -57,30 +57,28 @@ class Team extends React.Component {
                 <div className="team-leaf">
                     <TeamNameLeaf/>
                 </div>
-                <div class="d-flex justify-content-around">
-                    <div class="mx-5">
+                <div class="row">
+                    <div class="col-sm-4 col-6">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} 
                                     funFact={section.members[0].funFact}/>
                     </div>
-                    <div class="mx-5">
+                    <div class="col-sm-4 col-6">
                         <TeamMember name={section.members[1].name}
                                     position={section.members[1].position}
                                     funFact={section.members[1].funFact} />
                     </div>
-                    <div class="mx-5">
+                    <div class="col-sm-4 col-6">
                         <TeamMember name={section.members[2].name}
                                     position={section.members[2].position}
                                     funFact={section.members[2].funFact} />
                     </div>
-                </div>
-                <div class="d-flex justify-content-around">
-                    <div class="mx-5">
+                    <div class="col-sm-4 offset-sm-2 col-6">
                         <TeamMember name={section.members[3].name}
                                     position={section.members[3].position}
                                     funFact={section.members[3].funFact} />
                     </div>
-                    <div class="mx-5">
+                    <div class="col-sm-4 col-6">
                         <TeamMember name={section.members[4].name}
                                     position={section.members[4].position}
                                     funFact={section.members[4].funFact} />
@@ -97,26 +95,24 @@ class Team extends React.Component {
                 <div className="team-leaf">
                     <TeamNameLeaf/>
                 </div>
-                <div class="d-flex justify-content-around">
-                    <div class="mx-5">
+                <div class="row">
+                    <div class="col-6">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} 
                                     funFact={section.members[0].funFact}/>
                                     
                     </div>
-                    <div class="mx-5">
+                    <div class="col-6">
                         <TeamMember name={section.members[1].name}
                                     position={section.members[1].position}
                                     funFact={section.members[1].funFact} />
                     </div>
-                </div>
-                <div class="d-flex justify-content-around">
-                    <div class="mx-5">
+                    <div class="col-6">
                         <TeamMember name={section.members[2].name}
                                     position={section.members[2].position}
                                     funFact={section.members[2].funFact} />
                     </div>
-                    <div class="mx-5">
+                    <div class="col-6">
                         <TeamMember name={section.members[3].name}
                                     position={section.members[3].position}
                                     funFact={section.members[3].funFact} />
@@ -133,8 +129,8 @@ class Team extends React.Component {
                 <div className="team-leaf">
                     <TeamNameLeaf/>
                 </div>
-                <div class="d-flex justify-content-around">
-                    <div class="">
+                <div class="row">
+                    <div class="offset-sm-4 col-sm-4 col-6">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position} 
                                     funFact={section.members[0].funFact}/>
@@ -151,25 +147,23 @@ class Team extends React.Component {
                 <div className="team-leaf">
                     <TeamNameLeaf/>
                 </div>
-                <div class="d-flex justify-content-around">
-                    <div class="mx-5">
+                <div class="row">
+                    <div class="col-6">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position}
                                     funFact={section.members[0].funFact} />
                     </div>
-                    <div class="mx-5">
+                    <div class="col-6">
                         <TeamMember name={section.members[1].name}
                                     position={section.members[1].position}
                                     funFact={section.members[1].funFact} />
                     </div>
-                </div>
-                <div class="d-flex justify-content-around">
-                    <div class="mx-5">
+                    <div class="col-6">
                         <TeamMember name={section.members[2].name}
                                     position={section.members[2].position}
                                     funFact={section.members[2].funFact} />
                     </div>
-                    <div class="mx-5">
+                    <div class="col-6">
                         <TeamMember name={section.members[3].name}
                                     position={section.members[3].position}
                                     funFact={section.members[3].funFact} />
@@ -186,28 +180,21 @@ class Team extends React.Component {
                 <div className="team-leaf">
                     <TeamNameLeaf/>
                 </div>
-                <div class="d-flex justify-content-around">
-                    <div class="mx-5">
+                <div class="row">
+                    <div class="col-6">
                         <TeamMember name={section.members[0].name}
                                     position={section.members[0].position}
                                     funFact={section.members[0].funFact} />
                     </div>
-                    <div class="mx-5">
+                    <div class="col-6">
                         <TeamMember name={section.members[1].name}
                                     position={section.members[1].position}
                                     funFact={section.members[1].funFact} />
                     </div>
-                </div>
-                <div class="d-flex justify-content-around">
-                    <div class="mx-5">
+                    <div class="offset-sm-3 col-6">
                         <TeamMember name={section.members[2].name}
                                     position={section.members[2].position}
                                     funFact={section.members[2].funFact} />
-                    </div>
-                    <div class="mx-5">
-                        <TeamMember name={section.members[3].name}
-                                    position={section.members[3].position}
-                                    funFact={section.members[3].funFact} />
                     </div>
                 </div>
             </Fragment>
