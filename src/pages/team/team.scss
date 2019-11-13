@@ -49,6 +49,12 @@
     margin-top: -130px;
     margin-left: -100px;
     z-index: 2;
+
+    @media(max-width: $sm) {
+        margin-top: -125px;
+        margin-left: -225px;
+        transform: scale(0.3);
+    }
 }
 
 .team__cta {
@@ -63,13 +69,24 @@
 
 .team__cta-container {
     height: 400px;
+    width: 50%;
+
+    @media (max-width: $sm) {
+        width: 100%
+    }
 }
 
 .team-leaf-pattern {
-    margin-right: 0px;
     position: absolute;
     right: 0px;
     bottom: -200px;
+
+    @media (max-width:$sm) {
+        position: absolute;
+        transform: scale(0.3);
+        right: -250px;
+        bottom: -50px;
+    }
 }
 
 .team-badge-leaf__container {

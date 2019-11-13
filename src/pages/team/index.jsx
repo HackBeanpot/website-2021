@@ -230,8 +230,8 @@ class Team extends React.Component {
                         {this.renderSocial(TeamData[3])}
                         {this.renderSponsorship(TeamData[4])}
                         {this.renderTech(TeamData[5])}
-                        <div class="w-50 team__cta-container">
-                            <h3 class="team__cta-label"> Want to learn more about our team and HackBeanpot? </h3>
+                        <div className="team__cta-container">
+                            <h3 className="team__cta-label"> Want to learn more about our team and HackBeanpot? </h3>
                             <a href="mailto:team@hackbeapot.com" className="team__cta"> Email us </a>
                         </div>
                     </div>
