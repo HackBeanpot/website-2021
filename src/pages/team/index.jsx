@@ -16,20 +16,8 @@ const TeamMember = props => (
   </div>
 )
 
-class Team extends React.Component {
-
-  constructor(props) {
-    super(props)
-
-    this.renderLeadership = this.renderLeadership;
-    this.renderDesign = this.renderDesign;
-    this.renderOutreach = this.renderOutreach;
-    this.renderSocial = this.renderSocial;
-    this.renderSponsorship = this.renderSponsorship;
-    this.renderTech = this.renderTech;
-  }
-
-  renderLeadership(section) {
+const Team = () => {
+  function renderLeadership(section) {
     return (
       <Fragment class="mt-4">
         <div class="row">
@@ -48,7 +36,7 @@ class Team extends React.Component {
     )
   }
 
-  renderDesign(section) {
+  function renderDesign(section) {
     return (
       <Fragment class="mt-4">
         <h3 class="team__title">Design</h3>
@@ -86,7 +74,7 @@ class Team extends React.Component {
     )
   }
 
-  renderOutreach(section) {
+  function renderOutreach(section) {
     return (
       <Fragment class="mt-4">
         <h3 class="team__title">Outreach</h3>
@@ -120,7 +108,7 @@ class Team extends React.Component {
     )
   }
 
-  renderSocial(section) {
+  function renderSocial(section) {
     return (
       <Fragment class="mt-4">
         <h3 class="team__title">Social</h3>
@@ -138,7 +126,7 @@ class Team extends React.Component {
     )
   }
 
-  renderSponsorship(section) {
+  function renderSponsorship(section) {
     return (
       <Fragment>
         <h3 class="team__title">Sponsorship</h3>
@@ -171,7 +159,7 @@ class Team extends React.Component {
     )
   }
 
-  renderTech(section) {
+  function renderTech(section) {
     return (
       <Fragment>
         <h3 class="team__title">Tech</h3>
@@ -198,52 +186,51 @@ class Team extends React.Component {
       </Fragment>
     )
   }
-  render() {
-    return (
-      <div className="team">
-        <section className="team__header">
-          <div className="container">
-            <div className="team-header">
-              <h1 className="header__title">Meet the Team behind HackBeanpot</h1>
-              <div className="clearfix">
-                <p className="d-inline-block team-header__description">
-                  We are a group of ~20 driven students who aim to make technical experience and
-                  knowledge accessible to anyone. In the months leading up to our hackathon in
-                  February, we work hard both within and across our five teams - Design, Outreach,
-                  Social Media, Sponsorship, and Tech!
-                </p>
-                <div className="team-badge-leaf__container">
-                  <span className="team-badge-leaf">
-                    <TeamBadgeLeaf />
-                    <span className="team-badge-leaf__content">Hover over a headshot for a fun fact!</span>
-                  </span>
-                </div>
+
+  return (
+    <div className="team">
+      <section className="team__header">
+        <div className="container">
+          <div className="team-header">
+            <h1 className="header__title">Meet the Team behind HackBeanpot</h1>
+            <div className="clearfix">
+              <p className="d-inline-block team-header__description">
+                We are a group of ~20 driven students who aim to make technical experience and
+                knowledge accessible to anyone. In the months leading up to our hackathon in
+                February, we work hard both within and across our five teams - Design, Outreach,
+                Social Media, Sponsorship, and Tech!
+              </p>
+              <div className="team-badge-leaf__container">
+                <span className="team-badge-leaf">
+                  <TeamBadgeLeaf />
+                  <span className="team-badge-leaf__content">Hover over a headshot for a fun fact!</span>
+                </span>
               </div>
             </div>
-            {this.renderLeadership(TeamData[0])}
           </div>
-        </section>
+          {renderLeadership(TeamData[0])}
+        </div>
+      </section>
 
-        <section class="meet-the-team">
-          <div className="container">
-            {this.renderDesign(TeamData[1])}
-            {this.renderOutreach(TeamData[2])}
-            {this.renderSocial(TeamData[3])}
-            {this.renderSponsorship(TeamData[4])}
-            {this.renderTech(TeamData[5])}
+      <section class="meet-the-team">
+        <div className="container">
+          {renderDesign(TeamData[1])}
+          {renderOutreach(TeamData[2])}
+          {renderSocial(TeamData[3])}
+          {renderSponsorship(TeamData[4])}
+          {renderTech(TeamData[5])}
 
-            <div className="team__cta-container">
-              <h3 className="team__cta-label">Want to learn more about our team and HackBeanpot?</h3>
-              <a href="mailto:team@hackbeapot.com" className="team__cta">Email us</a>
-            </div>
+          <div className="team__cta-container">
+            <h3 className="team__cta-label">Want to learn more about our team and HackBeanpot?</h3>
+            <a href="mailto:team@hackbeapot.com" className="team__cta">Email us</a>
           </div>
-          <span class="team-leaf-pattern">
-            <TeamLeafPattern />
-          </span>
-        </section>
-      </div>
-    )
-  }
+        </div>
+        <span class="team-leaf-pattern">
+          <TeamLeafPattern />
+        </span>
+      </section>
+    </div>
+  )
 }
 
 export default Team;
