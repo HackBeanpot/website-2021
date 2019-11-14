@@ -11,180 +11,168 @@ const TeamMember = props => (
       <div className="team-member__circle" />
       <span className="team-member__fun-fact">{props.funFact}</span>
     </div>
-    <p class="team-member__name">{props.name}</p>
+    <p className="team-member__name">{props.name}</p>
     <p>{props.position}</p>
   </div>
 )
 
 const Team = () => {
   function renderLeadership(section) {
-    return (
-      <Fragment class="mt-4">
-        <div class="row">
-          <div class="col-6">
-            <TeamMember name={section.members[0].name}
-              position={section.members[0].position}
-              funFact={section.members[0].funFact} />
-          </div>
-          <div class="col-6">
-            <TeamMember name={section.members[1].name}
-              position={section.members[1].position}
-              funFact={section.members[1].funFact} />
-          </div>
+    return [
+      <div className="row">
+        <div className="col-6">
+          <TeamMember name={section.members[0].name}
+            position={section.members[0].position}
+            funFact={section.members[0].funFact} />
         </div>
-      </Fragment>
-    )
+        <div className="col-6">
+          <TeamMember name={section.members[1].name}
+            position={section.members[1].position}
+            funFact={section.members[1].funFact} />
+        </div>
+      </div>
+    ]
   }
 
   function renderDesign(section) {
-    return (
-      <Fragment class="mt-4">
-        <h3 class="team__title">Design</h3>
-        <div className="team-leaf">
-          <TeamNameLeaf />
+    return [
+      <h3 className="team__title">Design</h3>,
+      <div className="team-leaf">
+        <TeamNameLeaf />
+      </div>,
+      <div className="row">
+        <div className="col-sm-4 col-6">
+          <TeamMember name={section.members[0].name}
+            position={section.members[0].position}
+            funFact={section.members[0].funFact} />
         </div>
-        <div class="row">
-          <div class="col-sm-4 col-6">
-            <TeamMember name={section.members[0].name}
-              position={section.members[0].position}
-              funFact={section.members[0].funFact} />
-          </div>
-          <div class="col-sm-4 col-6">
-            <TeamMember name={section.members[1].name}
-              position={section.members[1].position}
-              funFact={section.members[1].funFact} />
-          </div>
-          <div class="col-sm-4 col-6">
-            <TeamMember name={section.members[2].name}
-              position={section.members[2].position}
-              funFact={section.members[2].funFact} />
-          </div>
-          <div class="col-sm-4 offset-sm-2 col-6">
-            <TeamMember name={section.members[3].name}
-              position={section.members[3].position}
-              funFact={section.members[3].funFact} />
-          </div>
-          <div class="col-sm-4 col-6">
-            <TeamMember name={section.members[4].name}
-              position={section.members[4].position}
-              funFact={section.members[4].funFact} />
-          </div>
+        <div className="col-sm-4 col-6">
+          <TeamMember name={section.members[1].name}
+            position={section.members[1].position}
+            funFact={section.members[1].funFact} />
         </div>
-      </Fragment>
-    )
+        <div className="col-sm-4 col-6">
+          <TeamMember name={section.members[2].name}
+            position={section.members[2].position}
+            funFact={section.members[2].funFact} />
+        </div>
+        <div className="col-sm-4 offset-sm-2 col-6">
+          <TeamMember name={section.members[3].name}
+            position={section.members[3].position}
+            funFact={section.members[3].funFact} />
+        </div>
+        <div className="col-sm-4 col-6">
+          <TeamMember name={section.members[4].name}
+            position={section.members[4].position}
+            funFact={section.members[4].funFact} />
+        </div>
+      </div>
+    ]
   }
 
   function renderOutreach(section) {
-    return (
-      <Fragment class="mt-4">
-        <h3 class="team__title">Outreach</h3>
-        <div className="team-leaf">
-          <TeamNameLeaf />
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <TeamMember name={section.members[0].name}
-              position={section.members[0].position}
-              funFact={section.members[0].funFact} />
+    return [
+      <h3 className="team__title">Outreach</h3>,
+      <div className="team-leaf">
+        <TeamNameLeaf />
+      </div>,
+      <div className="row">
+        <div className="col-6">
+          <TeamMember name={section.members[0].name}
+            position={section.members[0].position}
+            funFact={section.members[0].funFact} />
 
-          </div>
-          <div class="col-6">
-            <TeamMember name={section.members[1].name}
-              position={section.members[1].position}
-              funFact={section.members[1].funFact} />
-          </div>
-          <div class="col-6">
-            <TeamMember name={section.members[2].name}
-              position={section.members[2].position}
-              funFact={section.members[2].funFact} />
-          </div>
-          <div class="col-6">
-            <TeamMember name={section.members[3].name}
-              position={section.members[3].position}
-              funFact={section.members[3].funFact} />
-          </div>
         </div>
-      </Fragment>
-    )
+        <div className="col-6">
+          <TeamMember name={section.members[1].name}
+            position={section.members[1].position}
+            funFact={section.members[1].funFact} />
+        </div>
+        <div className="col-6">
+          <TeamMember name={section.members[2].name}
+            position={section.members[2].position}
+            funFact={section.members[2].funFact} />
+        </div>
+        <div className="col-6">
+          <TeamMember name={section.members[3].name}
+            position={section.members[3].position}
+            funFact={section.members[3].funFact} />
+        </div>
+      </div>
+    ]
   }
 
   function renderSocial(section) {
-    return (
-      <Fragment class="mt-4">
-        <h3 class="team__title">Social</h3>
-        <div className="team-leaf">
-          <TeamNameLeaf />
+    return [
+      <h3 className="team__title">Social</h3>,
+      <div className="team-leaf">
+        <TeamNameLeaf />
+      </div>,
+      <div className="row">
+        <div className="offset-sm-4 col-sm-4 col-6">
+          <TeamMember name={section.members[0].name}
+            position={section.members[0].position}
+            funFact={section.members[0].funFact} />
         </div>
-        <div class="row">
-          <div class="offset-sm-4 col-sm-4 col-6">
-            <TeamMember name={section.members[0].name}
-              position={section.members[0].position}
-              funFact={section.members[0].funFact} />
-          </div>
-        </div>
-      </Fragment>
-    )
+      </div>
+    ]
   }
 
   function renderSponsorship(section) {
-    return (
-      <Fragment>
-        <h3 class="team__title">Sponsorship</h3>
-        <div className="team-leaf">
-          <TeamNameLeaf />
+    return [
+      <h3 className="team__title">Sponsorship</h3>,
+      <div className="team-leaf">
+        <TeamNameLeaf />
+      </div>,
+      <div className="row">
+        <div className="col-6">
+          <TeamMember name={section.members[0].name}
+            position={section.members[0].position}
+            funFact={section.members[0].funFact} />
         </div>
-        <div class="row">
-          <div class="col-6">
-            <TeamMember name={section.members[0].name}
-              position={section.members[0].position}
-              funFact={section.members[0].funFact} />
-          </div>
-          <div class="col-6">
-            <TeamMember name={section.members[1].name}
-              position={section.members[1].position}
-              funFact={section.members[1].funFact} />
-          </div>
-          <div class="col-6">
-            <TeamMember name={section.members[2].name}
-              position={section.members[2].position}
-              funFact={section.members[2].funFact} />
-          </div>
-          <div class="col-6">
-            <TeamMember name={section.members[3].name}
-              position={section.members[3].position}
-              funFact={section.members[3].funFact} />
-          </div>
+        <div className="col-6">
+          <TeamMember name={section.members[1].name}
+            position={section.members[1].position}
+            funFact={section.members[1].funFact} />
         </div>
-      </Fragment>
-    )
+        <div className="col-6">
+          <TeamMember name={section.members[2].name}
+            position={section.members[2].position}
+            funFact={section.members[2].funFact} />
+        </div>
+        <div className="col-6">
+          <TeamMember name={section.members[3].name}
+            position={section.members[3].position}
+            funFact={section.members[3].funFact} />
+        </div>
+      </div>
+    ]
   }
 
   function renderTech(section) {
-    return (
-      <Fragment>
-        <h3 class="team__title">Tech</h3>
-        <div className="team-leaf">
-          <TeamNameLeaf />
+    return [
+      <h3 className="team__title">Tech</h3>,
+      <div className="team-leaf">
+        <TeamNameLeaf />
+      </div>,
+      <div className="row">
+        <div className="col-6">
+          <TeamMember name={section.members[0].name}
+            position={section.members[0].position}
+            funFact={section.members[0].funFact} />
         </div>
-        <div class="row">
-          <div class="col-6">
-            <TeamMember name={section.members[0].name}
-              position={section.members[0].position}
-              funFact={section.members[0].funFact} />
-          </div>
-          <div class="col-6">
-            <TeamMember name={section.members[1].name}
-              position={section.members[1].position}
-              funFact={section.members[1].funFact} />
-          </div>
-          <div class="offset-sm-3 col-6">
-            <TeamMember name={section.members[2].name}
-              position={section.members[2].position}
-              funFact={section.members[2].funFact} />
-          </div>
+        <div className="col-6">
+          <TeamMember name={section.members[1].name}
+            position={section.members[1].position}
+            funFact={section.members[1].funFact} />
         </div>
-      </Fragment>
-    )
+        <div className="offset-sm-3 col-6">
+          <TeamMember name={section.members[2].name}
+            position={section.members[2].position}
+            funFact={section.members[2].funFact} />
+        </div>
+      </div>
+    ]
   }
 
   return (
@@ -212,7 +200,7 @@ const Team = () => {
         </div>
       </section>
 
-      <section class="meet-the-team">
+      <section className="meet-the-team">
         <div className="container">
           {renderDesign(TeamData[1])}
           {renderOutreach(TeamData[2])}
@@ -225,7 +213,7 @@ const Team = () => {
             <a href="mailto:team@hackbeapot.com" className="team__cta">Email us</a>
           </div>
         </div>
-        <span class="team-leaf-pattern">
+        <span className="team-leaf-pattern">
           <TeamLeafPattern />
         </span>
       </section>
