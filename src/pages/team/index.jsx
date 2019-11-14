@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import TeamData from 'data/meet-the-team.json';
 import TeamNameLeaf from 'images/team-name-leaf.jsx';
 import TeamLeafPattern from 'images/team-leaf-pattern.jsx';
@@ -17,6 +17,8 @@ const TeamMember = props => (
 )
 
 const Team = () => {
+
+  // Leadership
   function renderLeadership(section) {
     return [
       <div className="row">
@@ -34,6 +36,7 @@ const Team = () => {
     ]
   }
 
+  // Design
   function renderDesign(section) {
     return [
       <h3 className="team__title">Design</h3>,
@@ -70,6 +73,7 @@ const Team = () => {
     ]
   }
 
+  // Outreach
   function renderOutreach(section) {
     return [
       <h3 className="team__title">Outreach</h3>,
@@ -102,6 +106,7 @@ const Team = () => {
     ]
   }
 
+  // Social
   function renderSocial(section) {
     return [
       <h3 className="team__title">Social</h3>,
@@ -118,6 +123,7 @@ const Team = () => {
     ]
   }
 
+  // Sponsorship
   function renderSponsorship(section) {
     return [
       <h3 className="team__title">Sponsorship</h3>,
@@ -149,6 +155,7 @@ const Team = () => {
     ]
   }
 
+  // Tech
   function renderTech(section) {
     return [
       <h3 className="team__title">Tech</h3>,
@@ -179,28 +186,26 @@ const Team = () => {
     <div className="team">
       <section className="team__header">
         <div className="container">
-          <div className="team-header">
-            <h1 className="header__title">Meet the Team behind HackBeanpot</h1>
-            <div className="clearfix">
-              <p className="d-inline-block team-header__description">
-                We are a group of ~20 driven students who aim to make technical experience and
-                knowledge accessible to anyone. In the months leading up to our hackathon in
-                February, we work hard both within and across our five teams - Design, Outreach,
-                Social Media, Sponsorship, and Tech!
-              </p>
-              <div className="team-badge-leaf__container">
-                <span className="team-badge-leaf">
-                  <TeamBadgeLeaf />
-                  <span className="team-badge-leaf__content">Hover over a headshot for a fun fact!</span>
-                </span>
-              </div>
+          <h1 className="header__title">Meet the Team behind HackBeanpot</h1>
+          <div className="team-header__info-container">
+            <p className="team-header__description">
+              We are a group of ~20 driven students who aim to make technical experience and
+              knowledge accessible to anyone. In the months leading up to our hackathon in
+              February, we work hard both within and across our five teams - Design, Outreach,
+              Social Media, Sponsorship, and Tech!
+          </p>
+            <div className="team-badge-leaf__container">
+              <span className="team-badge-leaf">
+                <TeamBadgeLeaf />
+              </span>
+              <span className="team-badge-leaf__content">Hover over a headshot for a fun fact!</span>
             </div>
           </div>
           {renderLeadership(TeamData[0])}
         </div>
       </section>
 
-      <section className="meet-the-team">
+      <section className="all-teams">
         <div className="container">
           {renderDesign(TeamData[1])}
           {renderOutreach(TeamData[2])}
@@ -210,7 +215,7 @@ const Team = () => {
 
           <div className="team__cta-container">
             <h3 className="team__cta-label">Want to learn more about our team and HackBeanpot?</h3>
-            <a href="mailto:team@hackbeapot.com" className="team__cta">Email us</a>
+            <a href="mailto:team@hackbeapot.com" className="team__cta" role="button">Email us</a>
           </div>
         </div>
         <span className="team-leaf-pattern">

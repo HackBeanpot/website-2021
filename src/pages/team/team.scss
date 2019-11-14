@@ -1,101 +1,146 @@
-@import '../styles/constants.scss';
-@import '../../styles/image-style.scss';
-
 // ---------------------------------------------------------------------------
 // Page Header
 // ---------------------------------------------------------------------------
 
-.team-header {
-  position: relative;
+.team__header {
+  @include yellow-green-bg;
+  @include bottom-padding;
+  padding-top: 200px;
 }
 
 .team-header__description {
   @include large-body-text;
-  width: 60%;
+  @include bottom-margin;
+  width: 100%;
+  display: inline-block;
+
+  @media (min-width: $md) {
+    width: 60%;
+  }
 }
 
-.team__header {
-  @include yellow-green-bg;
-  @include top-padding;
-  @include bottom-padding;
-  margin-top: 50px;
-}
+.team-header__info-container {
+  display: flex;
+  flex-direction: column;
 
-.team__title {
-  @include h4-text;
+  @media (min-width: $md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 // ---------------------------------------------------------------------------
 // All Teams Section
 // ---------------------------------------------------------------------------
 
-.meet-the-team {
+.all-teams {
   @include pale-blue-bg;
   @include top-padding;
   @include bottom-padding;
   position: relative;
-  margin-top: 100px;
+}
+
+.team__title {
+  @include h4-text;
+  margin-top: 50px;
+
+  @media (min-width: $md) {
+    margin-top: 100px;
+  }
 }
 
 .team-leaf {
-  margin-top: -130px;
-  margin-left: -100px;
+  margin-top: -125px;
+  margin-left: -200px;
+  transform: scale(0.4);
   z-index: 2;
 
-  @media (max-width: $sm) {
-    margin-top: -125px;
-    margin-left: -225px;
-    transform: scale(0.3);
+  @media (min-width: $sm) {
+    margin-left: -200px;
+    transform: scale(0.6);
   }
+
+  @media (min-width: $md) {
+    margin-left: -100px;
+    transform: scale(1);
+  }
+}
+
+.team-badge-leaf__container {
+  width: 250px;
+  height: 250px;
+  align-self: flex-end;
+  margin-top: -50px;
+
+  @media (min-width: $md) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.team-badge-leaf {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.team-badge-leaf__content {
+  @include h6-text($white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  text-align: center;
+}
+
+// ---------------------------------------------------------------------------
+// Page bottom CTA
+// ---------------------------------------------------------------------------
+
+.team__cta-container {
+  width: 100%;
+  margin: 150px 0;
+
+  @media (min-width: $md) {
+    width: 70%;
+  }
+
+  @media (min-width: $xl) {
+    width: 50%;
+  }
+}
+
+.team__cta-label {
+  @include h3-text;
+  margin-bottom: 40px;
 }
 
 .team__cta {
   @include primary-cta;
 }
 
-.team__cta-label {
-  @include h3-text;
-  @include bottom-margin;
-  margin-top: 200px;
-}
-
-.team__cta-container {
-  width: 100%;
-  height: 400px;
-
-  @media (min-width: $sm) {
-    width: 50%;
-  }
-}
-
 .team-leaf-pattern {
   position: absolute;
-  right: 0px;
-  bottom: -200px;
+  z-index: 0;
+  transform: scale(0.4);
+  right: -250px;
+  bottom: -100px;
 
-  @media (max-width: $sm) {
-    position: absolute;
-    transform: scale(0.3);
-    right: -250px;
-    bottom: -50px;
+  @media (min-width: $sm) {
+    transform: scale(0.6);
   }
-}
 
-.team-badge-leaf__container {
-  float: right;
-  margin-top: -70px;
-}
-
-.team-badge-leaf {
-  position: relative;
-  z-index: 2;
-}
-
-.team-badge-leaf__content {
-  @include h6-text($white);
-  position: absolute;
-  top: 0;
-  right: 0;
+  @media (min-width: $md) {
+    transform: scale(1);
+    right: 0px;
+    bottom: -200px;
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -131,7 +176,7 @@
   border-radius: 50%;
   border: 5px solid $hbp-navy;
 
-  @media (min-width: $sm) {
+  @media (min-width: $md) {
     width: 200px;
     height: 200px;
   }
@@ -159,8 +204,9 @@
 .team-member__fun-fact {
   @include body-text($white);
   width: 150px;
+  line-height: 1.4em;
 
-  @media (max-width: $sm) {
+  @media (max-width: $md) {
     width: 100px;
   }
 }
