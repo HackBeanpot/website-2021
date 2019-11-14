@@ -202,7 +202,7 @@
 }
 
 .team-member__fun-fact {
-  @include body-text($white);
+  @include small-body-text($white);
   width: 150px;
   line-height: 1.4em;
 
