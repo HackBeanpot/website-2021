@@ -4,17 +4,41 @@
 
 .header {
   @include pale-blue-bg;
-  @include top-padding;
   @include bottom-padding;
   position: relative;
-  margin-top: 50px;
+  padding-top: 150px;
 }
 
 .header__skyline {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: auto;
+  z-index: 0;
+
+  svg {
+    width: 130%;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: -100px;
+
+    svg {
+      width: 100%;
+    }
+  }
+}
+
+.header__content {
+  width: 100%;
+
+  @media (min-width: $lg) {
+    width: 60%;
+    margin-right: 50px;
+  }
+
+  @media (min-width: $xl) {
+    width: 45%;
+    margin-right: 50px;
+  }
 }
 
 .header__title {

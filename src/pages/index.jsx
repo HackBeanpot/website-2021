@@ -5,6 +5,7 @@ import AboutItem from 'components/aboutItem/about-item';
 import DynamicLink from 'components/dynamic-link';
 import AboutContent from 'data/about-content.json';
 
+import Skyline from 'images/svg/skyline.jsx';
 import LogoAnimation from 'images/logo-sprout.gif';
 import HomeAboutPattern from 'images/home-about-pattern.png';
 import HomeSponsorsCircuit from 'images/svg/home-sponsors-circuit.jsx';
@@ -35,7 +36,7 @@ const App = () => {
 
       <div className="home">
         <section className="header">
-          <div className="container">
+          <div className="container header__content">
             <h1 className="header__title">HackBeanpot</h1>
             <p className="header__description">
               An independently-run Boston hackathon for curious students,
@@ -50,6 +51,9 @@ const App = () => {
             >
               Join our mailing list
             </a>
+          </div>
+          <div className="header__skyline">
+            <Skyline />
           </div>
         </section>
 
