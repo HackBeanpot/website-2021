@@ -239,3 +239,20 @@
     text-decoration: none;
   }
 }
+
+// ---------------------------------------------------------------------------
+// Animations
+// ---------------------------------------------------------------------------
+
+.cloud {
+  animation: moveAcross 12s linear infinite;
+}
+
+@keyframes moveAcross {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
