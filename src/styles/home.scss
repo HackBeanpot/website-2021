@@ -25,6 +25,10 @@
       width: 100%;
     }
   }
+
+  @media (max-width: $sm) {
+    margin-top: 50px;
+  }
 }
 
 .header__content {
