@@ -5,6 +5,7 @@
   "author": "Team HackBeanpot <team@hackbeanpot.com>",
   "dependencies": {
     "@mdi/font": "^4.5.95",
+    "flickity": "^2.2.1",
     "gatsby": "^1.9.279",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
