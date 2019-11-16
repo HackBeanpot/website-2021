@@ -6,8 +6,19 @@ class StoriesPage extends React.Component {
   render() {
     return (
       <Fragment>
-        {/* TODO: Feed in stories data */}
-        <Stories />
+        <div className="stories-welcome container">
+          <div className="stories__title">We've got stories to share</div>
+            <div className="row">
+              <div className="stories__description col-md-8">
+                Whether you're an attendee, mentor, or an organizer, you'll come
+                to HackBeanpot with a story to tell. <br /> Here's a collection of
+                stories of previous attendees. Our hackers are our priority and we
+                aim to have everyone walk out with stories as unique and inspiring
+                as these!
+              </div>
+            </div>
+          <Stories />
+        </div>
 
         <div className="stories-tell-section">
           <div className="container stories-tell">
