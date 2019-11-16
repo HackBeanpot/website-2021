@@ -150,3 +150,38 @@
     padding-left: 0;
   }
 }
+
+// STORIES MOBILE
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+  padding-top: 50px;
+  height: 800px;
+  margin-right: 10px;
+  background: $pale-blue;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+}
+
+.flickity-button {
+  display: none;
+}
+
+.carousel-cell .stories-round-image {
+  margin-bottom: 50px;
+}
+
+.carousel-cell .quote-box-container {
+  margin-top: 100px;
+  margin: auto;
+}

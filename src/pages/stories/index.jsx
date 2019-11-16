@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import Stories from 'pages/stories/components/stories';
+import StoriesMobile from 'pages/stories/components/stories-mobile';
 
 class StoriesPage extends React.Component {
   render() {
@@ -17,7 +18,8 @@ class StoriesPage extends React.Component {
                 as these!
               </div>
             </div>
-          <Stories />
+          {/* <Stories /> */}
+          <StoriesMobile />
         </div>
 
         <div className="stories-tell-section">
