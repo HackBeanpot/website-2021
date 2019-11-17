@@ -7,7 +7,9 @@ import TeamBadgeLeaf from 'images/team-badge-leaf.jsx';
 const TeamMember = props => (
   <div className="team-member">
     <div className="team-member__image-container">
-      <img className="team-member__image" src="https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.jpg" alt="" />
+      <div className="team-member__image">
+        <img className="portrait" src={props.picture} alt={props.name} />
+      </div>
       <div className="team-member__circle" />
       <span className="team-member__fun-fact">{props.funFact}</span>
     </div>
@@ -25,12 +27,14 @@ const Team = () => {
         <div className="col-6">
           <TeamMember name={section.members[0].name}
             position={section.members[0].position}
-            funFact={section.members[0].funFact} />
+            funFact={section.members[0].funFact}
+            picture={section.members[0].picture} />
         </div>
         <div className="col-6">
           <TeamMember name={section.members[1].name}
             position={section.members[1].position}
-            funFact={section.members[1].funFact} />
+            funFact={section.members[1].funFact}
+            picture={section.members[1].picture} />
         </div>
       </div>
     )
@@ -48,27 +52,32 @@ const Team = () => {
           <div className="col-sm-4 col-6">
             <TeamMember name={section.members[0].name}
               position={section.members[0].position}
-              funFact={section.members[0].funFact} />
+              funFact={section.members[0].funFact}
+              picture={section.members[0].picture} />
           </div>
           <div className="col-sm-4 col-6">
             <TeamMember name={section.members[1].name}
               position={section.members[1].position}
-              funFact={section.members[1].funFact} />
+              funFact={section.members[1].funFact}
+              picture={section.members[1].picture} />
           </div>
           <div className="col-sm-4 col-6">
             <TeamMember name={section.members[2].name}
               position={section.members[2].position}
-              funFact={section.members[2].funFact} />
+              funFact={section.members[2].funFact}
+              picture={section.members[2].picture} />
           </div>
           <div className="col-sm-4 offset-sm-2 col-6">
             <TeamMember name={section.members[3].name}
               position={section.members[3].position}
-              funFact={section.members[3].funFact} />
+              funFact={section.members[3].funFact}
+              picture={section.members[3].picture} />
           </div>
           <div className="col-sm-4 col-6">
             <TeamMember name={section.members[4].name}
               position={section.members[4].position}
-              funFact={section.members[4].funFact} />
+              funFact={section.members[4].funFact}
+              picture={section.members[4].picture} />
           </div>
         </div>
       </Fragment>
@@ -88,23 +97,27 @@ const Team = () => {
           <div className="col-6">
             <TeamMember name={section.members[0].name}
               position={section.members[0].position}
-              funFact={section.members[0].funFact} />
+              funFact={section.members[0].funFact}
+              picture={section.members[0].picture} />
 
           </div>
           <div className="col-6">
             <TeamMember name={section.members[1].name}
               position={section.members[1].position}
-              funFact={section.members[1].funFact} />
+              funFact={section.members[1].funFact}
+              picture={section.members[1].picture} />
           </div>
           <div className="col-6">
             <TeamMember name={section.members[2].name}
               position={section.members[2].position}
-              funFact={section.members[2].funFact} />
+              funFact={section.members[2].funFact}
+              picture={section.members[2].picture} />
           </div>
           <div className="col-6">
             <TeamMember name={section.members[3].name}
               position={section.members[3].position}
-              funFact={section.members[3].funFact} />
+              funFact={section.members[3].funFact}
+              picture={section.members[3].picture} />
           </div>
         </div>
       </Fragment>
@@ -123,7 +136,8 @@ const Team = () => {
           <div className="offset-sm-4 col-sm-4 col-6">
             <TeamMember name={section.members[0].name}
               position={section.members[0].position}
-              funFact={section.members[0].funFact} />
+              funFact={section.members[0].funFact}
+              picture={section.members[0].picture} />
           </div>
         </div>
       </Fragment>
@@ -142,22 +156,26 @@ const Team = () => {
           <div className="col-6">
             <TeamMember name={section.members[0].name}
               position={section.members[0].position}
-              funFact={section.members[0].funFact} />
+              funFact={section.members[0].funFact}
+              picture={section.members[0].picture} />
           </div>
           <div className="col-6">
             <TeamMember name={section.members[1].name}
               position={section.members[1].position}
-              funFact={section.members[1].funFact} />
+              funFact={section.members[1].funFact}
+              picture={section.members[1].picture} />
           </div>
           <div className="col-6">
             <TeamMember name={section.members[2].name}
               position={section.members[2].position}
-              funFact={section.members[2].funFact} />
+              funFact={section.members[2].funFact}
+              picture={section.members[2].picture} />
           </div>
           <div className="col-6">
             <TeamMember name={section.members[3].name}
               position={section.members[3].position}
-              funFact={section.members[3].funFact} />
+              funFact={section.members[3].funFact}
+              picture={section.members[3].picture} />
           </div>
         </div>
       </Fragment>
@@ -176,17 +194,20 @@ const Team = () => {
           <div className="col-6">
             <TeamMember name={section.members[0].name}
               position={section.members[0].position}
-              funFact={section.members[0].funFact} />
+              funFact={section.members[0].funFact}
+              picture={section.members[0].picture} />
           </div>
           <div className="col-6">
             <TeamMember name={section.members[1].name}
               position={section.members[1].position}
-              funFact={section.members[1].funFact} />
+              funFact={section.members[1].funFact}
+              picture={section.members[1].picture} />
           </div>
           <div className="offset-sm-3 col-6">
             <TeamMember name={section.members[2].name}
               position={section.members[2].position}
-              funFact={section.members[2].funFact} />
+              funFact={section.members[2].funFact}
+              picture={section.members[2].picture} />
           </div>
         </div>
       </Fragment>)

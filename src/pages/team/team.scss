@@ -169,6 +169,18 @@
   }
 }
 
+.portrait {
+  width: 215px;
+  height: auto;
+  @media (max-width: 767px) {
+    width: 100px;
+  }
+}
+
+.team-member__image {
+  overflow: hidden;
+}
+
 .team-member__image,
 .team-member__circle {
   width: 150px;
