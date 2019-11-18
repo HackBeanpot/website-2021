@@ -94,7 +94,7 @@
   }
 
   @media (min-width: $md) {
-    margin-left: -100px;
+    margin-left: -80px;
     transform: scale(1);
   }
 }
@@ -172,6 +172,10 @@
 .team-member__image {
   overflow: hidden;
   display: inline-block;
+
+  img {
+    width: 100%;
+  }
 }
 
 .team-member__image,
@@ -185,19 +189,6 @@
     width: 200px;
     height: 200px;
   }
-}
-
-.team-member__picture {
-  width: 310px;
-  height: auto;
-
-  @media (max-width: $md) {
-    width: 150px;
-  }
-}
-
-.center {
-  margin: auto;
 }
 
 .team-member__circle,

@@ -8,10 +8,7 @@ const TeamMember = props => (
   <div className="team-member">
     <div className="team-member__image-container">
       <div className="team-member__image">
-        <img 
-          className="team-member__picture center" 
-          src={props.picture} 
-          alt={props.name} />
+        <img src={props.headshot} alt={props.name} />
       </div>
       <div className="team-member__circle" />
       <span className="team-member__fun-fact">{props.funFact}</span>
@@ -31,7 +28,7 @@ const Team = () => {
             name={section.members[0].name}
             position={section.members[0].position}
             funFact={section.members[0].funFact}
-            picture={section.members[0].picture}
+            headshot={section.members[0].headshot}
           />
         </div>
         <div className="col-6">
@@ -39,7 +36,7 @@ const Team = () => {
             name={section.members[1].name}
             position={section.members[1].position}
             funFact={section.members[1].funFact}
-            picture={section.members[1].picture} 
+            headshot={section.members[1].headshot}
           />
         </div>
       </div>
@@ -60,7 +57,7 @@ const Team = () => {
               name={section.members[0].name}
               position={section.members[0].position}
               funFact={section.members[0].funFact}
-              picture={section.members[0].picture} 
+              headshot={section.members[0].headshot}
             />
           </div>
           <div className="col-sm-4 col-6">
@@ -68,7 +65,7 @@ const Team = () => {
               name={section.members[1].name}
               position={section.members[1].position}
               funFact={section.members[1].funFact}
-              picture={section.members[1].picture} 
+              headshot={section.members[1].headshot}
             />
           </div>
           <div className="col-sm-4 col-6">
@@ -76,7 +73,7 @@ const Team = () => {
               name={section.members[2].name}
               position={section.members[2].position}
               funFact={section.members[2].funFact}
-              picture={section.members[2].picture} 
+              headshot={section.members[2].headshot}
             />
           </div>
           <div className="col-sm-4 offset-sm-2 col-6">
@@ -84,7 +81,7 @@ const Team = () => {
               name={section.members[3].name}
               position={section.members[3].position}
               funFact={section.members[3].funFact}
-              picture={section.members[3].picture} 
+              headshot={section.members[3].headshot}
             />
           </div>
           <div className="col-sm-4 col-6">
@@ -92,7 +89,7 @@ const Team = () => {
               name={section.members[4].name}
               position={section.members[4].position}
               funFact={section.members[4].funFact}
-              picture={section.members[4].picture} 
+              headshot={section.members[4].headshot}
             />
           </div>
         </div>
@@ -115,7 +112,7 @@ const Team = () => {
               name={section.members[0].name}
               position={section.members[0].position}
               funFact={section.members[0].funFact}
-              picture={section.members[0].picture} 
+              headshot={section.members[0].headshot}
             />
           </div>
           <div className="col-6">
@@ -123,7 +120,7 @@ const Team = () => {
               name={section.members[1].name}
               position={section.members[1].position}
               funFact={section.members[1].funFact}
-              picture={section.members[1].picture} 
+              headshot={section.members[1].headshot}
             />
           </div>
           <div className="col-6">
@@ -131,7 +128,7 @@ const Team = () => {
               name={section.members[2].name}
               position={section.members[2].position}
               funFact={section.members[2].funFact}
-              picture={section.members[2].picture} 
+              headshot={section.members[2].headshot}
             />
           </div>
           <div className="col-6">
@@ -139,7 +136,7 @@ const Team = () => {
               name={section.members[3].name}
               position={section.members[3].position}
               funFact={section.members[3].funFact}
-              picture={section.members[3].picture} 
+              headshot={section.members[3].headshot}
             />
           </div>
         </div>
@@ -161,7 +158,7 @@ const Team = () => {
               name={section.members[0].name}
               position={section.members[0].position}
               funFact={section.members[0].funFact}
-              picture={section.members[0].picture} 
+              headshot={section.members[0].headshot}
             />
           </div>
         </div>
@@ -183,7 +180,7 @@ const Team = () => {
               name={section.members[0].name}
               position={section.members[0].position}
               funFact={section.members[0].funFact}
-              picture={section.members[0].picture} 
+              headshot={section.members[0].headshot}
             />
           </div>
           <div className="col-6">
@@ -191,7 +188,7 @@ const Team = () => {
               name={section.members[1].name}
               position={section.members[1].position}
               funFact={section.members[1].funFact}
-              picture={section.members[1].picture} 
+              headshot={section.members[1].headshot}
             />
           </div>
           <div className="col-6">
@@ -199,7 +196,7 @@ const Team = () => {
               name={section.members[2].name}
               position={section.members[2].position}
               funFact={section.members[2].funFact}
-              picture={section.members[2].picture} 
+              headshot={section.members[2].headshot}
             />
           </div>
           <div className="col-6">
@@ -207,7 +204,7 @@ const Team = () => {
               name={section.members[3].name}
               position={section.members[3].position}
               funFact={section.members[3].funFact}
-              picture={section.members[3].picture} 
+              headshot={section.members[3].headshot}
             />
           </div>
         </div>
@@ -229,7 +226,7 @@ const Team = () => {
               name={section.members[0].name}
               position={section.members[0].position}
               funFact={section.members[0].funFact}
-              picture={section.members[0].picture} 
+              headshot={section.members[0].headshot}
             />
           </div>
           <div className="col-6">
@@ -237,7 +234,7 @@ const Team = () => {
               name={section.members[1].name}
               position={section.members[1].position}
               funFact={section.members[1].funFact}
-              picture={section.members[1].picture} 
+              headshot={section.members[1].headshot}
             />
           </div>
           <div className="offset-sm-3 col-6">
@@ -245,7 +242,7 @@ const Team = () => {
               name={section.members[2].name}
               position={section.members[2].position}
               funFact={section.members[2].funFact}
-              picture={section.members[2].picture} 
+              headshot={section.members[2].headshot}
             />
           </div>
         </div>
