@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Stories from 'pages/stories/components/stories';
+import StoriesMobile from 'pages/stories/components/stories-mobile';
 import DynamicLink from '../../components/dynamic-link';
 
 import StoriesPattern from 'images/stories-leaf-pattern.png';
@@ -24,6 +25,7 @@ const StoriesPage = () => {
         </div>
 
         <Stories />
+        <StoriesMobile />
       </section>
 
       <section className="stories-tell">

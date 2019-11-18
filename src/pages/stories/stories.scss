@@ -38,6 +38,11 @@
 .stories-circles {
   position: relative;
   margin: 150px 50px;
+  display: none;
+
+  @media (min-width: $md) {
+    display: block;
+  }
 }
 
 .stories-circles__top {
@@ -76,12 +81,17 @@
     img {
       filter: grayscale(0%);
     }
+
+    @media (max-width: $md) {
+      @include bottom-margin;
+    }
   }
 
   @media (max-width: 767px) {
     width: 100px;
     height: 100px;
   }
+}
 
 .stories-circles__img {
   width: 215px;
@@ -102,6 +112,11 @@
 
   @media (max-width: 1024px) {
     margin: 0;
+  }
+
+  @media (max-width: $md) {
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -185,23 +200,27 @@
   margin: auto;
 }
 
-// STORIES MOBILE
+// ---------------------------------------------------------------------------
+// STORIES CAROUSEL
+// ---------------------------------------------------------------------------
 
 .carousel {
-  background: #EEE;
+  display: block;
+
+  @media (min-width: $md) {
+    display: none;
+  }
 }
 
 .carousel-cell {
   width: 100%;
   padding-top: 50px;
-  height: 800px;
+  height: auto;
   margin-right: 10px;
-  background: $pale-blue;
   border-radius: 5px;
   counter-increment: gallery-cell;
 }
 
-/* cell number */
 .carousel-cell:before {
   display: block;
   text-align: center;
@@ -209,13 +228,4 @@
 
 .flickity-button {
   display: none;
-}
-
-.carousel-cell .stories-round-image {
-  margin-bottom: 50px;
-}
-
-.carousel-cell .quote-box-container {
-  margin-top: 100px;
-  margin: auto;
 }

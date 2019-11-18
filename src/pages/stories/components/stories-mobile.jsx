@@ -11,8 +11,8 @@ class StoriesMobile extends React.Component {
         return Quotes.map((person, index)=> {
             return (
                 <div key={`stories-${index}`} className="carousel-cell">
-                    <div className="stories-round-image__selected stories-round-image center" >
-                        <img className="portrait" src={person.imgSrc}  />
+                    <div className="stories-circles__img-container selected center" >
+                        <img className="stories-circles__img" src={person.imgSrc}  />
                     </div>
                     <Quote quote={person} />
                 </div>
