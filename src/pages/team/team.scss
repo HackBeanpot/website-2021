@@ -188,11 +188,16 @@
 }
 
 .team-member__picture {
-  width: 200px;
+  width: 310px;
   height: auto;
-  @media (max-width: 767px) {
-    width: 100px;
+
+  @media (max-width: $md) {
+    width: 150px;
   }
+}
+
+.center {
+  margin: auto;
 }
 
 .team-member__circle,
