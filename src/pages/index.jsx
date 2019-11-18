@@ -80,7 +80,10 @@ const App = () => {
                   Sprout is a representation of what we stand for as an
                   organization and what we hope to offer all our attendees:
                   growth in new skills, relationships, and experiences. Oh, and
-                  we're trying to up our sustainability game too. ♻️
+                  we're trying to up our sustainability game too.{' '}
+                  <span role="img" aria-label="Recycle emoji">
+                    ♻️
+                  </span>
                 </p>
                 <p>
                   So whether you're a seasoned hackathon-goer, a

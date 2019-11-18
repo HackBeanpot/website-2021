@@ -4,10 +4,6 @@ import RecruitIcon from 'images/recruit-icon';
 import InspireIcon from 'images/inspire-icon';
 
 class SponsorLevel extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   renderSponsorRow(levelContent, index) {
     let icon;
     if (levelContent.title === 'Engagement') {

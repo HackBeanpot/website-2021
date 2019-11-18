@@ -1,19 +1,14 @@
 import React from 'react';
+import DynamicLink from '../dynamic-link';
 
 const AboutItem = props => {
   let button;
 
   if (props.btn) {
     button = (
-      <a
-        href={props.btn.url}
-        role="button"
-        className="about-item__cta"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <DynamicLink to={props.btn.url} role="button" className="about-item__cta">
         {props.btn.text}
-      </a>
+      </DynamicLink>
     );
   }
 

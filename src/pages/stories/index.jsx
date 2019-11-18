@@ -64,6 +64,7 @@ const StoriesPage = () => {
               <img
                 className="stories-tell__img"
                 src="http://tools.hackbeanpot.com/assets/images/team.jpg"
+                alt="HackBeanpot core team"
               />
             </div>
           </div>
