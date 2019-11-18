@@ -1,6 +1,13 @@
 import React, { Fragment } from 'react';
+import Layout from '../../components/layout';
 
 import Stories from 'pages/stories/components/stories';
+
+export default () => (
+  <Layout>
+    <StoriesPage />
+  </Layout>
+);
 
 class StoriesPage extends React.Component {
   render() {
@@ -71,5 +78,3 @@ class StoriesPage extends React.Component {
     );
   }
 }
-
-export default StoriesPage;
