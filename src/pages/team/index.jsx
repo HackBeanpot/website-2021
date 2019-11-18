@@ -9,7 +9,7 @@ const TeamMember = props => (
     <div className="team-member__image-container">
       <div className="team-member__image">
         <img 
-          className="portrait" 
+          className="team-member__picture" 
           src={props.picture} 
           alt={props.name} />
       </div>
