@@ -16,9 +16,10 @@ const TeamMember = props => (
   <div className="team-member">
     <div className="team-member__image-container">
       <div className="team-member__image">
+        <div className="team-member__circle" />
+
         <img src={props.headshot} alt={props.name} />
       </div>
-      <div className="team-member__circle" />
       <span className="team-member__fun-fact">{props.funFact}</span>
     </div>
     <p className="team-member__name">{props.name}</p>
