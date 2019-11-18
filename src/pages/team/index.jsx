@@ -1,8 +1,16 @@
 import React, { Fragment } from 'react';
+import Layout from '../../components/layout';
+
 import TeamData from 'data/meet-the-team.json';
 import TeamNameLeaf from 'images/team-name-leaf.jsx';
 import TeamLeafPattern from 'images/team-leaf-pattern.jsx';
 import TeamBadgeLeaf from 'images/team-badge-leaf.jsx';
+
+export default () => (
+  <Layout>
+    <Team />
+  </Layout>
+);
 
 const TeamMember = props => (
   <div className="team-member">
@@ -304,5 +312,3 @@ const Team = () => {
     </div>
   );
 };
-
-export default Team;
