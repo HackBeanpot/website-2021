@@ -1,10 +1,17 @@
 import React from 'react';
+import Layout from '../../components/layout';
 
 import Stories from 'pages/stories/components/stories';
 import StoriesMobile from 'pages/stories/components/stories-mobile';
 import DynamicLink from '../../components/dynamic-link';
 
 import StoriesPattern from 'images/stories-leaf-pattern.png';
+
+export default () => (
+  <Layout>
+    <StoriesPage />
+  </Layout>
+);
 
 const StoriesPage = () => {
   return (
@@ -59,6 +66,7 @@ const StoriesPage = () => {
               <img
                 className="stories-tell__img"
                 src="http://tools.hackbeanpot.com/assets/images/team.jpg"
+                alt="HackBeanpot core team"
               />
             </div>
           </div>
@@ -67,5 +75,3 @@ const StoriesPage = () => {
     </div>
   );
 };
-
-export default StoriesPage;

@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Layout from '../../components/layout';
 
 import SponsorLevels from 'pages/sponsors/components/sponsor-levels';
 import Sponsors2019 from 'components/sponsors-2019';
@@ -12,6 +13,12 @@ import SponsorBlob3 from 'images/sponsor-blob-3';
 
 import MainContent from 'data/sponsor-main.json';
 import LevelContent from 'data/sponsor-level-content.json';
+
+export default () => (
+  <Layout>
+    <SponsorsPage />
+  </Layout>
+);
 
 class SponsorsPage extends React.Component {
   render() {
@@ -74,5 +81,3 @@ class SponsorsPage extends React.Component {
     );
   }
 }
-
-export default SponsorsPage;
