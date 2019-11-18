@@ -55,11 +55,10 @@ const Team = () => {
   function renderDesign(section) {
     return (
       <Fragment>
-        <h3 className="team__title">Design</h3>,
+        <h3 className="team__title">Design</h3>
         <div className="team-leaf">
           <TeamNameLeaf />
         </div>
-        ,
         <div className="row">
           <div className="col-sm-4 col-6">
             <TeamMember
@@ -105,11 +104,11 @@ const Team = () => {
   function renderOutreach(section) {
     return (
       <Fragment>
-        <h3 className="team__title">Outreach</h3>,
+        <h3 className="team__title">Outreach</h3>
         <div className="team-leaf">
           <TeamNameLeaf />
         </div>
-        ,
+
         <div className="row">
           <div className="col-6">
             <TeamMember
@@ -148,11 +147,10 @@ const Team = () => {
   function renderSocial(section) {
     return (
       <Fragment>
-        <h3 className="team__title">Social</h3>,
+        <h3 className="team__title">Social</h3>
         <div className="team-leaf">
           <TeamNameLeaf />
         </div>
-        ,
         <div className="row">
           <div className="offset-sm-4 col-sm-4 col-6">
             <TeamMember
@@ -170,11 +168,10 @@ const Team = () => {
   function renderSponsorship(section) {
     return (
       <Fragment>
-        <h3 className="team__title">Sponsorship</h3>,
+        <h3 className="team__title">Sponsorship</h3>
         <div className="team-leaf">
           <TeamNameLeaf />
         </div>
-        ,
         <div className="row">
           <div className="col-6">
             <TeamMember
@@ -213,11 +210,10 @@ const Team = () => {
   function renderTech(section) {
     return (
       <Fragment>
-        <h3 className="team__title">Tech</h3>,
+        <h3 className="team__title">Tech</h3>
         <div className="team-leaf">
           <TeamNameLeaf />
         </div>
-        ,
         <div className="row">
           <div className="col-6">
             <TeamMember
