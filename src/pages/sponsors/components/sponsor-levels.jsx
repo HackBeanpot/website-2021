@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import GrowIcon from 'images/grow-icon';
 import RecruitIcon from 'images/recruit-icon';
 import InspireIcon from 'images/inspire-icon';
@@ -6,7 +6,6 @@ import InspireIcon from 'images/inspire-icon';
 class SponsorLevel extends React.Component {
   constructor(props) {
     super(props);
-    this.renderSponsorRow = this.renderSponsorRow;
   }
 
   renderSponsorRow(levelContent, index) {

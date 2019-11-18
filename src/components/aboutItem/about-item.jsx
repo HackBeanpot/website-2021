@@ -10,6 +10,7 @@ const AboutItem = props => {
         role="button"
         className="about-item__cta"
         target="_blank"
+        rel="noopener noreferrer"
       >
         {props.btn.text}
       </a>

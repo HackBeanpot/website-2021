@@ -7,6 +7,7 @@ const Sponsors2019 = () => (
         href="https://gocatalant.com/"
         className="sponsor col-12 text-center"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
           className="catalant-logo"
@@ -19,6 +20,7 @@ const Sponsors2019 = () => (
         href="http://www.statestreet.com/home.html"
         className="sponsor col-md-6 text-center"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
           className="md-sponsor-image-tall"
@@ -30,6 +32,7 @@ const Sponsors2019 = () => (
           href="http://marketing.poweradvocate.com/"
           className="sponsor text-center"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="md-sponsor-image-wide"
@@ -40,6 +43,7 @@ const Sponsors2019 = () => (
           href="https://www.drift.com/"
           className="sponsor text-center"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="md-sponsor-image-wide"
@@ -53,6 +57,7 @@ const Sponsors2019 = () => (
         href="https://www.carbonite.com/"
         className="sponsor text-center"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
           className="sm-sponsor-image-wide"
@@ -63,6 +68,7 @@ const Sponsors2019 = () => (
         href="https://www.crosspointassociates.com/"
         className="sponsor text-center"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
           className="sm-sponsor-image-wide"
@@ -73,6 +79,7 @@ const Sponsors2019 = () => (
         href="https://n26.com/en-us"
         className="sponsor text-center"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
           className="sm-sponsor-image-square"
@@ -86,6 +93,7 @@ const Sponsors2019 = () => (
         href="https://www.bookbub.com"
         className="sponsor text-center"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
           className="sm-sponsor-image-wide"
@@ -96,6 +104,7 @@ const Sponsors2019 = () => (
         href="https://moltin.com/"
         className="sponsor text-center"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
           className="sm-sponsor-image-wide"
@@ -106,6 +115,7 @@ const Sponsors2019 = () => (
         href="https://www.datadoghq.com"
         className="sponsor text-center"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
           className="sm-sponsor-image-wide"
@@ -123,6 +133,7 @@ const Sponsors2019 = () => (
           href="https://cnrguys.com/"
           className="sponsor text-center"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="in-kind-sponsor-image-square"
@@ -133,6 +144,7 @@ const Sponsors2019 = () => (
           href="https://www.kindsnacks.com/"
           className="sponsor text-center"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="in-kind-sponsor-image-square"
@@ -143,6 +155,7 @@ const Sponsors2019 = () => (
           href="https://barnana.com/"
           className="sponsor text-center"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="in-kind-sponsor-image-wide"
@@ -153,6 +166,7 @@ const Sponsors2019 = () => (
           href="https://www.eatyour.coffee/"
           className="sponsor text-center"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="in-kind-sponsor-image-wide eat-your-coffee"

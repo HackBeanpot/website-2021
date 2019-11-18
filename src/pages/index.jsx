@@ -51,10 +51,11 @@ const App = () => {
               are opening soon!
             </p>
             <a
+              className="header__cta"
               href="http://eepurl.com/gCU4x1"
               role="button"
               target="_blank"
-              className="header__cta"
+              rel="noopener noreferrer"
             >
               Join our mailing list
             </a>

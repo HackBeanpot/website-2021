@@ -61,7 +61,11 @@ const CodeOfConduct = () => (
         </li>
         <li>
           Twitter:{' '}
-          <a href="https://www.twitter.com/hackbeanpot" target="_blank">
+          <a
+            href="https://www.twitter.com/hackbeanpot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             @HackBeanpot
           </a>
         </li>
