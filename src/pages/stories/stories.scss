@@ -86,21 +86,12 @@
       @include bottom-margin;
     }
   }
-
-  @media (max-width: 767px) {
-    width: 100px;
-    height: 100px;
-  }
 }
 
 .stories-circles__img {
   width: 215px;
   height: auto;
   filter: grayscale(100%);
-
-  @media (max-width: 767px) {
-    width: 100px;
-  }
 }
 // ---------------------------------------------------------------------------
 // Quote
@@ -109,10 +100,6 @@
 .quote {
   margin: 70px auto;
   max-width: 600px;
-
-  @media (max-width: 1024px) {
-    margin: 0;
-  }
 
   @media (max-width: $md) {
     width: 80%;
@@ -201,31 +188,38 @@
 }
 
 // ---------------------------------------------------------------------------
-// STORIES CAROUSEL
+// Stories Mobile
 // ---------------------------------------------------------------------------
 
-.carousel {
+.stories-carousel {
+  @include top-margin;
+  @include bottom-margin;
   display: block;
 
   @media (min-width: $md) {
     display: none;
   }
+
+  .flickity-page-dots .dot.is-selected {
+    background-color: $hbp-navy;
+  }
 }
 
-.carousel-cell {
+.stories-carousel-cell {
   width: 100%;
-  padding-top: 50px;
   height: auto;
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
-}
 
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-}
+  .stories-circles__img-container {
+    margin: auto;
+    border: solid 5px $hbp-blue;
 
-.flickity-button {
-  display: none;
+    img {
+      filter: grayscale(0%);
+    }
+  }
+
+  .quote {
+    margin: auto;
+    margin-top: 30px;
+  }
 }
