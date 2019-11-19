@@ -12,7 +12,7 @@ class StoriesMobile extends React.Component {
             return (
                 <div key={`stories-${index}`} className="carousel-cell">
                     <div className="stories-circles__img-container selected center" >
-                        <img className="stories-circles__img" src={person.imgSrc}  />
+                        <img className="stories-circles__img" src={person.imgSrc} alt={person.name}  />
                     </div>
                     <Quote quote={person} />
                 </div>
@@ -22,7 +22,7 @@ class StoriesMobile extends React.Component {
     render() {
         return(
             <Fragment>
-                <div class="carousel" data-flickity>
+                <div class="carousel" data-flickity="">
                     {this.renderQuotes()}
                 </div>
             </Fragment>
