@@ -1,23 +1,17 @@
 import React from 'react';
-import Flickity from 'flickity';
+import Flickity from 'react-flickity-component';
 
 import Quotes from 'data/quotes.json';
 import Quote from 'pages/stories/components/quote';
 
-import 'flickity/dist/flickity.min.css';
+const flickityOptions = {
+  wrapAround: false,
+  prevNextButtons: false,
+  pageDots: true,
+  adaptiveHeight: true
+};
 
 class StoriesMobile extends React.Component {
-  // componentDidMount() {
-  //   if (typeof window !== 'undefined') {
-  //     this.flkty = new Flickity('.stories-carousel', {
-  //       wrapAround: false,
-  //       prevNextButtons: false,
-  //       pageDots: true,
-  //       adaptiveHeight: true
-  //     });
-  //   }
-  // }
-
   renderQuotes() {
     return Quotes.map((person, index) => {
       return (
@@ -36,11 +30,18 @@ class StoriesMobile extends React.Component {
   }
 
   render() {
-    return (
-      <div className="stories-mobile stories-carousel">
-        {this.renderQuotes()}
-      </div>
-    );
+    if (typeof window !== 'undefined') {
+      return (
+        <Flickity
+          className={'stories-mobile stories-carousel'}
+          options={flickityOptions} // takes flickity options {}
+        >
+          {this.renderQuotes()}
+        </Flickity>
+      );
+    } else {
+      return null;
+    }
   }
 }
 
