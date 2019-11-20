@@ -34,11 +34,15 @@ class StoriesMobile extends React.Component {
   }
 
   render() {
-    return (
-      <div className="stories-mobile stories-carousel">
-        {this.renderQuotes()}
-      </div>
-    );
+    if (typeof window !== 'undefined') {
+      return (
+        <div className="stories-mobile stories-carousel">
+          {this.renderQuotes()}
+        </div>
+      );
+    } else {
+      return null;
+    }
   }
 }
 
