@@ -7,16 +7,16 @@ import Quote from 'pages/stories/components/quote';
 import 'flickity/dist/flickity.min.css';
 
 class StoriesMobile extends React.Component {
-  componentDidMount() {
-    if (typeof window !== 'undefined') {
-      this.flkty = new Flickity('.stories-carousel', {
-        wrapAround: false,
-        prevNextButtons: false,
-        pageDots: true,
-        adaptiveHeight: true
-      });
-    }
-  }
+  // componentDidMount() {
+  //   if (typeof window !== 'undefined') {
+  //     this.flkty = new Flickity('.stories-carousel', {
+  //       wrapAround: false,
+  //       prevNextButtons: false,
+  //       pageDots: true,
+  //       adaptiveHeight: true
+  //     });
+  //   }
+  // }
 
   renderQuotes() {
     return Quotes.map((person, index) => {
