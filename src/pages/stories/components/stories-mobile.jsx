@@ -8,12 +8,14 @@ import 'flickity/dist/flickity.min.css';
 
 class StoriesMobile extends React.Component {
   componentDidMount() {
-    this.flkty = new Flickity('.stories-carousel', {
-      wrapAround: false,
-      prevNextButtons: false,
-      pageDots: true,
-      adaptiveHeight: true
-    });
+    if (typeof window !== 'undefined') {
+      this.flkty = new Flickity('.stories-carousel', {
+        wrapAround: false,
+        prevNextButtons: false,
+        pageDots: true,
+        adaptiveHeight: true
+      });
+    }
   }
 
   renderQuotes() {
@@ -34,15 +36,11 @@ class StoriesMobile extends React.Component {
   }
 
   render() {
-    if (typeof window !== 'undefined') {
-      return (
-        <div className="stories-mobile stories-carousel">
-          {this.renderQuotes()}
-        </div>
-      );
-    } else {
-      return null;
-    }
+    return (
+      <div className="stories-mobile stories-carousel">
+        {this.renderQuotes()}
+      </div>
+    );
   }
 }
 
