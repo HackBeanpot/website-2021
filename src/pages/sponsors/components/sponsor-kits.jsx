@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Flickity from 'react-flickity-component';
 
 import KitContent from 'data/sponsor-kit-content.json';
@@ -37,7 +37,7 @@ const Kit = props => {
 const SponsorKitsMobile = () => {
   if (typeof window !== 'undefined') {
     return (
-      <Flickity className="sponsor-kits-carousel" options={flickityOptions}>
+      <Flickity className={'sponsor-kits-carousel'} options={flickityOptions}>
         {KitContent.map((content, index) => (
           <Kit key={`sponsor-kit-${index}`} content={content} />
         ))}
@@ -59,10 +59,12 @@ const SponsorKitsDesktop = () => {
 };
 
 const SponsorKits = () => {
-  return [
-    <SponsorKitsDesktop key="sponsor-kits-desktop" />,
-    <SponsorKitsMobile key="sponsor-kits-mobile" />
-  ];
+  return (
+    <Fragment>
+      <SponsorKitsDesktop key="sponsor-kits-desktop" />
+      <SponsorKitsMobile key="sponsor-kits-mobile" />
+    </Fragment>
+  );
 };
 
 export default SponsorKits;
