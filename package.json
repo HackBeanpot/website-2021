@@ -1,18 +1,20 @@
 {
   "name": "www-2019",
-  "description": "HackBeanpot Website 2019",
+  "description": "HackBeanpot Website 2020",
   "version": "1.0.0",
   "author": "Team HackBeanpot <team@hackbeanpot.com>",
   "dependencies": {
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-resolve-src": "^1.1.3",
-    "gatsby-plugin-sitemap": "^1.2.25",
-    "mdi-react": "^4.2.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0",
+    "@mdi/font": "^4.5.95",
+    "gatsby": "^2.17.15",
+    "gatsby-plugin-google-analytics": "^2.1.27",
+    "gatsby-plugin-react-helmet": "^3.1.15",
+    "gatsby-plugin-resolve-src": "^2.0.0",
+    "gatsby-plugin-sitemap": "^2.2.21",
+    "node-sass": "^4.12.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-flickity-component": "^3.4.0",
+    "react-helmet": "^5.2.1",
     "react-masonry-component": "^6.2.1"
   },
   "keywords": [
@@ -26,8 +28,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "bootstrap": "^4.1.1",
-    "gatsby-plugin-sass": "^1.0.26",
-    "prettier": "^1.12.0"
+    "bootstrap": "^4.3.1",
+    "gatsby-plugin-sass": "^2.1.23",
+    "prettier": "^1.18.2"
   }
 }

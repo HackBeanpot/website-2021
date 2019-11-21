@@ -1,38 +1,38 @@
 [
   {
     "title": "The stories.",
-    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2018-hbp-candid.jpg",
-    "btn": {
-      "text": "Read our stories",
-      "url": "https://medium.com/hackbeanblog",
-      "size": "lg-btn"
+    "img": {
+      "src": "http://tools.hackbeanpot.com/assets/images/2020-assets/homepage-illustration-1.png",
+      "alt": "Illustration of someone holding a plant"
     },
-    "floatDirection": "left",
-    "content":
-      "<p>Memorable stories from HackBeanpot are just one of the things that make us unique. Our attendees range from CS graduate students to beginner designers who have never written a line of code before.</p>"
+    "btn": {
+      "text": "Read the stories",
+      "url": "/stories"
+    },
+    "content": "<p>Memorable stories from HackBeanpot are just one of the things that make us unique. Our attendees range from CS graduate students to beginner designers who have never written a line of code before.</p>"
   },
   {
     "title": "The projects.",
-    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2017-hbp-demo.jpg",
+    "img": {
+      "src": "http://tools.hackbeanpot.com/assets/images/2020-assets/homepage-illustration-2.png",
+      "alt": "Illustration of someone holding a watering can"
+    },
     "btn": {
       "text": "See past projects",
-      "url": "https://projects.hackbeanpot.com/",
-      "size": "lg-btn"
+      "url": "https://projects.hackbeanpot.com/"
     },
-    "floatDirection": "right",
-    "content":
-      "<p>Projects at HackBeanpot are about learning and exploration. In past years they’ve ranged from a <a href='https://github.com/crowddj/crowddj-react/' target='_blank'>crowdsourced music playlist</a> to a <a href='https://github.com/dan3944/emojiscript/' target='_blank'>scripting language made entirely of emojis</a>.</p>"
+    "content": "<p>The projects made at HackBeanpot are interesting, meaningful, and a lot of the times, silly! Past projects have ranged from a <a href='https://github.com/crowddj/crowddj-react/' target='_blank'><strong>crowdsourced music playlist</strong></a> to a <a href='https://github.com/dan3944/emojiscript/' target='_blank'><strong>scripting language made entirely of emojis</strong></a>.</p>"
   },
   {
     "title": "The people.",
-    "imgSrc": "http://tools.hackbeanpot.com/assets/images/2018-hbp-group.jpg",
-    "btn": {
-      "text": "Check out our Sponsors page",
-      "url": "/sponsors",
-      "size": "lg-btn"
+    "img": {
+      "src": "http://tools.hackbeanpot.com/assets/images/2020-assets/homepage-illustration-3.png",
+      "alt": "Illustration of someone holding a laptop"
     },
-    "floatDirection": "left",
-    "content":
-      "<p>Every year HackBeanpot looks forward to hosting 150+ curious students, experienced hackers, and hi-tech sponsors in Boston. The only person we’re missing is you!</br></br><strong>Interested in sponsoring HackBeanpot?</strong></p>"
+    "btn": {
+      "text": "Learn more about sponsorship",
+      "url": "/sponsors"
+    },
+    "content": "<p>Every year HackBeanpot looks forward to hosting 150+ curious students, experienced mentors, and innovative sponsors in Boston. We are super proud of the community we've built - the only person we’re missing is you!</p>"
   }
 ]

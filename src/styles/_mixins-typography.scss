@@ -1,0 +1,135 @@
+// ---------------------------------------------------------------------------
+// Body Text
+// ---------------------------------------------------------------------------
+
+@mixin body-text($color: $hbp-navy) {
+  color: $color;
+  font-family: $font-body;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.62em;
+
+  @media (min-width: $xl) {
+    font-size: 18px;
+  }
+}
+
+@mixin large-body-text($color: $hbp-navy) {
+  color: $color;
+  font-family: $font-body;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.62em;
+
+  @media (min-width: $md) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 22px;
+  }
+}
+
+@mixin small-body-text($color: $hbp-navy) {
+  color: $color;
+  font-family: $font-body;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.62em;
+
+  @media (min-width: $md) {
+    font-size: 16px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// H1-H6
+// ---------------------------------------------------------------------------
+
+@mixin h1-text($color: $hbp-navy) {
+  color: $color;
+  font-family: $font-body;
+  font-size: 40px;
+  font-weight: 700;
+
+  @media (min-width: $sm) {
+    font-size: 60px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 80px;
+  }
+}
+
+@mixin h2-text($color: $hbp-navy) {
+  color: $color;
+  font-family: $font-body;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.4em;
+
+  @media (min-width: $lg) {
+    font-size: 45px;
+  }
+
+  @media (min-width: $xxl) {
+    font-size: 50px;
+  }
+}
+
+@mixin h3-text($color: $hbp-navy) {
+  color: $color;
+  font-family: $font-body;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4em;
+
+  @media (min-width: $lg) {
+    font-size: 40px;
+  }
+}
+
+@mixin h4-text($color: $hbp-navy) {
+  color: $color;
+  font-family: $font-body;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4em;
+
+  @media (min-width: $md) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $xxl) {
+    font-size: 32px;
+  }
+}
+
+@mixin h5-text($color: $hbp-navy) {
+  color: $color;
+  font-family: $font-body;
+  font-size: 18px;
+  font-weight: 700;
+
+  @media (min-width: $md) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 22px;
+  }
+}
+
+@mixin h6-text($color: $hbp-navy) {
+  color: $color;
+  font-family: $font-body;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  @media (min-width: $md) {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,60 @@
+* {
+  font-family: $font-body;
+  position: relative;
+  z-index: 20;
+}
+
+body {
+  @include body-text;
+  background-color: $pale-blue;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.dark-green-background {
+  background-color: $dark-green;
+  color: $white;
+  overflow: hidden;
+}
+
+.teal-background {
+  background-color: $sprout-green;
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+.light-background {
+  background-color: $grey;
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+.dark-background {
+  background-color: $hbp-navy;
+  color: $grey;
+  overflow: hidden;
+}
+
+// BUTTONS
+// TODO: Stop using this class in favor of the cta mixins
+.yellow-btn {
+  @include primary-cta;
+}
+
+// GENERAL
+.center-text {
+  text-align: center;
+}

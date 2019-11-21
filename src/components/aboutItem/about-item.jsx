@@ -1,32 +1,28 @@
 import React from 'react';
+import DynamicLink from '../dynamic-link';
 
 const AboutItem = props => {
   let button;
-  if (props.btn)
+
+  if (props.btn) {
     button = (
-      <a
-        href={props.btn.url}
-        role="button"
-        className={`btn yellow-btn ${props.btn.size}`}
-        target="_blank"
-      >
+      <DynamicLink to={props.btn.url} role="button" className="about-item__cta">
         {props.btn.text}
-      </a>
+      </DynamicLink>
     );
+  }
+
   return (
-    <div className="about-item">
+    <div className={`about-item ${props.index % 2 === 0 ? 'left' : 'right'}`}>
       <img
-        src={props.imgSrc}
-        className={`col-md-5 about-image align-${props.floatDirection}-img`}
+        src={props.img.src}
+        alt={props.img.alt}
+        className={`about-item__img img-${props.index}`}
       />
-      <div
-        className={`col-md-7 about-item-content align-${
-          props.floatDirection
-        }-content`}
-      >
-        <p className="about-item-title">{props.title}</p>
-        <div
-          className="about-item-description"
+      <div className="about-item__content">
+        <p className="about-item__title">{props.title}</p>
+        <p
+          className="about-item__description"
           dangerouslySetInnerHTML={{ __html: props.content }}
         />
         {button}
@@ -38,7 +34,7 @@ const AboutItem = props => {
 AboutItem.defaultProps = {
   title: '',
   content: '',
-  imgSrc: '',
+  img: {},
   hasBtn: false,
   floatDirection: 'left'
 };
