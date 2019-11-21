@@ -114,12 +114,12 @@
 
 .sponsor-kits {
   @include bottom-margin;
+  display: none;
   margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
 
-  @media (max-width: $md) {
-    display: none;
+  @media (min-width: $md) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
