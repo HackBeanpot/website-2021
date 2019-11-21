@@ -1,22 +1,15 @@
 @charset "UTF-8";
 
+// Vendor
 @import './normalize.scss';
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import './flickity.scss';
 
 // Global helpers
 @import './_constants.scss';
 @import './_mixins-typography.scss';
 @import './_mixins-helpers.scss';
 @import './_mixins-spacing.scss';
-@import './global.scss';
-
-// Pages
-@import '../pages/404/404.scss';
-@import '../pages/stories/stories.scss';
-@import '../pages/sponsors/sponsors.scss';
-@import '../pages/code-of-conduct/code-of-conduct.scss';
-@import './home.scss';
-@import '../pages/team/team.scss';
 
 // Components
 @import '../components/aboutItem/about-item.scss';
@@ -24,5 +17,12 @@
 @import './nav.scss';
 @import './footer.scss';
 
-// Vendor
-@import './flickity.scss';
+// Pages
+@import '../pages/404/404.scss';
+@import '../pages/code-of-conduct/code-of-conduct.scss';
+@import '../pages/stories/stories.scss';
+@import '../pages/sponsors/sponsors.scss';
+@import '../pages/team/team.scss';
+@import './home.scss';
+
+@import './global.scss';
