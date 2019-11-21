@@ -65,7 +65,7 @@ class SponsorsPage extends React.Component {
             <SponsorKits />
             <div className="sponsorship-model__cta-group">
               <p className="sponsorship-model__cta-label">
-                What to receive our full sponsorship package?
+                Want to receive our full sponsorship package?
               </p>
               <a
                 href="mailto:sponsorship@hackbeanpot.com"
