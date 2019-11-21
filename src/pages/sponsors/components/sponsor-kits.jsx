@@ -48,22 +48,13 @@ const SponsorKitsMobile = () => {
   }
 };
 
-const SponsorKitsDesktop = () => {
+const SponsorKits = () => {
   return (
     <div className="sponsor-kits">
       {KitContent.map((content, index) => (
         <Kit key={`sponsor-kit-${index}`} content={content} />
       ))}
     </div>
-  );
-};
-
-const SponsorKits = () => {
-  return (
-    <Fragment>
-      <SponsorKitsDesktop key="sponsor-kits-desktop" />
-      <SponsorKitsMobile key="sponsor-kits-mobile" />
-    </Fragment>
   );
 };
 
