@@ -44,7 +44,7 @@ const SponsorKitsMobile = () => {
       </Flickity>
     );
   } else {
-    return '';
+    return null;
   }
 };
 
