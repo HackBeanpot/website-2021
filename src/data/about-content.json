@@ -9,7 +9,7 @@
       "text": "Read the stories",
       "url": "/stories"
     },
-    "content": "<p>Memorable stories from HackBeanpot are just one of the things that make us unique. Our attendees range from CS graduate students to beginner designers who have never written a line of code before.</p>"
+    "content": "Memorable stories from HackBeanpot are just one of the things that make us unique. Our attendees range from CS graduate students to beginner designers who have never written a line of code before."
   },
   {
     "title": "The projects.",
@@ -21,7 +21,7 @@
       "text": "See past projects",
       "url": "https://projects.hackbeanpot.com/"
     },
-    "content": "<p>The projects made at HackBeanpot are interesting, meaningful, and a lot of the times, silly! Past projects have ranged from a <a href='https://github.com/crowddj/crowddj-react/' target='_blank'><strong>crowdsourced music playlist</strong></a> to a <a href='https://github.com/dan3944/emojiscript/' target='_blank'><strong>scripting language made entirely of emojis</strong></a>.</p>"
+    "content": "The projects made at HackBeanpot are interesting, meaningful, and a lot of the times, silly! Past projects have ranged from a <a href='https://github.com/crowddj/crowddj-react/' target='_blank'><strong>crowdsourced music playlist</strong></a> to a <a href='https://github.com/dan3944/emojiscript/' target='_blank'><strong>scripting language made entirely of emojis</strong></a>."
   },
   {
     "title": "The people.",
@@ -33,6 +33,6 @@
       "text": "Learn more about sponsorship",
       "url": "/sponsors"
     },
-    "content": "<p>Every year HackBeanpot looks forward to hosting 150+ curious students, experienced mentors, and innovative sponsors in Boston. We are super proud of the community we've built - the only person we’re missing is you!</p>"
+    "content": "Every year HackBeanpot looks forward to hosting 150+ curious students, experienced mentors, and innovative sponsors in Boston. We are super proud of the community we've built - the only person we’re missing is you!"
   }
 ]
