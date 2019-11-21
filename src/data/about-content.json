@@ -2,7 +2,7 @@
   {
     "title": "The stories.",
     "img": {
-      "src": "http://tools.hackbeanpot.com/assets/images/2020-assets/homepage-illustration-1.png",
+      "src": "https://tools.hackbeanpot.com/assets/images/2020-assets/homepage-illustration-1.png",
       "alt": "Illustration of someone holding a plant"
     },
     "btn": {
@@ -14,7 +14,7 @@
   {
     "title": "The projects.",
     "img": {
-      "src": "http://tools.hackbeanpot.com/assets/images/2020-assets/homepage-illustration-2.png",
+      "src": "https://tools.hackbeanpot.com/assets/images/2020-assets/homepage-illustration-2.png",
       "alt": "Illustration of someone holding a watering can"
     },
     "btn": {
@@ -26,7 +26,7 @@
   {
     "title": "The people.",
     "img": {
-      "src": "http://tools.hackbeanpot.com/assets/images/2020-assets/homepage-illustration-3.png",
+      "src": "https://tools.hackbeanpot.com/assets/images/2020-assets/homepage-illustration-3.png",
       "alt": "Illustration of someone holding a laptop"
     },
     "btn": {
