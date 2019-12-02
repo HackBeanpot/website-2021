@@ -49,16 +49,16 @@ const App = () => {
             <p className="header__description">
               An independently-run Boston hackathon for curious students,
               hackers, makers, and beginners. Applications for HackBeanpot 2020
-              will be available starting November&nbsp;27,&nbsp;2019!
+              are open now!
             </p>
             <a
               className="header__cta"
-              href="http://eepurl.com/gCU4x1"
+              href="https://apply.hackbeanpot.com/login"
               role="button"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Join our mailing list
+              Apply here
             </a>
           </div>
           <div className="header__skyline">
