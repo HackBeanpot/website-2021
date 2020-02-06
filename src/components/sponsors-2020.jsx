@@ -91,7 +91,7 @@ const Sponsors2020 = () => (
         rel="noopener noreferrer"
       >
         <img
-          src="https://tools.hackbeanpot.com/assets/logos/2020-sponsors/khoury_1155px.png"
+          src="https://tools.hackbeanpot.com/assets/logos/2020-sponsors/khoury_2026.png"
           alt="Khoury logo"
         />
       </a>
