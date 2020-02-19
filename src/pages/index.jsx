@@ -51,7 +51,15 @@ const App = () => {
               An independently-run Boston hackathon for curious students,
               hackers, makers, and beginners.
             </p>
-            <p className="header__description"><strong>Applications for our 2020 hackathon are currently closed.</strong></p>
+            <a
+              className="header__cta"
+              href="https://tinyurl.com/vcqdsam"
+              role="button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join our team!
+            </a>
           </div>
           <div className="header__skyline">
             <Skyline />
