@@ -1,0 +1,45 @@
+[
+  {
+    "year": "2020",
+    "projects": [
+      {
+        "name": "Projects 2020 Example 1",
+        "link": "https://hackbeanpot-2020.devpost.com/submissions/140714-garbage-ai",
+        "creators": "Creators",
+        "description": "Description",
+        "award": "Award Name"
+      },
+      {
+        "name": "Projects 2020 Example 2",
+        "link": "https://hackbeanpot-2020.devpost.com/submissions/140714-garbage-ai",
+        "creators": "Creators",
+        "description": "Description",
+        "award": ""
+      }
+    ]
+  },
+  {
+    "year": "2019",
+    "projects": [
+      {
+        "name": "Projects 2019 Example 1",
+        "link": "https://hackbeanpot-2020.devpost.com/submissions/140714-garbage-ai",
+        "creators": "Creators",
+        "description": "Description",
+        "award": ""
+      }
+    ]
+  },
+  {
+    "year": "2018",
+    "projects": [
+      {
+        "name": "Projects 2018 Example 1",
+        "link": "https://hackbeanpot-2020.devpost.com/submissions/140714-garbage-ai",
+        "creators": "Creators",
+        "description": "Description",
+        "award": "Award Name"
+      }
+    ]
+  }
+]
