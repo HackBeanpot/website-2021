@@ -8,11 +8,18 @@ module.exports = {
     'gatsby-plugin-resolve-src',
     `gatsby-plugin-sass`,
     'gatsby-plugin-sitemap',
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/pages/projects/data`
+      }
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-152750259-1",
-      },
-    },
+        trackingId: 'UA-152750259-1'
+      }
+    }
   ]
 };
