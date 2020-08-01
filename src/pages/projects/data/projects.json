@@ -175,11 +175,119 @@
     "year": "2017",
     "projects": [
       {
-        "name": "Projects 2017 Example 1",
-        "link": "https://hackbeanpot-2020.devpost.com/submissions/140714-garbage-ai",
-        "creator": "Creators",
-        "description": "Description",
-        "award": "Award Name"
+        "name": "Infinity Warp Drive",
+        "link": "https://github.com/jeruane/infinitecloudstorage",
+        "creator": "Eric Parker, Joseph Ruane, and Trevor Sanders",
+        "description": "We offer a solution to get infinite cloud storage for free!",
+        "award": "Least Likely to Make Money Award!"
+      },
+      {
+        "name": "Crowd DJ",
+        "link": "https://github.com/crowddj/crowddj-react",
+        "creator": "Brittany Chiang, Camden Phalen, John Martin, Ben Campbell, Drew Pomerleau, and Julie Tennett",
+        "description": "Crowd DJ is a web app that allows people who are at a party or social gathering with a DJ to request songs via their smartphones. The web app allows people to see the currently playing song, request songs, upvote songs, and rate songs so the DJ can see how the crowd is feeling and act accordingly. In other words, Crowd DJ is essentially a crowdsourced music queue.",
+        "award": "Best Visual/UI/UX Design Award!"
+      },
+      {
+        "name": "ProjectDumpster",
+        "link": "https://github.com/seanolly/ProjectDumpster",
+        "creator": "Sean Connolly and Ernie Hao",
+        "description": "Minecraft plus guns, minus the crafting.",
+        "award": "Team Frosh Award!"
+      },
+      {
+        "name": "EmojiScript",
+        "link": "https://dan3944.github.io/emojiscript/",
+        "creator": "Daniel Cohen, Nathan Goodman, and Milo Turner",
+        "description": "A modern, dynamically typed, state-of-the-art programming language that, for the first time ever, brings emojis to the playing field in language syntax.",
+        "award": "Most Fun Award!"
+      },
+      {
+        "name": "SecureStash",
+        "link": "https://github.com/keithemiller/beanpot",
+        "creator": "Keith Miller, Carter McCardwell, and Douglas Schonholtz",
+        "description": "SecureStash is a pill/liquor cabinet built to prevent teens from abusing their parents drugs. Using facial recognition we can authenticate users who are allowed to access certain compartments as well as capture who was trying to break in.",
+        "award": "Most Technically Challenging Award!"
+      },
+      {
+        "name": "Spill.it",
+        "link": "https://github.com/breedy231/spillit",
+        "creator": "Jon Corbett, Brendan Reed, Noah Appleby, and Alex Lim",
+        "description": "A party game using the indico API to have your friends spill the tea.",
+        "award": "1st in Best Use of indico's API!"
+      },
+      {
+        "name": "InTune",
+        "link": "https://github.com/feliciazhang/in-tune",
+        "creator": "Catalina Berretta, Felicia Zhang, Ashna Shah and Teddy Sevilla",
+        "description": "Be the star of your own life film. Enter a journal entry and InTune will analyze your moods to build a playlist that is a soundtrack of your day.",
+        "award": "2nd in Best Use of indico's API!"
+      },
+      {
+        "name": "Birdsong",
+        "link": "https://github.com/wet-cole/birdsongbot",
+        "creator": "Nabeel Sherazi, Kyle Coelho, Cole Wuilleumier, Noah Sirin, and Khang Bui",
+        "description": "A Twitter bot that intelligently distinguishes haikus leveraging the latest advancements in machine learning technology and plays an accompanying musical arrangement to fit the sentiment of the text.",
+        "award": "3rd in Best Use of indico's API and won Genuine's #InventTogether Award!"
+      },
+      {
+        "name": "Artist Expander",
+        "link": "https://github.com/jzimbel/artist-expander",
+        "creator": "Jon Zimbel",
+        "description": "Build a Spotify playlist of top tracks from artists for which you have only 1 track saved. Helps you find more music from artists you've already shown interest in, but haven't explored fully yet."
+      },
+      {
+        "name": "Fluff you, autocorrect!",
+        "link": "https://github.com/hontoriae/autocorrect",
+        "creator": "Olivia Wan, Emily Hontoria, and Alex Huntoon",
+        "description": "Replaces any swears typed with random nice words! :D"
+      },
+      {
+        "name": "Medicompare",
+        "link": "https://github.com/CodingItForward/medicompare",
+        "creator": "Neel Mehta and Allison Kao",
+        "description": "A web application that helps patients find the cheapest medical procedures in their area and gives them access to hidden healthcare costs."
+      },
+      {
+        "name": "Looseleaf",
+        "link": "http://looseleaf-app.herokuapp.com/",
+        "creator": "Julia Ebert and Clark Teeple",
+        "description": "Need to keep track of all those notes and code snippets with your group? Meet Looseleaf! Looseleaf is a mobile-friendly web app that lets you organize notebooks of math, code, and text notes to collaborate with your team. Leaf your notes here and set loose your imagination!"
+      },
+      {
+        "name": "Search Smarter",
+        "link": "https://github.com/l-tn3314/SearchSmarterChromeExtension",
+        "creator": "Raveena Jain, Shravali Reddy, and Tina Lee",
+        "description": "Not getting the right search results when performing a Google search? With our Chrome extension, getting better search results it super easy!"
+      },
+      {
+        "name": "Chase Morgan",
+        "link": "https://github.com/xPowerz/Chase-Morgan",
+        "creator": "Chet Powers, Max Mesirow, Mariana Dematte, and Rudhra Raveendran",
+        "description": "Generate memes with macheme learning."
+      },
+      {
+        "name": "Overscheduled",
+        "link": "https://github.com/monsuratolaosebikan/overscheduled/",
+        "creator": "Monsurat Olaosebikan, Yifan Xing, Jovaun Jackson, and John Williams",
+        "description": "Forget having to schedule everything yourself, let Overscheduled do it for you. Fair warning, you might actually be overscheduled."
+      },
+      {
+        "name": "SGJ",
+        "link": "https://github.com/sarahchou/AgeRecognition",
+        "creator": "Sarah Chou, Grace Hall, and Jamie Cirne",
+        "description": "Our idea was an iOS application that uses the camera and/or photo library to upload a picture and using Watson (IBM's API) will be able to find missing kids or human traffickers and display information about them such as gender, age range, and facial expression. But what we ended up accomplishing (since it was our first time using Swift and Xcode, was an application that could change the background of the app based on the photo taken or uploaded. Also includes a dummy html page that shows information that IBM's Watson API WOULD produce after viewing the photo and detecting facial features such as age, gender, and expressions."
+      },
+      {
+        "name": "PhotoQuest",
+        "link": "https://github.com/ray10102/HackBeanpot-2017-Photo-Quest",
+        "creator": "James Roberts, David Silva, Kait Sousa, Maxime Gautier, Raymond Huang, Anna Buchele, and Oscar Coen"
+      },
+      {
+        "name": "HappyTweet",
+        "link": "https://github.com/Arod15/HappyTweet",
+        "creator": "Warren Partridge, Ashley Deshields, Kevin Liang, Andres Rodriguez, Duy Nguyen, Gaspard Etienne, and Ryan Karjadi",
+        "description": "Ever wonder how happy you sound to others on Twitter? Or how sad? Or angry? Well, now you can use this Beanie Babies project to find out! You'll also be able to tell how other local Twitter users sound through their tweets, as well!"
       }
     ]
   },
