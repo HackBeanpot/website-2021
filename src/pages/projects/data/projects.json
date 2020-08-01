@@ -34,13 +34,15 @@
         "name": "Checkout",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140710-checkout-table-5",
         "creator": "Anthony Mu, Krishanu Datta, ja0911 and Alex Daloiso",
-        "description": "NEU gigs style app targeted towards college students looking to informally advertise their products, services, and social events in the Boston area."
+        "description": "NEU gigs style app targeted towards college students looking to informally advertise their products, services, and social events in the Boston area.",
+        "award": ""
       },
       {
         "name": "Programming Language Playground",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140703-pl-playground-team-16",
         "creator": "Nithin Saripalli and Deepak Ramesh Sethuraman",
-        "description": "An editor to explore Programming Language Semantics to help understand how programming languages work to help people become better programmers regardless of the language they use."
+        "description": "An editor to explore Programming Language Semantics to help understand how programming languages work to help people become better programmers regardless of the language they use.",
+        "award": ""
       },
       {
         "name": "Volunteer Go",
@@ -81,133 +83,155 @@
         "name": "GoodGreen",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140706-goodgreen",
         "creator": "Dennis Kats",
-        "description": "GoodGreen is a social media app that allows for keeping track of environmental goals, both premade and user-generated. Users can add other people, join challenges, and see what their fellow users are up to. Users can see other users' pages and what challenges they're doing, and search for challenges and users."
+        "description": "GoodGreen is a social media app that allows for keeping track of environmental goals, both premade and user-generated. Users can add other people, join challenges, and see what their fellow users are up to. Users can see other users' pages and what challenges they're doing, and search for challenges and users.",
+        "award": ""
       },
       {
         "name": "StudyHusky",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140704-studyhusky",
         "creator": "David Yan, Saahil Kumar, Cheng Xi Tsou, Stanley Wu, and Vevey Zhan",
-        "description": "A Student's Pocket Classroom Occupancy Viewer to remotely check which classrooms are occupied, which is especially helpful during midterms and finals."
+        "description": "A Student's Pocket Classroom Occupancy Viewer to remotely check which classrooms are occupied, which is especially helpful during midterms and finals.",
+        "award": ""
       },
       {
         "name": "RecycleVision",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140698-recyclevision",
         "creator": "Danish Farooq, Jan Simson, Solomon Mankin, and Matthew Guthrie",
-        "description": "Sustainability in Sight - This application takes a picture of an item and categorizes it as garbage, compost, or recycling. This would help the user figure out how to properly dispose of their waste."
+        "description": "Sustainability in Sight - This application takes a picture of an item and categorizes it as garbage, compost, or recycling. This would help the user figure out how to properly dispose of their waste.",
+        "award": ""
       },
       {
         "name": "ListNEU",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140694-listneu-table-10",
         "creator": "Sambasivam",
-        "description": "ListNEU is a marketplace for Northeastern students to buy, sell, or trade products and services. The ultimate goal of ListNEU is simply to provide a community of trust."
+        "description": "ListNEU is a marketplace for Northeastern students to buy, sell, or trade products and services. The ultimate goal of ListNEU is simply to provide a community of trust.",
+        "award": ""
       },
       {
         "name": "AAAAAAAAustralia",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140684-aaaaaaaaustralia",
         "creator": "William Kopans",
-        "description": "Have you ever wanted to hear a graph? AAAAAAAAustralia produces a graph and auditory method of interpreting data. Using Node.JS, we can collect data, and display the data not only as a graph but also as sound! The ability to hear graphs is not only a fun prospect but can also be used by people who cannot see or learn best through auditory input."
+        "description": "Have you ever wanted to hear a graph? AAAAAAAAustralia produces a graph and auditory method of interpreting data. Using Node.JS, we can collect data, and display the data not only as a graph but also as sound! The ability to hear graphs is not only a fun prospect but can also be used by people who cannot see or learn best through auditory input.",
+        "award": ""
       },
       {
         "name": "I''m Huuuungry",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140662-i-m-huuuungry",
         "creator": "Daniel Guddemi and David Malakh",
-        "description": "Dead simple interface for finding nearby open restaurants of a specific cuisine. Options are curated to your preferences. Curates a list of cheap, nearby, restaurants based around a streamlined UI, even someone who's not at 100% mental capacity could easily use it."
+        "description": "Dead simple interface for finding nearby open restaurants of a specific cuisine. Options are curated to your preferences. Curates a list of cheap, nearby, restaurants based around a streamlined UI, even someone who's not at 100% mental capacity could easily use it.",
+        "award": ""
       },
       {
         "name": "farmy",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140644-farmy",
         "creator": "John Abreu, Aquilae00, and Happyyguyy",
-        "description": "Make some dough off your surplus produce! Farmy is a hyper-local, produce marketplace that connects gardeners with a surplus of veggies to friends and neighbors in their area looking for cheap, fresh produce. Whether you're just growing a small pot of basil in your dorm or you're a community garden manager, farmy is the only place that helps you find a home for locally-grown produce. After you upload a listing, others can contact you about purchasing your veggies/fruit."
+        "description": "Make some dough off your surplus produce! Farmy is a hyper-local, produce marketplace that connects gardeners with a surplus of veggies to friends and neighbors in their area looking for cheap, fresh produce. Whether you're just growing a small pot of basil in your dorm or you're a community garden manager, farmy is the only place that helps you find a home for locally-grown produce. After you upload a listing, others can contact you about purchasing your veggies/fruit.",
+        "award": ""
       },
       {
         "name": "Mappening",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140643-mappening",
         "creator": "Spenser Cheung, Evan Orgra, Jaron Hylton, Matthew Lefebvre, and Christopher Myers",
-        "description": "An easy-to-use web-based geo-tagging platform that allows users to discover lesser known events/activities in their area."
+        "description": "An easy-to-use web-based geo-tagging platform that allows users to discover lesser known events/activities in their area.",
+        "award": ""
       },
       {
         "name": "Guitar Ear Trainer",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140629-guitar-ear-trainer",
         "creator": "Julian Hirn",
-        "description": "Browser and Desktop game for guitar ear training. Learn to get those guitar notes right every time :)"
+        "description": "Browser and Desktop game for guitar ear training. Learn to get those guitar notes right every time :)",
+        "award": ""
       },
       {
         "name": "FASTrashion",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140623-fastrashion",
         "creator": "Jessica Ding, Sonia Popovic, Grace Hall, Gary Nguyen",
-        "description": "A mobile app to show the real environmental cost of buying fast fashion - based on the type and composition of the item, our app will tell the user how many environmental resources were used in the item's production, so they can decide whether or not to buy it or (in the store) or reevaluate their fashion choices (at home) without impacting their style."
+        "description": "A mobile app to show the real environmental cost of buying fast fashion - based on the type and composition of the item, our app will tell the user how many environmental resources were used in the item's production, so they can decide whether or not to buy it or (in the store) or reevaluate their fashion choices (at home) without impacting their style.",
+        "award": ""
       },
       {
         "name": "Recycle Rewards",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140620-recycle-rewards",
         "creator": "Charles Williams, David Fu, Yinglin Wang, Scott Nelson, Kene Muogbo",
-        "description": "How do you get more people to start recycling? The best motivator is a little friendly competition. Users take pictures of a QR code (that we would distribute to partnering companies to put on their products) and our app tracks how many times they have recycled. There is also a social capability where you can add friends to see their stats, and there is a leaderboard capability that tracks the best recycler on the app."
+        "description": "How do you get more people to start recycling? The best motivator is a little friendly competition. Users take pictures of a QR code (that we would distribute to partnering companies to put on their products) and our app tracks how many times they have recycled. There is also a social capability where you can add friends to see their stats, and there is a leaderboard capability that tracks the best recycler on the app.",
+        "award": ""
       },
       {
         "name": "spotty",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140618-spotty",
         "creator": "Gino Jacob",
-        "description": "Spot a tune for your buddy - Creates a unique link for you. Anyone who has access to it can find out what kind of songs you've been listening to, and if they think you could do better, they'd drop a tune to a playlist that you've designated! It's social media for your music taste."
+        "description": "Spot a tune for your buddy - Creates a unique link for you. Anyone who has access to it can find out what kind of songs you've been listening to, and if they think you could do better, they'd drop a tune to a playlist that you've designated! It's social media for your music taste.",
+        "award": ""
       },
       {
         "name": "Bento",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140555-bento",
         "creator": "Shine Kim and Kimin Lee",
-        "description": "Always feel like you're buying new groceries-and never cooking? Bento can help! Bento allows you to explore recipes you have access to from the comfort of your own home, without having to go buy more."
+        "description": "Always feel like you're buying new groceries-and never cooking? Bento can help! Bento allows you to explore recipes you have access to from the comfort of your own home, without having to go buy more.",
+        "award": ""
       },
       {
         "name": "Khosury",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140530-khosury",
         "creator": "Ryan Rio Mitchell, Isi Donnelly, David Zhuang",
-        "description": "Intentionally knock off osu (Khosury), beautiful! For the future we want to flesh out the beatmap system and allow a user to select multiple beatmaps upon booting the game and additionally provide more of a menu. Another ideal feature would be a beatmap editor that allowed you to just drag notes and then save them, instead of writing json files!"
+        "description": "Intentionally knock off osu (Khosury), beautiful! For the future we want to flesh out the beatmap system and allow a user to select multiple beatmaps upon booting the game and additionally provide more of a menu. Another ideal feature would be a beatmap editor that allowed you to just drag notes and then save them, instead of writing json files!",
+        "award": ""
       },
       {
         "name": "shamehub",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140394-shamehub",
         "creator": "Nola Chen, Spencer Pozder, Rachel Volpert and Alexis Dubs",
-        "description": "Reducing waste through social shaming. Whatever the bad habits may be, we want to help folks break them through powerful forces of social pressure and .... SHAME. Shamehub connects to your bank cards and displays purchases in categories you deem shameful for all of your friends to see and shame your for!"
+        "description": "Reducing waste through social shaming. Whatever the bad habits may be, we want to help folks break them through powerful forces of social pressure and .... SHAME. Shamehub connects to your bank cards and displays purchases in categories you deem shameful for all of your friends to see and shame your for!",
+        "award": ""
       },
       {
         "name": "FreeBee",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140389-freebee-23",
         "creator": "Jin Young Bang, Rtchang, Richard Li, Kenny Alex Lin",
-        "description": "Intense amounts of furniture that are left on the streets of the Greater Boston Area especially during move-in and move-out day. We created FreeBee for you to openly throw out and collect your items."
+        "description": "Intense amounts of furniture that are left on the streets of the Greater Boston Area especially during move-in and move-out day. We created FreeBee for you to openly throw out and collect your items.",
+        "award": ""
       },
       {
         "name": "Candidating",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140367-candidating",
         "creator": "Avery Peterson, Aaron Pradhan, Akash Shah, and Rahul Shah",
-        "description": "An app for discovering local political candidates. Similar to Tinder, a user is able to see a candidate's profile, including their key issues and opinions on many other important issues. What makes it unique is that we hide the name, face, and political party of each candidate, forcing the user to choose candidates solely based on their platform. If the user agrees with a candidate's platform, they can swipe right to "match" with them. If they do not agree, they can swipe left to see the next candidate. Once they have gone through all the candidates, the user can then view their matches, revealing who they actually matched with. From there they can get more info from candidates' own website, as well as register to vote."
+        "description": "An app for discovering local political candidates. Similar to Tinder, a user is able to see a candidate's profile, including their key issues and opinions on many other important issues. What makes it unique is that we hide the name, face, and political party of each candidate, forcing the user to choose candidates solely based on their platform. If the user agrees with a candidate's platform, they can swipe right to \"match\" with them. If they do not agree, they can swipe left to see the next candidate. Once they have gone through all the candidates, the user can then view their matches, revealing who they actually matched with. From there they can get more info from candidates' own website, as well as register to vote.",
+        "award": ""
       },
       {
         "name": "Foocycle",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140355-foocycle",
         "creator": "Andrew Huang and Ryan L",
-        "description": "To promote food sustainability by encouraging food waste reduction and facilitating food exchange. Foocycle allows users to post about unwanted food items or leftovers within communities."
+        "description": "To promote food sustainability by encouraging food waste reduction and facilitating food exchange. Foocycle allows users to post about unwanted food items or leftovers within communities.",
+        "award": ""
       },
       {
         "name": "Level Up",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140341-hb-submission",
         "creator": "Zibing Zhang, Duchri, Anisa Anuar",
-        "description": "Level Up is a four-player card game. The game has some interesting mechanics that makes it both unique to implement and that's part of the reason behind why we picked it for our project!"
+        "description": "Level Up is a four-player card game. The game has some interesting mechanics that makes it both unique to implement and that's part of the reason behind why we picked it for our project!",
+        "award": ""
       },
       {
         "name": "Co-op Reviews",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140308-co-op-reviews",
         "creator": "Eric Stern, Eli Kirmayer, Justin Zhang, Hobin Yang",
-        "description": "Reviewing co-op experiences! There isn't a centralized system for students to learn about company's interview processes and what it's like to co-op somewhere, as it is not as common as interning."
+        "description": "Reviewing co-op experiences! There isn't a centralized system for students to learn about company's interview processes and what it's like to co-op somewhere, as it is not as common as interning.",
+        "award": ""
       },
       {
         "name": "Diagnoser",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140305-diagnoser",
         "creator": "Krish Sharma and Arun Jeevanantham",
-        "description": "Solving healthcare inaccessibility through connecting AI research and accessible technology. Our web app takes in images from a person's cell phone and uses cutting-edge machine learning models to provide them with real time diagnosis for a given disease, capitalizing on the growth of cellular connectivity and innovations in artificial intelligence."
+        "description": "Solving healthcare inaccessibility through connecting AI research and accessible technology. Our web app takes in images from a person's cell phone and uses cutting-edge machine learning models to provide them with real time diagnosis for a given disease, capitalizing on the growth of cellular connectivity and innovations in artificial intelligence.",
+        "award": ""
       },
       {
         "name": "FaceJeopardy",
         "link": "https://hackbeanpot-2020.devpost.com/submissions/140300-facejeopardy",
         "creator": " Marissa D'Alonzo and John Alling",
-        "description": "Like normal Jeopardy!, but based on everything about you! First, download your personal data from Facebook. Then, run it through our application, and enjoy a game of Jeopardy! that's based off everything Facebook knows about you."
+        "description": "Like normal Jeopardy!, but based on everything about you! First, download your personal data from Facebook. Then, run it through our application, and enjoy a game of Jeopardy! that's based off everything Facebook knows about you.",
+        "award": ""
       }
     ]
   },
@@ -246,109 +270,127 @@
         "name": "Foodies",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111930-foodies",
         "creator": "Mathias Kools, Jake Kinsella, Harry Mirzen, Michael Fitzgibbons, and Maxwell Salvadore",
-        "description": "College students have too many bad choices. We make a bad choice for them with mobile one-click random food delivery."
+        "description": "College students have too many bad choices. We make a bad choice for them with mobile one-click random food delivery.",
+        "award": ""
       },
       {
         "name": "Lost & Find",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111922-lost-find",
         "creator": "Nawach Kuptimanus, Hsin Hung Wu, Paschal Igusti, and Kenneth Kim",
-        "description": "A lost and found with reward system similiar to bounty hunting."
+        "description": "A lost and found with reward system similiar to bounty hunting.",
+        "award": ""
       },
       {
         "name": "aesthetify",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111909-aesthetify",
         "creator": "Niklas Pousette Harger, Lynnsey Martin, and Verda Bursal",
-        "description": "aesthetify is a web application that graphically models various metrics about any song on Spotify."
+        "description": "aesthetify is a web application that graphically models various metrics about any song on Spotify.",
+        "award": ""
       },
       {
         "name": "InstaReader",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111908-instareader",
         "creator": "Aaron Pradhan, Luke Janik, Peter Teixeira, Diana Sinyukova, and Alina Lam",
-        "description": "Accessibility for the visually impaired on social media is unacceptable. AI technologies can be used to enhance this. We used machine learning algorithms and data scraping to form full sentences about the media post, allowing the user to generate the best mental image possible."
+        "description": "Accessibility for the visually impaired on social media is unacceptable. AI technologies can be used to enhance this. We used machine learning algorithms and data scraping to form full sentences about the media post, allowing the user to generate the best mental image possible.",
+        "award": ""
       },
       {
         "name": "Debugging is music to my ears",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111718-debugging-is-music-to-my-ears",
         "creator": "Aaron Elliot, Kevin Liang, Brandon Chen, and Ashley Deshields",
-        "description": "Make debugging less boring by adding music. Your debugger now has music. Your code is now a dj. You hate your code? Upload a .wav of Friday by Rebecca Black to match."
+        "description": "Make debugging less boring by adding music. Your debugger now has music. Your code is now a dj. You hate your code? Upload a .wav of Friday by Rebecca Black to match.",
+        "award": ""
       },
       {
         "name": "reCursor",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111870-recursor",
         "creator": "Edgar Maldonado, Dania Alnahdi, and Alanna Pasco",
-        "description": "reCursor is a Google Chrome extension that allows you to customize your cursor with a theme of icons! There are five different themes that each contain their own set of icons. Every time you click anywhere on your webpage, the cursor will change too!"
+        "description": "reCursor is a Google Chrome extension that allows you to customize your cursor with a theme of icons! There are five different themes that each contain their own set of icons. Every time you click anywhere on your webpage, the cursor will change too!",
+        "award": ""
       },
       {
         "name": "Stock Stalker",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111905-stock-stalker",
         "creator": "Nikita Uppal, Anjali Thakkar, Mahema Singh, and Kyle Sferrazza",
-        "description": "An easier way to build an algorithm to trade stocks. Users can easily specify the desired behaviour for trading."
+        "description": "An easier way to build an algorithm to trade stocks. Users can easily specify the desired behaviour for trading.",
+        "award": ""
       },
       {
         "name": "Picspire",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111901-picspire",
         "creator": "John Abreu, Edsel Rudy, Subraiz Ahmed, and Jolene Lozano",
-        "description": "Have you ever tried taking the perfect picture in a new place but your pictures are never quite as nice as all these Instagram photographers? Well, Picspire is just for you! Picspire is a camera app that presents you with photography inspiration right from Instagram."
+        "description": "Have you ever tried taking the perfect picture in a new place but your pictures are never quite as nice as all these Instagram photographers? Well, Picspire is just for you! Picspire is a camera app that presents you with photography inspiration right from Instagram.",
+        "award": ""
       },
       {
         "name": "Tasteless",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111894-tasteless",
         "creator": "Dora Agali, Caolan Disini, and Kamoltat Sirivadhna",
-        "description": "Tasteless rates your Spotify library and tells you if you need to reevaluate your choices in music and/or life. Built with Flask, Spotify and Indico API, Tasteless uses \"state-of-the-art\" Sentiment-Analyzing AI From The Future™ to search the web for music reviews of all your favorite songs, in order to calculate your Music Appreciation Score. If your idea of a fun time is having more things to be insecure about, maybe Tasteless is the app for you."
+        "description": "Tasteless rates your Spotify library and tells you if you need to reevaluate your choices in music and/or life. Built with Flask, Spotify and Indico API, Tasteless uses \"state-of-the-art\" Sentiment-Analyzing AI From The Future™ to search the web for music reviews of all your favorite songs, in order to calculate your Music Appreciation Score. If your idea of a fun time is having more things to be insecure about, maybe Tasteless is the app for you.",
+        "award": ""
       },
       {
         "name": "tARnks",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111883-tarnks",
         "creator": "Raymond Huang, Shane Timmerman, Megan Lau, and Katie Busemeyer",
-        "description": "A multiplayer augmented reality game with tanks and buildings. We found an API that would lets you build a 3d model of a real life city. We wanted to use this technology to reconstruct a city in augmented reality, and explore and destroy that city using tanks, like in the Wii U game, Tanks."
+        "description": "A multiplayer augmented reality game with tanks and buildings. We found an API that would lets you build a 3d model of a real life city. We wanted to use this technology to reconstruct a city in augmented reality, and explore and destroy that city using tanks, like in the Wii U game, Tanks.",
+        "award": ""
       },
       {
         "name": "Meme Economy 2.0",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111871-meme-economy-2-0",
         "creator": "Ciarra Peters, Kenneth See Dehui, Avery Peterson, Amal Nazeem, and Manas Purohit",
-        "description": "We are an analytics platform for meme relevance. Meme freshness is an important metric on the success of a meme. Us as individuals have been very tired of seeing stale memes online; it's been a huge pain point in our lives, and we never want anyone to have to see a stale meme again."
+        "description": "We are an analytics platform for meme relevance. Meme freshness is an important metric on the success of a meme. Us as individuals have been very tired of seeing stale memes online; it's been a huge pain point in our lives, and we never want anyone to have to see a stale meme again.",
+        "award": ""
       },
       {
         "name": "fan-tastic_food",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111863-fan-tastic_food",
         "creator": "Jordan Nichols, Paul Stephen Hutchinson Maltaghati, Xavier Ruiz, Gagandeep Kang, and Keshav Maheshwari",
-        "description": "Web app designed for use in stadiums/arenas. User orders food from vendors online and is notified when it is ready."
+        "description": "Web app designed for use in stadiums/arenas. User orders food from vendors online and is notified when it is ready.",
+        "award": ""
       },
       {
         "name": "exPLAIN Campaign",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111856-explain-campaign",
         "creator": "Katherine Huang",
-        "description": "Science communication is all about making big ideas interesting and clear for different audiences. It can be challenging, but everyone's an expert on some topic, and anyone can practice it! Don't let me just tell you what science communication is—let the exPLAIN Campaign show you: complex topics in plain words."
+        "description": "Science communication is all about making big ideas interesting and clear for different audiences. It can be challenging, but everyone's an expert on some topic, and anyone can practice it! Don't let me just tell you what science communication is—let the exPLAIN Campaign show you: complex topics in plain words.",
+        "award": ""
       },
       {
         "name": "BeanPolitics",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111708-beanpolitics",
         "creator": "Adam Fleishaker, Mitchell Dodell, Reese Farquhar, Prabu Gugagantha, and Jonah Sander",
-        "description": "A fun, educational, and information-rich hub app for all things politics! Want to find out who represents you? Use the Civic Info Hub to become informed on your local representatives and how to contact them! Utilizes the Google Civic Information API & Google Maps Autocomplete API."
+        "description": "A fun, educational, and information-rich hub app for all things politics! Want to find out who represents you? Use the Civic Info Hub to become informed on your local representatives and how to contact them! Utilizes the Google Civic Information API & Google Maps Autocomplete API.",
+        "award": ""
       },
       {
         "name": "DITI",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111821-diti",
         "creator": "Michelle Lee, Shivani Deodhar, Dhanashri Palodkar, and Abhijit Menon",
-        "description": "A \"To-Do\" list application that analyses the sentiment behind your list and plays songs based off of the sentiment."
+        "description": "A \"To-Do\" list application that analyses the sentiment behind your list and plays songs based off of the sentiment.",
+        "award": ""
       },
       {
         "name": "TL;DR",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111819-tl-dr",
         "creator": "Skylar Gilfeather, Aya Aragon, Nesanne Mae Tam, Anirudh Kaushik, and Vikram Kaushik",
-        "description": "TL;DR analyses a constant incoming feed of news articles and develops a notion of \"trending stories\" from this. It then finds other articles that are also part of the trending stories and consolidates (summarizes) the articles into one summary. The summary is then presented to the user so that they can quickly understand the relevant information from a story."
+        "description": "TL;DR analyses a constant incoming feed of news articles and develops a notion of \"trending stories\" from this. It then finds other articles that are also part of the trending stories and consolidates (summarizes) the articles into one summary. The summary is then presented to the user so that they can quickly understand the relevant information from a story.",
+        "award": ""
       },
       {
         "name": "volunTIER",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111755-voluntier",
         "creator": "Trevor Stenson, Nithin Saripalli, Rahul Suryadevara, and Erin Wang",
-        "description": "Essentially it is a fitbit like application for volunteering. This website includes a social aspect to the volunteering."
+        "description": "Essentially it is a fitbit like application for volunteering. This website includes a social aspect to the volunteering.",
+        "award": ""
       },
       {
         "name": "Yo-setta Stone",
         "link": "https://hackbeanpot-2019.devpost.com/submissions/111727-yo-setta-stone",
         "creator": "Nathan Levy and Sarah Rieger",
-        "description": "A web application using NLP to create definitions for slang words based on context from tweets"
+        "description": "A web application using NLP to create definitions for slang words based on context from tweets",
+        "award": ""
       }
     ]
   },
@@ -383,178 +425,239 @@
         "name": "Ragtag",
         "link": "https://github.com/djkazic/ragtag",
         "creator": "Brittany Chiang, Kevin Cai, and Teddy Burns",
+        "description": "",
         "award": "Most Technically Challenging"
       },
       {
         "name": "PoliTweet",
         "link": "https://github.com/mgramigna/presidential-live-tweets",
         "creator": "Justin Kennedy, Andrew Bass, Mathew Gramigna, and Jack Nichols",
+        "description": "",
         "award": "Best Visual/UI/UX Design"
       },
       {
         "name": "Foam",
         "link": "https://github.com/LivD1125/HackBeanpot-Team-Foam.git",
         "creator": "Dylan Boudro, Erika McVey, Abhijeet Sharma, Olivia DeFlumeri, Nadine Shaalan, and Bahar Haji-Sheikhi",
+        "description": "",
         "award": "Team Frosh Memorial Award"
       },
       {
         "name": "khaled-script",
         "link": "https://www.npmjs.com/package/khaled-script",
         "creator": "Arjun Balaji",
+        "description": "",
         "award": "Least Likely to Make Money"
       },
       {
         "name": "Emovi (by the Gettem Next Timers)",
         "link": "https://github.com/westinn/Emovi",
         "creator": "Daniel Cohen and Nicolas Westin",
+        "description": "",
         "award": "Most Fun Idea"
       },
       {
         "name": "Pecan",
         "link": "https://github.com/OmkarB/pecan",
         "creator": "Omkar Bhat, Ty Coghlan, Raj Narayan, and Kevin Liu",
+        "description": "",
         "award": "Best Use of Wolfram Technology"
       },
       {
         "name": "The Hound",
         "link": "https://github.com/coreycle/The-Hound",
         "creator": "Corey Clemente, Ebrahim Ebrahim, and Dillon Sienko",
+        "description": "",
         "award": "Indico's Prize"
       },
       {
         "name": "Happy",
         "link": "",
-        "creator": "Rebecca Bagley, Karen Zheung, Zhihe Shen, Tammy Huynh, and Bjorn Shen"
+        "creator": "Rebecca Bagley, Karen Zheung, Zhihe Shen, Tammy Huynh, and Bjorn Shen",
+        "description": "",
+        "award": ""
       },
       {
         "name": "What's On My Plate (WOMP)",
         "link": "http://xiifulminata.github.io/WhatsOnMyPlate/",
-        "creator": "Gary Calzada, Victoria Yang, Yifan Xing, Jovaun Jackson, and Monsurat Olaosebikan"
+        "creator": "Gary Calzada, Victoria Yang, Yifan Xing, Jovaun Jackson, and Monsurat Olaosebikan",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Hack Connection",
         "link": "https://github.com/nathansomething/hack-connection",
-        "creator": "Nathan Goodman, Angela Massey, Charlotte O'Neill, Logan Moore, and Emily Hontoria"
+        "creator": "Nathan Goodman, Angela Massey, Charlotte O'Neill, Logan Moore, and Emily Hontoria",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Sharks and Minnows",
         "link": "https://github.com/dqgorelick/digital-ocean",
-        "creator": "Chris DeLucia, Dan Gorelick, Huy Le, Cheyan Setayesh, Andy Shen, Kaitlen Sousa, and Simon Ton"
+        "creator": "Chris DeLucia, Dan Gorelick, Huy Le, Cheyan Setayesh, Andy Shen, Kaitlen Sousa, and Simon Ton",
+        "description": "",
+        "award": ""
       },
       {
         "name": "metric-me",
         "link": "hacks.ramimac.me",
-        "creator": "Rami McCarthy, Tom Kowalski, and David Shoyket"
+        "creator": "Rami McCarthy, Tom Kowalski, and David Shoyket",
+        "description": "",
+        "award": ""
       },
       {
         "name": "GamePackCast",
         "link": "https://github.com/alfred/hackbeanpot16",
-        "creator": "Alfred Ababio, Matthew Capone, Brendan Ross, and Joseph Crotty"
+        "creator": "Alfred Ababio, Matthew Capone, Brendan Ross, and Joseph Crotty",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Long Story Short",
         "link": "https://github.com/bdatdo0601/StoryTelling",
-        "creator": "Dat Bac Do, Kyle Frick, An Huynh, and Justin Wright"
+        "creator": "Dat Bac Do, Kyle Frick, An Huynh, and Justin Wright",
+        "description": "",
+        "award": ""
       },
       {
         "name": "AfroCoding",
         "link": "https://github.com/agrundw/HackBeanpot2016",
-        "creator": "Alex Grundwerg and Dorian Franklin"
+        "creator": "Alex Grundwerg and Dorian Franklin",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Matthias Madness",
         "link": "https://github.com/emilydaniel/Matthias-Madness.git",
-        "creator": "Patrick Watrous"
+        "creator": "Patrick Watrous",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Snappage",
         "link": "",
-        "creator": "Patrick Watrous"
+        "creator": "Patrick Watrous",
+        "description": "",
+        "award": ""
       },
       {
         "name": "alejoseb",
         "link": "https://github.com/alejoseb/",
-        "creator": "Alejandro Mera"
+        "creator": "Alejandro Mera",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Close Call",
         "link": "https://github.com/golf1052/close-call",
-        "creator": "Nat Dempkowski, Andrew Knueven, Sanders Lauture, and Tevin Otieno"
+        "creator": "Nat Dempkowski, Andrew Knueven, Sanders Lauture, and Tevin Otieno",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Ambeyonce",
         "link": "https://github.com/TheMichaelHu/Ambeyonce",
-        "creator": "Michael Hu, Nikolai Wotton, Quan Do, and Kevin Luo"
+        "creator": "Michael Hu, Nikolai Wotton, Quan Do, and Kevin Luo",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Startup Query Language",
         "link": "",
-        "creator": "Michael Coppola"
+        "creator": "Michael Coppola",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Team Giant Robot Dog",
         "link": "https://github.com/johncomposed/scheduleThis/",
-        "creator": "Matthew Coleman, John Williams, and Max Lever"
+        "creator": "Matthew Coleman, John Williams, and Max Lever",
+        "description": "",
+        "award": ""
       },
       {
         "name": "binfmt_mysc",
         "link": "https://github.com/mossberg/binfmt_mysc",
-        "creator": "Mark Mossberg"
+        "creator": "Mark Mossberg",
+        "description": "",
+        "award": ""
       },
       {
         "name": "A Hard G",
         "link": "https://github.com/genagain/vacant-feeds",
-        "creator": "Gen Ohta"
+        "creator": "Gen Ohta",
+        "description": "",
+        "award": ""
       },
       {
         "name": "My Immortal Hotline",
         "link": "https://github.com/superjabenman/My-Immortal-Hotline",
-        "creator": "Jaben McCormack"
+        "creator": "Jaben McCormack",
+        "description": "",
+        "award": ""
       },
       {
         "name": "MealMate/Fanatic Four",
         "link": "https://github.com/Fanatic-Four/Meal-Mate",
-        "creator": "Tommy Nguyen, Calvin Mei, Kayla Nguyen, and Michelle Chan"
+        "creator": "Tommy Nguyen, Calvin Mei, Kayla Nguyen, and Michelle Chan",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Gungho",
         "link": "https://github.com/Kibii/Gungho",
-        "creator": "Catherine Feldman, Adam Mullarkey, James Yanyuk, and Michael Markman"
+        "creator": "Catherine Feldman, Adam Mullarkey, James Yanyuk, and Michael Markman",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Sassmates",
         "link": "https://github.com/nioushajafari/hackbeanpot-2016",
-        "creator": "Adrian Kant, Niousha Jafari, and Jaclyn Iulianetti"
+        "creator": "Adrian Kant, Niousha Jafari, and Jaclyn Iulianetti",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Cai",
         "link": "",
-        "creator": "Vignesh Mohankumar, and Eric Yu"
+        "creator": "Vignesh Mohankumar, and Eric Yu",
+        "description": "",
+        "award": ""
       },
       {
         "name": "AWSomeButton",
         "link": "https://github.com/stokesbga/AWSomeButton",
-        "creator": "Alexey Shablygin and Alexander Stokes"
+        "creator": "Alexey Shablygin and Alexander Stokes",
+        "description": "",
+        "award": ""
       },
       {
         "name": "statly",
         "link": "https://github.com/cwheel/statly",
-        "creator": "James Sullivan and Cameron Wheeler"
+        "creator": "James Sullivan and Cameron Wheeler",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Addi",
         "link": "https://github.com/nickzuber/addi",
-        "creator": "Danielle Nguyen and Nick Zuber"
+        "creator": "Danielle Nguyen and Nick Zuber",
+        "description": "",
+        "award": ""
       },
       {
         "name": "Relationship Tracker",
         "link": "https://github.com/marshallewhite/RelationshipTracker",
-        "creator": "Marshall White"
+        "creator": "Marshall White",
+        "description": "",
+        "award": ""
       },
       {
         "name": "UFree",
         "link": "https://github.com/l-tn3314/UFree",
-        "creator": "Tina Lee, Gabriel Centeno, Kristy Chen, and Trent Duffy"
+        "creator": "Tina Lee, Gabriel Centeno, Kristy Chen, and Trent Duffy",
+        "description": "",
+        "award": ""
       }
     ]
   }
