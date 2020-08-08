@@ -234,60 +234,71 @@
         "name": "Artist Expander",
         "link": "https://github.com/jzimbel/artist-expander",
         "creator": "Jon Zimbel",
-        "description": "Build a Spotify playlist of top tracks from artists for which you have only 1 track saved. Helps you find more music from artists you've already shown interest in, but haven't explored fully yet."
+        "description": "Build a Spotify playlist of top tracks from artists for which you have only 1 track saved. Helps you find more music from artists you've already shown interest in, but haven't explored fully yet.",
+        "award": ""
       },
       {
         "name": "Fluff you, autocorrect!",
         "link": "https://github.com/hontoriae/autocorrect",
         "creator": "Olivia Wan, Emily Hontoria, and Alex Huntoon",
-        "description": "Replaces any swears typed with random nice words! :D"
+        "description": "Replaces any swears typed with random nice words! :D",
+        "award": ""
       },
       {
         "name": "Medicompare",
         "link": "https://github.com/CodingItForward/medicompare",
         "creator": "Neel Mehta and Allison Kao",
-        "description": "A web application that helps patients find the cheapest medical procedures in their area and gives them access to hidden healthcare costs."
+        "description": "A web application that helps patients find the cheapest medical procedures in their area and gives them access to hidden healthcare costs.",
+        "award": ""
       },
       {
         "name": "Looseleaf",
         "link": "http://looseleaf-app.herokuapp.com/",
         "creator": "Julia Ebert and Clark Teeple",
-        "description": "Need to keep track of all those notes and code snippets with your group? Meet Looseleaf! Looseleaf is a mobile-friendly web app that lets you organize notebooks of math, code, and text notes to collaborate with your team. Leaf your notes here and set loose your imagination!"
+        "description": "Need to keep track of all those notes and code snippets with your group? Meet Looseleaf! Looseleaf is a mobile-friendly web app that lets you organize notebooks of math, code, and text notes to collaborate with your team. Leaf your notes here and set loose your imagination!",
+        "award": ""
       },
       {
         "name": "Search Smarter",
         "link": "https://github.com/l-tn3314/SearchSmarterChromeExtension",
         "creator": "Raveena Jain, Shravali Reddy, and Tina Lee",
-        "description": "Not getting the right search results when performing a Google search? With our Chrome extension, getting better search results it super easy!"
+        "description": "Not getting the right search results when performing a Google search? With our Chrome extension, getting better search results it super easy!",
+        "award": ""
       },
       {
         "name": "Chase Morgan",
         "link": "https://github.com/xPowerz/Chase-Morgan",
         "creator": "Chet Powers, Max Mesirow, Mariana Dematte, and Rudhra Raveendran",
-        "description": "Generate memes with macheme learning."
+        "description": "Generate memes with macheme learning.",
+        "award": ""
       },
       {
         "name": "Overscheduled",
         "link": "https://github.com/monsuratolaosebikan/overscheduled/",
         "creator": "Monsurat Olaosebikan, Yifan Xing, Jovaun Jackson, and John Williams",
-        "description": "Forget having to schedule everything yourself, let Overscheduled do it for you. Fair warning, you might actually be overscheduled."
+        "description": "Forget having to schedule everything yourself, let Overscheduled do it for you. Fair warning, you might actually be overscheduled.",
+        "award": ""
       },
       {
         "name": "SGJ",
         "link": "https://github.com/sarahchou/AgeRecognition",
         "creator": "Sarah Chou, Grace Hall, and Jamie Cirne",
-        "description": "Our idea was an iOS application that uses the camera and/or photo library to upload a picture and using Watson (IBM's API) will be able to find missing kids or human traffickers and display information about them such as gender, age range, and facial expression. But what we ended up accomplishing (since it was our first time using Swift and Xcode, was an application that could change the background of the app based on the photo taken or uploaded. Also includes a dummy html page that shows information that IBM's Watson API WOULD produce after viewing the photo and detecting facial features such as age, gender, and expressions."
+        "description": "Our idea was an iOS application that uses the camera and/or photo library to upload a picture and using Watson (IBM's API) will be able to find missing kids or human traffickers and display information about them such as gender, age range, and facial expression. But what we ended up accomplishing (since it was our first time using Swift and Xcode, was an application that could change the background of the app based on the photo taken or uploaded. Also includes a dummy html page that shows information that IBM's Watson API WOULD produce after viewing the photo and detecting facial features such as age, gender, and expressions.",
+        "award": ""
       },
       {
         "name": "PhotoQuest",
         "link": "https://github.com/ray10102/HackBeanpot-2017-Photo-Quest",
-        "creator": "James Roberts, David Silva, Kait Sousa, Maxime Gautier, Raymond Huang, Anna Buchele, and Oscar Coen"
+        "creator": "James Roberts, David Silva, Kait Sousa, Maxime Gautier, Raymond Huang, Anna Buchele, and Oscar Coen",
+        "description": "",
+        "award": ""
       },
       {
         "name": "HappyTweet",
         "link": "https://github.com/Arod15/HappyTweet",
         "creator": "Warren Partridge, Ashley Deshields, Kevin Liang, Andres Rodriguez, Duy Nguyen, Gaspard Etienne, and Ryan Karjadi",
-        "description": "Ever wonder how happy you sound to others on Twitter? Or how sad? Or angry? Well, now you can use this Beanie Babies project to find out! You'll also be able to tell how other local Twitter users sound through their tweets, as well!"
+        "description": "Ever wonder how happy you sound to others on Twitter? Or how sad? Or angry? Well, now you can use this Beanie Babies project to find out! You'll also be able to tell how other local Twitter users sound through their tweets, as well!",
+        "award": ""
       }
     ]
   },
