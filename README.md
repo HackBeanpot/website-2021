@@ -1,13 +1,12 @@
-# beta.hackbeanpot.com
-
-HackBeanpot's website for 2018-2020. It is written in React and served using GitHub Pages. We use Gatsby to compile our files into static assets for deployment.
+## HackBeanpot's website for 2021. 
+_Written in React and served using GitHub Pages. We use Gatsby to compile our files into static assets for deployment._
 
 ## Getting Set Up For Development
 
 First and foremost, make sure you have [Node](https://nodejs.org) installed.
 
-`git clone https://github.com/HackBeanpot/www-2019` Clone into this repository.
-`cd www-2019` CD into the new local repo.
+`git clone https://github.com/HackBeanpot/website-2021` Clone into this repository.
+`cd website-2021` CD into the new local repo.
 `npm install` Install dependencies.
 `npm install --global gatsby-cli` Install Gatsby
 `gatsby develop` Launch a hot-reloading dev environment to see the site running on your local!
