@@ -8,12 +8,6 @@ import FooterLeaves2 from 'images/svg/footer-leaves-2';
 
 const Footer = () => (
   <div className="footer">
-    <span className="footer__leaves-left">
-      <FooterLeaves1 />
-    </span>
-    <span className="footer__leaves-right">
-      <FooterLeaves2 />
-    </span>
     <div className="footer__logo">
       <LogoWhite />
     </div>
