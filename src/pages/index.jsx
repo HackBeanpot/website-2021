@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import FAQItems from 'components/faqItems/faq-items';
 import AboutItem from 'components/aboutItem/about-item';
-import DynamicLink from 'components/dynamic-link';
 import AboutContent from 'data/about-content.json';
 import Sponsors2020 from 'components/sponsors-2020'
 
