@@ -1,13 +1,12 @@
-# beta.hackbeanpot.com
-
-HackBeanpot's website for 2018-2020. It is written in React and served using GitHub Pages. We use Gatsby to compile our files into static assets for deployment.
+## HackBeanpot's website for 2021. 
+_Written in React and served using GitHub Pages. We use a Gatsby boilerplate that compiles into static assets for deployment._
 
 ## Getting Set Up For Development
 
 First and foremost, make sure you have [Node](https://nodejs.org) installed.
 
-`git clone https://github.com/HackBeanpot/www-2019` Clone into this repository.
-`cd www-2019` CD into the new local repo.
+`git clone https://github.com/HackBeanpot/website-2021` Clone into this repository.
+`cd website-2021` CD into the new local repo.
 `npm install` Install dependencies.
 `npm install --global gatsby-cli` Install Gatsby
 `gatsby develop` Launch a hot-reloading dev environment to see the site running on your local!
@@ -52,13 +51,19 @@ Don't. We have CI.
 
 But the command to do so is `gatsby build` in the repo's top-level directory. Keep in mind that if you do build on your local and then view the static files, links between pages won't work. Better to use `gatsby develop` to see the changes you're working on.
 
-## How CI Works
+## Tools and Frameworks
 
-Forbidden magic. Basically. (Coming soon, Warren will write about it)
+* [React](https://reactjs.org/docs/hello-world.html) - JavaScript library for building user interfaces or UI components
+* [Gatsby](https://www.gatsbyjs.org/docs/building-with-components/) - React-based web framework
+* [Prettier](https://prettier.io/) - Used to auto-format code 
+* [Material Design Icons](https://github.com/levrik/mdi-react) - Used to insert icons (Search for icons [here](https://materialdesignicons.com/))
+* [GraphQL](https://graphql.org/learn/) - Natively integrated with Gatsby, used to query data for our projects directory.
 
-## Useful References
+## File Structure
+_Under the src directory…_
 
-* [React](https://reactjs.org/docs/hello-world.html)
-* [Gatsby Components](https://www.gatsbyjs.org/docs/building-with-components/)
-* [Prettier](https://prettier.io/)
-* [Icons](https://github.com/levrik/mdi-react)
+* [Components](https://github.com/HackBeanpot/website-2021/tree/master/src/components) - Defines components that will be used in multiple places or throughout the website (like the header or footer).
+* [Data](https://github.com/HackBeanpot/website-2021/tree/master/src/data) - Contains any data that will be used to render elements. GraphQL is configured to automatically fetch data from this folder. For example, names and descriptions of projects are stored in a JSON file in /src/data and used to render project cards on the project page.
+* [Images](https://github.com/HackBeanpot/website-2021/tree/master/src/images) - Contains all image files
+* [Pages](https://github.com/HackBeanpot/website-2021/tree/master/src/pages) - Contains a folder for each page of the website and defines the layout of the pages.
+* [Styles](https://github.com/HackBeanpot/website-2021/tree/master/src/styles) - Contains the majority of our CSS. Styles should be defined here (as opposed to using in-line CSS or defining it in a “styles” section in the HTML) as much as possible.
