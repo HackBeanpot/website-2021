@@ -1,11 +1,10 @@
 .nav,
 .nav-mobile {
-  @include drop-shadow;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $white;
+  background-color: none;
   z-index: 100;
 }
 

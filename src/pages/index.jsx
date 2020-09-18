@@ -7,7 +7,7 @@ import DynamicLink from 'components/dynamic-link';
 import AboutContent from 'data/about-content.json';
 import Sponsors2020 from 'components/sponsors-2020'
 
-import Skyline from 'images/svg/skyline.jsx';
+import DaytimeScene from 'images/svg/daytime-scene.jsx';
 import LogoAnimation from 'images/logo-sprout.gif';
 import HomeAboutPattern from 'images/home-about-pattern.png';
 import HomeSponsorsCircuit from 'images/svg/home-sponsors-circuit.jsx';
@@ -45,8 +45,9 @@ const App = () => {
       <div className="home">
         <section className="header">
           <div className="container header__content">
-            <h1 className="header__title">We'll be back in 2021!</h1>
-            <h2 className="header__event-date">February 19-21</h2>
+            <h1 className="header__title">HackBeanpot will be back for 2021!</h1>
+            <h2 className="header__event-date">February 19-21, 2021</h2>
+            <p className="header__description">And we're going camping!</p>
             <a
               className="header__cta"
               href=""
@@ -58,7 +59,7 @@ const App = () => {
             </a>
           </div>
           {/* <div className="header__skyline">
-            <Skyline />
+            <DaytimeScene />
           </div> */}
         </section>
       </div>

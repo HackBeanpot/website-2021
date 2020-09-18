@@ -6,7 +6,11 @@
   @include pale-blue-bg;
   @include bottom-padding;
   position: relative;
-  padding-top: 150px;
+  padding-top: 120px;
+  background-image: url(../images/daytime-scene.svg);
+  background-repeat: no-repeat;
+  background-size: 107%;
+  background-position: center; 
 }
 
 .header__skyline {
@@ -19,10 +23,10 @@
   }
 
   @media (min-width: $lg) {
-    margin-top: -100px;
+    margin-top: -400px;
 
     svg {
-      width: 100%;
+      width: 110%;
     }
   }
 
@@ -36,10 +40,14 @@
 
   @media (min-width: $lg) {
     width: 60%;
+    margin-right: 50px;
+    padding-bottom: 100px;
   }
 
   @media (min-width: $xl) {
     width: 60%;
+    margin-right: 50px;
+    padding-bottom: 100px;
   }
 }
 

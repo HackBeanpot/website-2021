@@ -70,9 +70,9 @@
 // Colorblock Backgrounds
 // ---------------------------------------------------------------------------
 
-@mixin navy-bg {
-  background-color: $hbp-navy;
-  color: $white;
+@mixin grey-bg {
+  background-color: $grey;
+  color: $hbp-navy;
   overflow: hidden;
 }
 
