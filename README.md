@@ -1,5 +1,5 @@
 ## HackBeanpot's website for 2021. 
-_Written in React and served using GitHub Pages. We use Gatsby to compile our files into static assets for deployment._
+_Written in React and served using GitHub Pages. We use a Gatsby boilerplate that compiles into static assets for deployment._
 
 ## Getting Set Up For Development
 
@@ -54,15 +54,16 @@ But the command to do so is `gatsby build` in the repo's top-level directory. Ke
 ## Tools and Frameworks
 
 * [React](https://reactjs.org/docs/hello-world.html) - JavaScript library for building user interfaces or UI components
-* [Gatsby Components](https://www.gatsbyjs.org/docs/building-with-components/) - React-based web framework
+* [Gatsby](https://www.gatsbyjs.org/docs/building-with-components/) - React-based web framework
 * [Prettier](https://prettier.io/) - Used to auto-format code 
 * [Material Design Icons](https://github.com/levrik/mdi-react) - Used to insert icons (Search for icons [here](https://materialdesignicons.com/))
+* [GraphQL](https://graphql.org/learn/) - Natively integrated with Gatsby, used to query data for our projects directory.
 
 ## File Structure
 _Under the src directory…_
 
 * [Components](https://github.com/HackBeanpot/website-2021/tree/master/src/components) - Defines components that will be used in multiple places or throughout the website (like the header or footer).
-* [Data](https://github.com/HackBeanpot/website-2021/tree/master/src/data) - Contains any data that will be used to automatically render elements. For example, names and descriptions of projects are stored in the “data” directory and used to render project cards on the project page. 
+* [Data](https://github.com/HackBeanpot/website-2021/tree/master/src/data) - Contains any data that will be used to render elements. GraphQL is configured to automatically fetch data from this folder. For example, names and descriptions of projects are stored in a JSON file in /src/data and used to render project cards on the project page.
 * [Images](https://github.com/HackBeanpot/website-2021/tree/master/src/images) - Contains all image files
 * [Pages](https://github.com/HackBeanpot/website-2021/tree/master/src/pages) - Contains a folder for each page of the website and defines the layout of the pages.
 * [Styles](https://github.com/HackBeanpot/website-2021/tree/master/src/styles) - Contains the majority of our CSS. Styles should be defined here (as opposed to using in-line CSS or defining it in a “styles” section in the HTML) as much as possible.
