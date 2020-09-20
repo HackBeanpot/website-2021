@@ -58,9 +58,9 @@ const App = () => {
               Stay up to date
             </a>
           </div>
-          {/* <div className="header__skyline">
+          <div className="header__skyline">
             <DaytimeScene />
-          </div> */}
+          </div>
         </section>
       </div>
     </div>
