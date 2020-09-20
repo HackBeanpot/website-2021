@@ -78,7 +78,7 @@
 
 @mixin pale-blue-bg {
   @include inline-link;
-  background-color: $pale-blue;
+  background: linear-gradient(#CDFFFF 27%, #52c2c2 100%);
   color: $hbp-navy;
   overflow: hidden;
 }
