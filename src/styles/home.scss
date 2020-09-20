@@ -9,7 +9,7 @@
   padding-top: 120px;
   background-image: url(../images/daytime-scene.svg);
   background-repeat: no-repeat;
-  background-size: 107%;
+  background-size: 100%;
   background-position: center; 
 }
 
@@ -19,14 +19,14 @@
   z-index: 0;
 
   svg {
-    width: 130%;
+    width: 100%;
   }
 
   @media (min-width: $lg) {
     margin-top: -400px;
 
     svg {
-      width: 110%;
+      width: 100%;
     }
   }
 
