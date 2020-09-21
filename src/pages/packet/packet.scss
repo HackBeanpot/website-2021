@@ -3,8 +3,20 @@
   overflow-x: hidden;
 }
 
-.packet-header {
+.packet-cover {
   @include bottom-padding;
   padding-top: 200px;
   position: relative;
+}
+
+.cloud-background {
+  position: relative;
+  width: 40%;
+}
+
+.cloud-text {
+  position: absolute;
+  top: 210px;
+  left: 90px;
+  width: 50%;
 }
