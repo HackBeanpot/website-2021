@@ -70,11 +70,6 @@
   @include bottom-padding;
 }
 
-.theme__title {
-  @include h3-text;
-  @include bottom-margin;
-}
-
 .theme__content-wrapper {
   display: flex;
   justify-content: space-between;

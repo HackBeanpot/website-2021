@@ -8,7 +8,7 @@ import AboutContent from 'data/about-content.json';
 import Sponsors2020 from 'components/sponsors-2020'
 
 import DaytimeScene from 'images/svg/daytime-scene.jsx';
-import LogoAnimation from 'images/logo-sprout.gif';
+import Compass from 'images/svg/compass.jsx';
 import HomeAboutPattern from 'images/home-about-pattern.png';
 import HomeSponsorsCircuit from 'images/svg/home-sponsors-circuit.jsx';
 import favicon from './favicon.png';
@@ -62,6 +62,80 @@ const App = () => {
             <DaytimeScene />
           </div>
         </section>
+
+        <section className="theme-announcement">
+          <div className="container">
+            <div className="theme__content-wrapper">
+              <div className="theme__content">
+                <p className="theme__sprout">Join our virtual campsite!</p>
+                <p>
+                  At HackBeanpot 2021, we aim to create a welcoming “campsite” 
+                  by emphasizing our focus on exploration, creativity, and respect 
+                  for the world around us! Camping represents community, 
+                  sustainability, and the goal to help each other thrive 
+                  given a set of tools.
+                </p>
+                <p>
+                  Hackers can expect to put their resourcefulness to the test,
+                  while sharing stories, and learning new skills from peers. 
+                  So whether you're a seasoned hackathon-goer, an 
+                  ‘I-have-never-written-a-line-of-code’ beginner, or someone 
+                  in between, we’re excited for you to embark on this adventure with us!
+                </p>
+              </div>
+              <Compass />
+            </div>
+          </div>
+        </section>
+
+        {/* <section className="about">
+          <img
+            src={HomeAboutPattern}
+            alt="Animated logo"
+            className="about__pattern"
+          />
+          <div className="container">
+            <h2 className="about__title">HackBeanpot is about...</h2>
+            {AboutContent.map((item, index) => (
+              <AboutItem
+                key={`about-item-${index}`}
+                index={index}
+                title={item.title}
+                content={item.content}
+                img={item.img}
+                btn={item.btn}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section id="faq" className="faq">
+          <div className="container">
+            <h2 className="faq__title">FAQ</h2>
+            <FAQItems />
+            <div className="faq__cta-group">
+              <p className="faq__cta-label">Don't see your question?</p>
+              <a
+                href="mailto:team@hackbeanpot.com"
+                role="button"
+                className="faq__cta"
+              >
+                Let us know!
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="home-sponsors">
+          <span className="home-sponsors__circuit">
+            <HomeSponsorsCircuit />
+          </span>
+          <div className="container">
+            <h2 className="home-sponsors__title">Our Sponsors</h2>
+            <Sponsors2020 />
+          </div>
+          </div>
+        </section> */}
       </div>
     </div>
   );
