@@ -46,7 +46,7 @@
 // H1-H6
 // ---------------------------------------------------------------------------
 
-@mixin h1-text($color: $camp-brown) {
+@mixin h1-text($color: $camp-burnt-red) {
   color: $color;
   font-family: $font-body;
   font-size: 40px;
