@@ -1,0 +1,10 @@
+.packet {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.packet-header {
+  @include bottom-padding;
+  padding-top: 200px;
+  position: relative;
+}
