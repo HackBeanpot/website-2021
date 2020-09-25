@@ -79,13 +79,17 @@
   }
 }
 
-.theme__logo {
-  width: 50%;
-  margin-bottom: 20px;
+.theme__transition {
+  margin-bottom: -20px;
+  
+  @media (max-width: $md) {
+    margin-bottom: 0px;
+  }
+}
 
-  @media (min-width: $md) {
-    width: 30%;
-    margin-bottom: 0;
+.theme__logo {
+  @media (max-width: $lg) {
+    display: none;
   }
 }
 
@@ -93,18 +97,26 @@
   width: 100%;
   height: auto;
   z-index: 0;
-  margin-top: -750px;
+  margin-top: -350px;
 
   svg {
     width: 100%;
   }
 
-  @media (min-width: $lg) {
-    margin-top: -650px;
+  @media (max-width: $sm) {
+    margin-top: -150px;
   }
 
-  @media (max-width: $sm) {
+  @media (min-width: $lg) {
+    margin-top: -450px;
+  }
+
+  @media (min-width: $xl) {
     margin-top: -550px;
+  }
+
+  @media (min-width: $xxl) {
+    margin-top: -650px;
   }
 }
 
@@ -122,7 +134,7 @@
 .theme__content {
   width: 100%;
 
-  @media (min-width: $md) {
+  @media (min-width: $lg) {
     width: 60%;
   }
 }
