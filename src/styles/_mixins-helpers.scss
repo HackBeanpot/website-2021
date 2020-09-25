@@ -78,7 +78,21 @@
 
 @mixin pale-blue-bg {
   @include inline-link;
+  background-color: $pale-blue;
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+@mixin pale-blue-gradient-bg {
+  @include inline-link;
   background: linear-gradient(#CDFFFF 27%, #52c2c2 100%);
+  color: $hbp-navy;
+  overflow: hidden;
+}
+
+@mixin orange-gradient-bg {
+  @include inline-link;
+  background: linear-gradient(#334171 0%, #E56138 38%, #FFED8E 59%);
   color: $hbp-navy;
   overflow: hidden;
 }
