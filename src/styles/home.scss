@@ -44,6 +44,7 @@
 .header__title {
   @include h1-text;
   margin-bottom: 10px;
+  font-family: $dosis;
 }
 
 .header__event-date {
