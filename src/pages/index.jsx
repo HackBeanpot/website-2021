@@ -49,7 +49,7 @@ const App = () => {
           <div className="container header__content">
             <h1 className="header__title">HackBeanpot will be back!</h1>
             <h2 className="header__event-date">February 19-21, 2021</h2>
-            <p className="header__description">Join us for this year's virtual hackathon!</p>
+            <p className="header__description">Join us for our upcoming virtual hackathon!</p>
             <a
               className="header__cta"
               href=""
@@ -72,7 +72,7 @@ const App = () => {
           <div className="container">
             <div className="theme__content-wrapper">
               <div className="theme__content">
-                <p className="theme__sprout">Join our virtual campsite!</p>
+                <p className="theme__sprout">Our theme this year is Camping!</p>
                 <p>
                   At HackBeanpot 2021, we aim to create a welcoming “campsite” 
                   by emphasizing our focus on exploration, creativity, and respect 
@@ -88,7 +88,9 @@ const App = () => {
                   in between, we’re excited for you to embark on this adventure with us!
                 </p>
               </div>
-              <Compass />
+              <div className="theme__logo">
+                <Compass />
+              </div>
             </div>
           </div>
           <div className="theme__sunset-scene">
