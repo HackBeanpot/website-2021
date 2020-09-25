@@ -7,9 +7,10 @@ import DynamicLink from 'components/dynamic-link';
 import AboutContent from 'data/about-content.json';
 import Sponsors2020 from 'components/sponsors-2020'
 
-import DaytimeScene from 'images/svg/daytime-scene.jsx';
+import BlueTransition from 'images/svg/blue-transition.jsx';
 import Compass from 'images/svg/compass.jsx';
-import SunsetScene from 'images/svg/sunset-scene.jsx'
+import DaytimeScene from 'images/svg/daytime-scene.jsx';
+import SunsetScene from 'images/svg/sunset-scene.jsx';
 import HomeAboutPattern from 'images/home-about-pattern.png';
 import HomeSponsorsCircuit from 'images/svg/home-sponsors-circuit.jsx';
 import favicon from './favicon.png';
@@ -65,6 +66,9 @@ const App = () => {
         </section>
 
         <section className="theme-announcement">
+          <div className="theme__transition">
+            <BlueTransition />
+          </div>
           <div className="container">
             <div className="theme__content-wrapper">
               <div className="theme__content">
