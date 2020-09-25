@@ -9,6 +9,7 @@ import Sponsors2020 from 'components/sponsors-2020'
 
 import DaytimeScene from 'images/svg/daytime-scene.jsx';
 import Compass from 'images/svg/compass.jsx';
+import SunsetScene from 'images/svg/sunset-scene.jsx'
 import HomeAboutPattern from 'images/home-about-pattern.png';
 import HomeSponsorsCircuit from 'images/svg/home-sponsors-circuit.jsx';
 import favicon from './favicon.png';
@@ -85,6 +86,9 @@ const App = () => {
               </div>
               <Compass />
             </div>
+          </div>
+          <div className="theme__sunset-scene">
+            <SunsetScene />
           </div>
         </section>
 
