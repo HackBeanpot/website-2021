@@ -1,22 +1,22 @@
 .packet {
   position: relative;
   overflow-x: hidden;
+  margin: 50px;
 }
 
 .packet-cover {
   @include bottom-padding;
-  padding-top: 200px;
   position: relative;
 }
 
 .cloud-background {
   position: relative;
-  width: 40%;
+  width: 50%;
 }
 
 .cloud-text {
   position: absolute;
   top: 210px;
-  left: 90px;
+  left: 75px;
   width: 50%;
 }
