@@ -1,5 +1,7 @@
 import React from 'react';
 import CloudBackground from '../../images/svg/packet-cloud.svg'
+import PacketStruct from './packet-structure.json'
+import PackageComponent from './components/package-component'
 
 export default () => (
   <SponsorPacket />
@@ -26,6 +28,18 @@ class SponsorPacket extends React.Component {
               innovation and inclusion in Boston tech.
             </p>
           </div>
+        </section>
+        <section className='packet-struct'>
+          {Object.keys(PacketStruct).map(trail => {
+            const row = []
+            {for (let i = 0; i < PacketStruct[trail].length; i++) {
+              row.push(<PackageComponent trail={trail} level={i+1} perks={PacketStruct[trail][i]}/>)
+            }}
+
+            return (
+              <div className={`${trail}-row`}> { row } </div>
+            )
+          })}
         </section>
       </div>
     );

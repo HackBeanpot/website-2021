@@ -1,0 +1,18 @@
+{
+  "build": [
+    ["Sponsoring a prize", "Have a judge"],
+    ["Sponsoring a prize", "Have a judge", "Tech challenge", "Hardware/api introduction"],
+    ["Sponsoring a prize", "Have a judge", "Tech challenge", "Hardware/api introduction", "Host a workshop"]
+  ],
+  "engage": [
+    ["Mentors", "Sponsor a raffle basket"],
+    ["Mentors", "Sponsor a raffle basket", "Have a judge", "Host an activity"],
+    ["Mentors", "Sponsor a raffle basket", "Have a judge", "Host an activity", "Host a meal"]
+  ],
+  "recruit": [
+    ["Table the entire event", "Resumes"],
+    ["Table the entire event", "Resumes", "Attendee registry", "Intro during opening ceremony"],
+    ["Table the entire event", "Resumes", "Attendee registry", "Intro during opening ceremony",
+      "Advertise in our newsletter"]
+  ]
+}
