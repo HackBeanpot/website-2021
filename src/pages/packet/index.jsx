@@ -32,9 +32,9 @@ class SponsorPacket extends React.Component {
         <section className='packet-struct'>
           {Object.keys(PacketStruct).map(trail => {
             const row = []
-            {for (let i = 0; i < PacketStruct[trail].length; i++) {
-              row.push(<PackageComponent trail={trail} level={i+1} perks={PacketStruct[trail][i]}/>)
-            }}
+            {PacketStruct[trail].forEach((trail, index) => {
+              row.push(<PackageComponent trail={trail} level={index + 1} perks={trail}/>)
+            })}
 
             return (
               <div className={`${trail}-row`}> { row } </div>
