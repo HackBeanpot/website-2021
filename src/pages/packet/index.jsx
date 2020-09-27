@@ -7,8 +7,7 @@ export default () => (
   <SponsorPacket />
 )
 
-class SponsorPacket extends React.Component {
-  render() {
+const SponsorPacket = () => {
     return (
       <div className="packet">
         <section className="packet-cover">
@@ -32,8 +31,8 @@ class SponsorPacket extends React.Component {
         <section className='packet-struct'>
           {Object.keys(PacketStruct).map(trail => {
             const row = []
-            {PacketStruct[trail].forEach((trail, index) => {
-              row.push(<PackageComponent trail={trail} level={index + 1} perks={trail}/>)
+            {PacketStruct[trail].forEach((level, index) => {
+              row.push(<PackageComponent trail={trail} level={index + 1} perks={level}/>)
             })}
 
             return (
@@ -43,5 +42,4 @@ class SponsorPacket extends React.Component {
         </section>
       </div>
     );
-  }
 }
