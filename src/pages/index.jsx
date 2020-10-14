@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import Layout from '../components/layout';
-import Welcome from 'components/home/welcome';
-import ThemeAnnouncement from 'components/home/theme-announcement';
+import Welcome from '../components/sections/welcome';
+import ThemeAnnouncement from '../components/sections/theme-announcement';
 
 import favicon from './favicon.png';
 
