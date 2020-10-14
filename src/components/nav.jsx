@@ -6,7 +6,7 @@ import LogoIcon from 'images/svg/logo-icon.jsx';
 
 const Nav = () => (
   <nav className="nav">
-    <DynamicLink to="https://hackbeanpot.com/" className="nav__logo">
+    <DynamicLink to="/" className="nav__logo">
       <LogoIcon />
     </DynamicLink>
     <ul className="nav__list">
