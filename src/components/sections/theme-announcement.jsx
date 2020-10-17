@@ -12,7 +12,7 @@ const ThemeAnnouncement = () => (
         <div className="container">
             <div className="theme__content-wrapper">
                 <div className="theme__content">
-                    <p className="theme__sprout">Our theme this year is Camping!</p>
+                    <p className="theme__camp">Our theme this year is Camping!</p>
                     <p>
                         At HackBeanpot 2021, we aim to create a welcoming “campsite” 
                         by emphasizing our focus on exploration, creativity, and respect 
