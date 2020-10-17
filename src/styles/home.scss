@@ -187,13 +187,13 @@
 // ---------------------------------------------------------------------------
 
 .faq {
-  @include pale-blue-bg;
+  @include dark-background($camp-grass-green);
   @include top-padding;
   @include bottom-padding;
 }
 
 .faq__title {
-  @include h2-text;
+  @include h2-text($white);
   @include bottom-margin;
 
   @media (max-width: $md) {

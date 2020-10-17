@@ -76,6 +76,13 @@
   overflow: hidden;
 }
 
+@mixin dark-background($background-color: $camp-grass-green) {
+  @include inline-link;
+  background-color: $background-color;
+  color: $white;
+  overflow: hidden;
+}
+
 @mixin pale-blue-bg {
   @include inline-link;
   background-color: $pale-blue;
