@@ -5,7 +5,7 @@ const PackageComponent = (props) => {
     return (
       <div className={`package-component-${trail}-${level}`}>
         <input type="radio" name={trail} onChange={() => callback(level, trail)}/>
-        <ul className={`${trail}-${level}-list`}>
+        <ul className={`list-${trail}-${level}`}>
           {perks.map((perk, index) => {
             return (
               <p key={`${trail}-${level}-list-${index}`}> {perk} </p>

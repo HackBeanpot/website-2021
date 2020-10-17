@@ -9,16 +9,31 @@
   position: relative;
 }
 
-.cloud-background {
-  position: relative;
-  width: 50%;
+.intro-title {
+  font-size: 72px;
+  font-weight: bold;
 }
 
-.cloud-text {
-  position: absolute;
-  top: 210px;
-  left: 75px;
-  width: 50%;
+.intro-text {
+  font-size: 24px;
+}
+
+.packet-title {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.packet-text {
+  font-size: 24px;
+}
+
+.base-box {
+  font-weight: bold;
+  font-size: 32px;
+  background: #eeeeee;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
 }
 
 .build-row {
@@ -31,6 +46,11 @@
 
 .recruit-row {
   display: inline-flex;
+}
+
+ul[class^="list-"] {
+  font-weight: normal;
+  font-size: 18px;
 }
 
 div[class^="package-component-build-"] {
