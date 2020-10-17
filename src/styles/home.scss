@@ -3,31 +3,31 @@
 // ---------------------------------------------------------------------------
 
 .header {
-  @include pale-blue-bg;
-  @include bottom-padding;
+  @include pale-blue-gradient-bg;
   position: relative;
-  padding-top: 150px;
+  padding-top: 90px;
 }
 
 .header__skyline {
   width: 100%;
   height: auto;
   z-index: 0;
+  margin-top: -250px;
 
   svg {
-    width: 130%;
-  }
-
-  @media (min-width: $lg) {
-    margin-top: -100px;
-
-    svg {
-      width: 100%;
-    }
+    width: 100%;
   }
 
   @media (max-width: $sm) {
-    margin-top: 50px;
+    margin-top: -20px;
+  }
+
+  @media (min-width: $xl) {
+    margin-top: -350px;
+  }
+
+  @media (min-width: $xxl) {
+    margin-top: -450px;
   }
 }
 
@@ -48,16 +48,30 @@
 .header__title {
   @include h1-text;
   margin-bottom: 10px;
+  font-family: $dosis;
 }
 
 .header__event-date {
-  @include h4-text;
-  margin-bottom: 30px;
+  @include h4-text($camp-orange);
+  margin-bottom: 10px;
 }
 
 .header__description {
-  @include large-body-text;
+  @include large-body-text($camp-orange);
   margin-bottom: 30px;
+}
+
+.header__newsletter-input {
+  border: 0;
+  outline: 0;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+}
+
+.header__form-msg {
+  margin-top: 0.5rem;
 }
 
 .header__cta {
@@ -69,14 +83,7 @@
 // ---------------------------------------------------------------------------
 
 .theme-announcement {
-  @include pale-blue-bg;
-  @include top-padding;
-  @include bottom-padding;
-}
-
-.theme__title {
-  @include h3-text;
-  @include bottom-margin;
+  @include orange-gradient-bg;
 }
 
 .theme__content-wrapper {
@@ -90,17 +97,48 @@
   }
 }
 
-.theme__logo {
-  width: 50%;
-  margin-bottom: 20px;
-
-  @media (min-width: $md) {
-    width: 30%;
-    margin-bottom: 0;
+.theme__transition {
+  margin-bottom: -20px;
+  
+  @media (max-width: $md) {
+    margin-bottom: 0px;
   }
 }
 
-.theme__sprout {
+.theme__logo {
+  @media (max-width: $lg) {
+    display: none;
+  }
+}
+
+.theme__sunset-scene {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  margin-top: -350px;
+
+  svg {
+    width: 100%;
+  }
+
+  @media (max-width: $sm) {
+    margin-top: -150px;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: -450px;
+  }
+
+  @media (min-width: $xl) {
+    margin-top: -550px;
+  }
+
+  @media (min-width: $xxl) {
+    margin-top: -650px;
+  }
+}
+
+.theme__camp {
   @include h2-text;
   text-align: center;
   margin-bottom: 60px;
@@ -114,7 +152,7 @@
 .theme__content {
   width: 100%;
 
-  @media (min-width: $md) {
+  @media (min-width: $lg) {
     width: 60%;
   }
 }

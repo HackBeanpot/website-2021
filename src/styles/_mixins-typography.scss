@@ -46,18 +46,18 @@
 // H1-H6
 // ---------------------------------------------------------------------------
 
-@mixin h1-text($color: $hbp-navy) {
+@mixin h1-text($color: $camp-burnt-red) {
   color: $color;
   font-family: $font-body;
   font-size: 40px;
   font-weight: 700;
 
   @media (min-width: $sm) {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   @media (min-width: $lg) {
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 

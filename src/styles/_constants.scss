@@ -3,9 +3,10 @@
 // ---------------------------------------------------------------------------
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
 
 $font-body: 'Nunito Sans', Arial, Helvetica, sans-serif;
-// $font-mono:
+$dosis: 'Dosis', sans-serif;
 
 // ---------------------------------------------------------------------------
 // COLORS
@@ -16,13 +17,17 @@ $charles-river-blue: #4384e1;
 $hbp-navy: #1b365d;
 $midnight: #102037;
 
-$pale-blue: #e8fafe;
+$pale-blue: #b4ebeb;
 $hbp-blue: #a4dbe8;
 $mist: #52a1b4;
 
 $sprout-green-light: #bbffda;
 $sprout-green: #70e0a3;
 $sprout-green-dark: #417859;
+
+$camp-burnt-red: #953621;
+$camp-orange: #E56138;
+$camp-yellow: #F5D340;
 
 $not-so-dark-green: #7ac09a;
 $dark-green: #439a6b;

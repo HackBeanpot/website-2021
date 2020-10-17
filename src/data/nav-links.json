@@ -1,22 +1,2 @@
 [
-  {
-    "name": "FAQ",
-    "path": "/#faq"
-  },
-  {
-    "name": "Stories",
-    "path": "/stories"
-  },
-  {
-    "name": "Sponsors",
-    "path": "/sponsors"
-  },
-  {
-    "name": "Our Team",
-    "path": "/team"
-  },
-  {
-    "name": "Projects",
-    "path": "https://projects.hackbeanpot.com/"
-  }
 ]
