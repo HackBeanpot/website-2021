@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Welcome from '../components/sections/welcome';
 import ThemeAnnouncement from '../components/sections/theme-announcement';
+import FAQ from '../components/sections/faq';
 
 import favicon from './favicon.png';
 
@@ -39,6 +40,7 @@ const App = () => {
       <div className="home">
         <Welcome />
         <ThemeAnnouncement />
+        <FAQ />
       </div>
     </div>
   );
