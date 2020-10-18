@@ -9,9 +9,9 @@ export default () => (
 )
 
 /* TODO:
-  - Background (ie. flashlight, mountains, tent, etc) => do I need to import every piece
-  - Intro text => CSS for location
-  - PackageComponent => styling for button, price thing
+  - Background (ie. flashlight, mountains, tent, etc) => so I just import and then...?
+  - Intro text => CSS for location and moon logo thing
+  - PackageComponent => styling for button, price wood plaque thing
   - Footer => waiting on design
  */
 
