@@ -42,10 +42,26 @@
   background: #eeeeee;
   border-radius: 20px;
   padding: 10px;
-  margin-right: 10px;
+  width: 669px;
+  margin-left: 290px;
 }
 
+.base-box-price-check {
+  display: flex;
+  justify-content: space-between;
+}
+
+div[class*="-headline"] {
+  margin: 10px 0 10px 192px;
+  font-weight: bold;
+  font-size: 48px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
 div[class*='circle'] {
+  margin-right: 48px;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -72,14 +88,8 @@ div[class*='circle'] {
   background-color: #52C2C2;
 }
 
-div[class*="-headline"] {
-  font-weight: bold;
-  font-size: 48px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
 div[class*="-row"] {
+  margin-left: 290px;
   display: flex;
 }
 
@@ -104,7 +114,7 @@ div[class^="package-component-recruit-"] {
   background: #D0FFFF;
 }
 
-div[class*="-top-row"]{
+div[class*="-top-line"]{
   display: flex;
   justify-content: space-between;
 }

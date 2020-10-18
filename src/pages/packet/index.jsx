@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import MoonLogo from '../../images/svg/moon-logo.svg'
+import BaseCheck from '../../images/svg/packet-base-check.svg'
 import PacketStruct from '../../data/packet-structure.json'
 import PackageComponent from './components/package-component'
 
@@ -58,10 +59,15 @@ const SponsorPacket = () => {
         </section>
         <section className='packet-struct'>
           <div className='base-package'>
-            <div className={`base-circle`}>0</div>
-            <div className='base-headline'>Review the Base Package</div>
+            <div className='base-headline'>
+              <div className={`base-circle`}>0</div>
+              Review the Base Package
+            </div>
             <div className='base-box'>
-              $750
+              <div className='base-box-price-check'>
+                $750
+                <img src={BaseCheck} alt='Base package check mark' height='42' width='42'/>
+              </div>
               <ul className={`list-base-package`}>
                 {PacketStruct["base"].map((perk, index) => {
                   return <p key={`list-base-${index}`}> {perk} </p>
@@ -78,8 +84,10 @@ const SponsorPacket = () => {
             // TODO: convert from just 1 to 1-3
             return (
               <div className={`${trail}-div`}>
-                <div className={`${trail}-circle`}>1</div>
-                <div className={`${trail}-headline`}>{`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}</div>
+                <div className={`${trail}-headline`}>
+                  <div className={`${trail}-circle`}>1</div>
+                  {`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
+                </div>
                 <div className={`${trail}-row`}> { row } </div>
               </div>
             )

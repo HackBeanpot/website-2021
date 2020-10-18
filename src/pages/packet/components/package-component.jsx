@@ -4,7 +4,7 @@ const PackageComponent = (props) => {
     const {perks, level, trail, callback} = props
     return (
       <div className={`package-component-${trail}-${level}`}>
-        <div className={`package-component-${trail}-${level}-top-row`}>
+        <div className={`package-component-${trail}-${level}-top-line`}>
           <div className='price-sign'>
             {375 * level}
           </div>
