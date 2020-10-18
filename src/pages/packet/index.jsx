@@ -6,13 +6,18 @@ export default () => (
   <SponsorPacket />
 )
 
+/* TODO:
+  - Background => do I need to import every piece
+  - Intro text => CSS for location
+  -
+ */
+
 const SponsorPacket = () => {
   const PRICE_OF_PACKAGE = 375
   const [build, setBuild] = useState(0);
   const [engage, setEngage] = useState(0);
   const [recruit, setRecruit] = useState(0);
 
-  // TODO: make this not just an if statement lol
   const setTrail = (level, trailType) => {
     if (trailType === 'build') {
       setBuild(level)
@@ -29,28 +34,28 @@ const SponsorPacket = () => {
           <div className='intro-div'>
             <h1 className='intro-title'>Sponsor HBP 2021</h1>
             <p className="intro-text">
-              At HackBeanpot, we aim to foster an inclusive community <br/> that
-              welcomes students of any skill level to work together <br/> on
-              engaging technical projects. By bringing local <br/>companies,
-              organizers, and attendees together, <br/> HackBeanpot celebrates
+              At HackBeanpot, we aim to foster an inclusive community that
+              welcomes students of any skill level to work together on
+              engaging technical projects. By bringing local companies,
+              organizers, and attendees together, HackBeanpot celebrates
               innovation and inclusion in Boston tech.
             </p>
           </div>
-          <div className='packet-intro'>
+          <div className='packet-blurb'>
             <h1 className='packet-title'> Our Packet </h1>
             <p className='packet-text'>
               Each sponsor package starts with the base tier. We also have three
               optional trails designed to focus on different sponsorship goals,
               each with multiple tiers of perks to choose from. <br/>
               It’s that simple! As always, please contact us at
-              team@hackbeanpot.com with any questions, or if you are interested
-              in an alternative form of sponsorship.
+              <a className='email' href="mailto:team@hackbeanpot.com" target="_blank"> team@hackbeanpot.com </a>
+              with any questions, or if you are interested in an alternative form of sponsorship.
             </p>
           </div>
         </section>
         <section className='packet-struct'>
           <div className='base-package'>
-            <p className='base-intro'>Review the Base Package</p>
+            <div className='base-headline'>Review the Base Package</div>
             <div className='base-box'>
               $750
               <ul className={`list-base-package`}>
@@ -67,15 +72,18 @@ const SponsorPacket = () => {
             })}
 
             return (
-              <div className={`${trail}-div`}>
-                <p className={`${trail}-intro`}>{`Select your ${trail} Package`}</p>
+              <div className={`${trail}-row-div`}>
+                <div className={`${trail}-circle`}>
+                  1
+                </div>
+                <div className={`${trail}-headline`}>{`Select your ${trail} Package`}</div>\
                 <div className={`${trail}-row`}> { row } </div>
               </div>
             )
           })}
         </section>
         <section className='footer'>
-          <p> Running Total {build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
+          <p> Running Total {750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
         </section>
       </div>
     );

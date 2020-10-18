@@ -9,6 +9,7 @@
   position: relative;
 }
 
+/* Packet cover section CSS */
 .intro-title {
   font-size: 72px;
   font-weight: bold;
@@ -27,6 +28,12 @@
   font-size: 24px;
 }
 
+.email {
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Packet struct section CSS*/
 .base-box {
   font-weight: bold;
   font-size: 32px;
@@ -34,6 +41,44 @@
   border-radius: 20px;
   padding: 10px;
   margin-right: 10px;
+}
+
+.build-circle {
+  height: 60px;
+  width: 60px;
+  background-color: #E56138;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.engage-circle {
+  height: 60px;
+  width: 60px;
+  background-color: #CCAD0D;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.recruit-circle {
+  height: 60px;
+  width: 60px;
+  background-color: #52C2C2;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+div[class*="-headline"] {
+  font-weight: bold;
+  font-size: 48px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div[class*="-row-div"] {
+  align-items: center;
 }
 
 .build-row {
@@ -47,6 +92,9 @@
 .recruit-row {
   display: inline-flex;
 }
+
+
+/* Package Component (ie. one box for a trail tier) CSS */
 
 ul[class^="list-"] {
   font-weight: normal;
