@@ -1,7 +1,8 @@
 .packet {
   position: relative;
   overflow-x: hidden;
-  margin: 50px;
+  background-color: #142434;
+  color: #eeeeee;
 }
 
 .packet-cover {
@@ -37,37 +38,38 @@
 .base-box {
   font-weight: bold;
   font-size: 32px;
+  color: #000000;
   background: #eeeeee;
   border-radius: 20px;
   padding: 10px;
   margin-right: 10px;
 }
 
-.build-circle {
+div[class*='circle'] {
   height: 60px;
   width: 60px;
-  background-color: #E56138;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
+  font-size: 48px;
+  line-height: 65.47px;
+}
+
+.base-circle {
+  background-color: #ffffff;
+  color: #1B365D;
+}
+
+.build-circle {
+  background-color: #E56138;
 }
 
 .engage-circle {
-  height: 60px;
-  width: 60px;
   background-color: #CCAD0D;
-  border-radius: 50%;
-  display: inline-block;
-  text-align: center;
 }
 
 .recruit-circle {
-  height: 60px;
-  width: 60px;
   background-color: #52C2C2;
-  border-radius: 50%;
-  display: inline-block;
-  text-align: center;
 }
 
 div[class*="-headline"] {
@@ -77,47 +79,37 @@ div[class*="-headline"] {
   vertical-align: middle;
 }
 
-div[class*="-row-div"] {
-  align-items: center;
+div[class*="-row"] {
+  display: flex;
 }
-
-.build-row {
-  display: inline-flex;
-}
-
-.engage-row {
-  display: inline-flex;
-}
-
-.recruit-row {
-  display: inline-flex;
-}
-
 
 /* Package Component (ie. one box for a trail tier) CSS */
 
-ul[class^="list-"] {
-  font-weight: normal;
-  font-size: 18px;
+div[class^="package-component-"] {
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  color: #000000;
 }
 
 div[class^="package-component-build-"] {
   background: #F7CEC2;
-  border-radius: 20px;
-  padding: 10px;
-  margin-right: 10px;
 }
 
 div[class^="package-component-engage-"] {
   background: #FFED8E;
-  border-radius: 20px;
-  padding: 10px;
-  margin-right: 10px;
 }
 
 div[class^="package-component-recruit-"] {
   background: #D0FFFF;
-  border-radius: 20px;
-  padding: 10px;
-  margin-right: 10px;
+}
+
+div[class*="-top-row"]{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul[class^="list-"] {
+  font-weight: normal;
+  font-size: 18px;
 }
