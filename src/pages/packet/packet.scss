@@ -11,13 +11,26 @@
 }
 
 /* Packet cover section CSS */
+.moon-logo{
+  float: right;
+}
+
+.intro-div {
+  margin-left: 149px;
+}
+
 .intro-title {
   font-size: 72px;
   font-weight: bold;
 }
 
 .intro-text {
-  font-size: 24px;
+  font-size: 32px;
+  width: 50%;
+}
+
+.packet-blurb {
+  margin-left: 1000px;
 }
 
 .packet-title {
@@ -26,7 +39,8 @@
 }
 
 .packet-text {
-  font-size: 24px;
+  font-size: 32px;
+  width: 100%;
 }
 
 .email {
@@ -35,6 +49,11 @@
 }
 
 /* Packet struct section CSS*/
+.packet-struct {
+  @include bottom-padding;
+  position: relative;
+}
+
 .base-box {
   font-weight: bold;
   font-size: 32px;

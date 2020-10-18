@@ -34,8 +34,8 @@ const SponsorPacket = () => {
   return (
       <div className="packet">
         <section className="packet-cover">
-          <img src={MoonLogo} alt='HBP logo moon' height='257.89' width='251'/>
           <div className='intro-div'>
+            <img className='moon-logo' src={MoonLogo} alt='HBP logo moon' height='257.89' width='251'/>
             <h1 className='intro-title'>Sponsor HBP 2021</h1>
             <p className="intro-text">
               At HackBeanpot, we aim to foster an inclusive community that
@@ -50,7 +50,7 @@ const SponsorPacket = () => {
             <p className='packet-text'>
               Each sponsor package starts with the base tier. We also have three
               optional trails designed to focus on different sponsorship goals,
-              each with multiple tiers of perks to choose from. <br/>
+              each with multiple tiers of perks to choose from. <br/> <br/>
               It’s that simple! As always, please contact us at
               <a className='email' href="mailto:team@hackbeanpot.com" target="_blank" rel="noopener noreferrer"> team@hackbeanpot.com </a>
               with any questions, or if you are interested in an alternative form of sponsorship.
