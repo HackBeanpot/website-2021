@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import MoonLogo from '../../images/svg/moon-logo.svg'
 import PacketStruct from '../../data/packet-structure.json'
 import PackageComponent from './components/package-component'
 
@@ -7,9 +8,10 @@ export default () => (
 )
 
 /* TODO:
-  - Background => do I need to import every piece
+  - Background (ie. flashlight, mountains, tent, etc) => do I need to import every piece
   - Intro text => CSS for location
-  -
+  - PackageComponent => styling for button, price thing
+  - Footer => waiting on design
  */
 
 const SponsorPacket = () => {
@@ -31,6 +33,7 @@ const SponsorPacket = () => {
   return (
       <div className="packet">
         <section className="packet-cover">
+          <img src={MoonLogo} height='257.89' width='251'/>
           <div className='intro-div'>
             <h1 className='intro-title'>Sponsor HBP 2021</h1>
             <p className="intro-text">
@@ -48,13 +51,14 @@ const SponsorPacket = () => {
               optional trails designed to focus on different sponsorship goals,
               each with multiple tiers of perks to choose from. <br/>
               It’s that simple! As always, please contact us at
-              <a className='email' href="mailto:team@hackbeanpot.com" target="_blank"> team@hackbeanpot.com </a>
+              <a className='email' href="mailto:team@hackbeanpot.com" target="_blank" rel="noopener noreferrer"> team@hackbeanpot.com </a>
               with any questions, or if you are interested in an alternative form of sponsorship.
             </p>
           </div>
         </section>
         <section className='packet-struct'>
           <div className='base-package'>
+            <div className={`base-circle`}>0</div>
             <div className='base-headline'>Review the Base Package</div>
             <div className='base-box'>
               $750
@@ -71,12 +75,11 @@ const SponsorPacket = () => {
               row.push(<PackageComponent className={`row-${trail}-${level}`} trail={trail} level={index + 1} perks={level} callback={(level, trailType) => setTrail(level, trailType)}/>)
             })}
 
+            // TODO: convert from just 1 to 1-3
             return (
-              <div className={`${trail}-row-div`}>
-                <div className={`${trail}-circle`}>
-                  1
-                </div>
-                <div className={`${trail}-headline`}>{`Select your ${trail} Package`}</div>\
+              <div className={`${trail}-div`}>
+                <div className={`${trail}-circle`}>1</div>
+                <div className={`${trail}-headline`}>{`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}</div>
                 <div className={`${trail}-row`}> { row } </div>
               </div>
             )
