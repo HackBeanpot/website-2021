@@ -106,7 +106,7 @@
 }
 
 .theme__logo {
-  @media (max-width: $lg) {
+  @media (max-width: $xl) {
     display: none;
   }
 }
@@ -115,7 +115,7 @@
   width: 100%;
   height: auto;
   z-index: 0;
-  margin-top: -350px;
+  margin-top: -250px;
 
   svg {
     width: 100%;
@@ -126,14 +126,18 @@
   }
 
   @media (min-width: $lg) {
-    margin-top: -450px;
+    margin-top: -400px;
   }
 
   @media (min-width: $xl) {
-    margin-top: -550px;
+    margin-top: -500px;
   }
 
   @media (min-width: $xxl) {
+    margin-top: -550px;
+  }
+
+  @media (min-width: $xxxl) {
     margin-top: -650px;
   }
 }
@@ -152,7 +156,7 @@
 .theme__content {
   width: 100%;
 
-  @media (min-width: $lg) {
+  @media (min-width: $xl) {
     width: 60%;
   }
 }
