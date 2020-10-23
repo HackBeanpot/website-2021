@@ -5,7 +5,6 @@
 .header {
   @include pale-blue-gradient-bg;
   position: relative;
-  padding-top: 90px;
 }
 
 .header__skyline {
@@ -13,7 +12,7 @@
   height: auto;
   z-index: 0;
   margin-bottom: -1px;
-  margin-top: -250px;
+  margin-top: -300px;
 
   svg {
     width: 100%;
@@ -35,7 +34,7 @@
 .header__content {
   width: 100%;
 
-  @media (min-width: $lg) {
+  @media (min-width: $md) {
     width: 60%;
     margin-right: 50px;
   }
@@ -77,6 +76,7 @@
 
 .header__cta {
   @include primary-cta;
+  margin-top: 10px; 
 }
 
 // ---------------------------------------------------------------------------
