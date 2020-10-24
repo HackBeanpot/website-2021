@@ -14,7 +14,7 @@ import 'styles/main.scss';
 const Layout = ({ children }) => (
   <div>
     <Helmet
-      title="HackBeanpot 2020"
+      title="HackBeanpot 2021"
       meta={[
         {
           name: 'description',
@@ -23,7 +23,7 @@ const Layout = ({ children }) => (
         },
         {
           name: 'keywords',
-          content: 'hackathon, boston, students, hackers, makers, beginners'
+          content: 'hackbeanpot, hackathon, boston, 2021, students, hackers, makers, beginners'
         },
         {
           name: 'theme-color',
