@@ -6,9 +6,7 @@
 }
 
 .packet-cover {
-  @include bottom-padding;
   position: relative;
-  background: url("../images/svg/packet-background-top.svg") no-repeat center;
   background-size: 100% 100%;
 }
 
@@ -51,7 +49,6 @@
 .packet-struct {
   @include bottom-padding;
   position: relative;
-  background: url("../images/svg/packet-background-bottom.svg") no-repeat center;
   background-size: 100% 100%;
 }
 
@@ -155,8 +152,16 @@ div[class*="-line"] {
   font-size: 18px;
 }
 
-.base-line {
+.running-total-div {
+  display: flex;
+  justify-content: space-between;
   font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p[class^="footer-list-type"] {
+  margin-right: 160px;
 }
 
 .send-selection-div {
