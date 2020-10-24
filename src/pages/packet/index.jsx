@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import MoonLogo from '../../images/svg/moon-logo.svg'
 import BaseCheck from '../../images/svg/packet-base-check.svg'
 import PacketStruct from '../../data/packet-structure.json'
 import PackageComponent from './components/package-component'
+import SelectionArrow from '../../images/svg/packet-selection-arrow.svg'
 
 export default () => (
   <SponsorPacket />
@@ -35,7 +35,6 @@ const SponsorPacket = () => {
       <div className="packet">
         <section className="packet-cover">
           <div className='intro-div'>
-            <img className='moon-logo' src={MoonLogo} alt='HBP logo moon' height='257.89' width='251'/>
             <h1 className='intro-title'>Sponsor HBP 2021</h1>
             <p className="intro-text">
               At HackBeanpot, we aim to foster an inclusive community that
@@ -94,7 +93,35 @@ const SponsorPacket = () => {
           })}
         </section>
         <section className='footer'>
-          <p> Running Total {750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
+          <div className='footer-total-list'>
+            <div className='total-line'>
+              <h3>Running Total</h3>
+              <h3>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</h3>
+            </div>
+            <div className='base-line'>
+              <p>The Base Package</p>
+              <p>$750</p>
+            </div>
+            <div className='build-line'>
+              <p>The Build Package</p>
+              <p>${build * PRICE_OF_PACKAGE}</p>
+            </div>
+            <div className='engage-line'>
+              <p>The Engage Package</p>
+              <p>${engage * PRICE_OF_PACKAGE}</p>
+            </div>
+            <div className='recruit-line'>
+              <p>The Recruit Package</p>
+              <p>${recruit * PRICE_OF_PACKAGE}</p>
+            </div>
+          </div>
+          <div className='send-selection-div'>
+            <div className='get-in-touch-text'>Let's get in touch!</div>
+            <div className='send-selection-button'>
+              Send us your selection
+              <img className='selection-arrow' src={ SelectionArrow } alt='Selection arrow'/>
+            </div>
+          </div>
         </section>
       </div>
     );

@@ -8,12 +8,11 @@
 .packet-cover {
   @include bottom-padding;
   position: relative;
+  background: url("../images/svg/packet-background-top.svg") no-repeat center;
+  background-size: 100% 100%;
 }
 
 /* Packet cover section CSS */
-.moon-logo{
-  float: right;
-}
 
 .intro-div {
   margin-left: 149px;
@@ -52,6 +51,8 @@
 .packet-struct {
   @include bottom-padding;
   position: relative;
+  background: url("../images/svg/packet-background-bottom.svg") no-repeat center;
+  background-size: 100% 100%;
 }
 
 .base-box {
@@ -141,4 +142,48 @@ div[class*="-top-line"]{
 ul[class^="list-"] {
   font-weight: normal;
   font-size: 18px;
+}
+
+/* Footer */
+.footer-total-list {
+  padding-right: 250px;
+}
+
+div[class*="-line"] {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.base-line {
+  font-size: 32px;
+}
+
+.send-selection-div {
+  text-align: center;
+}
+
+.get-in-touch-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.send-selection-button {
+  border-radius: 40px;
+  background: #B4EBEB;
+  font-size: 24px;
+  color: black;
+  padding: 23px 0 23px 40px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selection-arrow {
+  margin-right: 29px;
+  margin-left: 22px;
+  width: 33px;
+  height: 28px;
 }
