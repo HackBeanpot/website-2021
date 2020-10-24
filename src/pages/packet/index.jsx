@@ -9,14 +9,15 @@ export default () => (
 )
 
 /* TODO:
-  - Background (ie. flashlight, mountains, tent, etc) => so I just import and then...?
-  - Intro text => CSS for location and moon logo thing
-  - PackageComponent => styling for button, price wood plaque thing
+  - Background => sizing
+  - Intro text => CSS for location
+  - PackageComponent => styling for radio buttons and opt out, price wood plaque thing
   - Footer => waiting on design
  */
 
 const SponsorPacket = () => {
-  const PRICE_OF_PACKAGE = 375
+  const PRICE_OF_PACKAGE = 375;
+  const trails = ["build", "engage", "recruit"];
   const [build, setBuild] = useState(0);
   const [engage, setEngage] = useState(0);
   const [recruit, setRecruit] = useState(0);
@@ -29,6 +30,12 @@ const SponsorPacket = () => {
     } else if (trailType === 'recruit') {
       setRecruit(level)
     }
+  }
+
+  const openMailClient = () => {
+    const subjectLine = "Interest in Sponsorship for HackBeanpot 2021"
+    const body = `Base + Level ${build} Build + Level ${engage} Engage + Level ${recruit} Recruit`
+    window.location.href = `mailto:team@hackbeapot.com?subject=${subjectLine}&body=${body}`
   }
 
   return (
@@ -84,7 +91,7 @@ const SponsorPacket = () => {
             return (
               <div className={`${trail}-div`}>
                 <div className={`${trail}-headline`}>
-                  <div className={`${trail}-circle`}>1</div>
+                  <div className={`${trail}-circle`}>{trails.findIndex((elem) => elem===trail) + 1}</div>
                   {`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
                 </div>
                 <div className={`${trail}-row`}> { row } </div>
@@ -94,30 +101,30 @@ const SponsorPacket = () => {
         </section>
         <section className='footer'>
           <div className='footer-total-list'>
-            <div className='total-line'>
-              <h3>Running Total</h3>
-              <h3>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</h3>
+            <div className='running-total-div'>
+              <p>Running Total</p>
+              <p>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
             </div>
             <div className='base-line'>
-              <p>The Base Package</p>
+              <p className='footer-list-type-total'>The Base Package</p>
               <p>$750</p>
             </div>
             <div className='build-line'>
-              <p>The Build Package</p>
+              <p className='footer-list-type-build'>The Build Package</p>
               <p>${build * PRICE_OF_PACKAGE}</p>
             </div>
             <div className='engage-line'>
-              <p>The Engage Package</p>
+              <p className='footer-list-type-engage'>The Engage Package</p>
               <p>${engage * PRICE_OF_PACKAGE}</p>
             </div>
             <div className='recruit-line'>
-              <p>The Recruit Package</p>
+              <p className='footer-list-type-recruit'>The Recruit Package</p>
               <p>${recruit * PRICE_OF_PACKAGE}</p>
             </div>
           </div>
           <div className='send-selection-div'>
             <div className='get-in-touch-text'>Let's get in touch!</div>
-            <div className='send-selection-button'>
+            <div className='send-selection-button' onClick={openMailClient}>
               Send us your selection
               <img className='selection-arrow' src={ SelectionArrow } alt='Selection arrow'/>
             </div>
