@@ -105,6 +105,20 @@ div[class*='circle'] {
   background-color: #52C2C2;
 }
 
+div[class*="-opt-out-button"] {
+  display: inline-block;
+  margin-left: 40px;
+  background-color: #B4EBEB;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 div[class*="-row"] {
   margin-left: 290px;
   display: flex;
