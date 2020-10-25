@@ -10,7 +10,6 @@ export default () => (
 
 /* TODO:
   - Background => sizing (Jenn will help)
-  - Intro text => CSS for location
   - PackageComponent => styling for radio buttons (Felicia) & price label
   - Footer => can't import background
  */
@@ -96,9 +95,8 @@ const SponsorPacket = () => {
                                          perks={level} callback={(level, trailType) => setTrail(level, trailType)}/>)
             })
 
-            // TODO: convert from just 1 to 1-3
             return (
-              <div className={`${trail}-div`}>
+              <div className={`${trail}-div-pack`}>
                 <div className={`${trail}-headline`}>
                   <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>
                   {`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
