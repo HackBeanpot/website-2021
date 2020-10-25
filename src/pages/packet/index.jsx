@@ -11,8 +11,8 @@ export default () => (
 /* TODO:
   - Background => sizing
   - Intro text => CSS for location
-  - PackageComponent => styling for radio buttons and opt out, price wood plaque thing
-  - Footer => waiting on design
+  - PackageComponent => styling for radio buttons & price label
+  - Footer => can't import background
  */
 
 const SponsorPacket = () => {
