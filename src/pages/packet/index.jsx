@@ -9,9 +9,8 @@ export default () => (
 )
 
 /* TODO:
-  - Background => sizing (Jenn will help)
+  - Background => sizing (especially at the bottom)
   - PackageComponent => styling for radio buttons (Felicia) & price label
-  - Footer => can't import background
  */
 
 const SponsorPacket = () => {
