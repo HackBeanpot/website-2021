@@ -5,9 +5,7 @@ const PackageComponent = (props) => {
     return (
       <div className={`package-component-${trail}-${level}`}>
         <div className={`package-component-${trail}-${level}-top-line`}>
-          <div className='price-sign'>
-            {375 * level}
-          </div>
+          <img src={require(`../../../images/svg/price-label-level-${level}.svg`)} alt='price-label' height="67" width="176" />
           <input type="radio" name={trail} id={`${trail}-${level}-button`} onChange={() => callback(level, trail)}/>
         </div>
         <ul className={`list-${trail}-${level}`}>
