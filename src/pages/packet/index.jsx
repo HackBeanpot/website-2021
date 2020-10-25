@@ -9,15 +9,16 @@ export default () => (
 )
 
 /* TODO:
-  - Background => sizing
+  - Background => sizing (Jenn will help)
   - Intro text => CSS for location
-  - PackageComponent => styling for radio buttons & price label
+  - PackageComponent => styling for radio buttons (Felicia) & price label
   - Footer => can't import background
  */
 
 const SponsorPacket = () => {
   const PRICE_OF_PACKAGE = 375;
-  const trails = ["build", "engage", "recruit"];
+  const TRAILS_LIST = ["build", "engage", "recruit"];
+
   const [build, setBuild] = useState(0);
   const [engage, setEngage] = useState(0);
   const [recruit, setRecruit] = useState(0);
@@ -99,7 +100,7 @@ const SponsorPacket = () => {
             return (
               <div className={`${trail}-div`}>
                 <div className={`${trail}-headline`}>
-                  <div className={`${trail}-circle`}>{trails.findIndex((elem) => elem===trail) + 1}</div>
+                  <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>
                   {`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
 
                   <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
