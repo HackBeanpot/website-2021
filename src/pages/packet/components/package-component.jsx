@@ -8,7 +8,7 @@ const PackageComponent = (props) => {
           <div className='price-sign'>
             {375 * level}
           </div>
-          <input type="radio" name={trail} onChange={() => callback(level, trail)}/>
+          <input type="radio" name={trail} id={`${trail}-${level}-button`} onChange={() => callback(level, trail)}/>
         </div>
         <ul className={`list-${trail}-${level}`}>
           {perks.map((perk, index) => {

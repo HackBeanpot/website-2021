@@ -32,6 +32,13 @@ const SponsorPacket = () => {
     }
   }
 
+  const removeOptionChecked = (trail) => {
+    setTrail(0, trail);
+    for (let i = 1; i <= 3; i++) {
+      document.getElementById(`${trail}-${i}-button`).checked = false;
+    }
+  }
+
   const openMailClient = () => {
     const subjectLine = "Interest in Sponsorship for HackBeanpot 2021"
     const body = `Base + Level ${build} Build + Level ${engage} Engage + Level ${recruit} Recruit`
@@ -84,7 +91,8 @@ const SponsorPacket = () => {
           {Object.keys(PacketStruct["trails"]).map(trail => {
             const row = []
             PacketStruct["trails"][trail].forEach((level, index) => {
-              row.push(<PackageComponent className={`row-${trail}-${level}`} trail={trail} level={index + 1} perks={level} callback={(level, trailType) => setTrail(level, trailType)}/>)
+              row.push(<PackageComponent className={`row-${trail}-${level}`} trail={trail} level={index + 1}
+                                         perks={level} callback={(level, trailType) => setTrail(level, trailType)}/>)
             })
 
             // TODO: convert from just 1 to 1-3
@@ -93,6 +101,10 @@ const SponsorPacket = () => {
                 <div className={`${trail}-headline`}>
                   <div className={`${trail}-circle`}>{trails.findIndex((elem) => elem===trail) + 1}</div>
                   {`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
+
+                  <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
+                    Clear selection
+                  </div>
                 </div>
                 <div className={`${trail}-row`}> { row } </div>
               </div>
