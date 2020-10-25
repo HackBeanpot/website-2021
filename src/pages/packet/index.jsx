@@ -10,7 +10,7 @@ export default () => (
 
 /* TODO:
   - Background => sizing (especially at the bottom)
-  - PackageComponent => styling for radio buttons (Felicia) & price label
+  - PackageComponent => styling for radio buttons (Felicia)
  */
 
 const SponsorPacket = () => {
@@ -78,7 +78,7 @@ const SponsorPacket = () => {
             <div className='base-box'>
               <div className='base-box-price-check'>
                 $750
-                <img src={BaseCheck} alt='Base package check mark' height='42' width='42'/>
+                <img className='base-box-check-mark' src={BaseCheck} alt='Base package check mark' height='42' width='42'/>
               </div>
               <ul className={`list-base-package`}>
                 {PacketStruct["base"].map((perk, index) => {

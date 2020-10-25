@@ -67,8 +67,16 @@
 }
 
 .base-box-price-check {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.base-box-check-mark {
+  position: absolute;
+  top: -5px;
+  left: 250px;
 }
 
 div[class*="-div-pack"] {
