@@ -23,7 +23,7 @@ const Layout = ({ children }) => (
         },
         {
           name: 'keywords',
-          content: 'hackbeanpot, hackathon, boston, 2021, students, hackers, makers, beginners'
+          content: 'hackbeanpot, hackathon, boston, 2021, students, hackers, makers, beginners, hack, beanpot, virtual, online, free, learning, learn, computer, science, programming, program, coding, code'
         },
         {
           name: 'theme-color',
