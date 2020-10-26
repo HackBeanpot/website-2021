@@ -10,11 +10,74 @@ export default () => (
 
 /* TODO:
   - Background => sizing (especially at the bottom)
-  - PackageComponent => styling for radio buttons (Felicia)
  */
 
+const PacketFooter = ({ build, engage, recruit }) => {
+  const PRICE_OF_PACKAGE = 375
+
+  const openMailClient = () => {
+    const subjectLine = "Interest in Sponsorship for HackBeanpot 2021"
+    const body = `Base + Level ${build} Build + Level ${engage} Engage + Level ${recruit} Recruit`
+    window.location.href = `mailto:team@hackbeapot.com?subject=${subjectLine}&body=${body}`
+  }
+
+  return (
+    <section className='footer'>
+      <div className='footer-total-list'>
+        <div className='running-total-div'>
+          <p>Running Total</p>
+          <p>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
+        </div>
+        <div className='base-line'>
+          <p className='footer-list-type-total'>The Base Package</p>
+          <p>$750</p>
+        </div>
+        <div className='build-line'>
+          <p className='footer-list-type-build'>The Build Package</p>
+          <p>${build * PRICE_OF_PACKAGE}</p>
+        </div>
+        <div className='engage-line'>
+          <p className='footer-list-type-engage'>The Engage Package</p>
+          <p>${engage * PRICE_OF_PACKAGE}</p>
+        </div>
+        <div className='recruit-line'>
+          <p className='footer-list-type-recruit'>The Recruit Package</p>
+          <p>${recruit * PRICE_OF_PACKAGE}</p>
+        </div>
+      </div>
+      <div className='send-selection-div'>
+        <div className='get-in-touch-text'>Let's get in touch!</div>
+        <div className='send-selection-button' onClick={openMailClient}>
+          Send us your selection
+          <img className='selection-arrow' src={ SelectionArrow } alt='Selection arrow'/>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+const BasePackage = () => (
+  <div className='base-package'>
+    <div className='base-headline'>
+      <div className={`base-circle`}>0</div>
+      Review the Base Package
+    </div>
+    <div className='base-box'>
+      <div className='base-box-price-check'>
+        $750
+        <img className='base-box-check-mark' src={BaseCheck} alt='Base package check mark' height='42' width='42'/>
+      </div>
+      <ul className={`list-base-package`}>
+        {PacketStruct["base"].map((perk, index) => {
+          return <p key={`list-base-${index}`}> {perk} </p>
+        })}
+      </ul>
+    </div>
+  </div>
+)
+
+
 const SponsorPacket = () => {
-  const PRICE_OF_PACKAGE = 375;
   const TRAILS_LIST = ["build", "engage", "recruit"];
 
   const [build, setBuild] = useState(0);
@@ -36,12 +99,6 @@ const SponsorPacket = () => {
     for (let i = 1; i <= 3; i++) {
       document.getElementById(`${trail}-${i}-button`).checked = false;
     }
-  }
-
-  const openMailClient = () => {
-    const subjectLine = "Interest in Sponsorship for HackBeanpot 2021"
-    const body = `Base + Level ${build} Build + Level ${engage} Engage + Level ${recruit} Recruit`
-    window.location.href = `mailto:team@hackbeapot.com?subject=${subjectLine}&body=${body}`
   }
 
   return (
@@ -70,33 +127,20 @@ const SponsorPacket = () => {
           </div>
         </section>
         <section className='packet-struct'>
-          <div className='base-package'>
-            <div className='base-headline'>
-              <div className={`base-circle`}>0</div>
-              Review the Base Package
-            </div>
-            <div className='base-box'>
-              <div className='base-box-price-check'>
-                $750
-                <img className='base-box-check-mark' src={BaseCheck} alt='Base package check mark' height='42' width='42'/>
-              </div>
-              <ul className={`list-base-package`}>
-                {PacketStruct["base"].map((perk, index) => {
-                  return <p key={`list-base-${index}`}> {perk} </p>
-                })}
-              </ul>
-            </div>
-          </div>
+          <BasePackage />
+
           {Object.keys(PacketStruct["trails"]).map(trail => {
             const row = []
+            const selectedLevel = trail === "build" ? build : trail === "engage" ? engage : recruit
             PacketStruct["trails"][trail].forEach((level, index) => {
-              row.push(<PackageComponent className={`row-${trail}-${level}`} trail={trail} level={index + 1}
-                                         perks={level} callback={(level, trailType) => setTrail(level, trailType)}/>)
+              row.push(<PackageComponent className={`row-${trail}-${level}`} trail={trail} level={index + 1} key={`${trail}-${level}`}
+                                         perks={level} callback={(level, trailType) => setTrail(level, trailType)}
+                                         selected={selectedLevel === index + 1}/>)
             })
 
             return (
               <div className={`${trail}-div-pack`}>
-                <div className={`${trail}-headline`}>
+                <div className={`packet-headline ${trail}-headline`}>
                   <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>
                   {`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
 
@@ -109,37 +153,7 @@ const SponsorPacket = () => {
             )
           })}
         </section>
-        <section className='footer'>
-          <div className='footer-total-list'>
-            <div className='running-total-div'>
-              <p>Running Total</p>
-              <p>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
-            </div>
-            <div className='base-line'>
-              <p className='footer-list-type-total'>The Base Package</p>
-              <p>$750</p>
-            </div>
-            <div className='build-line'>
-              <p className='footer-list-type-build'>The Build Package</p>
-              <p>${build * PRICE_OF_PACKAGE}</p>
-            </div>
-            <div className='engage-line'>
-              <p className='footer-list-type-engage'>The Engage Package</p>
-              <p>${engage * PRICE_OF_PACKAGE}</p>
-            </div>
-            <div className='recruit-line'>
-              <p className='footer-list-type-recruit'>The Recruit Package</p>
-              <p>${recruit * PRICE_OF_PACKAGE}</p>
-            </div>
-          </div>
-          <div className='send-selection-div'>
-            <div className='get-in-touch-text'>Let's get in touch!</div>
-            <div className='send-selection-button' onClick={openMailClient}>
-              Send us your selection
-              <img className='selection-arrow' src={ SelectionArrow } alt='Selection arrow'/>
-            </div>
-          </div>
-        </section>
+        <PacketFooter build={build} engage={engage} recruit={recruit} />
       </div>
     );
 }
