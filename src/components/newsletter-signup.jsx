@@ -45,11 +45,9 @@ const NewsletterSignup = () => {
                     />
                     <div className="header__form-msg">{message}</div>
 
-                    <div class="clear footer-cta-padding">
-                        <button className="header__cta" type="submit">
-                            Join our newsletter
-                        </button>
-                    </div>
+                    <button className="header__cta" type="submit">
+                        Join our newsletter
+                    </button>
                 </div>
             </form>
         </div>

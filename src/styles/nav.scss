@@ -1,10 +1,10 @@
 .nav,
 .nav-mobile {
-  position: fixed;
+  position: static; // temporarily pinning the nav
   top: 0;
   left: 0;
   width: 100%;
-  background-color: none;
+  background-color: $camp-pale-blue;
   z-index: 100;
 }
 
