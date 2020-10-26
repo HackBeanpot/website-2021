@@ -16,13 +16,15 @@ var _gatsbyReactRouterScroll = require("gatsby-react-router-scroll");
 
 var _domready = _interopRequireDefault(require("@mikaelkristiansson/domready"));
 
+var _gatsby = require("gatsby");
+
 var _navigation = require("./navigation");
 
 var _emitter = _interopRequireDefault(require("./emitter"));
 
 var _pageRenderer = _interopRequireDefault(require("./page-renderer"));
 
-var _asyncRequires = _interopRequireDefault(require("./async-requires"));
+var _asyncRequires = _interopRequireDefault(require("$virtual/async-requires"));
 
 var _loader = require("./loader");
 
@@ -30,9 +32,9 @@ var _ensureResources = _interopRequireDefault(require("./ensure-resources"));
 
 var _stripPrefix = _interopRequireDefault(require("./strip-prefix"));
 
-var _matchPaths = _interopRequireDefault(require("./match-paths.json"));
+var _matchPaths = _interopRequireDefault(require("$virtual/match-paths.json"));
 
-var _jsxFileName = "/Users/kastens/Sites/gatsby/packages/gatsby/cache-dir/production-app.js";
+// Generated during bootstrap
 const loader = new _loader.ProdLoader(_asyncRequires.default, _matchPaths.default);
 (0, _loader.setLoader)(loader);
 loader.setApiRunner(_apiRunnerBrowser.apiRunner);
@@ -55,75 +57,62 @@ window.___loader = _loader.publicLoader;
   // Remove this in v3
 
 
-  const RouteHandler = props => _react.default.createElement(_router.BaseContext.Provider, {
+  const RouteHandler = props => /*#__PURE__*/_react.default.createElement(_router.BaseContext.Provider, {
     value: {
       baseuri: `/`,
       basepath: `/`
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: void 0
-  }, _react.default.createElement(_pageRenderer.default, (0, _extends2.default)({}, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: void 0
-  })));
+    }
+  }, /*#__PURE__*/_react.default.createElement(_pageRenderer.default, props));
 
-  class LocationHandler extends _react.default.Component {
+  const DataContext = /*#__PURE__*/_react.default.createContext({});
+
+  class GatsbyRoot extends _react.default.Component {
     render() {
       const {
-        location
+        children
       } = this.props;
-      return _react.default.createElement(_ensureResources.default, {
-        location: location,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62
-        },
-        __self: this
+      return /*#__PURE__*/_react.default.createElement(_router.Location, null, ({
+        location
+      }) => /*#__PURE__*/_react.default.createElement(_ensureResources.default, {
+        location: location
       }, ({
         pageResources,
         location
-      }) => _react.default.createElement(_navigation.RouteUpdates, {
+      }) => {
+        const staticQueryResults = (0, _loader.getStaticQueryResults)();
+        return /*#__PURE__*/_react.default.createElement(_gatsby.StaticQueryContext.Provider, {
+          value: staticQueryResults
+        }, /*#__PURE__*/_react.default.createElement(DataContext.Provider, {
+          value: {
+            pageResources,
+            location
+          }
+        }, children));
+      }));
+    }
+
+  }
+
+  class LocationHandler extends _react.default.Component {
+    render() {
+      return /*#__PURE__*/_react.default.createElement(DataContext.Consumer, null, ({
+        pageResources,
+        location
+      }) => /*#__PURE__*/_react.default.createElement(_navigation.RouteUpdates, {
+        location: location
+      }, /*#__PURE__*/_react.default.createElement(_gatsbyReactRouterScroll.ScrollContext, {
         location: location,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64
-        },
-        __self: this
-      }, _react.default.createElement(_gatsbyReactRouterScroll.ScrollContext, {
-        location: location,
-        shouldUpdateScroll: _navigation.shouldUpdateScroll,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 65
-        },
-        __self: this
-      }, _react.default.createElement(_router.Router, {
+        shouldUpdateScroll: _navigation.shouldUpdateScroll
+      }, /*#__PURE__*/_react.default.createElement(_router.Router, {
         basepath: __BASE_PATH__,
         location: location,
-        id: "gatsby-focus-wrapper",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 69
-        },
-        __self: this
-      }, _react.default.createElement(RouteHandler, (0, _extends2.default)({
-        path: encodeURI(pageResources.page.path === `/404.html` ? (0, _stripPrefix.default)(location.pathname, __BASE_PATH__) : pageResources.page.matchPath || pageResources.page.path)
+        id: "gatsby-focus-wrapper"
+      }, /*#__PURE__*/_react.default.createElement(RouteHandler, (0, _extends2.default)({
+        path: pageResources.page.path === `/404.html` ? (0, _stripPrefix.default)(location.pathname, __BASE_PATH__) : encodeURI(pageResources.page.matchPath || pageResources.page.path)
       }, this.props, {
         location: location,
         pageResources: pageResources
-      }, pageResources.json, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 74
-        },
-        __self: this
-      }))))));
+      }, pageResources.json))))));
     }
 
   }
@@ -146,41 +135,14 @@ window.___loader = _loader.publicLoader;
   }
 
   _loader.publicLoader.loadPage(browserLoc.pathname).then(page => {
-    if (!page || page.status === `error`) {
+    if (!page || page.status === _loader.PageResourceStatus.Error) {
       throw new Error(`page resources for ${browserLoc.pathname} not found. Not rendering React`);
     }
 
     window.___webpackCompilationHash = page.page.webpackCompilationHash;
-
-    const Root = () => _react.default.createElement(_router.Location, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 129
-      },
-      __self: void 0
-    }, locationContext => _react.default.createElement(LocationHandler, (0, _extends2.default)({}, locationContext, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 130
-      },
-      __self: void 0
-    })));
-
-    const WrappedRoot = (0, _apiRunnerBrowser.apiRunner)(`wrapRootElement`, {
-      element: _react.default.createElement(Root, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 136
-        },
-        __self: void 0
-      })
-    }, _react.default.createElement(Root, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 137
-      },
-      __self: void 0
-    }), ({
+    const SiteRoot = (0, _apiRunnerBrowser.apiRunner)(`wrapRootElement`, {
+      element: /*#__PURE__*/_react.default.createElement(LocationHandler, null)
+    }, /*#__PURE__*/_react.default.createElement(LocationHandler, null), ({
       result
     }) => {
       return {
@@ -188,17 +150,11 @@ window.___loader = _loader.publicLoader;
       };
     }).pop();
 
-    let NewRoot = () => WrappedRoot;
+    const App = () => /*#__PURE__*/_react.default.createElement(GatsbyRoot, null, SiteRoot);
 
     const renderer = (0, _apiRunnerBrowser.apiRunner)(`replaceHydrateFunction`, undefined, _reactDom.default.hydrate)[0];
     (0, _domready.default)(() => {
-      renderer(_react.default.createElement(NewRoot, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 153
-        },
-        __self: void 0
-      }), typeof window !== `undefined` ? document.getElementById(`___gatsby`) : void 0, () => {
+      renderer( /*#__PURE__*/_react.default.createElement(App, null), typeof window !== `undefined` ? document.getElementById(`___gatsby`) : void 0, () => {
         (0, _apiRunnerBrowser.apiRunner)(`onInitialClientRender`);
       });
     });
