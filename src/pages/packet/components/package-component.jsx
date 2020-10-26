@@ -1,22 +1,34 @@
-import React from 'react';
+import React from 'react'
+import PacketCheck from '../../../images/svg/packet-check.js'
 
-const PackageComponent = (props) => {
-    const {perks, level, trail, callback} = props
-    return (
-      <div className={`package-component-${trail}-${level}`}>
-        <div className={`package-component-${trail}-${level}-top`}>
-          <img className={`${trail}-${level}-price-label`} src={require(`../../../images/svg/price-label-level-${level}.svg`)} alt='price-label' height="67" width="176" />
-          <input type="radio" className={`${trail}-${level}-radio`} id={`${trail}-${level}-button`} onChange={() => callback(level, trail)}/>
-        </div>
-        <ul className={`list-${trail}-${level}`}>
-          {perks.map((perk, index) => {
-            return (
-              <p key={`${trail}-${level}-list-${index}`}> {perk} </p>
-            )
-          })}
-        </ul>
-      </div>
-    )
+const checkColors = {
+  "build": '#E56138',
+  "engage": "#CCAD0D",
+  "recruit": "#52C2C2"
 }
 
-export default PackageComponent;
+const PackageComponent = ({ perks, level, trail, callback, selected }) => (
+  <label for={`${trail}-${level}-button`}
+    className={`packet-box package-component-${trail} packet-level-${level} ${selected ? 'packet-box-selected': ''}`}>
+    <img className={`packet-price-label`} src={require(`../../../images/svg/price-label-level-${level}.svg`)} alt='price-label' height="67" width="176" />
+    <input type="radio" className={`packet-radio`}
+      id={`${trail}-${level}-button`}
+      onChange={() => callback(level, trail)} checked={selected}/>
+    {
+      selected ?
+      <div className="packet-box-radio-checked">
+        <PacketCheck className="packet-box-check" shadowColor={checkColors[trail]} />
+      </div> :
+      <div className="packet-box-radio-unchecked" />
+    }
+    <ul className={`list-${trail}-${level}`}>
+      {perks.map((perk, index) => {
+        return (
+          <p key={`${trail}-${level}-list-${index}`}> {perk} </p>
+        )
+      })}
+    </ul>
+  </label>
+)
+
+export default PackageComponent

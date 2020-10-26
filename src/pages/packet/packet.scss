@@ -25,6 +25,7 @@
 .intro-text {
   font-size: 32px;
   width: 50%;
+  line-height: 36px;
 }
 
 .packet-blurb {
@@ -40,6 +41,7 @@
 
 .packet-text {
   font-size: 32px;
+  line-height: 36px;
 }
 
 .email {
@@ -54,13 +56,22 @@
   background-size: 100% 100%;
 }
 
+.packet ul {
+  margin-bottom: 0;
+}
+
+.packet ul p {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
 .base-box {
   font-weight: bold;
   font-size: 32px;
   color: #000000;
   background: #eeeeee;
   border-radius: 20px;
-  padding: 10px;
+  padding: 24px;
   width: 669px;
   margin-left: 290px;
   margin-bottom: 30px;
@@ -75,16 +86,18 @@
 
 .base-box-check-mark {
   position: absolute;
-  top: -5px;
-  left: 250px;
+  top: -8px;
+  right: 0;
+  width: unset;
 }
 
 div[class*="-div-pack"] {
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 
-div[class*="-headline"] {
-  margin: 35px 0 35px 192px;
+.base-headline,
+.packet-headline {
+  margin: 35px 0 50px 192px;
   font-weight: bold;
   font-size: 48px;
   display: inline-block;
@@ -142,54 +155,83 @@ div[class*="-row"] {
 
 /* Package Component (ie. one box for a trail tier) CSS */
 
-div[class^="package-component-"] {
+.packet-box {
   border-radius: 20px;
-  padding-left: 10px;
-  margin-right: 15px;
+  padding: 32px 24px 24px;
+  margin-right: 32px;
   color: #000000;
   height: 100%;
   width: 275px;
   position: relative;
+  cursor: pointer;
 }
 
-div[class*="-top"]{
-  position: relative;
-  margin-bottom: 30px;
-}
-
-img[class*="-1-price-label"] {
+.packet-price-label {
+  width: 175px;
   position: absolute;
-  top: -32px;
-  left: -50px;
+  top: -36px;
+  left: 8px;
 }
 
-img[class*="-2-price-label"] {
+.packet-radio {
+  display: none;
+}
+
+.packet-box-check {
   position: absolute;
-  top: -30px;
-  left: -45px;
+  top: -4px;
+  right: -8px;
 }
 
-img[class*="-3-price-label"] {
+.packet-box-radio-unchecked,
+.packet-box-radio-checked {
+  width: 16px;
+  height: 16px;
   position: absolute;
-  top: -30px;
-  left: -70px;
+  top: 16px;
+  right: 16px;
+  border-radius: 50%;
 }
 
-input[class*="-radio"] {
-  position: absolute;
-  top: 10px;
-  left: 225px;
+.package-component-build .packet-box-radio-checked {
+  background-color: #E56138;
 }
 
-div[class^="package-component-build-"] {
+.packet-box-selected.package-component-build,
+.package-component-build .packet-box-radio-unchecked,
+.package-component-build .packet-box-radio-checked {
+  box-shadow: 0 0 0 4px #E56138;
+}
+
+.package-component-build {
   background: #F7CEC2;
 }
 
-div[class^="package-component-engage-"] {
+.package-component-engage .packet-box-radio-checked {
+  background-color: #CCAD0D;
+}
+
+.packet-box-selected.package-component-engage,
+.package-component-engage .packet-box-radio-unchecked,
+.package-component-engage .packet-box-radio-checked {
+  box-shadow: 0 0 0 4px #CCAD0D;
+}
+
+.package-component-engage {
   background: #FFED8E;
 }
 
-div[class^="package-component-recruit-"] {
+.package-component-recruit .packet-box-radio-checked {
+  background-color: #52C2C2;
+}
+
+.packet-box-selected.package-component-recruit,
+.package-component-recruit .packet-box-radio-unchecked,
+.package-component-recruit .packet-box-radio-checked {
+  box-shadow: 0 0 0 4px #52C2C2;
+}
+
+.package-component-recruit {
   background: #D0FFFF;
 }
 
