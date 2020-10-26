@@ -46,7 +46,7 @@
 }
 
 .header__title {
-  @include h1-text;
+  @include h2-text($camp-burnt-red);
   margin-bottom: 10px;
   font-family: $dosis;
 }

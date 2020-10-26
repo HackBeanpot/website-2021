@@ -14,62 +14,54 @@ const CodeOfConduct = () => (
     <span className="coc__leaf">
       <BasicLeaf />
     </span>
-    <h1 className="coc__heading">HackBeanpot 2020 Code of Conduct</h1>
+    <h1 className="coc__heading">HackBeanpot 2021 Code of Conduct</h1>
     <div className="coc__body">
       <p>
-        The HackBeanpot team is dedicated to providing a safe, harassment-free
-        experience for everyone, regardless of gender, age, sexual orientation,
-        disability, physical appearance, body size, race, ethnicity,
-        nationality, religion, previous hackathon attendance, or computing
-        experience (or lack of any of the aforementioned). We do not tolerate
-        harassment of hackathon participants in any form. Harassment includes,
-        but is not limited to: offensive comments, sexual language or imagery,
-        deliberate intimidation, stalking, harassing photography or recording,
-        sustained general disruption, inappropriate physical contact, and
-        unwelcome sexual attention.
+        The HackBeanpot team is dedicated to providing a safe, harassment-free 
+        experience for everyone, regardless of gender, age, sexual orientation, 
+        disability, physical appearance, body size, race, ethnicity, 
+        nationality, religion, previous hackathon attendance, or computing 
+        experience (or lack of any of the aforementioned). We do not tolerate 
+        harassment of hackathon participants in any form. Harassment includes, 
+        but is not limited to: offensive comments, sexual language or imagery, 
+        deliberate intimidation, stalking, harassive photography or recording, 
+        sustained general disruption, and unwelcome sexual attention. 
       </p>
       <p>
-        Harassment is not tolerated in any part of the hackathon, including
-        within the venue, as a part of hacks created at the event, on social
-        media, or other online media. Hackathon attendees violating these rules
-        may be warned, disqualified, or expelled from the hackathon at the
-        discretion of the Event Staff.
+        Harassment is not tolerated in any part of the hackathon, including 
+        within our virtual spaces, as a part of hackathon projects created 
+        at the event, or on social media. Hackathon attendees, sponsors, judges, 
+        mentors, organizers, and all other individuals at HackBeanpot 2021 are 
+        subject to this Code of Conduct. Individuals violating these rules 
+        may be warned, disqualified, or expelled from the hackathon at the 
+        discretion of the Event Staff.      
       </p>
       <p>
-        Participants asked to stop any harassing behavior are expected to comply
-        immediately. If a participant engages in harassing behavior during,
-        before, or after the event, the Event Staff may take any action they
-        deem appropriate, including warning the offender, expelling them from
-        the hackathon and removing them from the premises, or excluding them
+        Participants asked to stop any harrassive behavior are expected to comply 
+        immediately. If a participant engages in such behavior during, 
+        before, or after the event, the Event Staff may take any action they 
+        deem appropriate, including warning the offender, expelling them from 
+        the hackathon, removing them from the virtual premises, or excluding them 
         from any and all future events.
       </p>
       <p>
-        If you are being harassed, notice that someone else is being harassed,
-        or have any other concerns, please contact a member of the Event Staff
-        immediately. Event Staff can be identified by their t-shirts. Event
-        Staff will be happy to help participants contact security or local law
-        enforcement, provide escorts, or otherwise assist those experiencing
+        If you are being harassed, notice that someone else is being harassed, 
+        or have any other concerns, please contact a member of the Event Staff 
+        immediately. Event Staff will be happy to help participants contact 
+        appropriate law enforcement or otherwise assist those experiencing 
         harassment to feel safe for the duration of the hackathon. We value you.
       </p>
       <br />
 
-      <p className="coc__subheading">Event Staff can be reached by:</p>
-      <ul>
-        <li>
-          Email:{' '}
-          <a href="mailto:team@hackbeanpot.com">team@hackbeanpot.com</a>
-        </li>
-        <li>
-          Twitter:{' '}
-          <a
-            href="https://www.twitter.com/hackbeanpot"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @HackBeanpot
-          </a>
-        </li>
-      </ul>
+      <p className="coc__subheading">How to reach event staff:</p>
+      <p>
+        <b>Before and after the event via email: </b>
+        to <a href="mailto:team@hackbeanpot.com">team@hackbeanpot.com</a>
+      </p>
+      <p>
+        <b>During the event via Slack: </b>
+        You can post in #ask-an-organizer or DM an Event Staff member (individuals with [Organizer] in their display name).
+      </p>
     </div>
   </div>
 );
