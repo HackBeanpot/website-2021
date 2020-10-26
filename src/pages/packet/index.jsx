@@ -90,7 +90,6 @@ const BasePackage = () => (
   </div>
 )
 
-
 const SponsorPacket = () => {
   const TRAILS_LIST = ["build", "engage", "recruit"];
 

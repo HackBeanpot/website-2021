@@ -229,6 +229,7 @@ div[class*="-row"] {
 
 .package-component-recruit .packet-box-radio-checked {
   background-color: $hbp-packet-blue;
+  box-shadow: 0 0 0 4px #E56138;
 }
 
 .packet-box-selected.package-component-recruit,
@@ -239,6 +240,7 @@ div[class*="-row"] {
 
 .package-component-recruit {
   background: $camp-packet-pale-blue;
+  box-shadow: 0 0 0 4px #52C2C2;
 }
 
 ul[class^="list-"] {
