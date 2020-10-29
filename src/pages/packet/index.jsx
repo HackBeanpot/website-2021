@@ -8,16 +8,27 @@ export default () => (
   <SponsorPacket />
 )
 
-/* TODO:
-  - Background => sizing (especially at the bottom)
- */
+const Template = ({ build, engage, recruit, PRICE_OF_PACKAGE}) => {
+  const newline = '%0d%0a%0d%0a';
+
+  return`
+Hi, I am [your name] from [your company] and we are interested in:${newline}
+    Base: $750${newline}
+    Level ${build} Build: $${PRICE_OF_PACKAGE*build}${newline}
+    Level ${engage} Engage: $${PRICE_OF_PACKAGE*engage}${newline}
+    Level ${recruit} Recruit: $${PRICE_OF_PACKAGE*recruit}${newline}
+    Total: $${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}${newline}
+Best,${newline}
+[Your name]
+  `
+}
 
 const PacketFooter = ({ build, engage, recruit }) => {
   const PRICE_OF_PACKAGE = 375
 
   const openMailClient = () => {
     const subjectLine = "Interest in Sponsorship for HackBeanpot 2021"
-    const body = `Base + Level ${build} Build + Level ${engage} Engage + Level ${recruit} Recruit`
+    const body = Template({build, engage, recruit, PRICE_OF_PACKAGE});
     window.location.href = `mailto:team@hackbeapot.com?subject=${subjectLine}&body=${body}`
   }
 
