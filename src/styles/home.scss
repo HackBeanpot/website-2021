@@ -46,9 +46,19 @@
 }
 
 .header__title {
-  @include h2-text($camp-burnt-red);
-  margin-bottom: 10px;
   font-family: $dosis;
+  color: $camp-burnt-red;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  @media (min-width: $sm) {
+    font-size: 50px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 60px;
+  }
 }
 
 .header__event-date {
