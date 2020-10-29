@@ -33,12 +33,18 @@
 
   @media (min-width: $md) {
     width: 80%;
+    @include left-padding;
   }
 }
 
 .coc__body {
   @include margins;
   @include body-text;
+
+  @media (min-width: $md) {
+    @include right-padding;
+    @include left-padding;
+  }
 }
 
 .coc__subheading {
