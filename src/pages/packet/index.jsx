@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import BaseCheck from '../../images/svg/packet-base-check.svg'
 import PacketStruct from '../../data/packet-structure.json'
-import PackageComponent from './components/package-component'
 import SelectionArrow from '../../images/svg/packet-selection-arrow.svg'
 import '../../styles/main.scss';
+import PackageRow from './components/packet-row';
 
 export default () => (
   <SponsorPacket />
@@ -68,24 +68,24 @@ const PacketFooter = ({ build, engage, recruit }) => {
   )
 }
 
-const BasePackage = () => (
-  <div className='base-div-pack'>
-    <div className='trail-intro'>
-      <div className='base-headline'>
-        <div className={`base-circle`}>0</div>
-      Review the Base Package
-    </div>
+
+const BasePackage = ({ isMobile }) => (
+  <div className='base-package'>
+    <div className='base-headline'>
+      <div className={`base-circle`}>0</div>
+      {!isMobile ? "Review the Base Package" : "The Base Package"}
     </div>
     <div className='base-box'>
       <div className='base-box-price-check'>
         $750
-        <img className='base-box-check-mark' src={BaseCheck} alt='Base package check mark' height='42' width='42' />
+        {!isMobile && <img className='base-box-check-mark' src={BaseCheck} alt='Base check' height='42' width='42'/>}
       </div>
       <ul className={`list-base-package`}>
-        {PacketStruct["base"].map((perk, index) => {
+        {PacketStruct[!isMobile?"base":"base-mobile"].map((perk, index) => {
           return <p key={`list-base-${index}`}> {perk} </p>
         })}
       </ul>
+      {isMobile && <div className='base-box-button-mobile'>Required</div>}
     </div>
   </div>
 )
@@ -96,6 +96,14 @@ const SponsorPacket = () => {
   const [build, setBuild] = useState(0);
   const [engage, setEngage] = useState(0);
   const [recruit, setRecruit] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const userAgent = typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+    const mobile = Boolean(userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i))
+    setIsMobile(mobile);
+  }, [])
+
 
   const setTrail = (level, trailType) => {
     if (trailType === 'build') {
@@ -125,49 +133,40 @@ const SponsorPacket = () => {
             engaging technical projects. By bringing local companies,
             organizers, and attendees together, HackBeanpot celebrates
             innovation and inclusion in Boston tech.
-            </p>
+          </p>
         </div>
         <div className='packet-blurb'>
           <h1 className='packet-title'> Our Packet </h1>
           <p className='packet-text'>
-            Each sponsor package starts with the <span style={{ fontWeight: "bold" }}>base tier</span>. We also have <span style={{ fontWeight: "bold" }}>three
+            Each sponsor package starts with the <span style={{ fontWeight: "bold" }}>base tier</span>. We also
+            have <span style={{ fontWeight: "bold" }}>three
               optional trails</span> designed to focus on different sponsorship goals,
-              each with multiple tiers of perks to choose from. <br /> <br />
-              It’s that simple! As always, please contact us at
-              <a className='email' href="mailto:team@hackbeanpot.com" target="_blank" rel="noopener noreferrer"> team@hackbeanpot.com </a>
-              with any questions, or if you are interested in an alternative form of sponsorship.
-            </p>
+            each with multiple tiers of perks to choose from. <br/> <br/>
+            It’s that simple! As always, please contact us at
+            <a className='email' href="mailto:team@hackbeanpot.com" target="_blank"
+               rel="noopener noreferrer"> team@hackbeanpot.com </a>
+            with any questions, or if you are interested in an alternative form of sponsorship.
+          </p>
         </div>
       </section>
       <section className='packet-struct'>
-        <BasePackage />
+        <BasePackage isMobile={isMobile}/>
 
         {Object.keys(PacketStruct["trails"]).map(trail => {
-          const row = []
-          const selectedLevel = trail === "build" ? build : trail === "engage" ? engage : recruit
-          PacketStruct["trails"][trail].forEach((level, index) => {
-            row.push(<PackageComponent className={`row-${trail}-${level}`} trail={trail} level={index + 1} key={`${trail}-${level}`}
-              perks={level} callback={(level, trailType) => setTrail(level, trailType)}
-              selected={selectedLevel === index + 1} />)
-          })
+          return <PackageRow
+            trail={trail}
+            build={build}
+            engage={engage}
+            recruit={recruit}
+            TRAILS_LIST={TRAILS_LIST}
+            removeOptionChecked={(trail) => removeOptionChecked(trail)}
+            setTrail={(level, trail) => setTrail(level, trail)}
+          />
 
-          return (
-            <div className={`${trail}-div-pack`}>
-              <div className='trail-intro'>
-                <div className={`packet-headline ${trail}-headline`}>
-                  <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem === trail) + 1}</div>
-                  {`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
-                </div>
-                <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
-                  Clear Selection
-                </div>
-              </div>
-              <div className={`${trail}-row`}> {row} </div>
-            </div>
-          )
         })}
       </section>
-      <PacketFooter build={build} engage={engage} recruit={recruit} />
+      <PacketFooter build={build} engage={engage} recruit={recruit}/>
     </div>
-  );
+  )
 }
+

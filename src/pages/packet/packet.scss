@@ -71,13 +71,13 @@
   color: $black;
   background: $grey;
   border-radius: 20px;
-  padding: 24px;
   width: 669px;
   margin-left: 108px;
   margin-bottom: 30px;
 }
 
 .base-box-price-check {
+  padding: 24px 24px 0;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -86,9 +86,22 @@
 
 .base-box-check-mark {
   position: absolute;
-  top: -8px;
-  right: 0;
+  top: 15px;
+  right: 20px;
   width: unset;
+}
+
+.list-base-package {
+  padding: 0 24px 10px;
+}
+
+.base-box-button-mobile {
+  padding: 10px 0;
+  font-size: 24px;
+  color: #eeeeee;
+  font-weight: normal;
+  text-align: center;
+  background: #102037;
 }
 
 div[class*="-div-pack"] {
