@@ -96,12 +96,18 @@ const SponsorPacket = () => {
   const [build, setBuild] = useState(0);
   const [engage, setEngage] = useState(0);
   const [recruit, setRecruit] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const userAgent = typeof window.navigator === "undefined" ? "" : navigator.userAgent;
-    const mobile = Boolean(userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i))
-    setIsMobile(mobile);
+    const handleWindowResize = () => setWindowWidth(window.innerWidth);
+
+    window.addEventListener('resize', handleWindowResize)
+    setIsMobile(windowWidth <= 768);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize)
+    };
   }, [])
 
 
