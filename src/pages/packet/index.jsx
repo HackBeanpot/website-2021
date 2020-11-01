@@ -73,7 +73,7 @@ const BasePackage = ({ isMobile }) => (
   <div className='base-package'>
     <div className='base-headline'>
       <div className={`base-circle`}>0</div>
-      {!isMobile ? "Review the Base Package" : "The Base Package"}
+      The Base Package
     </div>
     <div className='base-box'>
       <div className='base-box-price-check'>
@@ -81,7 +81,7 @@ const BasePackage = ({ isMobile }) => (
         {!isMobile && <img className='base-box-check-mark' src={BaseCheck} alt='Base check' height='42' width='42'/>}
       </div>
       <ul className={`list-base-package`}>
-        {PacketStruct[!isMobile?"base":"base-mobile"].map((perk, index) => {
+        {PacketStruct["base"].map((perk, index) => {
           return <p key={`list-base-${index}`}> {perk} </p>
         })}
       </ul>

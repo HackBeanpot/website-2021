@@ -35,10 +35,9 @@ const PackageComponent = ({ perks, level, trail, callback, selected, isMobile })
           )
         })}
       </ul>
-      {
-        (selected && isMobile) ?
-          <div className='packet-box-radio-checked-mobile'>Selected</div> :
-          <div className='packet-box-radio-unchecked-mobile'>Select</div>
+      { isMobile && (selected ?
+        <div className='packet-box-radio-checked-mobile'>Selected</div> :
+        <div className='packet-box-radio-unchecked-mobile'>Select</div>)
       }
     </label>
   )

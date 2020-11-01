@@ -11,18 +11,32 @@ const PackageRow = ({ trail, build, engage, recruit, TRAILS_LIST, removeOptionCh
                                selected={selectedLevel === index + 1}/>)
   })
 
-  return (
-    <div className={`${trail}-div-pack`}>
-      <div className={`packet-headline ${trail}-headline`}>
-        {!isMobile && <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>}
-        {(!isMobile ? 'Select your ' : '') + `${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
-        <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
-          Clear selection
+  if (!isMobile) {
+    return (
+      <div className={`${trail}-div-pack`}>
+        <div className={`packet-headline ${trail}-headline`}>
+          <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>
+          {`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
+          <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
+            Clear selection
+          </div>
         </div>
+        <div className={`${trail}-row`}> { row } </div>
       </div>
-      <div className={`${trail}-row`}> { row } </div>
-    </div>
-  )
+    )
+  } else {
+    return (
+      <div className={`${trail}-div-pack`}>
+        <div className={`packet-headline ${trail}-headline`}>
+          {`${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
+          <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
+            Clear selection
+          </div>
+        </div>
+        <div className={`${trail}-row`}> { row } </div>
+      </div>
+    )
+  }
 }
 
 
