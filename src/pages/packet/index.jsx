@@ -99,6 +99,7 @@ const SponsorPacket = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isMobile, setIsMobile] = useState(false);
 
+  // Check if mobile device
   useEffect(() => {
     const handleWindowResize = () => setWindowWidth(window.innerWidth);
 
@@ -109,7 +110,6 @@ const SponsorPacket = () => {
       window.removeEventListener('resize', handleWindowResize)
     };
   }, [])
-
 
   const setTrail = (level, trailType) => {
     if (trailType === 'build') {

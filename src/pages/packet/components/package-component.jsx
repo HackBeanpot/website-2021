@@ -7,20 +7,22 @@ const checkColors = {
   "recruit": "#52C2C2"
 }
 
-const PackageComponent = ({ perks, level, trail, callback, selected }) => {
+const PackageComponent = ({ perks, level, trail, callback, selected, isMobile }) => {
   const comp_perks = perks !== undefined ? perks : [];
   const comp_level = level !== undefined ? level : 1;
 
   return (
-    <label for={`${trail}-${level}-button`}
+    <label htmlFor={`${trail}-${level}-button`}
            className={`packet-box package-component-${trail} packet-level-${level} ${selected ? 'packet-box-selected' : ''}`}>
-      <img className={`packet-price-label`} src={require(`../../../images/svg/price-label-level-${comp_level}.svg`)}
-           alt='price-label' height="67" width="176"/>
-      <input type="radio" className={`packet-radio`}
-             id={`${trail}-${level}-button`}
-             onChange={() => callback(level, trail)} checked={selected}/>
+      {!isMobile ?
+        <img className={`packet-price-label`} src={require(`../../../images/svg/price-label-level-${comp_level}.svg`)}
+             alt='price-label' height="67" width="176"/>
+        : <div className={'packet-price-mobile'}>${375 * level}</div>}
+      {!isMobile && <input type="radio" className={`packet-radio`}
+                           id={`${trail}-${level}-button`}
+                           onChange={() => callback(level, trail)} checked={selected}/>}
       {
-        selected ?
+        (selected && !isMobile) ?
           <div className="packet-box-radio-checked">
             <PacketCheck className="packet-box-check" shadowColor={checkColors[trail]}/>
           </div> :
@@ -33,6 +35,11 @@ const PackageComponent = ({ perks, level, trail, callback, selected }) => {
           )
         })}
       </ul>
+      {
+        (selected && isMobile) ?
+          <div className='packet-box-radio-checked-mobile'>Selected</div> :
+          <div className='packet-box-radio-unchecked-mobile'>Select</div>
+      }
     </label>
   )
 }
