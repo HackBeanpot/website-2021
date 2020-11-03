@@ -7,7 +7,7 @@
   display: block;
   position: absolute;
   width: 150px;
-  top: 175px;
+  top: 25px;
   left: -50px;
 
   svg {
@@ -22,22 +22,29 @@
 
   @media (min-width: $md) {
     width: 300px;
-    top: 200px;
+    top: 50px;
   }
 }
 
 .coc__heading {
   @include h1-text;
-  margin-top: 200px;
+  margin-top: 50px;
   margin-bottom: 50px;
 
   @media (min-width: $md) {
     width: 80%;
+    @include left-padding;
   }
 }
 
 .coc__body {
+  @include margins;
   @include body-text;
+
+  @media (min-width: $md) {
+    @include right-padding;
+    @include left-padding;
+  }
 }
 
 .coc__subheading {
