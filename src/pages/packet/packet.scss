@@ -1,7 +1,7 @@
 .packet {
   position: relative;
   overflow-x: hidden;
-  color: #eeeeee;
+  color: $grey;
   background: #142434 url("../images/svg/packet-background.svg") no-repeat;
   background-size: cover;
 }
@@ -68,8 +68,8 @@
 .base-box {
   font-weight: bold;
   font-size: 32px;
-  color: #000000;
-  background: #eeeeee;
+  color: $black;
+  background: $grey;
   border-radius: 20px;
   padding: 24px;
   width: 669px;
@@ -117,32 +117,32 @@ div[class*='circle'] {
 }
 
 .base-circle {
-  background-color: #ffffff;
-  color: #1B365D;
+  background-color: $white;
+  color: $hbp-navy;
 }
 
 .build-circle {
-  background-color: #E56138;
+  background-color: $camp-orange;
 }
 
 .engage-circle {
-  background-color: #CCAD0D;
+  background-color: $camp-packet-yellow;
 }
 
 .recruit-circle {
-  background-color: #52C2C2;
+  background-color: $hbp-packet-blue;
 }
 
 div[class*="-opt-out-button"] {
   display: inline-block;
   margin-left: 40px;
-  background-color: #B4EBEB;
+  background-color: $pale-blue;
   border-radius: 20px;
   width: fit-content;
   padding: 10px;
   font-size: 18px;
   vertical-align: middle;
-  color: black;
+  color: $black;
   &:hover {
     cursor: pointer;
   }
@@ -159,7 +159,7 @@ div[class*="-row"] {
   border-radius: 20px;
   padding: 32px 24px 24px;
   margin-right: 32px;
-  color: #000000;
+  color: $black;
   height: 100%;
   width: 275px;
   position: relative;
@@ -194,45 +194,45 @@ div[class*="-row"] {
 }
 
 .package-component-build .packet-box-radio-checked {
-  background-color: #E56138;
+  background-color: $camp-orange;
 }
 
 .packet-box-selected.package-component-build,
 .package-component-build .packet-box-radio-unchecked,
 .package-component-build .packet-box-radio-checked {
-  box-shadow: 0 0 0 4px #E56138;
+  box-shadow: 0 0 0 4px $camp-orange;
 }
 
 .package-component-build {
-  background: #F7CEC2;
+  background: $pale-red;
 }
 
 .package-component-engage .packet-box-radio-checked {
-  background-color: #CCAD0D;
+  background-color: $camp-packet-yellow;
 }
 
 .packet-box-selected.package-component-engage,
 .package-component-engage .packet-box-radio-unchecked,
 .package-component-engage .packet-box-radio-checked {
-  box-shadow: 0 0 0 4px #CCAD0D;
+  box-shadow: 0 0 0 4px $camp-packet-yellow;
 }
 
 .package-component-engage {
-  background: #FFED8E;
+  background: $camp-packet-light-yellow;
 }
 
 .package-component-recruit .packet-box-radio-checked {
-  background-color: #52C2C2;
+  background-color: $hbp-packet-blue;
 }
 
 .packet-box-selected.package-component-recruit,
 .package-component-recruit .packet-box-radio-unchecked,
 .package-component-recruit .packet-box-radio-checked {
-  box-shadow: 0 0 0 4px #52C2C2;
+  box-shadow: 0 0 0 4px $hbp-packet-blue;
 }
 
 .package-component-recruit {
-  background: #D0FFFF;
+  background: $camp-packet-pale-blue;
 }
 
 ul[class^="list-"] {
@@ -243,10 +243,10 @@ ul[class^="list-"] {
 /* Footer */
 
 .footer {
-  background: #142434 url("../images/svg/packet-footer-background.svg") no-repeat;
+  background: $packet-dark-blue url("../images/svg/packet-footer-background.svg") no-repeat;
   background-size: cover;
   position: fixed;
-  color: #FFFFFF;
+  color: $white;
   bottom: 0;
   width: 100%;
   height: 280px;
@@ -286,9 +286,9 @@ p[class^="footer-list-type"] {
 
 .send-selection-button {
   border-radius: 40px;
-  background: #B4EBEB;
+  background: $pale-blue;
   font-size: 24px;
-  color: black;
+  color: $black;
   padding: 23px 0 23px 40px;
 
   &:hover {
