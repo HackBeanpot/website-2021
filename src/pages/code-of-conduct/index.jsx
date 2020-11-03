@@ -32,9 +32,7 @@ const CodeOfConduct = () => (
         within our virtual spaces, as a part of hackathon projects created 
         at the event, or on social media. Hackathon attendees, sponsors, judges, 
         mentors, organizers, and all other individuals at HackBeanpot 2021 are 
-        subject to this Code of Conduct. Individuals violating these rules 
-        may be warned, disqualified, or expelled from the hackathon at the 
-        discretion of the Event Staff.      
+        subject to this Code of Conduct.    
       </p>
       <p>
         Participants asked to stop any harrassive behavior are expected to comply 
