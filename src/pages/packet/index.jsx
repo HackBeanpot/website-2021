@@ -29,7 +29,7 @@ const PacketFooter = ({ build, engage, recruit }) => {
   const openMailClient = () => {
     const subjectLine = "Interest in Sponsorship for HackBeanpot 2021"
     const body = Template({build, engage, recruit, PRICE_OF_PACKAGE});
-    window.location.href = `mailto:team@hackbeapot.com?subject=${subjectLine}&body=${body}`
+    window.location.href = `mailto:team@hackbeanpot.com?subject=${subjectLine}&body=${body}`
   }
 
   return (
