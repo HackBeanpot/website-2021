@@ -250,6 +250,9 @@ ul[class^="list-"] {
   bottom: 0;
   width: 100%;
   height: 280px;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
 }
 
 .footer-total-list {
