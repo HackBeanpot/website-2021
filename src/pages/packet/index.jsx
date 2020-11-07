@@ -33,7 +33,7 @@ const PacketFooter = ({ build, engage, recruit }) => {
   }
 
   return (
-    <section className='footer'>
+    <section className='packet-footer'>
       <div className='footer-total-list'>
         <div className='running-total-div'>
           <p>Running Total</p>
