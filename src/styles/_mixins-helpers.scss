@@ -90,6 +90,13 @@
   overflow: hidden;
 }
 
+@mixin green-gradient-bg {
+  @include inline-link;
+  background: linear-gradient(180deg, #17331B 27.08%, #1D8A4F 85.42%);
+  color: $white;
+  overflow: hidden;
+}
+
 @mixin pale-blue-gradient-bg {
   @include inline-link;
   background: linear-gradient(#CDFFFF 27%, #52c2c2 100%);
