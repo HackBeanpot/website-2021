@@ -45,6 +45,4 @@ const PackageRow = ({ trail, build, engage, recruit, removeOptionChecked, setTra
   }
 }
 
-
-
 export default PackageRow

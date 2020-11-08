@@ -4,6 +4,7 @@ import PacketStruct from '../../data/packet-structure.json'
 import SelectionArrow from '../../images/svg/packet-selection-arrow.svg'
 import '../../styles/main.scss';
 import PackageRow from './components/packet-row';
+import useIsMobile from './components/useIsMobile';
 
 export default () => (
   <SponsorPacket />
@@ -91,25 +92,10 @@ const BasePackage = ({ isMobile }) => (
 )
 
 const SponsorPacket = () => {
-  const TRAILS_LIST = ["build", "engage", "recruit"];
-
   const [build, setBuild] = useState(0);
   const [engage, setEngage] = useState(0);
   const [recruit, setRecruit] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Check if mobile device
-  useEffect(() => {
-    const handleWindowResize = () => setWindowWidth(window.innerWidth);
-
-    window.addEventListener('resize', handleWindowResize)
-    setIsMobile(windowWidth <= 768);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize)
-    };
-  }, [])
+  const isMobile = useIsMobile();
 
   const setTrail = (level, trailType) => {
     if (trailType === 'build') {

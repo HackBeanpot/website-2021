@@ -22,11 +22,11 @@ const PackageComponent = ({ perks, level, trail, callback, selected, isMobile })
                            id={`${trail}-${level}-button`}
                            onChange={() => callback(level, trail)} checked={selected}/>}
       {
-        (selected && !isMobile) ?
+        !isMobile && (selected ?
           <div className="packet-box-radio-checked">
             <PacketCheck className="packet-box-check" shadowColor={checkColors[trail]}/>
           </div> :
-          <div className="packet-box-radio-unchecked"/>
+          <div className="packet-box-radio-unchecked"/>)
       }
       <ul className={`list-${trail}-${level}`}>
         {comp_perks.map((perk, index) => {

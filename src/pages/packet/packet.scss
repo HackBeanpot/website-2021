@@ -326,3 +326,13 @@ p[class^="footer-list-type"] {
   width: 33px;
   height: 28px;
 }
+
+@media only screen and (max-width: $md) {
+  div[class*="-row"], .packet-headline, .packet-blurb, .base-headline, .base-box, .intro-div  {
+    margin-left: 0;
+  }
+  div[class*="-row"] {
+    overflow: auto;
+    white-space: nowrap;
+  }
+}
