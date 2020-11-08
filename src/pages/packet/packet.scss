@@ -192,6 +192,13 @@ div[class*="-row"] {
   left: 8px;
 }
 
+.packet-price-mobile {
+  position: absolute;
+  top: 5px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .packet-radio {
   display: none;
 }
@@ -329,10 +336,32 @@ p[class^="footer-list-type"] {
 
 @media only screen and (max-width: $md) {
   div[class*="-row"], .packet-headline, .packet-blurb, .base-headline, .base-box, .intro-div  {
-    margin-left: 0;
+    margin-left: 20px;
   }
   div[class*="-row"] {
+    margin-right: 20px;
     overflow: auto;
     white-space: nowrap;
+  }
+
+  .packet {
+    background: #142434 url("../images/svg/packet-background-mobile.svg") no-repeat;
+  }
+
+  .intro-text {
+    width: 90%;
+    font-size: 22px;
+  }
+
+  .packet-blurb {
+    width: 90%;
+  }
+
+  .packet-text {
+    font-size: 20px;
+  }
+
+  .base-box {
+    width: 90%;
   }
 }

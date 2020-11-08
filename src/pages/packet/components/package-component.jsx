@@ -7,7 +7,7 @@ const checkColors = {
   "recruit": "#52C2C2"
 }
 
-const PackageComponent = ({ perks, level, trail, callback, selected, isMobile }) => {
+const PackageComponent = ({ perks, level, trail, setTrail, selected, isMobile, removeOptionChecked }) => {
   const comp_perks = perks !== undefined ? perks : [];
   const comp_level = level !== undefined ? level : 1;
 
@@ -20,7 +20,7 @@ const PackageComponent = ({ perks, level, trail, callback, selected, isMobile })
         : <div className={'packet-price-mobile'}>${375 * level}</div>}
       {!isMobile && <input type="radio" className={`packet-radio`}
                            id={`${trail}-${level}-button`}
-                           onChange={() => callback(level, trail)} checked={selected}/>}
+                           onChange={() => setTrail(level, trail)} checked={selected}/>}
       {
         !isMobile && (selected ?
           <div className="packet-box-radio-checked">
@@ -36,8 +36,8 @@ const PackageComponent = ({ perks, level, trail, callback, selected, isMobile })
         })}
       </ul>
       { isMobile && (selected ?
-        <div className='packet-box-radio-checked-mobile'>Selected</div> :
-        <div className='packet-box-radio-unchecked-mobile'>Select</div>)
+        <div className='packet-box-radio-checked-mobile' onChange={() => removeOptionChecked(trail)}>Selected</div> :
+        <div className='packet-box-radio-unchecked-mobile' onChange={() => setTrail(level, trail)}>Select</div>)
       }
     </label>
   )

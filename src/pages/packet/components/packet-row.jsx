@@ -13,8 +13,8 @@ const PackageRow = ({ trail, build, engage, recruit, removeOptionChecked, setTra
   const row = []
   trailPerks.forEach((level, index) => {
     row.push(<PackageComponent className={`row-${trail}-${level}`} trail={trail} level={index + 1} key={`${trail}-${level}`}
-                               isMobile={isMobile} perks={level} callback={(level, trailType) => setTrail(level, trailType)}
-                               selected={selectedLevel === index + 1}/>)
+                               isMobile={isMobile} perks={level} setTrail={(level, trailType) => setTrail(level, trailType)}
+                               selected={selectedLevel === index + 1} removeOptionChecked={(trail) => removeOptionChecked(trail)}/>)
   })
 
   if (!isMobile) {
@@ -35,9 +35,6 @@ const PackageRow = ({ trail, build, engage, recruit, removeOptionChecked, setTra
       <div className={`${trail}-div-pack`}>
         <div className={`packet-headline ${trail}-headline`}>
           {`${row_trail.charAt(0).toUpperCase() + row_trail.slice(1)} Package`}
-          <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
-            Clear selection
-          </div>
         </div>
         <div className={`${trail}-row`}> { row } </div>
       </div>
