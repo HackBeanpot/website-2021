@@ -18,7 +18,8 @@ const NavMobile = () => {
         <DynamicLink to="/" className="nav__logo">
           {isNavOpen ? <LogoIconWhite /> : <LogoIcon />}
         </DynamicLink>
-        <button onClick={menuToggle} className="nav-mobile__toggle-btn">
+        {/* Temporarily hiding the hamburger menu on mobile (since the teaser page has no navbar links).*/}
+        {/* <button onClick={menuToggle} className="nav-mobile__toggle-btn">
           <i
             className={
               isNavOpen
@@ -26,7 +27,7 @@ const NavMobile = () => {
                 : 'mdi mdi-24px mdi-menu menu-icon'
             }
           />
-        </button>
+          </button> */}
       </div>
       <ul
         className="nav-mobile__list"
