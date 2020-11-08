@@ -8,6 +8,8 @@ exports.components = {
   "component---src-pages-404-index-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/404/index.jsx"))),
   "component---src-pages-code-of-conduct-index-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/code-of-conduct/index.jsx"))),
   "component---src-pages-index-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/index.jsx"))),
+  "component---src-pages-packet-components-package-component-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/packet/components/package-component.jsx"))),
+  "component---src-pages-packet-index-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/packet/index.jsx"))),
   "component---src-pages-sponsors-components-sponsor-kits-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/sponsors/components/sponsor-kits.jsx"))),
   "component---src-pages-sponsors-index-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/sponsors/index.jsx"))),
   "component---src-pages-stories-components-quote-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/stories/components/quote.jsx"))),
