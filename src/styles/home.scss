@@ -5,14 +5,14 @@
 .header {
   @include pale-blue-gradient-bg;
   position: relative;
-  padding-top: 90px;
 }
 
 .header__skyline {
   width: 100%;
   height: auto;
   z-index: 0;
-  margin-top: -250px;
+  margin-bottom: -1px;
+  margin-top: -300px;
 
   svg {
     width: 100%;
@@ -46,9 +46,19 @@
 }
 
 .header__title {
-  @include h1-text;
-  margin-bottom: 10px;
   font-family: $dosis;
+  color: $camp-burnt-red;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  @media (min-width: $sm) {
+    font-size: 50px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 60px;
+  }
 }
 
 .header__event-date {
@@ -64,7 +74,7 @@
 .header__newsletter-input {
   border: 0;
   outline: 0;
-  width: 300px;
+  width: 290px;
   height: 40px;
   border-radius: 10px;
   padding: 0 0.5rem;
@@ -76,6 +86,7 @@
 
 .header__cta {
   @include primary-cta;
+  margin-top: 10px; 
 }
 
 // ---------------------------------------------------------------------------
@@ -98,10 +109,11 @@
 }
 
 .theme__transition {
-  margin-bottom: -20px;
+  margin-top: -1px;
+  width: 100vw;
   
   @media (max-width: $md) {
-    margin-bottom: 0px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -115,7 +127,7 @@
   width: 100%;
   height: auto;
   z-index: 0;
-  margin-top: -350px;
+  margin-top: -250px;
 
   svg {
     width: 100%;
@@ -126,14 +138,18 @@
   }
 
   @media (min-width: $lg) {
-    margin-top: -450px;
+    margin-top: -400px;
   }
 
   @media (min-width: $xl) {
-    margin-top: -550px;
+    margin-top: -500px;
   }
 
   @media (min-width: $xxl) {
+    margin-top: -570px;
+  }
+
+  @media (min-width: $xxxl) {
     margin-top: -650px;
   }
 }
@@ -141,10 +157,10 @@
 .theme__camp {
   @include h2-text;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 2rem;
 
   @media (min-width: $md) {
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
     text-align: left;
   }
 }
