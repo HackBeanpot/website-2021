@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
     />
     <Nav />
     <NavMobile />
-    <div>{children}</div>
+    {children}
     <Footer />
   </div>
 );

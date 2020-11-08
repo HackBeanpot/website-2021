@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Team HackBeanpot <team@hackbeanpot.com>",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "@mdi/font": "^4.5.95",
     "gatsby": "^2.17.15",
     "gatsby-plugin-google-analytics": "^2.1.27",
@@ -16,6 +17,7 @@
     "react-dom": "^16.12.0",
     "react-flickity-component": "^3.4.0",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.11.0",
     "react-masonry-component": "^6.2.1"
   },
   "keywords": [

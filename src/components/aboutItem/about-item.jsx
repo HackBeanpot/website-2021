@@ -1,42 +1,24 @@
 import React from 'react';
-import DynamicLink from '../dynamic-link';
+import CarouselSlide from "./slideshow/slideshow";
+import AboutFootsteps from "../../images/svg/footsteps";
+
 
 const AboutItem = props => {
-  let button;
-
-  if (props.btn) {
-    button = (
-      <DynamicLink to={props.btn.url} role="button" className="about-item__cta">
-        {props.btn.text}
-      </DynamicLink>
-    );
-  }
-
   return (
-    <div className={`about-item ${props.index % 2 === 0 ? 'left' : 'right'}`}>
-      <img
-        src={props.img.src}
-        alt={props.img.alt}
-        className={`about-item__img img-${props.index}`}
-      />
-      <div className="about-item__content">
-        <p className="about-item__title">{props.title}</p>
-        <p
-          className="about-item__description"
-          dangerouslySetInnerHTML={{ __html: props.content }}
-        />
-        {button}
+    <div className="about-item">
+      <div className="about-title">
+        HackBeanPot is about...
       </div>
+      <CarouselSlide/>
+      <p className="about-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+      <AboutFootsteps/>
     </div>
-  );
-};
-
-AboutItem.defaultProps = {
-  title: '',
-  content: '',
-  img: {},
-  hasBtn: false,
-  floatDirection: 'left'
-};
+  )
+}
 
 export default AboutItem;
