@@ -233,6 +233,14 @@ div[class*="-row"] {
   background: $pale-red;
 }
 
+.packet-box-radio-checked-mobile-build {
+  background: $camp-orange;
+}
+
+.packet-box-radio-unchecked-mobile-build {
+  background: $camp-packet-light-red;
+}
+
 .package-component-engage .packet-box-radio-checked {
   background-color: $camp-packet-yellow;
 }
@@ -247,9 +255,16 @@ div[class*="-row"] {
   background: $camp-packet-light-yellow;
 }
 
+.packet-box-radio-checked-mobile-engage {
+  background: $camp-packet-yellow;
+}
+
+.packet-box-radio-unchecked-mobile-engage {
+  background: $camp-yellow;
+}
+
 .package-component-recruit .packet-box-radio-checked {
   background-color: $hbp-packet-blue;
-  box-shadow: 0 0 0 4px #E56138;
 }
 
 .packet-box-selected.package-component-recruit,
@@ -260,8 +275,16 @@ div[class*="-row"] {
 
 .package-component-recruit {
   background: $camp-packet-pale-blue;
-  box-shadow: 0 0 0 4px #52C2C2;
 }
+
+.packet-box-radio-checked-mobile-recruit {
+  background: $hbp-packet-blue;
+}
+
+.packet-box-radio-unchecked-mobile-recruit {
+  background: $pale-blue;
+}
+
 
 ul[class^="list-"] {
   font-weight: normal;
@@ -334,18 +357,30 @@ p[class^="footer-list-type"] {
   height: 28px;
 }
 
+.packet-footer-mobile {
+  background: $midnight;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  padding: 50px 10px 0;
+  position: fixed;
+  bottom: 0;
+}
+
 @media only screen and (max-width: $md) {
   div[class*="-row"], .packet-headline, .packet-blurb, .base-headline, .base-box, .intro-div  {
     margin-left: 20px;
   }
   div[class*="-row"] {
-    margin-right: 20px;
+    padding-left: 5px;
     overflow: auto;
     white-space: nowrap;
   }
 
   .packet {
-    background: #142434 url("../images/svg/packet-background-mobile.svg") no-repeat;
+    background: #142434 url("../../images/svg/packet-background-mobile.svg") no-repeat;
   }
 
   .intro-text {
@@ -359,6 +394,14 @@ p[class^="footer-list-type"] {
 
   .packet-text {
     font-size: 20px;
+  }
+
+  .base-headline {
+    font-size: 40px;
+  }
+
+  .packet-headline {
+    font-size: 40px;
   }
 
   .base-box {

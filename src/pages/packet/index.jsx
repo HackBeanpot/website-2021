@@ -6,6 +6,13 @@ import '../../styles/main.scss';
 import PackageRow from './components/packet-row';
 import useIsMobile from './components/useIsMobile';
 
+/*
+TODO:
+- new footer for mobile
+- fix CSS for packet select
+- make packet select responsive
+ */
+
 export default () => (
   <SponsorPacket />
 )
@@ -25,7 +32,7 @@ Best,${newline}
   `
 }
 
-const PacketFooter = ({ build, engage, recruit }) => {
+const PacketFooter = ({ build, engage, recruit, isMobile }) => {
   const PRICE_OF_PACKAGE = 375
 
   const openMailClient = () => {
@@ -58,6 +65,7 @@ const PacketFooter = ({ build, engage, recruit }) => {
           <p>${recruit * PRICE_OF_PACKAGE}</p>
         </div>
       </div>
+
       <div className='send-selection-div'>
         <div className='get-in-touch-text'>Let's get in touch!</div>
         <div className='send-selection-button' onClick={openMailClient}>
@@ -73,7 +81,7 @@ const PacketFooter = ({ build, engage, recruit }) => {
 const BasePackage = ({ isMobile }) => (
   <div className='base-package'>
     <div className='base-headline'>
-      <div className={`base-circle`}>0</div>
+      {!isMobile && <div className={`base-circle`}>0</div>}
       The Base Package
     </div>
     <div className='base-box'>
@@ -154,7 +162,6 @@ const SponsorPacket = () => {
             removeOptionChecked={(trail) => removeOptionChecked(trail)}
             setTrail={(level, trail) => setTrail(level, trail)}
           />
-
         })}
       </section>
       <PacketFooter build={build} engage={engage} recruit={recruit}/>
