@@ -7,7 +7,7 @@ const checkIsMobile = (windowWidth) => {
 const useIsMobile = () => {
   const isWindowClient = typeof window === 'object';
 
-  const [isMobile, setIsMobile] = useState(isWindowClient ? checkIsMobile(window.innerWidth) : undefined);
+  const [isMobile, setIsMobile] = useState(isWindowClient ? checkIsMobile(window.innerWidth) : false);
 
   useEffect(() => {
     const setSize = () => {
