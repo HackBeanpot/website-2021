@@ -36,8 +36,8 @@ const PackageComponent = ({ perks, level, trail, setTrail, selected, isMobile, r
         })}
       </ul>
       { isMobile && (selected ?
-        <div className={`packet-box-radio-checked-mobile-${trail}`} onChange={() => removeOptionChecked(trail)}>Selected</div> :
-        <div className={`packet-box-radio-unchecked-mobile-${trail}`} onChange={() => setTrail(level, trail)}>Select</div>)
+        <div className={`packet-box-radio-mobile-checked-${trail}`} onChange={() => removeOptionChecked(trail)}>Selected</div> :
+        <div className={`packet-box-radio-mobile-unchecked-${trail}`} onChange={() => setTrail(level, trail)}>Select</div>)
       }
     </label>
   )

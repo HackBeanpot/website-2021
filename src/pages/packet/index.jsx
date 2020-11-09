@@ -8,8 +8,7 @@ import useIsMobile from './components/useIsMobile';
 
 /*
 TODO:
-- new footer for mobile
-- fix CSS for packet select
+- footer => how to expand and expanded footer
 - make packet select responsive
  */
 
@@ -32,7 +31,7 @@ Best,${newline}
   `
 }
 
-const PacketFooter = ({ build, engage, recruit, isMobile }) => {
+const PacketFooter = ({ build, engage, recruit, isMobile, isExpandedFooter }) => {
   const PRICE_OF_PACKAGE = 375
 
   const openMailClient = () => {
@@ -65,12 +64,11 @@ const PacketFooter = ({ build, engage, recruit, isMobile }) => {
           <p>${recruit * PRICE_OF_PACKAGE}</p>
         </div>
       </div>
-
       <div className='send-selection-div'>
         <div className='get-in-touch-text'>Let's get in touch!</div>
         <div className='send-selection-button' onClick={openMailClient}>
           Send us your selection
-          <img className='selection-arrow' src={SelectionArrow} alt='Selection arrow' />
+          <img className='selection-arrow' src={SelectionArrow} alt='Selection arrow'/>
         </div>
       </div>
     </section>
@@ -166,6 +164,6 @@ const SponsorPacket = () => {
       </section>
       <PacketFooter build={build} engage={engage} recruit={recruit}/>
     </div>
-  )
+  );
 }
 
