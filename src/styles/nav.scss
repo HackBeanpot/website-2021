@@ -1,11 +1,17 @@
 .nav,
 .nav-mobile {
-  position: static; // temporarily pinning the nav
+  position: fixed;
+  transition: 0.3s ease-in-out;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $camp-pale-blue;
+  height: $navbar-height;
   z-index: 100;
+  background-color: $camp-pale-blue;
+}
+
+nav.scrolled {
+  background-color: $white;
 }
 
 .nav__logo {
