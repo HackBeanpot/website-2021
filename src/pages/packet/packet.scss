@@ -2,7 +2,7 @@
   position: relative;
   overflow-x: hidden;
   color: $grey;
-  background: #142434 url("../images/svg/packet-background.svg") no-repeat;
+  background: #142434 url("../../images/svg/packet-background.svg") no-repeat;
   background-size: cover;
 }
 
@@ -243,7 +243,7 @@ ul[class^="list-"] {
 /* Footer */
 
 .packet-footer {
-  background: $packet-dark-blue url("../images/svg/packet-footer-background.svg") no-repeat;
+  background: $packet-dark-blue url("../../images/svg/packet-footer-background.svg") no-repeat;
   background-size: cover;
   position: fixed;
   color: $white;
