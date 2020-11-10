@@ -203,13 +203,13 @@
 // ---------------------------------------------------------------------------
 
 .faq {
-  @include pale-blue-bg;
+  @include green-gradient-bg;
   @include top-padding;
   @include bottom-padding;
 }
 
 .faq__title {
-  @include h2-text;
+  @include h2-text($white);
   @include bottom-margin;
 
   @media (max-width: $md) {
@@ -229,6 +229,14 @@
 
 .faq__cta {
   @include primary-cta;
+}
+
+.faq__footsteps {
+  float: right;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
 }
 
 // ---------------------------------------------------------------------------
