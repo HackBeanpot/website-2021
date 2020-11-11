@@ -1,8 +1,8 @@
 import React from 'react';
 import DynamicLink from './dynamic-link.jsx';
-import NavLinks from '../data/nav-links.json';
+import NavLinks from 'data/nav-links.json';
 
-import LogoIcon from '../images/svg/logo-icon.jsx';
+import LogoIcon from 'images/svg/logo-icon.jsx';
 
 const Nav = () => (
   <nav className="nav">
