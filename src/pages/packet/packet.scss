@@ -384,22 +384,22 @@ p[class^="footer-list-type"] {
 
 .packet-footer-mobile {
   background: $midnight;
-  height: 100px;
   width: 100%;
-  padding: 50px 25px 0;
   position: fixed;
   bottom: 0;
 }
 
-.footer-mobile-total {
-  display: flex;
-  justify-content: space-between;
-  font-size: 24px;
+.card {
+  background: $packet-dark-blue url("../../images/svg/packet-footer-background.svg") no-repeat;
+  background-size: cover;
 }
 
-.footer-mobile-total-value {
-  font-weight: bold;
+.card-body {
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
 
 @media only screen and (max-width: $md) {
   div[class*="-row"], .packet-headline, .packet-blurb, .base-headline, .base-box, .intro-div  {
@@ -412,7 +412,7 @@ p[class^="footer-list-type"] {
   }
 
   .packet {
-    background: #142434 url("../../images/svg/packet-background-mobile.svg") no-repeat;
+    background: $packet-dark-blue url("../../images/svg/packet-background-mobile.svg") no-repeat;
   }
 
   .intro-text {
@@ -454,19 +454,14 @@ p[class^="footer-list-type"] {
     margin: 0 20px 20px;
   }
 
-  .packet-footer{
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100px;
-  }
-
   .footer-total-list {
     padding: 20px 0 0;
+    margin-bottom: 20px;
     font-size: 16px;
   }
 
   .running-total-div {
+    margin: 20px 0 0;
     font-size: 20px;
     width: 100%;
   }

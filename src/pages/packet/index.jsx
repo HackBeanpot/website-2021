@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Accordion from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
 import BaseCheck from '../../images/svg/packet-base-check.svg'
 import PacketStruct from '../../data/packet-structure.json'
 import SelectionArrow from '../../images/svg/packet-selection-arrow.svg'
@@ -42,39 +44,85 @@ const PacketFooter = ({ build, engage, recruit, isMobile, isExpandedFooter }) =>
     window.location.href = `mailto:team@hackbeanpot.com?subject=${subjectLine}&body=${body}`
   }
 
-  return (
-    <section className='packet-footer'>
-      <div className='footer-total-list'>
-        <div className='running-total-div'>
-          <p>Running Total</p>
-          <p>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
+  if(!isMobile) {
+    return (
+      <section className='packet-footer'>
+        <div className='footer-total-list'>
+          <div className='running-total-div'>
+            <p>Running Total</p>
+            <p>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
+          </div>
+          <div className='base-line'>
+            <p className='footer-list-type-total'>The Base Package</p>
+            <p>$750</p>
+          </div>
+          <div className='build-line'>
+            <p className='footer-list-type-build'>The Build Package</p>
+            <p>${build * PRICE_OF_PACKAGE}</p>
+          </div>
+          <div className='engage-line'>
+            <p className='footer-list-type-engage'>The Engage Package</p>
+            <p>${engage * PRICE_OF_PACKAGE}</p>
+          </div>
+          <div className='recruit-line'>
+            <p className='footer-list-type-recruit'>The Recruit Package</p>
+            <p>${recruit * PRICE_OF_PACKAGE}</p>
+          </div>
         </div>
-        <div className='base-line'>
-          <p className='footer-list-type-total'>The Base Package</p>
-          <p>$750</p>
+        <div className='send-selection-div'>
+          <div className='get-in-touch-text'>Let's get in touch!</div>
+          <div className='send-selection-button' onClick={openMailClient}>
+            Send us your selection
+            <img className='selection-arrow' src={SelectionArrow} alt='Selection arrow'/>
+          </div>
         </div>
-        <div className='build-line'>
-          <p className='footer-list-type-build'>The Build Package</p>
-          <p>${build * PRICE_OF_PACKAGE}</p>
-        </div>
-        <div className='engage-line'>
-          <p className='footer-list-type-engage'>The Engage Package</p>
-          <p>${engage * PRICE_OF_PACKAGE}</p>
-        </div>
-        <div className='recruit-line'>
-          <p className='footer-list-type-recruit'>The Recruit Package</p>
-          <p>${recruit * PRICE_OF_PACKAGE}</p>
-        </div>
-      </div>
-      <div className='send-selection-div'>
-        <div className='get-in-touch-text'>Let's get in touch!</div>
-        <div className='send-selection-button' onClick={openMailClient}>
-          Send us your selection
-          <img className='selection-arrow' src={SelectionArrow} alt='Selection arrow'/>
-        </div>
-      </div>
-    </section>
-  )
+      </section>
+    )
+  } else {
+    return (
+      <section className='packet-footer-mobile'>
+        <Accordion defaultActiveKey='0'>
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey='0'>
+              <div className='running-total-div'>
+                <p>Running Total</p>
+                <p>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
+              </div>
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey='0'>
+              <Card.Body>
+                <div className='footer-total-list'>
+                  <div className='base-line'>
+                    <p className='footer-list-type-total'>The Base Package</p>
+                    <p>$750</p>
+                  </div>
+                  <div className='build-line'>
+                    <p className='footer-list-type-build'>The Build Package</p>
+                    <p>${build * PRICE_OF_PACKAGE}</p>
+                  </div>
+                  <div className='engage-line'>
+                    <p className='footer-list-type-engage'>The Engage Package</p>
+                    <p>${engage * PRICE_OF_PACKAGE}</p>
+                  </div>
+                  <div className='recruit-line'>
+                    <p className='footer-list-type-recruit'>The Recruit Package</p>
+                    <p>${recruit * PRICE_OF_PACKAGE}</p>
+                  </div>
+                </div>
+                <div className='send-selection-div'>
+                  <div className='get-in-touch-text'>Let's get in touch!</div>
+                  <div className='send-selection-button' onClick={openMailClient}>
+                    Send us your selection
+                    <img className='selection-arrow' src={SelectionArrow} alt='Selection arrow'/>
+                  </div>
+                </div>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
+      </section>
+    )
+  }
 }
 
 
