@@ -3,6 +3,7 @@
   "description": "HackBeanpot Website 2020",
   "version": "1.0.0",
   "author": "Team HackBeanpot <team@hackbeanpot.com>",
+  "prod": "gatsby serve",
   "dependencies": {
     "@mdi/font": "^4.9.95",
     "flickity": "^2.2.1",
