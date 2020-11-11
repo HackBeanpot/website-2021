@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import Footer from '../components/footer';
-import Nav from 'components/nav';
-import NavMobile from 'components/nav-mobile';
+import Nav from '../components/nav';
+import NavMobile from '../components/nav-mobile';
 
 import favicon from '../pages/favicon.png';
 

@@ -8,12 +8,11 @@ import '../../styles/main.scss';
 import WhiteLogo from '../../images/svg/moon-logo.svg'
 import PackageRow from './components/packet-row';
 import useIsMobile from './components/useIsMobile';
+import "../../styles/main.scss";
 
 /*
 TODO:
-- footer => expanded footer
-- move moon logo
-- add descriptions for each component
+- footer => footer arrow
  */
 
 export default () => (
