@@ -3,13 +3,15 @@ import BaseCheck from '../../images/svg/packet-base-check.svg'
 import PacketStruct from '../../data/packet-structure.json'
 import SelectionArrow from '../../images/svg/packet-selection-arrow.svg'
 import '../../styles/main.scss';
+import WhiteLogo from '../../images/svg/moon-logo.svg'
 import PackageRow from './components/packet-row';
 import useIsMobile from './components/useIsMobile';
 
 /*
 TODO:
-- footer => how to expand and expanded footer
-- make packet select responsive
+- footer => expanded footer
+- move moon logo
+- add descriptions for each component
  */
 
 export default () => (
@@ -122,6 +124,9 @@ const SponsorPacket = () => {
 
   return (
     <div className="packet">
+      {isMobile && <section className='packet-header'>
+        <img className='mobile-header-logo' src={WhiteLogo} alt='white logo' />
+      </section>}
       <section className="packet-cover">
         <div className='intro-div'>
           <h1 className='intro-title'>Sponsor HBP 2021</h1>
@@ -156,9 +161,9 @@ const SponsorPacket = () => {
             build={build}
             engage={engage}
             recruit={recruit}
-            TRAILS_LIST={TRAILS_LIST}
             removeOptionChecked={(trail) => removeOptionChecked(trail)}
             setTrail={(level, trail) => setTrail(level, trail)}
+            isMobile={isMobile}
           />
         })}
       </section>

@@ -6,12 +6,20 @@
   background-size: cover;
 }
 
+.mobile-header-logo {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 75px;
+  width: 75px;
+}
+
+/* Packet cover section CSS */
+
 .packet-cover {
   position: relative;
   background-size: 100% 100%;
 }
-
-/* Packet cover section CSS */
 
 .intro-div {
   margin: 320px 0 1200px 150px;
