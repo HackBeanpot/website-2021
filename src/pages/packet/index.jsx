@@ -3,6 +3,7 @@ import BaseCheck from '../../images/svg/packet-base-check.svg'
 import PacketStruct from '../../data/packet-structure.json'
 import PackageComponent from './components/package-component'
 import SelectionArrow from '../../images/svg/packet-selection-arrow.svg'
+import '../../styles/main.scss';
 
 export default () => (
   <SponsorPacket />
