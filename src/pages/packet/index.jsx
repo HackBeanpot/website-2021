@@ -83,6 +83,7 @@ const BasePackage = ({ isMobile }) => (
     <div className='base-headline'>
       {!isMobile && <div className={`base-circle`}>0</div>}
       The Base Package
+      {isMobile && <div className='base-description'>{PacketStruct["descriptions"]["base"]}</div>}
     </div>
     <div className='base-box'>
       <div className='base-box-price-check'>

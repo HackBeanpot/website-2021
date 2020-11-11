@@ -35,6 +35,7 @@ const PackageRow = ({ trail, build, engage, recruit, removeOptionChecked, setTra
       <div className={`${trail}-div-pack`}>
         <div className={`packet-headline ${trail}-headline`}>
           {`${row_trail.charAt(0).toUpperCase() + row_trail.slice(1)} Package`}
+          <div className={`packet-headline ${trail}-description`}>{PacketStruct["descriptions"][trail]}</div>
         </div>
         <div className={`${trail}-row`}> { row } </div>
       </div>

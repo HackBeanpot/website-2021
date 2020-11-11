@@ -121,6 +121,7 @@ div[class*="-div-pack"] {
 
 .base-headline,
 .packet-headline {
+  margin: 35px 0 35px 192px;
   font-weight: bold;
   font-size: 48px;
   vertical-align: middle;
@@ -130,6 +131,14 @@ div[class*="-div-pack"] {
   display: flex;
   justify-content: space-between;
   margin: 30px 0 60px;
+
+}
+div[class*='-description'] {
+  margin-top: 20px;
+  margin-left: 0;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: normal;
 }
 
 div[class*='circle'] {
