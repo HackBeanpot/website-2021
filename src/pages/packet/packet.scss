@@ -394,12 +394,15 @@ p[class^="footer-list-type"] {
   background-size: cover;
 }
 
+.footer-arrow {
+  height: 10px;
+}
+
 .card-body {
   width: 100%;
   flex-direction: column;
   justify-content: flex-start;
 }
-
 
 @media only screen and (max-width: $lg) {
   div[class*="-row"], .packet-headline, .packet-blurb, .base-headline, .base-box, .intro-div  {

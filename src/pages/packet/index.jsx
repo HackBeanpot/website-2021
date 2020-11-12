@@ -7,6 +7,7 @@ import BaseCheck from '../../images/svg/packet-base-check.svg'
 import PacketStruct from '../../data/packet-structure.json'
 import SelectionArrow from '../../images/svg/packet-selection-arrow.svg'
 import WhiteLogo from '../../images/svg/moon-logo.svg'
+import FooterArrow from '../../images/svg/packet-footer-arrow.svg'
 import '../../styles/main.scss';
 
 /*
@@ -82,6 +83,7 @@ const PacketFooter = ({ build, engage, recruit, isMobile, isExpandedFooter }) =>
         <Accordion defaultActiveKey='0'>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey='0'>
+              <img src={FooterArrow} alt='footer arrow' className='footer-arrow'/>
               <div className='running-total-div'>
                 <p>Running Total</p>
                 <p>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
