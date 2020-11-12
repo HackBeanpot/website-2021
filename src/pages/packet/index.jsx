@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import PackageRow from './components/packet-row';
+import useIsMobile from './components/useIsMobile';
 import BaseCheck from '../../images/svg/packet-base-check.svg'
 import PacketStruct from '../../data/packet-structure.json'
 import SelectionArrow from '../../images/svg/packet-selection-arrow.svg'
-import '../../styles/main.scss';
 import WhiteLogo from '../../images/svg/moon-logo.svg'
-import PackageRow from './components/packet-row';
-import useIsMobile from './components/useIsMobile';
-import "../../styles/main.scss";
+import '../../styles/main.scss';
 
 /*
 TODO:
