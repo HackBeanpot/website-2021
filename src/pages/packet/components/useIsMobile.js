@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const checkIsMobile = (windowWidth) => {
-  return windowWidth && windowWidth <= 992;
+  return windowWidth && windowWidth <= 960;
 };
 
 const useIsMobile = () => {

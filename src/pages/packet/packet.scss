@@ -401,7 +401,7 @@ p[class^="footer-list-type"] {
 }
 
 
-@media only screen and (max-width: $md) {
+@media only screen and (max-width: $lg) {
   div[class*="-row"], .packet-headline, .packet-blurb, .base-headline, .base-box, .intro-div  {
     margin-left: 20px;
   }
