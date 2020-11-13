@@ -4,9 +4,9 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Welcome from '../components/sections/welcome';
 import ThemeAnnouncement from '../components/sections/theme-announcement';
+import AboutItem from "../components/aboutItem/about-item";
 
 import favicon from './favicon.png';
-import AboutItem from "../components/aboutItem/about-item";
 
 export default () => (
   <Layout>

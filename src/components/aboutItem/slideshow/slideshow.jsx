@@ -1,138 +1,52 @@
-import React, {useRef, useState} from 'react';
-import { Card, makeStyles, Slide } from '@material-ui/core';
-import './slideshow.scss';
-import SLIDE_INFO from '../../../data/slide-content.json';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import RedPanda2 from '../../../images/redpanda.jpg';
 
-const Arrow = (props) => {
-  const { direction, clickFunction } = props;
-  const icon = direction === 'left' ? <FaChevronLeft /> : <FaChevronRight />;
-
-  return <div className='arrow' onClick={clickFunction}>{icon}</div>;
-}
-
-const CenterCarouselCard = (props) => {
-  const {backgroundColor, title} = props.content;
-  const useStyles = makeStyles(() => ({//customized the slides content card.
-    card: {
-      backgroundColor,
-      borderRadius: 5,
-      padding: '75px 50px',
-      margin: '0px 25px',
-      width: '613px',
-      height: '472px',
-      // boxShadow: '20px 20px 20px black',
-      display: 'flex',
-      justifyContent: 'center'
-    }
-  }));
-  const classes = useStyles();
-  return (
-    <Card className={classes.card}/>
-  )
-}
-
-const LeftCarouselCard = (props) => {
-  const {backgroundColor, title} = props.content;
-  const useStyles = makeStyles(() => ({//customized the slides content card.
-    card: {
-      backgroundColor,
-      borderRadius: 5,
-      padding: '75px 50px',
-      margin: '0px 25px',
-      width: '299px',
-      height: '284px',
-      // boxShadow: '20px 20px 20px black',
-      display: 'flex',
-      justifyContent: 'center'
-    }
-  }));
-  const classes = useStyles();
-  return (
-    <Card className={classes.card}>
-      {/*<h1>{title}</h1>*/}
-    </Card>
-  )
-}
-
-const RightCarouselCard = (props) => {
-  const {backgroundColor, title} = props.content;
-  const useStyles = makeStyles(() => ({//customized the slides content card.
-    card: {
-      backgroundColor,
-      borderRadius: 5,
-      padding: '75px 50px',
-      margin: '0px 25px',
-      width: '299px',
-      height: '284px',
-      // boxShadow: '20px 20px 20px black',
-      display: 'flex',
-      justifyContent: 'center'
-    }
-  }));
-  const classes = useStyles();
-  return (
-    <Card className={classes.card}>
-      {/*<h1>{title}</h1>*/}
-    </Card>
-  )
-}
-
-const CarouselSlide = () => {
-  // const [slideShowArray, setSlideShowArray] = useState(SLIDE_INFO);
-  const [index, setIndex] = useState(1);
-  const [slideIn, setSlideIn] = useState(true);
-  const [slideDirection, setSlideDirection] = useState('down');
-  const numSlides = SLIDE_INFO.length;
-
-  const left_content = SLIDE_INFO[(index-1+numSlides) % numSlides];
-  const right_content = SLIDE_INFO[(index+1+numSlides) % numSlides];
-  const content = SLIDE_INFO[index];
-
-  const onArrowClick = (direction) => {
-
-    const increment = direction === 'left' ? -1 : 1;
-    const newIndex = (index + increment + numSlides) % numSlides;
-
-    const oppDirection = direction === 'left' ? 'right' : 'left';
-    setSlideDirection(direction);
-    setSlideIn(false);
-
-    setTimeout(() => {//delay for the reappearance of the card.
-      setIndex(newIndex);
-      setSlideDirection(oppDirection);
-      setSlideIn(true);
-    }, 300);
+export default function SimpleSlider() {
+  const settings = {
+    centerMode: true,
+    centerPadding: 0,
+    draggable: true,
+    swipe: true,
+    swipeToSlide: true,
+    speed: 500,
+    slidesToShow: 3, //changes on responsive
+    dots: true,
+    arrows: true,
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        centerMode: true,
+        arrows: false,
+        variableWidth: true
+      }
+    }]
   };
-
   return (
-    <div className='slideshow'>
-      <Arrow
-        direction='left'
-        clickFunction={() => onArrowClick('left')}
-      />
-      <Slide in={slideIn} direction={slideDirection}>
-        <div>
-          <LeftCarouselCard content={left_content}/>
+    <div className='about-slideshow'>
+      <Slider {...settings}>
+        <div className='about-slideshow-item' style={{width: 400}}>
+          <img src={RedPanda2}/>
         </div>
-      </Slide>
-      <Slide in={slideIn} direction={slideDirection}>
-        <div>
-          <CenterCarouselCard content={content}/>
+        <div className='about-slideshow-item' style={{width: 400}}>
+          <img src={RedPanda2}/>
         </div>
-      </Slide>
-      <Slide in={slideIn} direction={slideDirection}>
-        <div>
-          <RightCarouselCard content={right_content}/>
+        <div className='about-slideshow-item' style={{width: 400}}>
+          <img src={RedPanda2}/>
         </div>
-      </Slide>
-      <Arrow
-        direction='right'
-        clickFunction={() => onArrowClick('right')}
-      />
+        <div className='about-slideshow-item' style={{width: 400}}>
+          <img src={RedPanda2}/>
+        </div>
+        <div className='about-slideshow-item' style={{width: 400}}>
+          <img src={RedPanda2}/>
+        </div>
+        <div className='about-slideshow-item' style={{width: 400}}>
+          <img src={RedPanda2}/>
+        </div>
+      </Slider>
     </div>
   );
 }
-
-export default CarouselSlide;
-

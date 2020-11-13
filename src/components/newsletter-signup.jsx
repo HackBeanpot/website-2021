@@ -4,17 +4,17 @@ import addToMailChimp from 'gatsby-plugin-mailchimp';
 const NewsletterSignup = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-  
+
     const handleSubmit = async e => {
       e.preventDefault();
-  
+
       try {
         const { result, msg } = await addToMailChimp(email);
-  
+
         if (result !== 'success') {
           throw msg; //error with subscription from our end or plugin
         }
-  
+
         setEmail('');
         setMessage('Thank you for subscribing!');
       } catch (err) {
@@ -25,7 +25,7 @@ const NewsletterSignup = () => {
         }
       }
     };
-  
+
     const handleEmailChange = e => {
         e.preventDefault();
         setEmail(e.target.value);
@@ -45,7 +45,7 @@ const NewsletterSignup = () => {
                     />
                     <div className="header__form-msg">{message}</div>
 
-                    <div class="clear footer-cta-padding">
+                    <div className="clear footer-cta-padding">
                         <button className="header__cta" type="submit">
                             Join our newsletter
                         </button>

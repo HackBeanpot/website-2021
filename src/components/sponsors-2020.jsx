@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Sponsors2020 = () => (
-  <div class="container">
+  <div className="container">
     {/* Catalant */}
     <div className="row">
       <a
@@ -36,14 +36,14 @@ const Sponsors2020 = () => (
 
     {/* PathAI, PowerAdvocate and Drift */}
     <div className="row">
-      <a 
+      <a
         href="https://www.pathai.com/"
         className="col-md-4 d-flex align-items-center my-3"
         target="_blank"
         rel="noopener noreferrer"
       >
-          <img 
-            src="https://tools.hackbeanpot.com/assets/logos/2020-sponsors/pathai_498px.png" 
+          <img
+            src="https://tools.hackbeanpot.com/assets/logos/2020-sponsors/pathai_498px.png"
             alt="PathAI"
           />
       </a>
