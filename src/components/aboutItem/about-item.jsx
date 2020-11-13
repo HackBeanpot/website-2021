@@ -7,7 +7,7 @@ const AboutItem = props => {
   return (
     <div className="about-item">
       <div className="about-title">
-        HackBeanPot is about...
+        HackBeanpot is about...
       </div>
       <SlideShow/>
 

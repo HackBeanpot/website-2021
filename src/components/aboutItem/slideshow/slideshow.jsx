@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import RedPanda2 from '../../../images/redpanda.jpg';
+import {AboutNextArrow, AboutPrevArrow} from "./custom-arrow";
 
 export default function SimpleSlider() {
   const settings = {
@@ -14,7 +15,8 @@ export default function SimpleSlider() {
     speed: 500,
     slidesToShow: 3, //changes on responsive
     dots: true,
-    arrows: true,
+    nextArrow: <AboutNextArrow/>,
+    prevArrow: <AboutPrevArrow/>,
     responsive: [{
       breakpoint: 600,
       settings: {
