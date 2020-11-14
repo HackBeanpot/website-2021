@@ -33,20 +33,20 @@ const NewsletterSignup = () => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='footer__form'>
                 <div>
-                    {/* <div className="header__form-heading">Sign up for our newsletter</div> */}
+                    <div className="footer__form-heading">Join our newsletter!</div>
                     <input
                         placeholder="Email address"
                         name="email"
                         type="text"
                         onChange={handleEmailChange}
-                        className="header__newsletter-input"
+                        className="footer__form-input"
                     />
-                    <div className="header__form-msg">{message}</div>
+                    <div className="footer__form-msg">{message}</div>
 
-                    <button className="header__cta" type="submit">
-                        Join our newsletter
+                    <button className="footer__form-btn" type="submit">
+                        Subscribe
                     </button>
                 </div>
             </form>
