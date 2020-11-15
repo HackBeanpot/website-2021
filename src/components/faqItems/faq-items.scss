@@ -33,5 +33,5 @@
 }
 
 .faq-item__question {
-  @include h5-text;
+  @include h5-text($white);
 }

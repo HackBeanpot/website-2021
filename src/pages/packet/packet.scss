@@ -1,0 +1,307 @@
+.packet {
+  position: relative;
+  overflow-x: hidden;
+  color: $grey;
+  background: #142434 url("../../images/svg/packet-background.svg") no-repeat;
+  background-size: cover;
+}
+
+.packet-cover {
+  position: relative;
+  background-size: 100% 100%;
+}
+
+/* Packet cover section CSS */
+
+.intro-div {
+  margin: 320px 0 1200px 150px;
+}
+
+.intro-title {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.intro-text {
+  font-size: 32px;
+  width: 50%;
+  line-height: 36px;
+}
+
+.packet-blurb {
+  margin-left: 40%;
+  width: 52%;
+  margin-bottom: 500px;
+}
+
+.packet-title {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.packet-text {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.email {
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Packet struct section CSS*/
+.packet-struct {
+  padding-bottom: 500px;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+.packet ul {
+  margin-bottom: 0;
+}
+
+.packet ul p {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.base-box {
+  font-weight: bold;
+  font-size: 32px;
+  color: $black;
+  background: $grey;
+  border-radius: 20px;
+  padding: 24px;
+  width: 669px;
+  margin-left: 290px;
+  margin-bottom: 30px;
+}
+
+.base-box-price-check {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.base-box-check-mark {
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: unset;
+}
+
+div[class*="-div-pack"] {
+  margin-bottom: 50px;
+}
+
+.base-headline,
+.packet-headline {
+  margin: 35px 0 50px 192px;
+  font-weight: bold;
+  font-size: 48px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+div[class*='circle'] {
+  margin-right: 48px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-size: 48px;
+  line-height: 65.47px;
+}
+
+.base-circle {
+  background-color: $white;
+  color: $hbp-navy;
+}
+
+.build-circle {
+  background-color: $camp-orange;
+}
+
+.engage-circle {
+  background-color: $camp-packet-yellow;
+}
+
+.recruit-circle {
+  background-color: $hbp-packet-blue;
+}
+
+div[class*="-opt-out-button"] {
+  display: inline-block;
+  margin-left: 40px;
+  background-color: $pale-blue;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+  color: $black;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+div[class*="-row"] {
+  margin-left: 290px;
+  display: flex;
+}
+
+/* Package Component (ie. one box for a trail tier) CSS */
+
+.packet-box {
+  border-radius: 20px;
+  padding: 32px 24px 24px;
+  margin-right: 32px;
+  color: $black;
+  height: 100%;
+  width: 275px;
+  position: relative;
+  cursor: pointer;
+}
+
+.packet-price-label {
+  width: 175px;
+  position: absolute;
+  top: -36px;
+  left: 8px;
+}
+
+.packet-radio {
+  display: none;
+}
+
+.packet-box-check {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+}
+
+.packet-box-radio-unchecked,
+.packet-box-radio-checked {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 50%;
+}
+
+.package-component-build .packet-box-radio-checked {
+  background-color: $camp-orange;
+}
+
+.packet-box-selected.package-component-build,
+.package-component-build .packet-box-radio-unchecked,
+.package-component-build .packet-box-radio-checked {
+  box-shadow: 0 0 0 4px $camp-orange;
+}
+
+.package-component-build {
+  background: $pale-red;
+}
+
+.package-component-engage .packet-box-radio-checked {
+  background-color: $camp-packet-yellow;
+}
+
+.packet-box-selected.package-component-engage,
+.package-component-engage .packet-box-radio-unchecked,
+.package-component-engage .packet-box-radio-checked {
+  box-shadow: 0 0 0 4px $camp-packet-yellow;
+}
+
+.package-component-engage {
+  background: $camp-packet-light-yellow;
+}
+
+.package-component-recruit .packet-box-radio-checked {
+  background-color: $hbp-packet-blue;
+}
+
+.packet-box-selected.package-component-recruit,
+.package-component-recruit .packet-box-radio-unchecked,
+.package-component-recruit .packet-box-radio-checked {
+  box-shadow: 0 0 0 4px $hbp-packet-blue;
+}
+
+.package-component-recruit {
+  background: $camp-packet-pale-blue;
+}
+
+ul[class^="list-"] {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/* Footer */
+
+.packet-footer {
+  background: $packet-dark-blue url("../../images/svg/packet-footer-background.svg") no-repeat;
+  background-size: cover;
+  position: fixed;
+  color: $white;
+  bottom: 0;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.footer-total-list {
+  padding-right: 250px;
+}
+
+div[class*="-line"] {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.running-total-div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p[class^="footer-list-type"] {
+  margin-right: 160px;
+}
+
+.send-selection-div {
+  text-align: center;
+}
+
+.get-in-touch-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.send-selection-button {
+  border-radius: 40px;
+  background: $pale-blue;
+  font-size: 24px;
+  color: $black;
+  padding: 23px 0 23px 40px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selection-arrow {
+  margin-right: 29px;
+  margin-left: 22px;
+  width: 33px;
+  height: 28px;
+}

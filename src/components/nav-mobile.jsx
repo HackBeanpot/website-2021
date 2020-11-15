@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { useScrollYPosition } from 'react-use-scroll-position';
+
+
 import DynamicLink from './dynamic-link.jsx';
 import NavLinks from 'data/nav-links.json';
 
@@ -7,19 +10,19 @@ import LogoIconWhite from 'images/svg/logo-icon-white.jsx';
 
 const NavMobile = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const hasScrolled = useScrollYPosition() > 0;
 
   function menuToggle() {
     setIsNavOpen(!isNavOpen);
   }
 
   return (
-    <nav className={`nav-mobile ${isNavOpen ? 'opened' : 'closed'}`}>
+    <nav className={`nav-mobile ${isNavOpen ? 'opened' : 'closed'} ${hasScrolled ? 'scrolled' : ''}`}>
       <div className="nav-mobile__top">
         <DynamicLink to="/" className="nav__logo">
           {isNavOpen ? <LogoIconWhite /> : <LogoIcon />}
         </DynamicLink>
-        {/* Temporarily hiding the hamburger menu on mobile (since the teaser page has no navbar links).*/}
-        {/* <button onClick={menuToggle} className="nav-mobile__toggle-btn">
+        <button onClick={menuToggle} className="nav-mobile__toggle-btn">
           <i
             className={
               isNavOpen
@@ -27,7 +30,7 @@ const NavMobile = () => {
                 : 'mdi mdi-24px mdi-menu menu-icon'
             }
           />
-        </button> */}
+        </button>
       </div>
       <ul
         className="nav-mobile__list"

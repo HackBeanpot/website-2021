@@ -21,7 +21,7 @@ const FAQItems = props => {
       </span>
       <div>
         <p className="faq-item__question">{FAQ.question}</p>
-        <p
+        <div
           className="faq-item__answer"
           dangerouslySetInnerHTML={{ __html: FAQ.answer }}
         />

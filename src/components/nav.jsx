@@ -1,11 +1,16 @@
 import React from 'react';
+import { useScrollYPosition } from 'react-use-scroll-position';
+
 import DynamicLink from './dynamic-link.jsx';
 import NavLinks from 'data/nav-links.json';
 
 import LogoIcon from 'images/svg/logo-icon.jsx';
 
-const Nav = () => (
-  <nav className="nav">
+const Nav = () => {
+  const hasScrolled = useScrollYPosition() > 0;
+
+  return (
+  <nav className={`nav ${hasScrolled ? 'scrolled' : ''}`}>
     <DynamicLink to="/" className="nav__logo">
       <LogoIcon />
     </DynamicLink>
@@ -21,6 +26,7 @@ const Nav = () => (
       })}
     </ul>
   </nav>
-);
+  )
+}
 
 export default Nav;
