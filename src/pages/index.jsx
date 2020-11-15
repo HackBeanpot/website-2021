@@ -6,8 +6,6 @@ import ThemeAnnouncement from '../components/sections/theme-announcement';
 import FAQ from '../components/sections/faq';
 import AboutItem from "../components/aboutItem/about-item";
 
-import favicon from './favicon.png';
-
 export default () => (
   <Layout>
     <App />
@@ -23,6 +21,6 @@ const App = () => {
         <AboutItem/>
         <FAQ />
       </div>
-    </>
+    </div>
   );
 };
