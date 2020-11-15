@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import RedPanda2 from '../../../images/redpanda.jpg';
+
 import {AboutNextArrow, AboutPrevArrow} from "./custom-arrow";
 
-export default function SimpleSlider() {
+const Slideshow = ({slides, currSlide, updateSlide}) => {
   const settings = {
     centerMode: true,
     centerPadding: 0,
@@ -15,8 +15,11 @@ export default function SimpleSlider() {
     speed: 500,
     slidesToShow: 3, //changes on responsive
     dots: true,
-    nextArrow: <AboutNextArrow/>,
-    prevArrow: <AboutPrevArrow/>,
+    nextArrow: <AboutNextArrow currSlide={currSlide} updateSlide={updateSlide}/>,
+    prevArrow: <AboutPrevArrow currSlide={currSlide} updateSlide={updateSlide}/>,
+    beforeChange: (beforeIndex, afterIndex) => {
+      updateSlide(afterIndex);
+    },
     responsive: [{
       breakpoint: 600,
       settings: {
@@ -30,25 +33,14 @@ export default function SimpleSlider() {
   return (
     <div className='about-slideshow'>
       <Slider {...settings}>
-        <div className='about-slideshow-item' style={{width: 400}}>
-          <img src={RedPanda2}/>
-        </div>
-        <div className='about-slideshow-item' style={{width: 400}}>
-          <img src={RedPanda2}/>
-        </div>
-        <div className='about-slideshow-item' style={{width: 400}}>
-          <img src={RedPanda2}/>
-        </div>
-        <div className='about-slideshow-item' style={{width: 400}}>
-          <img src={RedPanda2}/>
-        </div>
-        <div className='about-slideshow-item' style={{width: 400}}>
-          <img src={RedPanda2}/>
-        </div>
-        <div className='about-slideshow-item' style={{width: 400}}>
-          <img src={RedPanda2}/>
-        </div>
+        {slides.map(data => (
+          <div className='about-slideshow-item' style={{width: 400}}>
+            <img src={data.picture}/>
+          </div>
+        ))}
       </Slider>
     </div>
   );
 }
+
+export default Slideshow

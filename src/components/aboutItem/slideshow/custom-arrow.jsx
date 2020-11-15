@@ -4,7 +4,7 @@ import NextArrow from '../../../images/svg/about-rightarrow';
 
 
 export function AboutNextArrow(props) {
-  const { style, onClick } = props;
+  const { style, onClick, currSlide, updateSlide, slideCount } = props;
   return (
     <div
       className="custom-arrow custom-arrow-next"
@@ -17,7 +17,7 @@ export function AboutNextArrow(props) {
 }
 
 export function AboutPrevArrow(props) {
-  const { style, onClick } = props;
+  const { style, onClick, currSlide, updateSlide, slideCount } = props;
   return (
     <div
       className="custom-arrow custom-arrow-prev"

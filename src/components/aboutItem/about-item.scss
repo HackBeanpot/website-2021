@@ -29,11 +29,15 @@
 .about-paragraph {
   color: #CFE8E8;
   width: 30vw;
+  text-align: center;
+  font-size: 2vw;
   @media (max-width: $sm){
     width: revert;
     padding-top: 5%;
     padding-left: 13vw;
     padding-right: 13vw;
+    font-size: 5vw;
+
   }
 }
 
