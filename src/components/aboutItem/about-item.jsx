@@ -1,42 +1,51 @@
-import React from 'react';
-import DynamicLink from '../dynamic-link';
+import React, {useState} from 'react';
+import SlideShow from "./slideshow/slideshow";
+import AboutRightFoot from "../../images/svg/about-rightfoot";
+import AboutLeftFoot from "../../images/svg/about-leftfoot";
+import Slide1 from '../../images/slide1.jpg';
+import Slide2 from '../../images/slide2.jpg';
+import Slide3 from '../../images/slide3.jpg';
+import Slide4 from '../../images/slide4.jpg';
+import Slide5 from '../../images/slide5.jpg';
 
 const AboutItem = props => {
-  let button;
-
-  if (props.btn) {
-    button = (
-      <DynamicLink to={props.btn.url} role="button" className="about-item__cta">
-        {props.btn.text}
-      </DynamicLink>
-    );
-  }
-
+  const [currSlide, updateSlide] = useState(0);
+  const SlideArray = [{
+    picture: Slide1,
+    caption: "Building connections"
+  }, {
+    picture: Slide2,
+    caption: "Creating new projects"
+  }, {
+    picture: Slide3,
+    caption: "Learning new things"
+  }, {
+    picture: Slide4,
+    caption: "Connecting with our partners in the Boston tech community"
+  }, {
+    picture: Slide5,
+    caption: "Fostering a sense of community"
+  }];
   return (
-    <div className={`about-item ${props.index % 2 === 0 ? 'left' : 'right'}`}>
-      <img
-        src={props.img.src}
-        alt={props.img.alt}
-        className={`about-item__img img-${props.index}`}
-      />
-      <div className="about-item__content">
-        <p className="about-item__title">{props.title}</p>
-        <p
-          className="about-item__description"
-          dangerouslySetInnerHTML={{ __html: props.content }}
-        />
-        {button}
+    <div className="about-item">
+      <div className="about__title">
+        HackBeanpot is about...
+      </div>
+      <SlideShow slides={SlideArray} currSlide={currSlide} updateSlide={updateSlide}/>
+
+      <div className='about-content'>
+        <div className="about-footsteps">
+          <AboutLeftFoot/>
+        </div>
+        <p className="about-paragraph">
+          {SlideArray[currSlide].caption}
+        </p>
+        <div className="about-footsteps" style={{paddingTop: '10%'}}>
+          <AboutRightFoot/>
+        </div>
       </div>
     </div>
-  );
-};
-
-AboutItem.defaultProps = {
-  title: '',
-  content: '',
-  img: {},
-  hasBtn: false,
-  floatDirection: 'left'
-};
+  )
+}
 
 export default AboutItem;
