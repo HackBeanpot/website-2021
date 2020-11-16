@@ -28,7 +28,7 @@ const AboutItem = props => {
   }];
   return (
     <div className="about-item">
-      <div className="about-title">
+      <div className="about__title">
         HackBeanpot is about...
       </div>
       <SlideShow slides={SlideArray} currSlide={currSlide} updateSlide={updateSlide}/>
