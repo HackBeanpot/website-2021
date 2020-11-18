@@ -6,7 +6,6 @@ import ThemeAnnouncement from '../components/sections/theme-announcement';
 import FAQ from '../components/sections/faq';
 import AboutItem from "../components/aboutItem/about-item";
 
-
 export default () => (
   <Layout>
     <App />

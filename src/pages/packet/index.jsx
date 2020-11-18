@@ -10,11 +10,6 @@ import WhiteLogo from '../../images/svg/moon-logo.svg'
 import FooterArrow from '../../images/svg/packet-footer-arrow.svg'
 import '../../styles/main.scss';
 
-/*
-TODO:
-- footer => footer arrow
- */
-
 export default () => (
   <SponsorPacket />
 )
