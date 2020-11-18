@@ -325,10 +325,8 @@ ul[class^="list-"] {
   color: $white;
   bottom: 0;
   width: 100%;
-  height: 280px;
   display: flex;
   justify-content: space-around;
-  padding: 40px;
 }
 
 .footer-total-list {
@@ -382,16 +380,14 @@ p[class^="footer-list-type"] {
   height: 28px;
 }
 
-.packet-footer-mobile {
-  background: $midnight;
+.accordion {
   width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
 .card {
   background: $packet-dark-blue url("../../images/svg/packet-footer-background.svg") no-repeat;
   background-size: cover;
+  padding: 0 200px 0;
 }
 
 .footer-arrow {
@@ -400,8 +396,8 @@ p[class^="footer-list-type"] {
 
 .card-body {
   width: 100%;
-  flex-direction: column;
-  justify-content: flex-start;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: $lg) {
@@ -467,5 +463,11 @@ p[class^="footer-list-type"] {
     margin: 20px 0 0;
     font-size: 20px;
     width: 100%;
+  }
+
+  .card-body {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
