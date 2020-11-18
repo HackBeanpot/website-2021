@@ -2,9 +2,9 @@ import React from 'react'
 import PacketCheck from '../../../images/svg/packet-check.js'
 
 const checkColors = {
-  "build": '#E56138',
+  "build": "#E56138",
   "engage": "#CCAD0D",
-  "recruit": "#52C2C2"
+  "network": "#52C2C2"
 }
 
 const PackageComponent = ({ perks, level, trail, setTrail, selected, isMobile, removeOptionChecked }) => {

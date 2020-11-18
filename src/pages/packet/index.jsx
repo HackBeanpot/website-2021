@@ -19,27 +19,27 @@ export default () => (
   <SponsorPacket />
 )
 
-const Template = ({ build, engage, recruit, PRICE_OF_PACKAGE }) => {
+const Template = ({ build, engage, network, PRICE_OF_PACKAGE }) => {
   const newline = '%0d%0a%0d%0a';
 
   return `
 Hi, I am [your name] from [your company] and we are interested in:${newline}
     Base: $750${newline}
-    Level ${build} Build: $${PRICE_OF_PACKAGE * build}${newline}
-    Level ${engage} Engage: $${PRICE_OF_PACKAGE * engage}${newline}
-    Level ${recruit} Recruit: $${PRICE_OF_PACKAGE * recruit}${newline}
-    Total: $${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}${newline}
+    Level ${build} Build: $${PRICE_OF_PACKAGE*build}${newline}
+    Level ${engage} Engage: $${PRICE_OF_PACKAGE*engage}${newline}
+    Level ${network} network: $${PRICE_OF_PACKAGE*network}${newline}
+    Total: $${750 + build * PRICE_OF_PACKAGE + network * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}${newline}
 Best,${newline}
 [Your name]
   `
 }
 
-const PacketFooter = ({ build, engage, recruit, isMobile, isExpandedFooter }) => {
+const PacketFooter = ({ build, engage, network }) => {
   const PRICE_OF_PACKAGE = 375
 
   const openMailClient = () => {
     const subjectLine = "Interest in Sponsorship for HackBeanpot 2021"
-    const body = Template({ build, engage, recruit, PRICE_OF_PACKAGE });
+    const body = Template({ build, engage, network, PRICE_OF_PACKAGE });
     window.location.href = `mailto:team@hackbeanpot.com?subject=${subjectLine}&body=${body}`
   }
 
@@ -51,7 +51,7 @@ const PacketFooter = ({ build, engage, recruit, isMobile, isExpandedFooter }) =>
             <img src={FooterArrow} alt='footer arrow' className='footer-arrow'/>
             <div className='running-total-div'>
               <p>Running Total</p>
-              <p>${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
+              <p>${750 + build * PRICE_OF_PACKAGE + network * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}</p>
             </div>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey='0'>
@@ -69,9 +69,9 @@ const PacketFooter = ({ build, engage, recruit, isMobile, isExpandedFooter }) =>
                   <p className='footer-list-type-engage'>The Engage Package</p>
                   <p>${engage * PRICE_OF_PACKAGE}</p>
                 </div>
-                <div className='recruit-line'>
-                  <p className='footer-list-type-recruit'>The Recruit Package</p>
-                  <p>${recruit * PRICE_OF_PACKAGE}</p>
+                <div className='network-line'>
+                  <p className='footer-list-type-network'>The Network Package</p>
+                  <p>${network * PRICE_OF_PACKAGE}</p>
                 </div>
               </div>
               <div className='send-selection-div'>
@@ -115,7 +115,7 @@ const BasePackage = ({ isMobile }) => (
 const SponsorPacket = () => {
   const [build, setBuild] = useState(0);
   const [engage, setEngage] = useState(0);
-  const [recruit, setRecruit] = useState(0);
+  const [network, setNetwork] = useState(0);
   const isMobile = useIsMobile();
 
   const setTrail = (level, trailType) => {
@@ -123,8 +123,8 @@ const SponsorPacket = () => {
       setBuild(level)
     } else if (trailType === 'engage') {
       setEngage(level)
-    } else if (trailType === 'recruit') {
-      setRecruit(level)
+    } else if (trailType === 'network') {
+      setNetwork(level)
     }
   }
 
@@ -173,14 +173,14 @@ const SponsorPacket = () => {
             trail={trail}
             build={build}
             engage={engage}
-            recruit={recruit}
+            network={network}
             removeOptionChecked={(trail) => removeOptionChecked(trail)}
             setTrail={(level, trail) => setTrail(level, trail)}
             isMobile={isMobile}
           />
         })}
       </section>
-      <PacketFooter build={build} engage={engage} recruit={recruit}/>
+      <PacketFooter build={build} engage={engage} network={network}/>
     </div>
   );
 }

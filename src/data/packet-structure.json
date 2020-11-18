@@ -44,7 +44,7 @@
         "Host a meal"
       ]
     ],
-    "recruit": [
+    "network": [
       [
         "Table the entire event",
         "Resumes"
@@ -68,7 +68,7 @@
     "base": "Our base tier includes all the essentials for every sponsor",
     "build": "See the creative ways your technology can be transformed!",
     "engage": "Foster relationships with our passionate attendees!",
-    "recruit": "Recruit the next generation of talented and ambitious creators!"
+    "network": "Recruit the next generation of talented and ambitious creators!"
   }
 }
 

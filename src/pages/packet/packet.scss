@@ -165,7 +165,7 @@ div[class*='circle'] {
   background-color: $camp-packet-yellow;
 }
 
-.recruit-circle {
+.network-circle {
   background-color: $hbp-packet-blue;
 }
 
@@ -289,25 +289,25 @@ div[class^="packet-box-radio-mobile-"] {
   background: $camp-yellow;
 }
 
-.package-component-recruit .packet-box-radio-checked {
+.package-component-network .packet-box-radio-checked {
   background-color: $hbp-packet-blue;
 }
 
-.packet-box-selected.package-component-recruit,
-.package-component-recruit .packet-box-radio-unchecked,
-.package-component-recruit .packet-box-radio-checked {
+.packet-box-selected.package-component-network,
+.package-component-network .packet-box-radio-unchecked,
+.package-component-network .packet-box-radio-checked {
   box-shadow: 0 0 0 4px $hbp-packet-blue;
 }
 
-.package-component-recruit {
+.package-component-network {
   background: $camp-packet-pale-blue;
 }
 
-.packet-box-radio-mobile-checked-recruit {
+.packet-box-radio-mobile-checked-network {
   background: $hbp-packet-blue;
 }
 
-.packet-box-radio-mobile-unchecked-recruit {
+.packet-box-radio-mobile-unchecked-network {
   background: $pale-blue;
 }
 

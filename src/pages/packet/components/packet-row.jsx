@@ -2,11 +2,11 @@ import PacketStruct from '../../../data/packet-structure.json';
 import PackageComponent from './package-component';
 import React from 'react';
 
-const PackageRow = ({ trail, build, engage, recruit, removeOptionChecked, setTrail, isMobile }) => {
-  const TRAILS_LIST = ["build", "engage", "recruit"];
+const PackageRow = ({ trail, build, engage, network, removeOptionChecked, setTrail, isMobile }) => {
+  const TRAILS_LIST = ["build", "engage", "network"];
 
   const row_trail = trail !== undefined ? trail : 'build';
-  const selectedLevel = trail === "build" ? build : trail === "engage" ? engage : recruit;
+  const selectedLevel = trail === "build" ? build : trail === "engage" ? engage : network;
   const trailPerks = PacketStruct["trails"][trail] !== undefined ? PacketStruct["trails"][trail] : [];
 
 
