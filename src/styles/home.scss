@@ -177,18 +177,10 @@
 // About
 // ---------------------------------------------------------------------------
 .about__title {
-  position: relative;
-  font-size: 56px;
-  padding-left: 7vw;
-  padding-top: 5%;
-  padding-bottom: 2vw;
-  line-height: 1.4em;
-  color: #CFE8E8;
-  mix-blend-mode: normal;
+  @include h2-text(#CFE8E8);
+  @include left-padding;
 
-  @media (max-width: $sm) {
-    font-size: 35px;
-    padding-left: 0;
+  @media (max-width: $lg) {
     text-align: center;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -196,10 +188,8 @@
 }
 
 .about-item{
-  position: relative;
-  background: linear-gradient(180deg, #386A3F 3.65%, #0C4124 57.29%, #102137 100%);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  height: fit-content ;
+  @include top-padding;
+  @include green-blue-gradient-bg;
 }
 
 .about-paragraph {
@@ -207,28 +197,25 @@
   width: 30vw;
   text-align: center;
   font-size: 2vw;
-  @media (max-width: $sm){
+  @media (max-width: $lg){
     width: revert;
-    padding-top: 5%;
-    padding-left: 13vw;
-    padding-right: 13vw;
-    font-size: 5vw;
-
+    font-size: 4vw;
   }
 }
 
 .about-footsteps{
   width: 20vw;
-  @media (max-width: $sm){
+  @media (max-width: $lg){
     display: none;
   }
 }
 
 .about-content{
+  @include bottom-padding;
   padding-top: 5%;
   display: flex;
   justify-content: space-between;
-  @media (max-width: $sm){
+  @media (max-width: $lg){
     justify-content: center;
   }
 }

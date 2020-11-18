@@ -58,18 +58,9 @@
 .footer__social-link {
   color: $hbp-navy;
   transition: color 0.2s ease;
-
-  &:hover {
-    color: $sprout-green-light;
-  }
 }
 
 .footer__coc-link {
-  color: $sprout-green;
+  color: $hbp-packet-blue;
   transition: color 0.2s ease;
-
-  &:hover {
-    color: $sprout-green-light;
-    text-decoration: none;
-  }
 }

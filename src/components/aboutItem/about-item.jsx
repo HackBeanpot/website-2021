@@ -27,10 +27,10 @@ const AboutItem = props => {
     caption: "Fostering a sense of community"
   }];
   return (
-    <div className="about-item">
-      <div className="about__title">
+    <div id="about" className="about-item">
+      <h2 className="about__title">
         HackBeanpot is about...
-      </div>
+      </h2>
       <SlideShow slides={SlideArray} currSlide={currSlide} updateSlide={updateSlide}/>
 
       <div className='about-content'>
