@@ -131,8 +131,8 @@ const SponsorPacket = () => {
         <div className='packet-blurb'>
           <h1 className='packet-title'> Our Packet </h1>
           <p className='packet-text'>
-            Each sponsor package starts with the <span style={{ fontWeight: "bold" }}>base tier</span>. We also have three
-              optional <span style={{ fontWeight: "bold" }}>trails</span> designed to focus on different sponsorship goals,
+            Each sponsor package starts with the <span style={{ fontWeight: "bold" }}>base tier</span>. We also have <span style={{ fontWeight: "bold" }}>three
+              optional trails</span> designed to focus on different sponsorship goals,
               each with multiple tiers of perks to choose from. <br /> <br />
               It’s that simple! As always, please contact us at
               <a className='email' href="mailto:team@hackbeanpot.com" target="_blank" rel="noopener noreferrer"> team@hackbeanpot.com </a>
