@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import BaseCheck from '../../images/svg/packet-base-check.svg'
 import PacketStruct from '../../data/packet-structure.json'
 import PackageComponent from './components/package-component'
@@ -9,15 +9,15 @@ export default () => (
   <SponsorPacket />
 )
 
-const Template = ({ build, engage, recruit, PRICE_OF_PACKAGE}) => {
+const Template = ({ build, engage, recruit, PRICE_OF_PACKAGE }) => {
   const newline = '%0d%0a%0d%0a';
 
-  return`
+  return `
 Hi, I am [your name] from [your company] and we are interested in:${newline}
     Base: $750${newline}
-    Level ${build} Build: $${PRICE_OF_PACKAGE*build}${newline}
-    Level ${engage} Engage: $${PRICE_OF_PACKAGE*engage}${newline}
-    Level ${recruit} Recruit: $${PRICE_OF_PACKAGE*recruit}${newline}
+    Level ${build} Build: $${PRICE_OF_PACKAGE * build}${newline}
+    Level ${engage} Engage: $${PRICE_OF_PACKAGE * engage}${newline}
+    Level ${recruit} Recruit: $${PRICE_OF_PACKAGE * recruit}${newline}
     Total: $${750 + build * PRICE_OF_PACKAGE + recruit * PRICE_OF_PACKAGE + engage * PRICE_OF_PACKAGE}${newline}
 Best,${newline}
 [Your name]
@@ -29,7 +29,7 @@ const PacketFooter = ({ build, engage, recruit }) => {
 
   const openMailClient = () => {
     const subjectLine = "Interest in Sponsorship for HackBeanpot 2021"
-    const body = Template({build, engage, recruit, PRICE_OF_PACKAGE});
+    const body = Template({ build, engage, recruit, PRICE_OF_PACKAGE });
     window.location.href = `mailto:team@hackbeanpot.com?subject=${subjectLine}&body=${body}`
   }
 
@@ -61,7 +61,7 @@ const PacketFooter = ({ build, engage, recruit }) => {
         <div className='get-in-touch-text'>Let's get in touch!</div>
         <div className='send-selection-button' onClick={openMailClient}>
           Send us your selection
-          <img className='selection-arrow' src={ SelectionArrow } alt='Selection arrow'/>
+          <img className='selection-arrow' src={SelectionArrow} alt='Selection arrow' />
         </div>
       </div>
     </section>
@@ -69,15 +69,17 @@ const PacketFooter = ({ build, engage, recruit }) => {
 }
 
 const BasePackage = () => (
-  <div className='base-package'>
-    <div className='base-headline'>
-      <div className={`base-circle`}>0</div>
+  <div className='base-div-pack'>
+    <div className='trail-intro'>
+      <div className='base-headline'>
+        <div className={`base-circle`}>0</div>
       Review the Base Package
+    </div>
     </div>
     <div className='base-box'>
       <div className='base-box-price-check'>
         $750
-        <img className='base-box-check-mark' src={BaseCheck} alt='Base package check mark' height='42' width='42'/>
+        <img className='base-box-check-mark' src={BaseCheck} alt='Base package check mark' height='42' width='42' />
       </div>
       <ul className={`list-base-package`}>
         {PacketStruct["base"].map((perk, index) => {
@@ -114,58 +116,59 @@ const SponsorPacket = () => {
   }
 
   return (
-      <div className="packet">
-        <section className="packet-cover">
-          <div className='intro-div'>
-            <h1 className='intro-title'>Sponsor HBP 2021</h1>
-            <p className="intro-text">
-              At HackBeanpot, we aim to foster an inclusive community that
-              welcomes students of any skill level to work together on
-              engaging technical projects. By bringing local companies,
-              organizers, and attendees together, HackBeanpot celebrates
-              innovation and inclusion in Boston tech.
+    <div className="packet">
+      <section className="packet-cover">
+        <div className='intro-div'>
+          <h1 className='intro-title'>Sponsor HBP 2021</h1>
+          <p className="intro-text">
+            At HackBeanpot, we aim to foster an inclusive community that
+            welcomes students of any skill level to work together on
+            engaging technical projects. By bringing local companies,
+            organizers, and attendees together, HackBeanpot celebrates
+            innovation and inclusion in Boston tech.
             </p>
-          </div>
-          <div className='packet-blurb'>
-            <h1 className='packet-title'> Our Packet </h1>
-            <p className='packet-text'>
-              Each sponsor package starts with the base tier. We also have three
-              optional trails designed to focus on different sponsorship goals,
-              each with multiple tiers of perks to choose from. <br/> <br/>
+        </div>
+        <div className='packet-blurb'>
+          <h1 className='packet-title'> Our Packet </h1>
+          <p className='packet-text'>
+            Each sponsor package starts with the <span style={{ fontWeight: "bold" }}>base tier</span>. We also have three
+              optional <span style={{ fontWeight: "bold" }}>trails</span> designed to focus on different sponsorship goals,
+              each with multiple tiers of perks to choose from. <br /> <br />
               It’s that simple! As always, please contact us at
               <a className='email' href="mailto:team@hackbeanpot.com" target="_blank" rel="noopener noreferrer"> team@hackbeanpot.com </a>
               with any questions, or if you are interested in an alternative form of sponsorship.
             </p>
-          </div>
-        </section>
-        <section className='packet-struct'>
-          <BasePackage />
+        </div>
+      </section>
+      <section className='packet-struct'>
+        <BasePackage />
 
-          {Object.keys(PacketStruct["trails"]).map(trail => {
-            const row = []
-            const selectedLevel = trail === "build" ? build : trail === "engage" ? engage : recruit
-            PacketStruct["trails"][trail].forEach((level, index) => {
-              row.push(<PackageComponent className={`row-${trail}-${level}`} trail={trail} level={index + 1} key={`${trail}-${level}`}
-                                         perks={level} callback={(level, trailType) => setTrail(level, trailType)}
-                                         selected={selectedLevel === index + 1}/>)
-            })
+        {Object.keys(PacketStruct["trails"]).map(trail => {
+          const row = []
+          const selectedLevel = trail === "build" ? build : trail === "engage" ? engage : recruit
+          PacketStruct["trails"][trail].forEach((level, index) => {
+            row.push(<PackageComponent className={`row-${trail}-${level}`} trail={trail} level={index + 1} key={`${trail}-${level}`}
+              perks={level} callback={(level, trailType) => setTrail(level, trailType)}
+              selected={selectedLevel === index + 1} />)
+          })
 
-            return (
-              <div className={`${trail}-div-pack`}>
+          return (
+            <div className={`${trail}-div-pack`}>
+              <div className='trail-intro'>
                 <div className={`packet-headline ${trail}-headline`}>
-                  <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>
+                  <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem === trail) + 1}</div>
                   {`Select your ${trail.charAt(0).toUpperCase() + trail.slice(1)} Package`}
-
-                  <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
-                    Clear selection
-                  </div>
                 </div>
-                <div className={`${trail}-row`}> { row } </div>
+                <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
+                  Clear Selection
+                </div>
               </div>
-            )
-          })}
-        </section>
-        <PacketFooter build={build} engage={engage} recruit={recruit} />
-      </div>
-    );
+              <div className={`${trail}-row`}> {row} </div>
+            </div>
+          )
+        })}
+      </section>
+      <PacketFooter build={build} engage={engage} recruit={recruit} />
+    </div>
+  );
 }
