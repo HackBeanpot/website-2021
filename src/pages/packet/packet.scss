@@ -23,7 +23,7 @@
 }
 
 .intro-text {
-  font-size: 32px;
+  font-size: 28px;
   width: 50%;
   line-height: 36px;
 }
@@ -40,8 +40,8 @@
 }
 
 .packet-text {
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .email {
@@ -73,7 +73,7 @@
   border-radius: 20px;
   padding: 24px;
   width: 669px;
-  margin-left: 290px;
+  margin-left: 108px;
   margin-bottom: 30px;
 }
 
@@ -92,18 +92,24 @@
 }
 
 div[class*="-div-pack"] {
-  margin-bottom: 50px;
+  margin:auto;
+  margin-bottom: 60px;
+  width: 75%;
+  max-width: 1000px;
 }
 
 .base-headline,
 .packet-headline {
-  margin: 35px 0 50px 192px;
   font-weight: bold;
   font-size: 48px;
-  display: inline-block;
   vertical-align: middle;
 }
 
+.trail-intro {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 60px;
+}
 
 div[class*='circle'] {
   margin-right: 48px;
@@ -134,22 +140,22 @@ div[class*='circle'] {
 }
 
 div[class*="-opt-out-button"] {
-  display: inline-block;
-  margin-left: 40px;
   background-color: $pale-blue;
   border-radius: 20px;
   width: fit-content;
-  padding: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  padding:6px 12px 0;
+  margin: 8px 0;
+  font-weight: bold;
   vertical-align: middle;
-  color: $black;
+  color: $midnight;
   &:hover {
     cursor: pointer;
   }
 }
 
 div[class*="-row"] {
-  margin-left: 290px;
+  margin-left: 76px;
   display: flex;
 }
 
@@ -158,7 +164,7 @@ div[class*="-row"] {
 .packet-box {
   border-radius: 20px;
   padding: 32px 24px 24px;
-  margin-right: 32px;
+  margin-left: 32px;
   color: $black;
   height: 100%;
   width: 275px;
