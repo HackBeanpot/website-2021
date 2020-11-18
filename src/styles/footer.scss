@@ -3,10 +3,16 @@
   @include grey-bg;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  text-align: center;
+}
+
+.footer__row {
+  margin: 1em 0;
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   @media (min-width: $md) {
     flex-direction: row;
@@ -14,9 +20,14 @@
 }
 
 .footer__logo {
-  width: 150px;
-  height: auto;
-  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 150px;
+    height: 150px;
+  }
 
   @media (min-width: $md) {
     margin-right: 80px;
@@ -24,30 +35,21 @@
   }
 
   @media (min-width: $lg) {
-    width: 200px;
-  }
-}
-
-.footer__content {
-  width: 70%;
-  text-align: center;
-
-  @media (min-width: $sm) {
-    width: 50%;
-  }
-
-  @media (min-width: $md) {
-    width: 300px;
-    text-align: left;
+    svg {
+      width: 200px;
+    }
   }
 }
 
 .footer__social {
   display: flex;
   justify-content: space-between;
-  width: 70%;
   margin-left: auto;
   margin-right: auto;
+
+  li {
+    margin: 0 0.5em;
+  }
 
   @media (min-width: $md) {
     margin-left: 0;
@@ -63,4 +65,41 @@
 .footer__coc-link {
   color: $hbp-packet-blue;
   transition: color 0.2s ease;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  width: 300px;
+  height: 40px;
+  box-sizing:border-box;
+}
+
+.footer__form {
+  width: 100%;
+  padding: 1em 0;
+
+  .footer__form-heading {
+    @include h6-text;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .footer__form-msg {
+    margin-top: 0.5rem;
+  }
+
+  .footer__form-input {
+    border-radius: 10px;
+    padding: 0 0.5rem;
+  }
+
+  .footer__form-btn {
+    @include secondary-cta;
+    margin-top: 10px;
+  }
+}
+
+.footer__legal {
+  display: block;
 }
