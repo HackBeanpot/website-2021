@@ -2,9 +2,9 @@ import React from 'react';
 import { useScrollYPosition } from 'react-use-scroll-position';
 
 import DynamicLink from './dynamic-link.jsx';
-import NavLinks from 'data/nav-links.json';
+import NavLinks from '../data/nav-links.json';
 
-import LogoIcon from 'images/svg/logo-icon.jsx';
+import LogoIcon from '../images/svg/logo-icon.jsx';
 
 const Nav = () => {
   const hasScrolled = useScrollYPosition() > 0;

@@ -1,6 +1,6 @@
 {
   "base" : [
-    "Table during sponsor fair with company representatives",
+    "Table during sponsor fair",
     "Company logo on T-Shirt",
     "Company logo on our website",
     "Distribute company swag at the event"
@@ -44,7 +44,7 @@
         "Host a meal"
       ]
     ],
-    "recruit": [
+    "network": [
       [
         "Table the entire event",
         "Resumes"
@@ -63,6 +63,12 @@
         "Advertise in our newsletter"
       ]
     ]
+  },
+  "descriptions": {
+    "base": "Our base tier includes all the essentials for every sponsor",
+    "build": "See the creative ways your technology can be transformed!",
+    "engage": "Foster relationships with our passionate attendees!",
+    "network": "Recruit the next generation of talented and ambitious creators!"
   }
 }
 

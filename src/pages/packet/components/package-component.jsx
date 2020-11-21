@@ -2,29 +2,31 @@ import React from 'react'
 import PacketCheck from '../../../images/svg/packet-check.js'
 
 const checkColors = {
-  "build": '#E56138',
+  "build": "#E56138",
   "engage": "#CCAD0D",
-  "recruit": "#52C2C2"
+  "network": "#52C2C2"
 }
 
-const PackageComponent = ({ perks, level, trail, callback, selected }) => {
+const PackageComponent = ({ perks, level, trail, setTrail, selected, isMobile, removeOptionChecked }) => {
   const comp_perks = perks !== undefined ? perks : [];
   const comp_level = level !== undefined ? level : 1;
 
   return (
-    <label for={`${trail}-${level}-button`}
+    <label htmlFor={`${trail}-${level}-button`}
            className={`packet-box package-component-${trail} packet-level-${level} ${selected ? 'packet-box-selected' : ''}`}>
-      <img className={`packet-price-label`} src={require(`../../../images/svg/price-label-level-${comp_level}.svg`)}
-           alt='price-label' height="67" width="176"/>
-      <input type="radio" className={`packet-radio`}
-             id={`${trail}-${level}-button`}
-             onChange={() => callback(level, trail)} checked={selected}/>
+      {!isMobile ?
+        <img className={`packet-price-label`} src={require(`../../../images/svg/price-label-level-${comp_level}.svg`)}
+             alt='price-label' height="67" width="176"/>
+        : <div className={'packet-price-mobile'}>${375 * level}</div>}
+      {!isMobile && <input type="radio" className={`packet-radio`}
+                           id={`${trail}-${level}-button`}
+                           onChange={() => setTrail(level, trail)} checked={selected}/>}
       {
-        selected ?
+        !isMobile && (selected ?
           <div className="packet-box-radio-checked">
             <PacketCheck className="packet-box-check" shadowColor={checkColors[trail]}/>
           </div> :
-          <div className="packet-box-radio-unchecked"/>
+          <div className="packet-box-radio-unchecked"/>)
       }
       <ul className={`list-${trail}-${level}`}>
         {comp_perks.map((perk, index) => {
@@ -33,6 +35,12 @@ const PackageComponent = ({ perks, level, trail, callback, selected }) => {
           )
         })}
       </ul>
+      { isMobile && (selected ?
+        <div className={`packet-box-radio-mobile-checked-${trail}`} id={`${trail}-${level}-button`}
+             onClick={() => removeOptionChecked(trail)}>Selected</div> :
+        <div className={`packet-box-radio-mobile-unchecked-${trail}`} id={`${trail}-${level}-button`}
+             onClick={() => setTrail(level, trail)}>Select</div>)
+      }
     </label>
   )
 }
