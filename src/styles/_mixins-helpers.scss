@@ -90,6 +90,14 @@
   overflow: hidden;
 }
 
+@mixin green-blue-gradient-bg {
+  @include inline-link;
+  background: linear-gradient(180deg, #386A3F 3.65%, #0C4124 57.29%, #102137 100%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+  overflow: hidden;
+}
+
 @mixin green-gradient-bg {
   @include inline-link;
   background: linear-gradient(180deg, #17331B 27.08%, #1D8A4F 85.42%);
@@ -107,13 +115,6 @@
 @mixin orange-gradient-bg {
   @include inline-link;
   background: linear-gradient(#334171 0%, #E56138 38%, #FFED8E 59%);
-  color: $hbp-navy;
-  overflow: hidden;
-}
-
-@mixin sprout-green-bg {
-  @include inline-link($charles-river-blue, $hbp-navy);
-  background-color: $sprout-green;
   color: $hbp-navy;
   overflow: hidden;
 }
