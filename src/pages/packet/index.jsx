@@ -86,16 +86,18 @@ const PacketFooter = ({ build, engage, network }) => {
 
 
 const BasePackage = ({ isMobile }) => (
-  <div className='base-package'>
-    <div className='base-headline'>
-      {!isMobile && <div className={`base-circle`}>0</div>}
-      The Base Package
-      {isMobile && <div className='base-description'>{PacketStruct["descriptions"]["base"]}</div>}
+  <div className='base-div-pack'>
+    <div className='trail-intro'>
+      <div className='base-headline'>
+        {!isMobile && <div className={`base-circle`}>0</div>}
+        The Base Package
+        {isMobile && <div className='base-description'>{PacketStruct["descriptions"]["base"]}</div>}
+      </div>
     </div>
     <div className='base-box'>
       <div className='base-box-price-check'>
         $750
-        {!isMobile && <img className='base-box-check-mark' src={BaseCheck} alt='Base check' height='42' width='42'/>}
+        {!isMobile && <img className='base-box-check-mark' src={BaseCheck} alt='Base package check mark' height='42' width='42'/>}
       </div>
       <ul className={`list-base-package`}>
         {PacketStruct["base"].map((perk, index) => {

@@ -79,6 +79,7 @@
   color: $black;
   background: $grey;
   border-radius: 20px;
+  padding: 24px;
   width: 669px;
   margin-left: 108px;
   margin-bottom: 30px;
@@ -121,7 +122,6 @@ div[class*="-div-pack"] {
 
 .base-headline,
 .packet-headline {
-  margin: 35px 0 35px 192px;
   font-weight: bold;
   font-size: 48px;
   vertical-align: middle;
@@ -403,9 +403,11 @@ p[class^="footer-list-type"] {
 @media only screen and (max-width: $lg) {
   div[class*="-row"], .packet-headline, .packet-blurb, .base-headline, .base-box, .intro-div  {
     margin-left: 20px;
+    line-height: 1.25;
   }
+
   div[class*="-row"] {
-    padding-left: 5px;
+    padding-top: 30px;
     overflow: auto;
     white-space: nowrap;
   }

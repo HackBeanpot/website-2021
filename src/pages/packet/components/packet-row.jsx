@@ -20,9 +20,11 @@ const PackageRow = ({ trail, build, engage, network, removeOptionChecked, setTra
   if (!isMobile) {
     return (
       <div className={`${trail}-div-pack`}>
-        <div className={`packet-headline ${trail}-headline`}>
-          <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>
-          {`Select your ${row_trail.charAt(0).toUpperCase() + row_trail.slice(1)} Package`}
+        <div className='trail-intro'>
+          <div className={`packet-headline ${trail}-headline`}>
+            <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>
+            {`Select your ${row_trail.charAt(0).toUpperCase() + row_trail.slice(1)} Package`}
+          </div>
           <div className={`${trail}-opt-out-button`} onClick={() => removeOptionChecked(trail)}>
             Clear selection
           </div>
