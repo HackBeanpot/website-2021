@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{FzkZ:function(n,e,t){"use strict";t.r(e);var i=t("q1tI"),r=function(n){return n&&n<=960};e.default=function(){var n="object"==typeof window,e=Object(i.useState)(!!n&&r(window.innerWidth)),t=e[0],o=e[1];return Object(i.useEffect)((function(){var e=function(){o(r(window.innerWidth))};if(n)return window.addEventListener("resize",e),function(){return window.removeEventListener("resize",e)}}),[n,o]),t}}}]);
+//# sourceMappingURL=component---src-pages-packet-components-use-is-mobile-js-78106dd21e07e9bbccf4.js.map

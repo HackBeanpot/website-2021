@@ -9,6 +9,8 @@ exports.components = {
   "component---src-pages-code-of-conduct-index-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/code-of-conduct/index.jsx"))),
   "component---src-pages-index-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/index.jsx"))),
   "component---src-pages-packet-components-package-component-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/packet/components/package-component.jsx"))),
+  "component---src-pages-packet-components-packet-row-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/packet/components/packet-row.jsx"))),
+  "component---src-pages-packet-components-use-is-mobile-js": hot(preferDefault(require("/home/circleci/project/src/pages/packet/components/useIsMobile.js"))),
   "component---src-pages-packet-index-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/packet/index.jsx"))),
   "component---src-pages-sponsors-components-sponsor-kits-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/sponsors/components/sponsor-kits.jsx"))),
   "component---src-pages-sponsors-index-jsx": hot(preferDefault(require("/home/circleci/project/src/pages/sponsors/index.jsx"))),
