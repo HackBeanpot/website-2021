@@ -22,7 +22,8 @@
 }
 
 .intro-div {
-  margin: 320px 0 1200px 150px;
+  margin: 220px 0 1200px 150px;
+  width: 50%;
 }
 
 .intro-title {
@@ -32,13 +33,12 @@
 
 .intro-text {
   font-size: 28px;
-  width: 50%;
   line-height: 36px;
 }
 
 .packet-blurb {
   margin-left: 40%;
-  width: 52%;
+  width: 50%;
   margin-bottom: 500px;
 }
 
@@ -107,13 +107,14 @@
 .base-box-button-mobile {
   padding: 10px 0;
   font-size: 24px;
-  color: #eeeeee;
+  border-radius: 10px;
+  color: $white;
   font-weight: normal;
   text-align: center;
-  background: #102037;
+  background: $midnight;
 }
 
-div[class*="-div-pack"] {
+.packet-tier {
   margin:auto;
   margin-bottom: 60px;
   width: 75%;
@@ -131,9 +132,14 @@ div[class*="-div-pack"] {
   display: flex;
   justify-content: space-between;
   margin: 30px 0 60px;
-
 }
-div[class*='-description'] {
+
+.base-intro {
+  margin: 30px 0 60px;
+}
+
+.packet-description,
+.base-description {
   margin-top: 20px;
   margin-left: 0;
   font-size: 24px;
@@ -198,6 +204,7 @@ div[class*="-row"] {
   color: $black;
   height: 100%;
   width: 275px;
+  min-width: 275px;
   position: relative;
   cursor: pointer;
 }
@@ -238,7 +245,7 @@ div[class*="-row"] {
 }
 
 div[class^="packet-box-radio-mobile-"] {
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   padding: 10px 0;
   font-size: 20px;
   font-weight: normal;
@@ -401,9 +408,19 @@ p[class^="footer-list-type"] {
 }
 
 @media only screen and (max-width: $lg) {
-  div[class*="-row"], .packet-headline, .packet-blurb, .base-headline, .base-box, .intro-div  {
-    margin-left: 20px;
+  .packet-headline,
+  .packet-blurb,
+  .base-box,
+  .intro-div,
+  .trail-intro,
+  .base-intro  {
+    margin: 0 20px;
     line-height: 1.25;
+    width: auto;
+  }
+
+  div[class*="-row"] {
+    margin: 0;
   }
 
   div[class*="-row"] {
@@ -414,36 +431,58 @@ p[class^="footer-list-type"] {
 
   .packet {
     background: $packet-dark-blue url("../../images/svg/packet-background-mobile.svg") no-repeat;
+    background-size: 140vw;
   }
 
-  .intro-text {
-    width: 90%;
-    font-size: 22px;
+  .packet h1 {
+    font-size: 48px;
+  }
+
+  .packet p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .intro-div {
+    margin-top: 120px;
   }
 
   .packet-blurb {
-    width: 90%;
+    margin-top: 300px;
   }
 
-  .packet-text {
-    font-size: 20px;
+  .packet-tier {
+    width: 100%;
   }
 
   .packet-struct {
+    margin-top: 150px;
     margin-bottom: 0;
     padding-bottom: 100px;
   }
 
-  .base-headline {
-    font-size: 40px;
+  .base-headline,
+  .packet-headline  {
+    font-size: 38px;
   }
 
-  .packet-headline {
-    font-size: 40px;
+  .trail-intro,
+  .base-intro {
+    margin-bottom: 16px;
   }
 
-  .base-box {
-    width: 90%;
+  .base-description,
+  .packet-description {
+    font-size: 20px;
+  }
+
+  .base-box .list-base-package,
+  .base-box .base-box-price-check {
+    padding: 0;
+  }
+
+  .base-box .list-base-package {
+    margin: 0 0 8px 0;
   }
 
   .packet-box {
@@ -453,6 +492,21 @@ p[class^="footer-list-type"] {
 
   ul[class^="list-"] {
     margin: 0 20px 20px;
+  }
+
+  p[class^="footer-list-type"] {
+    margin-right: 40px;
+  }
+
+  .packet .card-header {
+    padding: 0;
+  }
+
+  .packet .card-body {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .footer-total-list {
@@ -467,9 +521,12 @@ p[class^="footer-list-type"] {
     width: 100%;
   }
 
-  .card-body {
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
+  .get-in-touch-text {
+    font-size: 28px;
+  }
+
+  .send-selection-button {
+    padding: 16px 8px;
+    margin-bottom: 8px;
   }
 }

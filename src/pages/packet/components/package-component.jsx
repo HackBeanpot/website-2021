@@ -31,7 +31,7 @@ const PackageComponent = ({ perks, level, trail, setTrail, selected, isMobile, r
       <ul className={`list-${trail}-${level}`}>
         {comp_perks.map((perk, index) => {
           return (
-            <p key={`${trail}-${level}-list-${index}`}> {perk} </p>
+            <li key={`${trail}-${level}-list-${index}`}> {perk} </li>
           )
         })}
       </ul>
