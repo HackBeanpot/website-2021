@@ -29,7 +29,7 @@ Best,${newline}
   `
 }
 
-const PacketFooter = ({ build, engage, network }) => {
+const PacketFooter = ({ build, engage, network, isMobile }) => {
   const PRICE_OF_PACKAGE = 375
 
   const openMailClient = () => {
@@ -40,7 +40,7 @@ const PacketFooter = ({ build, engage, network }) => {
 
   return (
     <section className='packet-footer'>
-      <Accordion defaultActiveKey='0'>
+      <Accordion>
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey='0'>
             <img src={FooterArrow} alt='footer arrow' className='footer-arrow'/>
@@ -73,7 +73,7 @@ const PacketFooter = ({ build, engage, network }) => {
                 <div className='get-in-touch-text'>Let's get in touch!</div>
                 <div className='send-selection-button' onClick={openMailClient}>
                   Send us your selection
-                  <img className='selection-arrow' src={SelectionArrow} alt='Selection arrow'/>
+                  {!isMobile && <img className='selection-arrow' src={SelectionArrow} alt='Selection arrow'/>}
                 </div>
               </div>
             </Card.Body>
@@ -86,13 +86,13 @@ const PacketFooter = ({ build, engage, network }) => {
 
 
 const BasePackage = ({ isMobile }) => (
-  <div className='base-div-pack'>
-    <div className='trail-intro'>
+  <div className='base-div-pack packet-tier'>
+    <div className='base-intro'>
       <div className='base-headline'>
         {!isMobile && <div className={`base-circle`}>0</div>}
-        The Base Package
-        {isMobile && <div className='base-description'>{PacketStruct["descriptions"]["base"]}</div>}
+        Base Package
       </div>
+      {isMobile && <div className='base-description'>{PacketStruct["descriptions"]["base"]}</div>}
     </div>
     <div className='base-box'>
       <div className='base-box-price-check'>
@@ -177,7 +177,7 @@ const SponsorPacket = () => {
           />
         })}
       </section>
-      <PacketFooter build={build} engage={engage} network={network}/>
+      <PacketFooter build={build} engage={engage} network={network} isMobile={isMobile}/>
     </div>
   );
 }

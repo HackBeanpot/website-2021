@@ -19,7 +19,7 @@ const PackageRow = ({ trail, build, engage, network, removeOptionChecked, setTra
 
   if (!isMobile) {
     return (
-      <div className={`${trail}-div-pack`}>
+      <div className={`${trail}-div-pack packet-tier`}>
         <div className='trail-intro'>
           <div className={`packet-headline ${trail}-headline`}>
             <div className={`${trail}-circle`}>{TRAILS_LIST.findIndex((elem) => elem===trail) + 1}</div>
@@ -34,10 +34,10 @@ const PackageRow = ({ trail, build, engage, network, removeOptionChecked, setTra
     )
   } else {
     return (
-      <div className={`${trail}-div-pack`}>
+      <div className={`${trail}-div-pack packet-tier`}>
         <div className={`packet-headline ${trail}-headline`}>
           {`${row_trail.charAt(0).toUpperCase() + row_trail.slice(1)} Package`}
-          <div className={`packet-headline ${trail}-description`}>{PacketStruct["descriptions"][trail]}</div>
+          <div className={`packet-description ${trail}-description`}>{PacketStruct["descriptions"][trail]}</div>
         </div>
         <div className={`${trail}-row`}> { row } </div>
       </div>
