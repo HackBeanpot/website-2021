@@ -261,10 +261,8 @@
 // ---------------------------------------------------------------------------
 
 .home-sponsors {
-  @include yellow-green-bg;
   @include top-padding;
   @include bottom-padding;
-  position: relative;
 }
 
 .home-sponsors__circuit {
@@ -291,7 +289,6 @@
 
 .home-sponsors__title {
   @include h2-text;
-  @include bottom-margin;
 }
 
 .home-sponsors__cta-group {
