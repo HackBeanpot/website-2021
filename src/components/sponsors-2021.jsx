@@ -8,11 +8,12 @@ const Sponsors2021 = () => (
       <div className="row">
         <a
           href="https://www.facebook.com/"
-          className="col-md-3 offset-md-2 home-sponsors__logo-wrapper my-sm-3"
+          className="col-md-3 offset-md-2 home-sponsors__logo-wrapper my-sm-3 mx-5"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
+            className="home-sponsors__logo"
             src="https://tools.hackbeanpot.com/assets/logos/2021-sponsors/facebook_2133px.png"
             alt="Facebook logo"
           />
@@ -24,6 +25,7 @@ const Sponsors2021 = () => (
           rel="noopener noreferrer"
         >
           <img
+            className="home-sponsors__logo"
             src="https://tools.hackbeanpot.com/assets/logos/2021-sponsors/khoury_1304px.png"
             alt="Khoury logo"
           />
@@ -33,17 +35,32 @@ const Sponsors2021 = () => (
       {/* In-Kind Sponsors */}
       <h2 className="home-sponsors__subtitle">In-Kind Sponsors</h2>
       <div className="row">
+        <div className="col-md-2"></div>
         <a
           href="https://www.badabeansnacks.com/"
-          className="col-md-4 offset-md-4 home-sponsors__logo-wrapper my-sm-3"
+          className="col home-sponsors__logo-wrapper my-sm-3"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
+            className="home-sponsors__logo"
             src="https://tools.hackbeanpot.com/assets/logos/2021-sponsors/badabeanbadaboom_1500px.png"
             alt="Facebook logo"
           />
         </a>
+        <a
+          href="https://www.joinglimpse.com/"
+          className="col home-sponsors__logo-wrapper my-sm-3"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="home-sponsors__logo"
+            src="https://tools.hackbeanpot.com/assets/logos/2021-sponsors/glimpse.png"
+            alt="Facebook logo"
+          />
+        </a>
+        <div className="col-md-2"></div>
       </div>
     </div>
   </div>
