@@ -1,10 +1,14 @@
 [
   {
+    "name": "About",
+    "path": "/#about"
+  },
+  {
     "name": "FAQ",
     "path": "/#faq"
   },
   {
-    "name": "About",
-    "path": "/#about"
+    "name": "Sponsors",
+    "path": "/#sponsors"
   }
 ]

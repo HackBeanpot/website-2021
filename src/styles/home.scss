@@ -277,10 +277,15 @@
   &__logo-wrapper {
     justify-content: center;
     display: flex;
+    
+    @media (max-width: $sm) {
+      max-height: 150px;
+    }
   }
 
   &__logo {
     object-fit: contain;
+    height: 100%;
   }
 }
 

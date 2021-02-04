@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Sponsors2021 = () => (
-  <div className="home-sponsors">
+  <section id="sponsors" className="home-sponsors">
     <div className="container">
       <h2 className="home-sponsors__title">2021 Sponsors</h2>
       {/* Facebook and Khoury */}
@@ -63,7 +63,7 @@ const Sponsors2021 = () => (
         <div className="col-md-2"></div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Sponsors2021;
