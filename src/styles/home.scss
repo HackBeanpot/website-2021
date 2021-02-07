@@ -278,7 +278,7 @@
     justify-content: center;
     display: flex;
     
-    @media (max-width: $sm) {
+    @media (max-width: $md) {
       max-height: 150px;
     }
   }
