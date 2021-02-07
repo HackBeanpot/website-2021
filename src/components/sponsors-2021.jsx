@@ -43,7 +43,7 @@ const Sponsors2021 = () => (
         >
           <img
             className="home-sponsors__logo"
-            src="https://tools.hackbeanpot.com/assets/logos/2021-sponsors/upstatment.png"
+            src="https://tools.hackbeanpot.com/assets/logos/2021-sponsors/upstatement.png"
             alt="Upstatement logo"
           />
         </a>
@@ -107,15 +107,15 @@ const Sponsors2021 = () => (
           />
         </a>
         <a
-          href="https://www.zyprr.com/"
+          href="https://www.zipperhq.com/"
           className="col home-sponsors__logo-wrapper my-sm-3"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             className="home-sponsors__logo"
-            src="https://tools.hackbeanpot.com/assets/logos/2021-sponsors/zyprr.png"
-            alt="Zyprr logo"
+            src="https://tools.hackbeanpot.com/assets/logos/2021-sponsors/zipperHQ.png"
+            alt="ZipperHQ logo"
           />
         </a>
         <div className="col-md-1"></div>
