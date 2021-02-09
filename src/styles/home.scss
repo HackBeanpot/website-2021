@@ -266,7 +266,6 @@
 
   &__title {
     @include h2-text;
-    @include bottom-margin;
   }
 
   &__subtitle {
@@ -277,8 +276,10 @@
   &__logo-wrapper {
     justify-content: center;
     display: flex;
+    max-height: 12vw;
+    margin-top: 15px;
     
-    @media (max-width: $sm) {
+    @media (max-width: $md) {
       max-height: 150px;
     }
   }
