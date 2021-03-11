@@ -63,7 +63,7 @@
 }
 
 .header__description {
-  @include large-body-text($camp-orange);
+  @include h4-text($camp-orange);
   margin-bottom: 30px;
 }
 
