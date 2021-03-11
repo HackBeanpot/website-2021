@@ -3,14 +3,14 @@
 <url> <loc>https://hackbeanpot.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/code-of-conduct/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/packet/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hackbeanpot.com/stories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/sponsors/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hackbeanpot.com/stories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/team/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/packet/components/package-component/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/packet/components/packet-row/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/packet/components/useIsMobile/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hackbeanpot.com/sponsors/components/sponsor-kits/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/stories/components/quote/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/stories/components/stories-mobile/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hackbeanpot.com/stories/components/stories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hackbeanpot.com/sponsors/components/sponsor-kits/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
