@@ -1,6 +1,6 @@
 ## HackBeanpot's website for 2021. 
 
-[<img src="./static/powered-by-vercel.svg" alt="Powered by Vercel" width="150"/>](https://vercel.com/?utm_source=hackbeanpot&utm_campaign=oss)
+[<img src="./src/images/svg/powered-by-vercel.svg" alt="Powered by Vercel" width="150"/>](https://vercel.com/?utm_source=hackbeanpot&utm_campaign=oss)
 
 _Written in React and deployed using [Vercel](https://vercel.com/?utm_source=hackbeanpot&utm_campaign=oss). We use a Gatsby boilerplate that compiles into static assets for deployment._
 
