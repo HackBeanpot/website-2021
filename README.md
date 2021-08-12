@@ -1,5 +1,8 @@
 ## HackBeanpot's website for 2021. 
-_Written in React and served using GitHub Pages. We use a Gatsby boilerplate that compiles into static assets for deployment._
+
+[<img src="./static/powered-by-vercel.svg" alt="Powered by Vercel" width="150"/>](https://vercel.com/?utm_source=hackbeanpot&utm_campaign=oss)
+
+_Written in React and deployed using [Vercel](https://vercel.com/?utm_source=hackbeanpot&utm_campaign=oss). We use a Gatsby boilerplate that compiles into static assets for deployment._
 
 ## Getting Set Up For Development
 
