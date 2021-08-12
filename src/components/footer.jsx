@@ -2,7 +2,7 @@ import React from 'react';
 import NewsletterSignup from '../components/newsletter-signup'
 import DynamicLink from './dynamic-link';
 import SocialLinks from 'data/social-links.json';
-
+import Vercel from './vercel';
 import LogoWhite from 'images/logo-white.jsx';
 
 const Footer = () => (
@@ -24,7 +24,8 @@ const Footer = () => (
       <div className="footer__logo">
         <LogoWhite />
       </div>
-        <NewsletterSignup/>
+      <NewsletterSignup/>
+      <Vercel />
     </div>
     <div className="footer__legal">
       <p>HackBeanpot, Inc. is a registered 501(c)(3) organization.&nbsp;</p>
