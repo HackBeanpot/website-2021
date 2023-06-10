@@ -7,7 +7,7 @@
   "dependencies": {
     "@mdi/font": "^4.9.95",
     "flickity": "^2.2.1",
-    "gatsby": "^2.24.86",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-google-analytics": "^2.3.19",
     "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-react-helmet": "^3.3.14",
